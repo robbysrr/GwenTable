@@ -1,0 +1,12 @@
+workstream,artifact,availability,evidence,scope_or_next
+Hazards v3,GwenTable_SRD521_Hazards_v3.zip,Included: history/ and source/hazards-v3/,Fresh 170/170; 11 manifest checks,Standalone latest candidate; not website
+Hazards v2,GwenTable_SRD521_Hazards_v2.zip,Included: history/,Fresh 131/131; 9 manifest checks,Historical rollback; cumulative
+Hazards v1,GwenTable_SRD521_Hazard_Integration.zip,Included: history/,Fresh 76/76; 7 manifest checks,Historical rollback; cumulative
+Canonical website,UX9 / dev.14 / Convergence08 (identity unresolved),"MISSING: obtain full checkout or latest complete site ZIP, commit and lockfiles",No current tests,Highest priority; do not infer ancestry
+Private rules bridge Dev.22,DEV21_TO_DEV22.patch; exact Dev.21/22 full source ZIP needed,"Library patch indexed, raw retrieval refused",Historical 573/573 Node; 42/42 HTTP; browser timeout,"Tracked target AC, damage, temp HP, resistance/vulnerability/immunity, prior attack sequences"
+Party conditions candidate,GwenTable_dev14_SRD_Party_Condition_Reconciliation_PRIVATE_Source.zip,MISSING: exact ZIP required,Historical 697/697; static build passed; real browser persistence unverified,Separate branch; not canonical
+MVP Bard high level,GwenTable_MVP_dev14_to_dev15_SRD_Bard.patch,"Library patch indexed, raw retrieval refused",Historical report only; not retested,Bard 13–20; Warlock/Wizard 13–20 then pending; reconcile newer branches
+Localization newest known,GwenTable_SRD521_Spell_Localization_v1_44.zip,Library raw retrieval refused,"180/339 source-reference records previously reported, not verified now",No verified complete translation or website integration
+Localization central audit,GwenTable_SRD521_Spell_Central_Audit_v1_41.zip,Library raw retrieval refused,Not retested,Retrieve with approved localization master and source checkpoints
+Official source,SRD_CC_v5.2.1.pdf,Official URL in SOURCE_AND_RELEASE.md; not bundled,Candidate source reference only,Pin exact source bytes and version before new rules edits
+Real save fixtures and approved artwork,"Existing repository-owned fixtures, manifests and backups",MISSING: use sanitized fixtures and approved assets only,Not tested,Never export production data or secrets

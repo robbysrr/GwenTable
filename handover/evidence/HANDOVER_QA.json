@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-26",
+  "node": "v22.16.0",
+  "fresh_extraction_retests": [
+    {
+      "archive": "GwenTable_SRD521_Hazard_Integration.zip",
+      "sha256": "f7d89524a10bc6c3e1f23efa6c2f8426a7d372a601cc5dc52adac8e8e50adf8a",
+      "manifest_entries_verified": 7,
+      "tests_passed": 76,
+      "tests_failed": 0,
+      "zip_crc": "PASS",
+      "scope": "standalone hazard candidate; cumulative tests"
+    },
+    {
+      "archive": "GwenTable_SRD521_Hazards_v2.zip",
+      "sha256": "a16b51aa34ee7f336e5bc1d6241190df8cccc3dd19d926c7b5f27c8fb1f5051e",
+      "manifest_entries_verified": 9,
+      "tests_passed": 131,
+      "tests_failed": 0,
+      "zip_crc": "PASS",
+      "scope": "standalone hazard candidate; cumulative tests"
+    },
+    {
+      "archive": "GwenTable_SRD521_Hazards_v3.zip",
+      "sha256": "8a2a38e5d90b1279230a2739d30b3b125673b7b71d0bba1f315044183ba26bb1",
+      "manifest_entries_verified": 11,
+      "tests_passed": 170,
+      "tests_failed": 0,
+      "zip_crc": "PASS",
+      "scope": "standalone hazard candidate; cumulative tests"
+    }
+  ],
+  "website_merge": "NOT PERFORMED",
+  "browser_tests": "NOT RUN",
+  "historical_branches_retested": false
+}

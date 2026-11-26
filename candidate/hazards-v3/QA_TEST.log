@@ -1,0 +1,1030 @@
+TAP version 13
+# Subtest: fall 0ft
+ok 1 - fall 0ft
+  ---
+  duration_ms: 3.294921
+  type: 'test'
+  ...
+# Subtest: fall 9.99ft
+ok 2 - fall 9.99ft
+  ---
+  duration_ms: 0.266037
+  type: 'test'
+  ...
+# Subtest: fall 10ft
+ok 3 - fall 10ft
+  ---
+  duration_ms: 0.066739
+  type: 'test'
+  ...
+# Subtest: fall 19.99ft
+ok 4 - fall 19.99ft
+  ---
+  duration_ms: 0.088742
+  type: 'test'
+  ...
+# Subtest: fall 20ft
+ok 5 - fall 20ft
+  ---
+  duration_ms: 0.074552
+  type: 'test'
+  ...
+# Subtest: fall 199ft
+ok 6 - fall 199ft
+  ---
+  duration_ms: 0.103855
+  type: 'test'
+  ...
+# Subtest: fall 200ft
+ok 7 - fall 200ft
+  ---
+  duration_ms: 0.081362
+  type: 'test'
+  ...
+# Subtest: fall 10000ft
+ok 8 - fall 10000ft
+  ---
+  duration_ms: 0.052949
+  type: 'test'
+  ...
+# Subtest: invalid distance -1
+ok 9 - invalid distance -1
+  ---
+  duration_ms: 0.492826
+  type: 'test'
+  ...
+# Subtest: invalid distance NaN
+ok 10 - invalid distance NaN
+  ---
+  duration_ms: 0.472866
+  type: 'test'
+  ...
+# Subtest: invalid distance Infinity
+ok 11 - invalid distance Infinity
+  ---
+  duration_ms: 0.173299
+  type: 'test'
+  ...
+# Subtest: invalid distance 10
+ok 12 - invalid distance 10
+  ---
+  duration_ms: 0.061572
+  type: 'test'
+  ...
+# Subtest: invalid distance null
+ok 13 - invalid distance null
+  ---
+  duration_ms: 0.072508
+  type: 'test'
+  ...
+# Subtest: solid damage
+ok 14 - solid damage
+  ---
+  duration_ms: 0.698704
+  type: 'test'
+  ...
+# Subtest: liquid without check
+ok 15 - liquid without check
+  ---
+  duration_ms: 0.084416
+  type: 'test'
+  ...
+# Subtest: liquid athletics 15
+ok 16 - liquid athletics 15
+  ---
+  duration_ms: 0.135603
+  type: 'test'
+  ...
+# Subtest: liquid acrobatics 14
+ok 17 - liquid acrobatics 14
+  ---
+  duration_ms: 0.054942
+  type: 'test'
+  ...
+# Subtest: liquid acrobatics 20
+ok 18 - liquid acrobatics 20
+  ---
+  duration_ms: 0.042503
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[1]}
+ok 19 - reject fall {"rolls":[1]}
+  ---
+  duration_ms: 0.071146
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[0,4]}
+ok 20 - reject fall {"rolls":[0,4]}
+  ---
+  duration_ms: 0.041151
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[7,4]}
+ok 21 - reject fall {"rolls":[7,4]}
+  ---
+  duration_ms: 0.033399
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[null,null]}
+ok 22 - reject fall {"rolls":[null,null]}
+  ---
+  duration_ms: 0.121682
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[2.5,4]}
+ok 23 - reject fall {"rolls":[2.5,4]}
+  ---
+  duration_ms: 0.072889
+  type: 'test'
+  ...
+# Subtest: reject fall {"surface":"air"}
+ok 24 - reject fall {"surface":"air"}
+  ---
+  duration_ms: 0.042934
+  type: 'test'
+  ...
+# Subtest: reject fall {"surface":"liquid","liquidCheck":{"skill":"athletics","total":15}}
+ok 25 - reject fall {"surface":"liquid","liquidCheck":{"skill":"athletics","total":15}}
+  ---
+  duration_ms: 0.048733
+  type: 'test'
+  ...
+# Subtest: reject fall {"reactionAvailable":true,"liquidCheck":{"skill":"athletics","total":15}}
+ok 26 - reject fall {"reactionAvailable":true,"liquidCheck":{"skill":"athletics","total":15}}
+  ---
+  duration_ms: 0.071767
+  type: 'test'
+  ...
+# Subtest: reject fall {"surface":"liquid","reactionAvailable":true,"liquidCheck":{"skill":"stealth","total":20}}
+ok 27 - reject fall {"surface":"liquid","reactionAvailable":true,"liquidCheck":{"skill":"stealth","total":20}}
+  ---
+  duration_ms: 0.048622
+  type: 'test'
+  ...
+# Subtest: reject fall {"reactionAvailable":"true"}
+ok 28 - reject fall {"reactionAvailable":"true"}
+  ---
+  duration_ms: 0.040961
+  type: 'test'
+  ...
+# Subtest: 20d6 cap
+ok 29 - 20d6 cap
+  ---
+  duration_ms: 0.134611
+  type: 'test'
+  ...
+# Subtest: zero from liquid check
+ok 30 - zero from liquid check
+  ---
+  duration_ms: 0.184356
+  type: 'test'
+  ...
+# Subtest: landing 0
+ok 31 - landing 0
+  ---
+  duration_ms: 0.086989
+  type: 'test'
+  ...
+# Subtest: landing 1
+ok 32 - landing 1
+  ---
+  duration_ms: 0.037836
+  type: 'test'
+  ...
+# Subtest: landing 120
+ok 33 - landing 120
+  ---
+  duration_ms: 0.030035
+  type: 'test'
+  ...
+# Subtest: invalid final damage
+ok 34 - invalid final damage
+  ---
+  duration_ms: 0.135472
+  type: 'test'
+  ...
+# Subtest: burning d4 1
+ok 35 - burning d4 1
+  ---
+  duration_ms: 0.094311
+  type: 'test'
+  ...
+# Subtest: burning d4 2
+ok 36 - burning d4 2
+  ---
+  duration_ms: 0.037716
+  type: 'test'
+  ...
+# Subtest: burning d4 3
+ok 37 - burning d4 3
+  ---
+  duration_ms: 0.031687
+  type: 'test'
+  ...
+# Subtest: burning d4 4
+ok 38 - burning d4 4
+  ---
+  duration_ms: 0.030746
+  type: 'test'
+  ...
+# Subtest: not burning
+ok 39 - not burning
+  ---
+  duration_ms: 0.089844
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":false,"roll":1}
+ok 40 - reject burn {"burning":false,"roll":1}
+  ---
+  duration_ms: 0.069334
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":true,"roll":5}
+ok 41 - reject burn {"burning":true,"roll":5}
+  ---
+  duration_ms: 0.067631
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":true,"roll":0}
+ok 42 - reject burn {"burning":true,"roll":0}
+  ---
+  duration_ms: 0.039219
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":"true","roll":3}
+ok 43 - reject burn {"burning":"true","roll":3}
+  ---
+  duration_ms: 0.036654
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":true}
+ok 44 - reject burn {"burning":true}
+  ---
+  duration_ms: 0.058448
+  type: 'test'
+  ...
+# Subtest: roll extinguish
+ok 45 - roll extinguish
+  ---
+  duration_ms: 0.113269
+  type: 'test'
+  ...
+# Subtest: extinguish douse
+ok 46 - extinguish douse
+  ---
+  duration_ms: 0.069063
+  type: 'test'
+  ...
+# Subtest: extinguish submerge
+ok 47 - extinguish submerge
+  ---
+  duration_ms: 0.04712
+  type: 'test'
+  ...
+# Subtest: extinguish smother
+ok 48 - extinguish smother
+  ---
+  duration_ms: 0.040911
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":false,"method":"douse"}
+ok 49 - reject extinguish {"burning":false,"method":"douse"}
+  ---
+  duration_ms: 0.067371
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":true,"method":"roll","actionAvailable":true}
+ok 50 - reject extinguish {"burning":true,"method":"roll","actionAvailable":true}
+  ---
+  duration_ms: 0.038067
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":true,"method":"roll","canAct":true}
+ok 51 - reject extinguish {"burning":true,"method":"roll","canAct":true}
+  ---
+  duration_ms: 0.034111
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":true,"method":"magic"}
+ok 52 - reject extinguish {"burning":true,"method":"magic"}
+  ---
+  duration_ms: 0.03315
+  type: 'test'
+  ...
+# Subtest: breath CON -5
+ok 53 - breath CON -5
+  ---
+  duration_ms: 0.056374
+  type: 'test'
+  ...
+# Subtest: breath CON -1
+ok 54 - breath CON -1
+  ---
+  duration_ms: 0.028933
+  type: 'test'
+  ...
+# Subtest: breath CON 0
+ok 55 - breath CON 0
+  ---
+  duration_ms: 0.026499
+  type: 'test'
+  ...
+# Subtest: breath CON 1
+ok 56 - breath CON 1
+  ---
+  duration_ms: 0.025949
+  type: 'test'
+  ...
+# Subtest: breath CON 3
+ok 57 - breath CON 3
+  ---
+  duration_ms: 0.072519
+  type: 'test'
+  ...
+# Subtest: breath CON 10
+ok 58 - breath CON 10
+  ---
+  duration_ms: 0.036395
+  type: 'test'
+  ...
+# Subtest: invalid CON -6
+ok 59 - invalid CON -6
+  ---
+  duration_ms: 0.063335
+  type: 'test'
+  ...
+# Subtest: invalid CON 11
+ok 60 - invalid CON 11
+  ---
+  duration_ms: 0.035523
+  type: 'test'
+  ...
+# Subtest: invalid CON 1.5
+ok 61 - invalid CON 1.5
+  ---
+  duration_ms: 0.033701
+  type: 'test'
+  ...
+# Subtest: invalid CON 2
+ok 62 - invalid CON 2
+  ---
+  duration_ms: 0.034311
+  type: 'test'
+  ...
+# Subtest: out of breath
+ok 63 - out of breath
+  ---
+  duration_ms: 0.248801
+  type: 'test'
+  ...
+# Subtest: breath remains
+ok 64 - breath remains
+  ---
+  duration_ms: 0.068753
+  type: 'test'
+  ...
+# Subtest: choking bypasses timer
+ok 65 - choking bypasses timer
+  ---
+  duration_ms: 0.055854
+  type: 'test'
+  ...
+# Subtest: fatal level 6
+ok 66 - fatal level 6
+  ---
+  duration_ms: 0.050055
+  type: 'test'
+  ...
+# Subtest: reject turn {"total":6}
+ok 67 - reject turn {"total":6}
+  ---
+  duration_ms: 0.05983
+  type: 'test'
+  ...
+# Subtest: reject turn {"total":7}
+ok 68 - reject turn {"total":7}
+  ---
+  duration_ms: 0.062984
+  type: 'test'
+  ...
+# Subtest: reject turn {"suffocation":3}
+ok 69 - reject turn {"suffocation":3}
+  ---
+  duration_ms: 0.04018
+  type: 'test'
+  ...
+# Subtest: reject turn {"suffocation":-1}
+ok 70 - reject turn {"suffocation":-1}
+  ---
+  duration_ms: 0.0531
+  type: 'test'
+  ...
+# Subtest: reject turn {"remainingSeconds":-1}
+ok 71 - reject turn {"remainingSeconds":-1}
+  ---
+  duration_ms: 0.036294
+  type: 'test'
+  ...
+# Subtest: reject turn {"choking":"true"}
+ok 72 - reject turn {"choking":"true"}
+  ---
+  duration_ms: 0.03345
+  type: 'test'
+  ...
+# Subtest: breathing preserves other exhaustion
+ok 73 - breathing preserves other exhaustion
+  ---
+  duration_ms: 0.15449
+  type: 'test'
+  ...
+# Subtest: breathing with no suffocation
+ok 74 - breathing with no suffocation
+  ---
+  duration_ms: 0.15373
+  type: 'test'
+  ...
+# Subtest: breathing not resurrection
+ok 75 - breathing not resurrection
+  ---
+  duration_ms: 0.12061
+  type: 'test'
+  ...
+# Subtest: invalid ledger
+ok 76 - invalid ledger
+  ---
+  duration_ms: 0.148402
+  type: 'test'
+  ...
+# Subtest: consumption commits stock and intake together
+ok 77 - consumption commits stock and intake together
+  ---
+  duration_ms: 3.130285
+  type: 'test'
+  ...
+# Subtest: insufficient stock rollback
+ok 78 - insufficient stock rollback
+  ---
+  duration_ms: 1.454091
+  type: 'test'
+  ...
+# Subtest: zero intake rejected
+ok 79 - zero intake rejected
+  ---
+  duration_ms: 2.438928
+  type: 'test'
+  ...
+# Subtest: explicit null rejected
+ok 80 - explicit null rejected
+  ---
+  duration_ms: 0.399417
+  type: 'test'
+  ...
+# Subtest: negative intake rejected
+ok 81 - negative intake rejected
+  ---
+  duration_ms: 0.259267
+  type: 'test'
+  ...
+# Subtest: fractional intake rejected
+ok 82 - fractional intake rejected
+  ---
+  duration_ms: 0.32794
+  type: 'test'
+  ...
+# Subtest: unconfirmed rejected
+ok 83 - unconfirmed rejected
+  ---
+  duration_ms: 0.307509
+  type: 'test'
+  ...
+# Subtest: wrong actor rejected
+ok 84 - wrong actor rejected
+  ---
+  duration_ms: 0.229163
+  type: 'test'
+  ...
+# Subtest: host authorization rejected
+ok 85 - host authorization rejected
+  ---
+  duration_ms: 0.569971
+  type: 'test'
+  ...
+# Subtest: host command mismatch rejected
+ok 86 - host command mismatch rejected
+  ---
+  duration_ms: 0.605905
+  type: 'test'
+  ...
+# Subtest: host type mismatch rejected
+ok 87 - host type mismatch rejected
+  ---
+  duration_ms: 0.347569
+  type: 'test'
+  ...
+# Subtest: unexpected client fields rejected
+ok 88 - unexpected client fields rejected
+  ---
+  duration_ms: 0.226759
+  type: 'test'
+  ...
+# Subtest: unverified day rejected
+ok 89 - unverified day rejected
+  ---
+  duration_ms: 0.26109
+  type: 'test'
+  ...
+# Subtest: half ration closes without save
+ok 90 - half ration closes without save
+  ---
+  duration_ms: 0.534258
+  type: 'test'
+  ...
+# Subtest: save reminder persisted, day unchanged
+ok 91 - save reminder persisted, day unchanged
+  ---
+  duration_ms: 0.399567
+  type: 'test'
+  ...
+# Subtest: failure resolves once, locks source and advances day
+ok 92 - failure resolves once, locks source and advances day
+  ---
+  duration_ms: 0.619795
+  type: 'test'
+  ...
+# Subtest: success no exhaustion
+ok 93 - success no exhaustion
+  ---
+  duration_ms: 3.075233
+  type: 'test'
+  ...
+# Subtest: pending locks further consumption
+ok 94 - pending locks further consumption
+  ---
+  duration_ms: 0.411354
+  type: 'test'
+  ...
+# Subtest: pending locks repeated close
+ok 95 - pending locks repeated close
+  ---
+  duration_ms: 0.355691
+  type: 'test'
+  ...
+# Subtest: wrong reminder rejected
+ok 96 - wrong reminder rejected
+  ---
+  duration_ms: 4.78766
+  type: 'test'
+  ...
+# Subtest: wrong save DC rejected
+ok 97 - wrong save DC rejected
+  ---
+  duration_ms: 0.366658
+  type: 'test'
+  ...
+# Subtest: wrong save actor rejected
+ok 98 - wrong save actor rejected
+  ---
+  duration_ms: 0.464584
+  type: 'test'
+  ...
+# Subtest: changed immunity rejected
+ok 99 - changed immunity rejected
+  ---
+  duration_ms: 0.392446
+  type: 'test'
+  ...
+# Subtest: save cannot be supplied by client
+ok 100 - save cannot be supplied by client
+  ---
+  duration_ms: 0.359677
+  type: 'test'
+  ...
+# Subtest: save result from host required
+ok 101 - save result from host required
+  ---
+  duration_ms: 0.343533
+  type: 'test'
+  ...
+# Subtest: replay with fresh revision rejected
+ok 102 - replay with fresh revision rejected
+  ---
+  duration_ms: 0.263303
+  type: 'test'
+  ...
+# Subtest: stale snapshot rejected by memory transaction
+ok 103 - stale snapshot rejected by memory transaction
+  ---
+  duration_ms: 0.460578
+  type: 'test'
+  ...
+# Subtest: JSON pending roundtrip
+ok 104 - JSON pending roundtrip
+  ---
+  duration_ms: 0.821637
+  type: 'test'
+  ...
+# Subtest: read and result copies cannot mutate store
+ok 105 - read and result copies cannot mutate store
+  ---
+  duration_ms: 0.387489
+  type: 'test'
+  ...
+# Subtest: recovery requires host approval
+ok 106 - recovery requires host approval
+  ---
+  duration_ms: 0.547518
+  type: 'test'
+  ...
+# Subtest: locked exhaustion cannot be recovered
+ok 107 - locked exhaustion cannot be recovered
+  ---
+  duration_ms: 2.064062
+  type: 'test'
+  ...
+# Subtest: intake unlocks matching recovery
+ok 108 - intake unlocks matching recovery
+  ---
+  duration_ms: 0.404704
+  type: 'test'
+  ...
+# Subtest: suffocation requires verified own turn
+ok 109 - suffocation requires verified own turn
+  ---
+  duration_ms: 0.233038
+  type: 'test'
+  ...
+# Subtest: duplicate turn rejected with new command
+ok 110 - duplicate turn rejected with new command
+  ---
+  duration_ms: 0.565755
+  type: 'test'
+  ...
+# Subtest: breathing clears only suffocation
+ok 111 - breathing clears only suffocation
+  ---
+  duration_ms: 0.858222
+  type: 'test'
+  ...
+# Subtest: fatal state cannot be resumed
+ok 112 - fatal state cannot be resumed
+  ---
+  duration_ms: 0.799364
+  type: 'test'
+  ...
+# Subtest: corrupt pending import rejected
+ok 113 - corrupt pending import rejected
+  ---
+  duration_ms: 0.583611
+  type: 'test'
+  ...
+# Subtest: corrupt duplicate event history rejected
+ok 114 - corrupt duplicate event history rejected
+  ---
+  duration_ms: 0.511925
+  type: 'test'
+  ...
+# Subtest: immune closes partial food without save
+ok 115 - immune closes partial food without save
+  ---
+  duration_ms: 0.614607
+  type: 'test'
+  ...
+# Subtest: size tiny
+ok 116 - size tiny
+  ---
+  duration_ms: 3.853535
+  type: 'test'
+  ...
+# Subtest: size small
+ok 117 - size small
+  ---
+  duration_ms: 0.248752
+  type: 'test'
+  ...
+# Subtest: size medium
+ok 118 - size medium
+  ---
+  duration_ms: 0.33467
+  type: 'test'
+  ...
+# Subtest: size large
+ok 119 - size large
+  ---
+  duration_ms: 0.216734
+  type: 'test'
+  ...
+# Subtest: size huge
+ok 120 - size huge
+  ---
+  duration_ms: 4.739939
+  type: 'test'
+  ...
+# Subtest: size gargantuan
+ok 121 - size gargantuan
+  ---
+  duration_ms: 0.279828
+  type: 'test'
+  ...
+# Subtest: reject size toString
+ok 122 - reject size toString
+  ---
+  duration_ms: 0.318575
+  type: 'test'
+  ...
+# Subtest: reject size __proto__
+ok 123 - reject size __proto__
+  ---
+  duration_ms: 0.129093
+  type: 'test'
+  ...
+# Subtest: reject size invalid
+ok 124 - reject size invalid
+  ---
+  duration_ms: 3.296052
+  type: 'test'
+  ...
+# Subtest: reject size null
+ok 125 - reject size null
+  ---
+  duration_ms: 0.695168
+  type: 'test'
+  ...
+# Subtest: threshold 63/7
+ok 126 - threshold 63/7
+  ---
+  duration_ms: 1.301383
+  type: 'test'
+  ...
+# Subtest: threshold 64/8
+ok 127 - threshold 64/8
+  ---
+  duration_ms: 0.185377
+  type: 'test'
+  ...
+# Subtest: threshold 128/16
+ok 128 - threshold 128/16
+  ---
+  duration_ms: 0.217895
+  type: 'test'
+  ...
+# Subtest: threshold 0/0
+ok 129 - threshold 0/0
+  ---
+  duration_ms: 0.108592
+  type: 'test'
+  ...
+# Subtest: threshold 129/17
+ok 130 - threshold 129/17
+  ---
+  duration_ms: 0.265767
+  type: 'test'
+  ...
+# Subtest: save DC
+ok 131 - save DC
+  ---
+  duration_ms: 0.219318
+  type: 'test'
+  ...
+# Subtest: partial food fail adds locked
+ok 132 - partial food fail adds locked
+  ---
+  duration_ms: 5.532962
+  type: 'test'
+  ...
+# Subtest: partial food success no gain
+ok 133 - partial food success no gain
+  ---
+  duration_ms: 0.266438
+  type: 'test'
+  ...
+# Subtest: missing save atomic
+ok 134 - missing save atomic
+  ---
+  duration_ms: 0.473887
+  type: 'test'
+  ...
+# Subtest: unexpected save rejected
+ok 135 - unexpected save rejected
+  ---
+  duration_ms: 0.198126
+  type: 'test'
+  ...
+# Subtest: five consecutive days then daily
+ok 136 - five consecutive days then daily
+  ---
+  duration_ms: 0.461389
+  type: 'test'
+  ...
+# Subtest: any food resets foodless streak
+ok 137 - any food resets foodless streak
+  ---
+  duration_ms: 0.265446
+  type: 'test'
+  ...
+# Subtest: both hazards same day
+ok 138 - both hazards same day
+  ---
+  duration_ms: 0.213509
+  type: 'test'
+  ...
+# Subtest: full water unlocks not removes
+ok 139 - full water unlocks not removes
+  ---
+  duration_ms: 0.228401
+  type: 'test'
+  ...
+# Subtest: full food unlocks not removes
+ok 140 - full food unlocks not removes
+  ---
+  duration_ms: 0.199017
+  type: 'test'
+  ...
+# Subtest: later deficit locks only new level
+ok 141 - later deficit locks only new level
+  ---
+  duration_ms: 3.733735
+  type: 'test'
+  ...
+# Subtest: locked level cannot be removed
+ok 142 - locked level cannot be removed
+  ---
+  duration_ms: 0.275602
+  type: 'test'
+  ...
+# Subtest: eligible source removal only one
+ok 143 - eligible source removal only one
+  ---
+  duration_ms: 0.223174
+  type: 'test'
+  ...
+# Subtest: suffocation source shared and isolated
+ok 144 - suffocation source shared and isolated
+  ---
+  duration_ms: 2.599262
+  type: 'test'
+  ...
+# Subtest: duplicate turn rejected even with fresh revision
+ok 145 - duplicate turn rejected even with fresh revision
+  ---
+  duration_ms: 0.317945
+  type: 'test'
+  ...
+# Subtest: breath remaining no gain
+ok 146 - breath remaining no gain
+  ---
+  duration_ms: 0.248541
+  type: 'test'
+  ...
+# Subtest: choking bypasses breath
+ok 147 - choking bypasses breath
+  ---
+  duration_ms: 0.183734
+  type: 'test'
+  ...
+# Subtest: immune creature no gains
+ok 148 - immune creature no gains
+  ---
+  duration_ms: 0.251996
+  type: 'test'
+  ...
+# Subtest: terminal death caps and blocks recovery
+ok 149 - terminal death caps and blocks recovery
+  ---
+  duration_ms: 0.313238
+  type: 'test'
+  ...
+# Subtest: day replay rejected even with fresh revision
+ok 150 - day replay rejected even with fresh revision
+  ---
+  duration_ms: 0.207279
+  type: 'test'
+  ...
+# Subtest: stale revision
+ok 151 - stale revision
+  ---
+  duration_ms: 0.161591
+  type: 'test'
+  ...
+# Subtest: unconfirmed event
+ok 152 - unconfirmed event
+  ---
+  duration_ms: 0.188512
+  type: 'test'
+  ...
+# Subtest: unexpected event field
+ok 153 - unexpected event field
+  ---
+  duration_ms: 0.173199
+  type: 'test'
+  ...
+# Subtest: JSON round trip
+ok 154 - JSON round trip
+  ---
+  duration_ms: 4.362485
+  type: 'test'
+  ...
+# Subtest: new day size change
+ok 155 - new day size change
+  ---
+  duration_ms: 0.238145
+  type: 'test'
+  ...
+# Subtest: bad intake -1
+ok 156 - bad intake -1
+  ---
+  duration_ms: 0.343323
+  type: 'test'
+  ...
+# Subtest: bad intake 1.1
+ok 157 - bad intake 1.1
+  ---
+  duration_ms: 0.131897
+  type: 'test'
+  ...
+# Subtest: bad intake NaN
+ok 158 - bad intake NaN
+  ---
+  duration_ms: 0.122372
+  type: 'test'
+  ...
+# Subtest: bad intake Infinity
+ok 159 - bad intake Infinity
+  ---
+  duration_ms: 0.122363
+  type: 'test'
+  ...
+# Subtest: bad intake 1
+ok 160 - bad intake 1
+  ---
+  duration_ms: 0.12746
+  type: 'test'
+  ...
+# Subtest: bad intake null
+ok 161 - bad intake null
+  ---
+  duration_ms: 0.182333
+  type: 'test'
+  ...
+# Subtest: bad ledger rejected
+ok 162 - bad ledger rejected
+  ---
+  duration_ms: 0.163233
+  type: 'test'
+  ...
+# Subtest: untrusted source rejects inherited names
+ok 163 - untrusted source rejects inherited names
+  ---
+  duration_ms: 0.185147
+  type: 'test'
+  ...
+# Subtest: pure reducer does not change source
+ok 164 - pure reducer does not change source
+  ---
+  duration_ms: 0.16744
+  type: 'test'
+  ...
+# Subtest: empty intake rejected
+ok 165 - empty intake rejected
+  ---
+  duration_ms: 0.145918
+  type: 'test'
+  ...
+# Subtest: tiny half boundary
+ok 166 - tiny half boundary
+  ---
+  duration_ms: 0.196133
+  type: 'test'
+  ...
+# Subtest: tiny below half
+ok 167 - tiny below half
+  ---
+  duration_ms: 0.166519
+  type: 'test'
+  ...
+# Subtest: immunity must be explicitly boolean
+ok 168 - immunity must be explicitly boolean
+  ---
+  duration_ms: 0.22121
+  type: 'test'
+  ...
+# Subtest: suffocation fatal
+ok 169 - suffocation fatal
+  ---
+  duration_ms: 0.196163
+  type: 'test'
+  ...
+# Subtest: invalid next size atomic
+ok 170 - invalid next size atomic
+  ---
+  duration_ms: 0.224555
+  type: 'test'
+  ...
+1..170
+# tests 170
+# suites 0
+# pass 170
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 181.355512

@@ -1,0 +1,15 @@
+{
+  "candidate": "standalone hazards v3",
+  "baseline_sha256": "a16b51aa34ee7f336e5bc1d6241190df8cccc3dd19d926c7b5f27c8fb1f5051e",
+  "baseline_checksums_passed": 9,
+  "inherited_tests_passed": 131,
+  "new_tests_passed": 39,
+  "total_tests_passed": 170,
+  "failed": 0,
+  "node": "22.16.0",
+  "syntax": "pass",
+  "canonical_website_integration": false,
+  "browser_tests": "not run",
+  "real_persistence": "not implemented",
+  "clean_archive_retest": "see separate packaging verification"
+}

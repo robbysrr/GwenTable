@@ -1,0 +1,202 @@
+<title>GwenTable Survival Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one column "camp ledger" on phones; on wide screens the day panel sits beside the character and supplies column. */
+:root {
+  --bg: #e9efed; --surface: #fbfcfb; --fg: #13201e; --muted: #52615d; --line: #c9d4d1;
+  --accent: #1d6b64; --accent-fg: #ffffff; --water: #2564a6; --food: #8a5a12;
+  --danger: #a8352a; --warn-bg: #fff3d6; --warn-fg: #5c4100; --ok: #2f6b2f;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1716; --surface: #172220; --fg: #e4ecea; --muted: #9aaba6; --line: #2c3c39;
+  --accent: #5cc0b4; --accent-fg: #06201d; --water: #7fb4ee; --food: #e0aa55;
+  --danger: #ff8a7a; --warn-bg: #3a2e10; --warn-fg: #ffe2a3; --ok: #8fd18f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1716; --surface: #172220; --fg: #e4ecea; --muted: #9aaba6; --line: #2c3c39;
+  --accent: #5cc0b4; --accent-fg: #06201d; --water: #7fb4ee; --food: #e0aa55;
+  --danger: #ff8a7a; --warn-bg: #3a2e10; --warn-fg: #ffe2a3; --ok: #8fd18f; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 16px/1.5 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 16px 40px }
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15 }
+h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 800 }
+h2 { font-size: 1.2rem; font-weight: 600 }
+h3 { font-size: 1rem; font-weight: 600 }
+p { margin: 0 }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums }
+.muted { color: var(--muted) }
+.small { font-size: .875rem }
+header.top { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; justify-content: space-between }
+.eyebrow { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700 }
+.notice { background: var(--warn-bg); color: var(--warn-fg); border-radius: 10px; padding: 10px 14px; font-size: .9rem }
+.grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr) }
+@media (min-width: 900px) { .grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) } }
+.col { display: grid; gap: 16px; align-content: start; min-width: 0 }
+section.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 12px; min-width: 0 }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.between { justify-content: space-between }
+button, select, input, textarea { font: inherit; color: inherit }
+button { min-height: 44px; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700 }
+button:hover:not(:disabled) { border-color: var(--accent) }
+button.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent) }
+button.danger { color: var(--danger); border-color: var(--danger) }
+button:disabled { opacity: .45; cursor: not-allowed }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
+input[type=number], select, textarea { min-height: 44px; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg) }
+input[type=number] { width: 7.5em }
+textarea { width: 100%; min-height: 8em; font-family: var(--mono); font-size: .8rem }
+label.field { display: grid; gap: 4px; font-weight: 700; font-size: .9rem }
+.lang { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+.lang button { border: 0; border-radius: 0; min-width: 52px }
+.lang button[aria-pressed=true] { background: var(--accent); color: var(--accent-fg) }
+/* Exhaustion track */
+.track { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px }
+.pip { aspect-ratio: 1.4; max-width: 100%; border-radius: 8px; border: 2px dashed var(--line); display: grid; place-items: center; font: 600 .8rem var(--mono) }
+.pip.on { border-style: solid; color: var(--accent-fg) }
+.pip.s-other { background: var(--muted); border-color: var(--muted) }
+.pip.s-suffocation { background: var(--accent); border-color: var(--accent) }
+.pip.s-dehydration, .pip.s-dehydrationLocked { background: var(--water); border-color: var(--water) }
+.pip.s-malnutrition, .pip.s-malnutritionLocked { background: var(--food); border-color: var(--food) }
+.pip.locked { background-image: repeating-linear-gradient(45deg, transparent 0 5px, rgba(0,0,0,.22) 5px 8px) }
+.pip.dead { background: var(--danger); border-color: var(--danger) }
+dl.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0 }
+dl.kv dt { color: var(--muted) } dl.kv dd { margin: 0; font-weight: 700; min-width: 0; overflow-wrap: anywhere }
+/* Intake meters */
+.meter { display: grid; gap: 4px }
+.bar { position: relative; height: 14px; border-radius: 7px; background: var(--bg); border: 1px solid var(--line); overflow: hidden }
+.bar > span { position: absolute; inset: 0 auto 0 0; border-radius: 7px }
+.bar.water > span { background: var(--water) } .bar.food > span { background: var(--food) }
+.bar .half { position: absolute; top: -2px; bottom: -2px; left: 50%; width: 2px; background: var(--fg); opacity: .55 }
+.forecast { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px }
+.forecast li { padding: 8px 12px; border-radius: 10px; background: var(--bg); border-left: 4px solid var(--line) }
+.forecast li.bad { border-left-color: var(--danger) } .forecast li.save { border-left-color: var(--food) } .forecast li.good { border-left-color: var(--ok) }
+.prompt { border: 2px solid var(--food); border-radius: 14px; padding: 14px; display: grid; gap: 10px; background: var(--surface) }
+.confirm { border: 1px dashed var(--accent); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px }
+.toast { padding: 10px 14px; border-radius: 10px; font-weight: 700 }
+.toast.err { background: var(--danger); color: var(--surface) } .toast.ok { background: var(--accent); color: var(--accent-fg) }
+ol.log { margin: 0; padding-left: 1.4em; display: grid; gap: 4px; max-height: 16em; overflow: auto; font-size: .9rem }
+details summary { cursor: pointer; font-weight: 700; min-height: 32px }
+footer { font-size: .8rem; color: var(--muted); display: grid; gap: 6px }
+footer a { color: var(--accent); overflow-wrap: anywhere }
+@media (prefers-reduced-motion: no-preference) { .bar > span { transition: width .3s ease } }
+</style>
+
+<div class="wrap" id="app">
+  <header class="top">
+    <div>
+      <p class="eyebrow" data-t="eyebrow">GwenTable · SRD 5.2.1</p>
+      <h1 data-t="title">Daily survival</h1>
+    </div>
+    <div class="lang" role="group" aria-label="Language / Bahasa">
+      <button type="button" id="lang-en" aria-pressed="true">EN</button>
+      <button type="button" id="lang-id" aria-pressed="false">ID</button>
+    </div>
+  </header>
+  <p class="notice" data-t="candidate">Candidate preview of the Hazards v3 rules engine. This is not the GwenTable website, its saves or its character sheet. Data stays in this browser only.</p>
+  <div id="status" role="status" aria-live="polite"></div>
+
+  <div class="grid">
+    <div class="col">
+      <section class="panel" aria-labelledby="h-char">
+        <div class="row between"><h2 id="h-char" data-t="character">Character</h2><span class="small muted num" id="rev"></span></div>
+        <dl class="kv">
+          <dt data-t="size">Size</dt><dd id="size-v"></dd>
+          <dt data-t="needs">Daily needs</dt><dd id="needs-v" class="num"></dd>
+        </dl>
+        <h3 data-t="exhaustion">Exhaustion</h3>
+        <div class="track" id="track" role="img"></div>
+        <dl class="kv small">
+          <dt data-t="d20">D20 Tests</dt><dd class="num" id="d20-v"></dd>
+          <dt data-t="speed">Speed</dt><dd class="num" id="speed-v"></dd>
+        </dl>
+        <ul class="forecast small" id="sources"></ul>
+        <label class="row small"><input type="checkbox" id="immune"> <span data-t="immune">Immune to Exhaustion (table ruling)</span></label>
+      </section>
+
+      <section class="panel" aria-labelledby="h-sup">
+        <h2 id="h-sup" data-t="supplies">Supplies carried</h2>
+        <dl class="kv">
+          <dt data-t="water">Water</dt><dd class="num" id="stock-w"></dd>
+          <dt data-t="food">Food</dt><dd class="num" id="stock-f"></dd>
+        </dl>
+        <p class="small muted" data-t="stocknote">Supplies are example quantities in whole ounces, not real inventory items.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="h-rest">
+        <h2 id="h-rest" data-t="recovery">Recovery and other effects</h2>
+        <p class="small muted" data-t="restnote">Finishing a Long Rest removes 1 Exhaustion level. Dehydration or malnutrition levels stay locked until the character drinks or eats a full day's amount.</p>
+        <div class="row">
+          <label class="field" for="rest-src"><span data-t="restfrom">Remove level from</span>
+            <select id="rest-src"></select></label>
+          <button type="button" id="btn-rest" data-t="longrest">Finished a Long Rest</button>
+        </div>
+        <button type="button" id="btn-other" data-t="addother">Other effect: gain 1 Exhaustion</button>
+        <div id="confirm-side"></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel" aria-labelledby="h-day">
+        <div class="row between"><h2 id="h-day"><span data-t="day">Day</span> <span class="num" id="day-v"></span></h2></div>
+        <div class="meter">
+          <div class="row between small"><strong data-t="water">Water</strong><span class="num" id="in-w"></span></div>
+          <div class="bar water" aria-hidden="true"><span id="bar-w"></span><i class="half"></i></div>
+        </div>
+        <div class="meter">
+          <div class="row between small"><strong data-t="food">Food</strong><span class="num" id="in-f"></span></div>
+          <div class="bar food" aria-hidden="true"><span id="bar-f"></span><i class="half"></i></div>
+        </div>
+        <p class="small muted" data-t="halfmark">The line marks half the daily need.</p>
+        <form id="f-consume" class="row" novalidate>
+          <label class="field" for="q-w"><span data-t="drink">Drink (fl oz)</span><input type="number" id="q-w" min="0" step="1" inputmode="numeric" value="32"></label>
+          <label class="field" for="q-f"><span data-t="eat">Eat (oz)</span><input type="number" id="q-f" min="0" step="1" inputmode="numeric" value="8"></label>
+          <button type="submit" id="btn-consume" data-t="consume">Consume…</button>
+        </form>
+        <div id="confirm-consume"></div>
+        <h3 data-t="ifends">If the day ends now</h3>
+        <ul class="forecast" id="forecast"></ul>
+        <button type="button" class="primary" id="btn-close" data-t="closeday">End the day…</button>
+        <div id="confirm-close"></div>
+        <div id="pending"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="h-log">
+        <h2 id="h-log" data-t="log">Receipts</h2>
+        <ol class="log" id="log" reversed></ol>
+      </section>
+
+      <section class="panel" aria-labelledby="h-data">
+        <h2 id="h-data" data-t="data">Save data</h2>
+        <details>
+          <summary data-t="export">Export JSON</summary>
+          <div class="row"><button type="button" id="btn-copy" data-t="copy">Copy</button></div>
+          <textarea id="out" readonly aria-label="Export JSON"></textarea>
+        </details>
+        <details>
+          <summary data-t="import">Import JSON</summary>
+          <textarea id="in" aria-label="Import JSON"></textarea>
+          <div class="row"><button type="button" id="btn-import" data-t="load">Load snapshot</button></div>
+        </details>
+        <div class="row">
+          <label class="field" for="new-size"><span data-t="newsize">New example size</span>
+            <select id="new-size"><option>tiny</option><option>small</option><option selected>medium</option><option>large</option><option>huge</option><option>gargantuan</option></select></label>
+          <button type="button" class="danger" id="btn-reset" data-t="reset">Start new example…</button>
+        </div>
+        <div id="confirm-reset"></div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p lang="en">This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at <a href="https://www.dndbeyond.com/srd">https://www.dndbeyond.com/srd</a>. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a>.</p>
+    <p data-t="adapt">Rules adapted into original code (Dehydration, Malnutrition, Exhaustion). Indonesian labels are draft translations. Not endorsed by Wizards of the Coast.</p>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>

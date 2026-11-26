@@ -1,0 +1,474 @@
+./INTEGRATION.md: OK
+./PROJECT_STATE.md: OK
+./QA_RECEIPT.json: OK
+./QA_TEST.log: OK
+./README.md: OK
+./src/hazards.mjs: OK
+./test/hazards.test.mjs: OK
+
+TAP version 13
+# Subtest: fall 0ft
+ok 1 - fall 0ft
+  ---
+  duration_ms: 2.853308
+  type: 'test'
+  ...
+# Subtest: fall 9.99ft
+ok 2 - fall 9.99ft
+  ---
+  duration_ms: 0.263032
+  type: 'test'
+  ...
+# Subtest: fall 10ft
+ok 3 - fall 10ft
+  ---
+  duration_ms: 0.08702
+  type: 'test'
+  ...
+# Subtest: fall 19.99ft
+ok 4 - fall 19.99ft
+  ---
+  duration_ms: 0.058618
+  type: 'test'
+  ...
+# Subtest: fall 20ft
+ok 5 - fall 20ft
+  ---
+  duration_ms: 0.058257
+  type: 'test'
+  ...
+# Subtest: fall 199ft
+ok 6 - fall 199ft
+  ---
+  duration_ms: 0.068292
+  type: 'test'
+  ...
+# Subtest: fall 200ft
+ok 7 - fall 200ft
+  ---
+  duration_ms: 0.049383
+  type: 'test'
+  ...
+# Subtest: fall 10000ft
+ok 8 - fall 10000ft
+  ---
+  duration_ms: 0.044446
+  type: 'test'
+  ...
+# Subtest: invalid distance -1
+ok 9 - invalid distance -1
+  ---
+  duration_ms: 0.480106
+  type: 'test'
+  ...
+# Subtest: invalid distance NaN
+ok 10 - invalid distance NaN
+  ---
+  duration_ms: 0.377974
+  type: 'test'
+  ...
+# Subtest: invalid distance Infinity
+ok 11 - invalid distance Infinity
+  ---
+  duration_ms: 0.186909
+  type: 'test'
+  ...
+# Subtest: invalid distance 10
+ok 12 - invalid distance 10
+  ---
+  duration_ms: 0.057576
+  type: 'test'
+  ...
+# Subtest: invalid distance null
+ok 13 - invalid distance null
+  ---
+  duration_ms: 0.040781
+  type: 'test'
+  ...
+# Subtest: solid damage
+ok 14 - solid damage
+  ---
+  duration_ms: 0.833143
+  type: 'test'
+  ...
+# Subtest: liquid without check
+ok 15 - liquid without check
+  ---
+  duration_ms: 0.08759
+  type: 'test'
+  ...
+# Subtest: liquid athletics 15
+ok 16 - liquid athletics 15
+  ---
+  duration_ms: 0.22141
+  type: 'test'
+  ...
+# Subtest: liquid acrobatics 14
+ok 17 - liquid acrobatics 14
+  ---
+  duration_ms: 0.133759
+  type: 'test'
+  ...
+# Subtest: liquid acrobatics 20
+ok 18 - liquid acrobatics 20
+  ---
+  duration_ms: 0.430692
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[1]}
+ok 19 - reject fall {"rolls":[1]}
+  ---
+  duration_ms: 0.213448
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[0,4]}
+ok 20 - reject fall {"rolls":[0,4]}
+  ---
+  duration_ms: 0.054571
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[7,4]}
+ok 21 - reject fall {"rolls":[7,4]}
+  ---
+  duration_ms: 0.074791
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[null,null]}
+ok 22 - reject fall {"rolls":[null,null]}
+  ---
+  duration_ms: 1.324957
+  type: 'test'
+  ...
+# Subtest: reject fall {"rolls":[2.5,4]}
+ok 23 - reject fall {"rolls":[2.5,4]}
+  ---
+  duration_ms: 0.214159
+  type: 'test'
+  ...
+# Subtest: reject fall {"surface":"air"}
+ok 24 - reject fall {"surface":"air"}
+  ---
+  duration_ms: 0.070365
+  type: 'test'
+  ...
+# Subtest: reject fall {"surface":"liquid","liquidCheck":{"skill":"athletics","total":15}}
+ok 25 - reject fall {"surface":"liquid","liquidCheck":{"skill":"athletics","total":15}}
+  ---
+  duration_ms: 0.051046
+  type: 'test'
+  ...
+# Subtest: reject fall {"reactionAvailable":true,"liquidCheck":{"skill":"athletics","total":15}}
+ok 26 - reject fall {"reactionAvailable":true,"liquidCheck":{"skill":"athletics","total":15}}
+  ---
+  duration_ms: 0.043635
+  type: 'test'
+  ...
+# Subtest: reject fall {"surface":"liquid","reactionAvailable":true,"liquidCheck":{"skill":"stealth","total":20}}
+ok 27 - reject fall {"surface":"liquid","reactionAvailable":true,"liquidCheck":{"skill":"stealth","total":20}}
+  ---
+  duration_ms: 0.041813
+  type: 'test'
+  ...
+# Subtest: reject fall {"reactionAvailable":"true"}
+ok 28 - reject fall {"reactionAvailable":"true"}
+  ---
+  duration_ms: 0.097836
+  type: 'test'
+  ...
+# Subtest: 20d6 cap
+ok 29 - 20d6 cap
+  ---
+  duration_ms: 0.136154
+  type: 'test'
+  ...
+# Subtest: zero from liquid check
+ok 30 - zero from liquid check
+  ---
+  duration_ms: 0.393266
+  type: 'test'
+  ...
+# Subtest: landing 0
+ok 31 - landing 0
+  ---
+  duration_ms: 0.097085
+  type: 'test'
+  ...
+# Subtest: landing 1
+ok 32 - landing 1
+  ---
+  duration_ms: 0.045117
+  type: 'test'
+  ...
+# Subtest: landing 120
+ok 33 - landing 120
+  ---
+  duration_ms: 2.090169
+  type: 'test'
+  ...
+# Subtest: invalid final damage
+ok 34 - invalid final damage
+  ---
+  duration_ms: 0.125598
+  type: 'test'
+  ...
+# Subtest: burning d4 1
+ok 35 - burning d4 1
+  ---
+  duration_ms: 0.091476
+  type: 'test'
+  ...
+# Subtest: burning d4 2
+ok 36 - burning d4 2
+  ---
+  duration_ms: 0.036555
+  type: 'test'
+  ...
+# Subtest: burning d4 3
+ok 37 - burning d4 3
+  ---
+  duration_ms: 0.032789
+  type: 'test'
+  ...
+# Subtest: burning d4 4
+ok 38 - burning d4 4
+  ---
+  duration_ms: 0.029484
+  type: 'test'
+  ...
+# Subtest: not burning
+ok 39 - not burning
+  ---
+  duration_ms: 0.151096
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":false,"roll":1}
+ok 40 - reject burn {"burning":false,"roll":1}
+  ---
+  duration_ms: 0.170164
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":true,"roll":5}
+ok 41 - reject burn {"burning":true,"roll":5}
+  ---
+  duration_ms: 0.071327
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":true,"roll":0}
+ok 42 - reject burn {"burning":true,"roll":0}
+  ---
+  duration_ms: 0.061922
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":"true","roll":3}
+ok 43 - reject burn {"burning":"true","roll":3}
+  ---
+  duration_ms: 0.062834
+  type: 'test'
+  ...
+# Subtest: reject burn {"burning":true}
+ok 44 - reject burn {"burning":true}
+  ---
+  duration_ms: 0.112447
+  type: 'test'
+  ...
+# Subtest: roll extinguish
+ok 45 - roll extinguish
+  ---
+  duration_ms: 0.358394
+  type: 'test'
+  ...
+# Subtest: extinguish douse
+ok 46 - extinguish douse
+  ---
+  duration_ms: 0.363803
+  type: 'test'
+  ...
+# Subtest: extinguish submerge
+ok 47 - extinguish submerge
+  ---
+  duration_ms: 0.176804
+  type: 'test'
+  ...
+# Subtest: extinguish smother
+ok 48 - extinguish smother
+  ---
+  duration_ms: 0.108452
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":false,"method":"douse"}
+ok 49 - reject extinguish {"burning":false,"method":"douse"}
+  ---
+  duration_ms: 0.352156
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":true,"method":"roll","actionAvailable":true}
+ok 50 - reject extinguish {"burning":true,"method":"roll","actionAvailable":true}
+  ---
+  duration_ms: 0.176433
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":true,"method":"roll","canAct":true}
+ok 51 - reject extinguish {"burning":true,"method":"roll","canAct":true}
+  ---
+  duration_ms: 0.067862
+  type: 'test'
+  ...
+# Subtest: reject extinguish {"burning":true,"method":"magic"}
+ok 52 - reject extinguish {"burning":true,"method":"magic"}
+  ---
+  duration_ms: 0.041713
+  type: 'test'
+  ...
+# Subtest: breath CON -5
+ok 53 - breath CON -5
+  ---
+  duration_ms: 0.44209
+  type: 'test'
+  ...
+# Subtest: breath CON -1
+ok 54 - breath CON -1
+  ---
+  duration_ms: 0.045699
+  type: 'test'
+  ...
+# Subtest: breath CON 0
+ok 55 - breath CON 0
+  ---
+  duration_ms: 0.041882
+  type: 'test'
+  ...
+# Subtest: breath CON 1
+ok 56 - breath CON 1
+  ---
+  duration_ms: 0.109634
+  type: 'test'
+  ...
+# Subtest: breath CON 3
+ok 57 - breath CON 3
+  ---
+  duration_ms: 0.335951
+  type: 'test'
+  ...
+# Subtest: breath CON 10
+ok 58 - breath CON 10
+  ---
+  duration_ms: 0.303704
+  type: 'test'
+  ...
+# Subtest: invalid CON -6
+ok 59 - invalid CON -6
+  ---
+  duration_ms: 0.193278
+  type: 'test'
+  ...
+# Subtest: invalid CON 11
+ok 60 - invalid CON 11
+  ---
+  duration_ms: 0.164946
+  type: 'test'
+  ...
+# Subtest: invalid CON 1.5
+ok 61 - invalid CON 1.5
+  ---
+  duration_ms: 0.117355
+  type: 'test'
+  ...
+# Subtest: invalid CON 2
+ok 62 - invalid CON 2
+  ---
+  duration_ms: 0.157915
+  type: 'test'
+  ...
+# Subtest: out of breath
+ok 63 - out of breath
+  ---
+  duration_ms: 0.336903
+  type: 'test'
+  ...
+# Subtest: breath remains
+ok 64 - breath remains
+  ---
+  duration_ms: 0.098096
+  type: 'test'
+  ...
+# Subtest: choking bypasses timer
+ok 65 - choking bypasses timer
+  ---
+  duration_ms: 0.059489
+  type: 'test'
+  ...
+# Subtest: fatal level 6
+ok 66 - fatal level 6
+  ---
+  duration_ms: 0.076193
+  type: 'test'
+  ...
+# Subtest: reject turn {"total":6}
+ok 67 - reject turn {"total":6}
+  ---
+  duration_ms: 0.067551
+  type: 'test'
+  ...
+# Subtest: reject turn {"total":7}
+ok 68 - reject turn {"total":7}
+  ---
+  duration_ms: 0.037726
+  type: 'test'
+  ...
+# Subtest: reject turn {"suffocation":3}
+ok 69 - reject turn {"suffocation":3}
+  ---
+  duration_ms: 0.034771
+  type: 'test'
+  ...
+# Subtest: reject turn {"suffocation":-1}
+ok 70 - reject turn {"suffocation":-1}
+  ---
+  duration_ms: 0.034502
+  type: 'test'
+  ...
+# Subtest: reject turn {"remainingSeconds":-1}
+ok 71 - reject turn {"remainingSeconds":-1}
+  ---
+  duration_ms: 0.035714
+  type: 'test'
+  ...
+# Subtest: reject turn {"choking":"true"}
+ok 72 - reject turn {"choking":"true"}
+  ---
+  duration_ms: 0.065268
+  type: 'test'
+  ...
+# Subtest: breathing preserves other exhaustion
+ok 73 - breathing preserves other exhaustion
+  ---
+  duration_ms: 0.155813
+  type: 'test'
+  ...
+# Subtest: breathing with no suffocation
+ok 74 - breathing with no suffocation
+  ---
+  duration_ms: 0.126318
+  type: 'test'
+  ...
+# Subtest: breathing not resurrection
+ok 75 - breathing not resurrection
+  ---
+  duration_ms: 0.12685
+  type: 'test'
+  ...
+# Subtest: invalid ledger
+ok 76 - invalid ledger
+  ---
+  duration_ms: 0.122393
+  type: 'test'
+  ...
+1..76
+# tests 76
+# suites 0
+# pass 76
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 155.644029
