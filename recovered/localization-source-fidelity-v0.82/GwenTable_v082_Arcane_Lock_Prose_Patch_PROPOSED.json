@@ -1,0 +1,19 @@
+{
+  "patch_id": "GT082-PROSE-001",
+  "status": "PROPOSED_NOT_APPROVED",
+  "spell": "Arcane Lock",
+  "field": "spell_effect_prose",
+  "source_srd_folio": 110,
+  "local_draft_page": 219,
+  "srd_sha256": "22bbbe05f97619b7e55f6284bce497b45e6bb3e2f09b77b92b466dc9196e8f63",
+  "local_pdf_sha256": "1a1f328e711bab1ace78040115251030021a8abb2dd0c02f99a4cb5c32c41444",
+  "old_fragment_pdf_extraction": "Benda itu terkunci secara\nmagic selama Duration dan tidak dapat dibuka menggunakan cara nonmagical.",
+  "new_fragment_proposed": "Selama durasi spell, benda itu terkunci secara magis. Tidak ada cara nonmagis yang dapat membuka kunci tersebut.",
+  "old_fragment_sha256": "40911b6564ceaf6a2b65e14198090e7ad5f76ab2d58e3320a4068ba0a8aa46dc",
+  "local_section_sha256": "7aaa86ba562a5480e8eb9a65c5a2f5f4f5268901fc1fc104fc62f88ec123a0dc",
+  "candidate_section_sha256": "748e53c0bcbc0464aad8a4ab90d601f047a65476569e702a9ef86e1b60182dcf",
+  "reversible_test_passed": true,
+  "status_note": "Patch applies to a structured/plain-text extraction copy only. Never perform blind find-and-replace on the binary PDF. Human approval needed.",
+  "editor_decision": "PENDING",
+  "editor_identity_verified": false
+}

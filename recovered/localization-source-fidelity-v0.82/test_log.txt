@@ -1,0 +1,12 @@
+{
+  "clause_rows": 62,
+  "match_provisional": 61,
+  "mismatch": 1,
+  "all_anchors_present": true,
+  "patch_revert_exact": true,
+  "68_old_candidates_unsigned": true,
+  "negative_patch_mutations_rejected": 8,
+  "browser_checks": 4,
+  "browser_pass": true
+}
+PASS: preview-only text patch and exact rollback; no PDF, repository or website write

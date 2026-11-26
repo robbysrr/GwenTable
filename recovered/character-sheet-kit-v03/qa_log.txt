@@ -1,0 +1,14 @@
+PASS A4 Quick_Reference: 1 page(s), 130 fields, 29 fill/save/reopen values
+PASS A4 Compact: 3 page(s), 360 fields, 53 fill/save/reopen values
+PASS A4 Complete: 4 page(s), 435 fields, 54 fill/save/reopen values
+PASS A4 Spell_Continuation: 1 page(s), 179 fields, 2 fill/save/reopen values
+PASS A4 Inventory_Notes: 1 page(s), 93 fields, 3 fill/save/reopen values
+PASS A4 Expanded_Entries: 1 page(s), 75 fields, 1 fill/save/reopen values
+PASS LETTER Quick_Reference: 1 page(s), 130 fields, 29 fill/save/reopen values
+PASS LETTER Compact: 3 page(s), 360 fields, 53 fill/save/reopen values
+PASS LETTER Complete: 4 page(s), 435 fields, 54 fill/save/reopen values
+PASS LETTER Spell_Continuation: 1 page(s), 179 fields, 2 fill/save/reopen values
+PASS LETTER Inventory_Notes: 1 page(s), 93 fields, 3 fill/save/reopen values
+PASS LETTER Expanded_Entries: 1 page(s), 75 fields, 1 fill/save/reopen values
+PASS tab insertion order, distinct fields, widget bounds and appearances, SRD attribution, generator prefill
+PASS exact v0.2 field names and types for all twelve variants

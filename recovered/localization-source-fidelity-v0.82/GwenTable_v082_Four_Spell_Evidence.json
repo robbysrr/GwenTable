@@ -1,0 +1,52 @@
+{
+  "status": "AI_SOURCE_COMPARED_EDITORIAL_PENDING",
+  "source_sha256": "22bbbe05f97619b7e55f6284bce497b45e6bb3e2f09b77b92b466dc9196e8f63",
+  "local_pdf_sha256": "1a1f328e711bab1ace78040115251030021a8abb2dd0c02f99a4cb5c32c41444",
+  "spells": {
+    "Arcane Lock": {
+      "srd_pages": [
+        110
+      ],
+      "local_pages": [
+        219
+      ],
+      "source_english_excerpt": "Arcane Lock\nLevel 2 Abjuration (Wizard)\nCasting Time: Action\nRange: Touch\nComponents: V, S, M (gold dust worth 25+ GP, which \nthe spell consumes)\nDuration: Until dispelled\nYou touch a closed door, window, gate, container, \nor hatch and magically lock it for the duration. This \nlock can’t be unlocked by any nonmagical means. \nYou and any creatures you designate when you cast \nthe spell can open and close the object despite the \nlock. You can also set a password that, when spoken \nwithin 5 feet of the object, unlocks it for 1 minute.\n",
+      "draft_indonesian_excerpt": "Arcane Lock\nLevel 2 Abjuration (Wizard)\nProperti\nNilai\nCasting Time\nAction\nRange\nTouch\nComponents\nV, S, M (gold dust worth 25+ GP, which the spell consumes)\nDuration\nUntil dispelled\nSentuh satu pintu, jendela, gerbang, container, atau hatch yang tertutup. Benda itu terkunci secara\nmagic selama Duration dan tidak dapat dibuka menggunakan cara nonmagical.\nKamu dan creature yang kamu tentukan saat casting tetap bisa membuka dan menutupnya. Kamu juga boleh\nmemasang password. Jika diucapkan dalam jarak 5 feet dari benda tersebut, password akan membuka kunci\nmagic selama 1 menit.\nMaterial: Gold dust senilai minimal 25 GP habis digunakan saat spell di-cast. Komponen ini tidak bisa\ndiganti begitu saja dengan Component Pouch atau Focus biasa.\n"
+    },
+    "Astral Projection": {
+      "srd_pages": [
+        111
+      ],
+      "local_pages": [
+        222
+      ],
+      "source_english_excerpt": "Astral Projection\nLevel 9 Necromancy (Cleric, Warlock, Wizard)\nCasting Time: 1 hour\nRange: 10 feet\nComponents: V, S, M (for each of the spell’s targets, \none jacinth worth 1,000+ GP and one silver bar worth \n100+ GP, all of which the spell consumes)\nDuration: Until dispelled\nYou and up to eight willing creatures within range \nproject your astral bodies into the Astral Plane \n(the spell ends instantly if you are already on that \nplane). Each target’s body is left behind in a state of \nsuspended animation; it has the Unconscious condi-\ntion, doesn’t need food or air, and doesn’t age.\n\t A target’s astral form resembles its body in almost \nevery way, replicating its game statistics and pos-\nsessions. The principal difference is the addition of \na silvery cord that trails from between the shoulder \nblades of the astral form. The cord fades from view \nafter 1 foot. If the cord is cut—which happens only \nwhen an effect states that it does so—the target’s \nbody and astral form both die.\n\t A target’s astral form can travel through the As-\ntral Plane. The moment an astral form leaves that \nplane, the target’s body and possessions travel \nalong the silver cord, causing the target to re-enter \nits body on the new plane.\n\t Any damage or other effects that apply to an as-\ntral form have no effect on the target’s body and \nvice versa. If a target’s body or astral form drops to \n0 Hit Points, the spell ends for that target. The spell \nends for all the targets if you take a Magic action to \ndismiss it.\n\t When the spell ends for a target who isn’t dead, \nthe target reappears in its body and exits the state \nof suspended animation.\n",
+      "draft_indonesian_excerpt": "Astral Projection\nLevel 9 Necromancy (Cleric, Warlock, Wizard)\nProperti\nNilai\nCasting Time\n1 hour\nRange\n10 feet\nComponents\nV, S, M (for each target, one jacinth worth 1,000+ GP and one silver bar worth 100+ GP, all consumed)\nDuration\nUntil dispelled\nKamu dan hingga 8 willing creatures dalam Range memproyeksikan tubuh astral kalian ke Astral Plane.\nJika kamu sudah berada di plane itu saat casting, spell langsung berakhir. Tubuh fisik tiap target tertinggal\ndalam keadaan suspended animation: terkena kondisi Unconscious, tidak perlu makan atau bernapas, dan\ntidak mengalami penuaan.\nWujud astral tiap target menyerupai tubuh aslinya, termasuk game statistics serta barang miliknya.\nPerbedaan utamanya adalah silver cord yang muncul dari punggung, di antara kedua tulang belikat. Tali ini\nmenghilang dari pandangan setelah sekitar 1 foot. Jika tali itu terputus, yang hanya bisa terjadi jika suatu\nefek secara khusus menyatakannya, tubuh fisik dan wujud astral target keduanya mati.\nWujud astral dapat menjelajahi Astral Plane. Begitu meninggalkan Astral Plane, tubuh dan barang milik target\nmengikuti silver cord dan target kembali memasuki tubuhnya di plane yang baru.\nDamage dan efek lain yang mengenai wujud astral tidak memengaruhi tubuh fisik, begitu juga\nsebaliknya. Jika HP tubuh fisik atau wujud astral turun ke 0, spell berakhir bagi target tersebut. Kamu\ndapat mengakhiri spell untuk semua target dengan Magic action. Bila spell berakhir untuk target yang\nmasih hidup, target kembali ke tubuh fisiknya dan keluar dari suspended animation.\nMaterial cost: Untuk setiap target, diperlukan 1 jacinth seharga minimal 1,000 GP dan 1 silver bar\nseharga minimal 100 GP; seluruhnya dikonsumsi. Jumlah target memengaruhi kebutuhan Material\ncomponents.\n"
+    },
+    "Augury": {
+      "srd_pages": [
+        111
+      ],
+      "local_pages": [
+        222,
+        223
+      ],
+      "source_english_excerpt": "Augury\nLevel 2 Divination (Cleric, Druid, Wizard)\nCasting Time: 1 minute or Ritual\nRange: Self\nComponents: V, S, M (specially marked sticks, bones, \ncards, or other divinatory tokens worth 25+ GP)\nDuration: Instantaneous\nYou receive an omen from an otherworldly entity \nabout the results of a course of action that you plan \nto take within the next 30 minutes. The GM chooses \nthe omen from the Omens table.\nOmens\nOmen\nFor Results That Will Be …\nWeal\nGood\nWoe\nBad\nWeal and woe\nGood and bad\nIndifference\nNeither good nor bad\nThe spell doesn’t account for circumstances, such as \nother spells, that might change the results.\n\t If you cast the spell more than once before finish-\ning a Long Rest, there is a cumulative 25 percent \nchance for each casting after the first that you get \nno answer.\n",
+      "draft_indonesian_excerpt": "Augury\nLevel 2 Divination (Cleric, Druid, Wizard)\nProperti\nNilai\nCasting Time\n1 minute or Ritual\nRange\nSelf\nComponents\nV, S, M (specially marked sticks, bones, cards, or other divinatory tokens worth 25+ GP)\nDuration\nInstantaneous\nKamu meminta pertanda dari entitas dunia lain mengenai hasil suatu rencana tindakan yang akan kamu\nlakukan dalam 30 menit ke depan. GM memilih satu pertanda dari tabel berikut.\nOmen\nArtinya\nWeal\nHasil baik\nWoe\nHasil buruk\nWeal and woe\nAda hasil baik dan buruk\nIndifference\nTidak secara khusus baik ataupun buruk\nGwenTable | SRD 5.2.1 | Bahasa Indonesia v0.11B (draf)\n2\nSpell ini tidak memperhitungkan keadaan baru, seperti spell lain yang nantinya mungkin mengubah\nhasil. Jika kamu meng-cast Augury lebih dari sekali sebelum menyelesaikan Long Rest, setiap casting\nsetelah yang pertama memiliki peluang kumulatif 25% untuk tidak memperoleh jawaban: casting kedua\n25%, ketiga 50%, dan seterusnya.\n"
+    },
+    "Awaken": {
+      "srd_pages": [
+        111,
+        112
+      ],
+      "local_pages": [
+        223,
+        224
+      ],
+      "source_english_excerpt": "Awaken\nLevel 5 Transmutation (Bard, Druid)\nCasting Time: 8 hours\nRange: Touch\nComponents: V, S, M (an agate worth 1,000+ GP, which \nthe spell consumes)\nDuration: Instantaneous\nYou spend the casting time tracing magical path-\nways within a precious gemstone, and then touch \nthe target. The target must be either a Beast or \nPlant creature with an Intelligence of 3 or less or a \nnatural plant that isn’t a creature. The target gains \nSystem Reference Document 5.2.1\n112\nan Intelligence of 10 and the ability to speak one \nlanguage you know. If the target is a natural plant, \nit becomes a Plant creature and gains the ability to \nmove its limbs, roots, vines, creepers, and so forth, \nand it gains senses similar to a human’s. The GM \nchooses statistics appropriate for the awakened \nPlant, such as the statistics for the Awakened \nShrub or Awakened Tree in “Monsters.”\n\t The awakened target has the Charmed condition \nfor 30 days or until you or your allies deal damage \nto it. When that condition ends, the awakened crea-\nture chooses its attitude toward you.\n",
+      "draft_indonesian_excerpt": "Awaken\nLevel 5 Transmutation (Bard, Druid)\nProperti\nNilai\nCasting Time\n8 hours\nRange\nTouch\nComponents\nV, S, M (an agate worth 1,000+ GP, consumed)\nDuration\nInstantaneous\nSelama Casting Time, kamu menelusuri pola-pola magic di dalam gemstone yang berharga, kemudian\nmenyentuh target. Target harus berupa salah satu dari berikut:\nBeast creature atau Plant creature dengan Intelligence 3 atau kurang; atau\ntumbuhan alami yang bukan creature.\nTarget memperoleh Intelligence 10 dan kemampuan berbicara dalam satu bahasa yang kamu ketahui.\nJika targetnya tumbuhan alami yang bukan creature, tumbuhan itu menjadi Plant creature, mampu\nmenggerakkan bagian tubuh seperti dahan, akar, atau sulur, dan mendapat kemampuan indra yang serupa\ndengan Human. GM memilih game statistics yang sesuai, misalnya Awakened Shrub atau Awakened Tree\ndari bab Monsters.\nTarget yang terbangunkan mendapat kondisi Charmed selama 30 hari, atau sampai kamu atau sekutumu\nmenyebabkan damage padanya. Setelah Charmed berakhir, creature tersebut menentukan sendiri\nsikapnya terhadapmu.\n• \n• \nGwenTable | SRD 5.2.1 | Bahasa Indonesia v0.11B (draf)\n3\n\n"
+    }
+  },
+  "clause_count": 62,
+  "confirmed_scope_mismatch_count": 1
+}

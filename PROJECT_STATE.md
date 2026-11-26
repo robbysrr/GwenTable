@@ -54,3 +54,28 @@ Owner direction: build a private browser preview of the Hazards v3 candidate (ch
 **Next:** recover the authoritative GwenTable site checkout (P0), then integrate this slice into its real character sheet, inventory, save resolver and storage.
 
 **Environment:** Claude Code cloud session on personal environment `GwenTable` (package registries + media.dndbeyond.com). Release decision unchanged: NO GO.
+
+---
+
+## Milestone • 27 November 2026 • Context v3: source identification (blocked) and verification of supplied kits
+
+**Inputs received:** Context v3, Character Sheet Kit v0.3, Spell Localization v1.46, Localization Source Fidelity v0.82 (+ START_HERE v3). That is 3 of the 22 registered archives, plus the context. Searching the connected Google Drive found none of the 22. The only ZIPs there are two "DnD-20261117…" exports (1.6/2.1 GB) in a "Books" folder; they are not GwenTable source and were not downloaded.
+
+**Authoritative website baseline: NOT IDENTIFIED.** UX9, Convergence08, Dev15 and MVP16 source ZIPs are all missing. No integration was performed. See `docs/CONSOLIDATION_PLAN.md` for the exact files required and the selection/merge procedure.
+
+**Verified now**
+- ZIP CRC OK for all 5 uploaded ZIPs. Byte sizes of sheet kit, v1.46 and v0.82 match `RECOVERED_ARCHIVES.md`.
+- Context v3 `node verify.mjs`: 38/38 hashes, Hazards v3 170/170.
+- Sheet kit v0.3 `test_field_sheet.py`: 12/12 variants PASS + layout/attribution checks (ReportLab, pypdf).
+- Localization v1.46: 25/25 hashes; 124/124 unittests; combined file holds 60 records (#145–204).
+- Localization v0.82: 26/26 manifest hashes; `test_v082.py` PASS (62 clause rows, 8/8 bad patches rejected, 4 Chromium checks). Installed PyMuPDF and Python Playwright 1.63.0; symlinked `/usr/bin/chromium` to the preinstalled browser, container only.
+- Finding: the v0.82 kit's `SRD_CC_v5.2.1_copy.pdf` is a re-saved file (SHA-256 22bbbe05…, 6,542,011 bytes) that differs in bytes from the official PDF (8974902d…). The extracted text is identical, so the kit's `srd_sha256` pins a copy, not the official file.
+- Secret-pattern scan of all extracted packages: no matches.
+
+**Repository changes:** `docs/` (v3 register, backlog JSON with status vocabulary and evidence, consolidation plan), `handover/*_v3.md`, `recovered/` (text/source parts of sheet kit v0.3, localization v1.46 and v0.82; PDFs and images not committed).
+
+**Register:** 315 items: 293 not verifiable, 6 blocked, 2 partial, 1 candidate-only, 8 candidate-verified, 3 verified, 2 compliant. Site-integrated: 0/315.
+
+**Next:** owner supplies the four site ZIPs (+ recovery kit and QA ZIPs), then baseline selection per the plan.
+
+**Environment:** Claude Code cloud, GwenTable environment. Release: NO GO.

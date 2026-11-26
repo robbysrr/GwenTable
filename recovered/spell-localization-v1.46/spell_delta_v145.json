@@ -1,0 +1,601 @@
+{
+  "version": "1.45-delta",
+  "parent": "1.44-combined-deltas",
+  "parent_merge_verified": false,
+  "status": "INTERNAL_DRAFT_NO_GO",
+  "attribution": "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "translation_notice": "Indonesian adaptation; source mechanics retained; not an official translation.",
+  "source_url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+  "records": [
+    {
+      "ordinal": 181,
+      "name_en": "Jump",
+      "level": 1,
+      "school": "Transmutation",
+      "classes": [
+        "Druid",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Bonus Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "kaki belakang belalang",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "1 minute",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143
+        ],
+        "anchor": "Jump",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu creature yang bersedia. Hingga spell berakhir, sekali pada setiap turn-nya creature tersebut dapat melompat hingga 30 feet dengan menghabiskan 10 feet dari jatah movement-nya.\n\n**Using a Higher-Level Spell Slot.** Kamu dapat menargetkan satu creature tambahan untuk setiap level Spell Slot di atas level 1.",
+      "reference_checks": {
+        "willing_target": true,
+        "jump_max_ft": 30,
+        "movement_cost_ft": 10,
+        "max_uses_per_target_turn": 1,
+        "upcast_targets_per_slot": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 182,
+      "name_en": "Knock",
+      "level": 2,
+      "school": "Transmutation",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143,
+          144
+        ],
+        "anchor": "Knock",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Pilih sebuah benda yang dapat kamu lihat dalam jangkauan, seperti pintu, kotak, peti, belenggu, gembok, atau benda lain dengan penghalang akses biasa maupun magis.\n\nJika benda tertutup oleh kunci biasa, macet, atau terpalang, kunci terbuka, kemacetan teratasi, atau palangnya terbuka. Jika benda memiliki beberapa kunci, hanya satu yang terbuka.\n\nJika benda tertutup oleh Arcane Lock, efek Arcane Lock ditekan selama 10 menit. Selama waktu itu, benda dapat dibuka dan ditutup.\n\nSaat kamu meng-cast spell ini, benda tersebut menghasilkan bunyi ketukan keras yang terdengar hingga 300 feet.",
+      "reference_checks": {
+        "target_visible": true,
+        "target_kind": "object",
+        "mundane_effects": [
+          "unlock",
+          "unstick",
+          "unbar"
+        ],
+        "locks_opened_per_cast": 1,
+        "arcane_lock_suppressed_minutes": 10,
+        "arcane_lock_dispelled": false,
+        "noise_radius_ft": 300
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 183,
+      "name_en": "Legend Lore",
+      "level": 5,
+      "school": "Divination",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Wizard"
+      ],
+      "casting_time": "10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "dupa senilai minimal 250 GP (habis digunakan) dan empat potong gading senilai minimal 50 GP per potong (tidak habis digunakan)",
+        "minimum_gp": 450,
+        "consumed": null
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          144
+        ],
+        "anchor": "Legend Lore",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sebutkan nama atau jelaskan seseorang, tempat, atau benda yang terkenal. GM memberikan ringkasan singkat dalam benakmu mengenai pengetahuan penting tentang hal terkenal itu.\n\nInformasi tersebut dapat berupa perincian penting, pengungkapan yang menghibur, atau rahasia yang belum pernah dikenal luas. Semakin banyak yang sudah kamu ketahui, semakin tepat dan terperinci informasi yang kamu peroleh. Informasi itu akurat, tetapi GM dapat menyampaikannya melalui kiasan atau puisi.\n\nJika hal yang kamu pilih ternyata tidak terkenal, kamu mendengar nada sedih dari trombon dan spell gagal.",
+      "reference_checks": {
+        "target_kinds": [
+          "person",
+          "place",
+          "object"
+        ],
+        "requires_fame": true,
+        "gm_determines_lore": true,
+        "information_accurate": true,
+        "prior_knowledge_increases_detail": true,
+        "figurative_delivery_possible": true,
+        "not_famous_fails": true,
+        "material_parts": [
+          {
+            "item": "incense",
+            "quantity": 1,
+            "minimum_gp_each": 250,
+            "consumed": true
+          },
+          {
+            "item": "ivory strips",
+            "quantity": 4,
+            "minimum_gp_each": 50,
+            "consumed": false
+          }
+        ],
+        "material_total_min_gp": 450,
+        "material_consumed_min_gp": 250,
+        "material_mixed_consumption": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 184,
+      "name_en": "Lesser Restoration",
+      "level": 2,
+      "school": "Abjuration",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ],
+      "casting_time": "Bonus Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          144
+        ],
+        "anchor": "Lesser Restoration",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu creature dan akhiri salah satu kondisi berikut yang dialaminya: Blinded, Deafened, Paralyzed, atau Poisoned.",
+      "reference_checks": {
+        "target_count": 1,
+        "conditions_removed_count": 1,
+        "eligible_conditions": [
+          "Blinded",
+          "Deafened",
+          "Paralyzed",
+          "Poisoned"
+        ]
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 185,
+      "name_en": "Levitate",
+      "level": 2,
+      "school": "Transmutation",
+      "classes": [
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "pegas logam",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 10 minutes",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          144
+        ],
+        "anchor": "Levitate",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Pilih satu creature atau benda lepas yang dapat kamu lihat dalam jangkauan. Target terangkat vertikal hingga 20 feet dan tetap melayang selama durasi spell. Benda yang diangkat spell ini dapat memiliki berat hingga 500 pounds. Creature yang tidak bersedia dan berhasil dalam Constitution Saving Throw tidak terpengaruh.\n\nTarget hanya dapat bergerak dengan mendorong atau menarik benda tetap atau permukaan dalam jangkauannya, seperti dinding atau langit-langit, seolah sedang memanjat. Pada turn-mu, kamu dapat mengubah ketinggian target hingga 20 feet ke atas atau ke bawah. Jika kamu sendiri merupakan target, kamu dapat naik atau turun sebagai bagian dari movement-mu. Jika bukan, kamu dapat menggunakan Magic Action untuk memindahkan target, yang harus tetap berada dalam jangkauan spell.\n\nKetika spell berakhir, target yang masih melayang turun perlahan ke tanah.",
+      "reference_checks": {
+        "target_visible": true,
+        "target_kinds": [
+          "creature",
+          "loose_object"
+        ],
+        "initial_rise_ft": 20,
+        "object_weight_max_lb": 500,
+        "unwilling_save": "Constitution",
+        "successful_save": "unaffected",
+        "movement_requires_fixed_surface": true,
+        "altitude_change_max_ft": 20,
+        "altitude_change_timing": "caster_turn",
+        "self_move_cost": "movement",
+        "other_move_cost": "Magic Action",
+        "other_target_stays_in_range": true,
+        "end_descent": "gentle"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 186,
+      "name_en": "Light",
+      "level": 0,
+      "school": "Evocation",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "M"
+      ],
+      "material": {
+        "text_id": "kunang-kunang atau lumut berpendar",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "1 hour",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          144
+        ],
+        "anchor": "Light",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu benda berukuran Large atau lebih kecil yang tidak sedang dikenakan atau dibawa oleh pihak lain. Hingga spell berakhir, benda memancarkan Bright Light dalam radius 20 feet dan Dim Light sejauh 20 feet tambahan. Kamu bebas memilih warna cahaya.\n\nMenutupi benda dengan sesuatu yang tidak tembus cahaya menghalangi cahaya tersebut. Spell berakhir jika kamu meng-cast-nya lagi.",
+      "reference_checks": {
+        "target_count": 1,
+        "max_object_size": "Large",
+        "not_worn_or_carried_by_other": true,
+        "bright_radius_ft": 20,
+        "dim_additional_ft": 20,
+        "color_choice": true,
+        "opaque_cover_blocks_light": true,
+        "recast_ends": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 187,
+      "name_en": "Lightning Bolt",
+      "level": 3,
+      "school": "Evocation",
+      "classes": [
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sedikit bulu hewan dan batang kristal",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          144
+        ],
+        "anchor": "Lightning Bolt",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sambaran petir membentuk Line sepanjang 100 feet dan selebar 5 feet yang memancar darimu ke arah pilihanmu. Setiap creature dalam Line melakukan Dexterity Saving Throw. Jika gagal, creature menerima 8d6 Lightning damage; jika berhasil, damage menjadi separuhnya.\n\n**Using a Higher-Level Spell Slot.** Damage bertambah 1d6 untuk setiap level Spell Slot di atas level 3.",
+      "reference_checks": {
+        "line_length_ft": 100,
+        "line_width_ft": 5,
+        "direction_choice": true,
+        "save": "Dexterity",
+        "damage": "8d6",
+        "damage_type": "Lightning",
+        "success_damage_multiplier": 0.5,
+        "upcast_dice_per_slot": "1d6"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 188,
+      "name_en": "Locate Animals or Plants",
+      "level": 2,
+      "school": "Divination",
+      "classes": [
+        "Bard",
+        "Druid",
+        "Ranger"
+      ],
+      "casting_time": "Action or Ritual",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "bulu anjing bloodhound",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          144
+        ],
+        "anchor": "Locate Animals or Plants",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Jelaskan atau sebutkan jenis tertentu dari Beast, creature bertipe Plant, atau tanaman nonmagis. Kamu mengetahui arah dan jarak menuju creature atau tanaman terdekat dari jenis itu dalam radius 5 miles, jika ada.",
+      "reference_checks": {
+        "target_kinds": [
+          "Beast",
+          "Plant creature",
+          "nonmagical plant"
+        ],
+        "nearest_only": true,
+        "search_radius_miles": 5,
+        "information": [
+          "direction",
+          "distance"
+        ],
+        "ritual": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 189,
+      "name_en": "Locate Creature",
+      "level": 4,
+      "school": "Divination",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "bulu anjing bloodhound",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 1 hour",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          145
+        ],
+        "anchor": "Locate Creature",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Jelaskan atau sebutkan nama creature yang kamu kenal. Jika creature itu berada dalam jarak 1.000 feet darimu, kamu merasakan arah lokasinya. Jika bergerak, kamu mengetahui arah pergerakannya.\n\nSpell dapat menemukan creature tertentu yang kamu kenal, atau creature terdekat dari jenis tertentu (misalnya human atau unicorn) jika kamu pernah melihat creature dari jenis tersebut dari dekat, dalam jarak 30 feet, setidaknya sekali. Jika creature yang kamu jelaskan atau sebutkan berada dalam wujud berbeda, misalnya akibat Flesh to Stone atau Polymorph, spell tidak menemukannya.\n\nSpell tidak dapat menemukan creature jika lapisan timbal dengan ketebalan berapa pun menghalangi jalur langsung antara kamu dan creature itu.",
+      "reference_checks": {
+        "search_radius_ft": 1000,
+        "information": [
+          "direction",
+          "movement_direction_if_moving"
+        ],
+        "specific_known_creature": true,
+        "nearest_specific_kind": true,
+        "kind_prior_sighting_max_ft": 30,
+        "kind_prior_sighting_min_count": 1,
+        "different_form_blocks": true,
+        "any_lead_thickness_blocks_direct_path": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 190,
+      "name_en": "Locate Object",
+      "level": 2,
+      "school": "Divination",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "ranting bercabang",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 10 minutes",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          145
+        ],
+        "anchor": "Locate Object",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Jelaskan atau sebutkan nama benda yang kamu kenal. Jika benda berada dalam jarak 1.000 feet darimu, kamu merasakan arah lokasinya. Jika benda bergerak, kamu mengetahui arah pergerakannya.\n\nSpell dapat menemukan benda tertentu yang kamu kenal jika kamu pernah melihatnya dari dekat, dalam jarak 30 feet, setidaknya sekali. Sebagai alternatif, spell dapat menemukan benda terdekat dari jenis tertentu, misalnya jenis pakaian, perhiasan, perabot, alat, atau senjata tertentu.\n\nSpell tidak dapat menemukan benda jika lapisan timbal dengan ketebalan berapa pun menghalangi jalur langsung antara kamu dan benda itu.",
+      "reference_checks": {
+        "search_radius_ft": 1000,
+        "information": [
+          "direction",
+          "movement_direction_if_moving"
+        ],
+        "specific_object_prior_sighting_max_ft": 30,
+        "specific_object_prior_sighting_min_count": 1,
+        "nearest_particular_kind": true,
+        "any_lead_thickness_blocks_direct_path": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 191,
+      "name_en": "Longstrider",
+      "level": 1,
+      "school": "Transmutation",
+      "classes": [
+        "Bard",
+        "Druid",
+        "Ranger",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sejumput tanah",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "1 hour",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          145
+        ],
+        "anchor": "Longstrider",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu creature. Speed target bertambah 10 feet hingga spell berakhir.\n\n**Using a Higher-Level Spell Slot.** Kamu dapat menargetkan satu creature tambahan untuk setiap level Spell Slot di atas level 1.",
+      "reference_checks": {
+        "target_count": 1,
+        "speed_bonus_ft": 10,
+        "upcast_targets_per_slot": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 192,
+      "name_en": "Mage Armor",
+      "level": 1,
+      "school": "Abjuration",
+      "classes": [
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sepotong kulit samak",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "8 hours",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          145
+        ],
+        "anchor": "Mage Armor",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu creature yang bersedia dan tidak sedang mengenakan armor. Hingga spell berakhir, base AC target menjadi 13 ditambah Dexterity modifier-nya. Spell berakhir lebih awal jika target mengenakan armor.",
+      "reference_checks": {
+        "willing_target": true,
+        "target_must_be_unarmored": true,
+        "base_ac_constant": 13,
+        "base_ac_modifier": "Dexterity",
+        "base_ac_replacement": true,
+        "ends_on_donning_armor": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    }
+  ]
+}

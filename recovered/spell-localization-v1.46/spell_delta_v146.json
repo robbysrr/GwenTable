@@ -1,0 +1,616 @@
+{
+  "version": "1.46-delta",
+  "parent": "1.45-combined-deltas",
+  "parent_merge_verified": false,
+  "status": "INTERNAL_DRAFT_NO_GO",
+  "attribution": "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "translation_notice": "Indonesian adaptation; source mechanics retained; not an official translation.",
+  "source_url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+  "records": [
+    {
+      "ordinal": 193,
+      "name_en": "Mage Hand",
+      "level": 0,
+      "school": "Conjuration",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "1 minute",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          145
+        ],
+        "anchor": "Mage Hand",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Tangan spektral yang melayang muncul di titik pilihanmu dalam jangkauan dan bertahan selama durasi spell. Tangan itu lenyap jika berada lebih dari 30 feet darimu atau jika kamu meng-cast spell ini lagi.\n\nSaat casting, gunakan tangan itu untuk memanipulasi benda, membuka pintu atau wadah yang tidak terkunci, menyimpan atau mengambil barang dari wadah terbuka, atau menuang isi botol kecil. Pada turn-turn selanjutnya, kamu dapat kembali mengendalikannya dengan Magic Action, sekaligus menggerakkannya hingga 30 feet sebagai bagian dari action tersebut.\n\nTangan ini tidak dapat menyerang, mengaktifkan magic item, atau membawa lebih dari 10 pounds.",
+      "reference_checks": {
+        "max_distance_ft": 30,
+        "recast_vanishes": true,
+        "initial_manipulation": true,
+        "later_control": "Magic Action",
+        "move_per_action_ft": 30,
+        "carry_max_lb": 10,
+        "can_attack": false,
+        "can_activate_magic_items": false,
+        "unlocked_door_or_container": true,
+        "open_container_access": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 194,
+      "name_en": "Magic Circle",
+      "level": 3,
+      "school": "Abjuration",
+      "classes": [
+        "Cleric",
+        "Paladin",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "1 minute",
+      "range": "10 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "garam dan bubuk perak",
+        "minimum_gp": 100,
+        "consumed": true
+      },
+      "duration": "1 hour",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          145,
+          146
+        ],
+        "anchor": "Magic Circle",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Ciptakan Cylinder energi magis berjari-jari 10 feet dan setinggi 20 feet, berpusat pada titik di tanah yang dapat kamu lihat dalam jangkauan. Rune bercahaya muncul pada perpotongan Cylinder dengan lantai atau permukaan lain.\n\nPilih satu atau lebih tipe creature: Celestial, Elemental, Fey, Fiend, atau Undead. Creature dari tipe pilihan terkena efek berikut:\n\n- Creature tidak dapat dengan sukarela memasuki Cylinder melalui cara nonmagis. Untuk masuk melalui teleportasi atau perjalanan antarplane, creature terlebih dahulu harus berhasil dalam Charisma Saving Throw.\n- Creature mendapat Disadvantage pada Attack Roll terhadap target di dalam Cylinder.\n- Target di dalam Cylinder tidak dapat dirasuki atau mengalami kondisi Charmed maupun Frightened akibat creature tersebut.\n\nSetiap kali casting, kamu dapat membalik arah efek agar creature bertipe pilihan tidak dapat meninggalkan Cylinder sesuai batasan yang sama dan target di luar terlindungi.\n\n**Using a Higher-Level Spell Slot.** Durasi bertambah 1 jam untuk setiap level Spell Slot di atas level 3.",
+      "reference_checks": {
+        "radius_ft": 10,
+        "height_ft": 20,
+        "visible_ground_point": true,
+        "eligible_types": [
+          "Celestial",
+          "Elemental",
+          "Fey",
+          "Fiend",
+          "Undead"
+        ],
+        "choose_multiple_types": true,
+        "voluntary_nonmagical_entry_blocked": true,
+        "teleport_or_planar_save": "Charisma",
+        "attack_disadvantage": true,
+        "protected_effects": [
+          "possession",
+          "Charmed",
+          "Frightened"
+        ],
+        "reversible": true,
+        "upcast_hours_per_slot": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 195,
+      "name_en": "Magic Jar",
+      "level": 6,
+      "school": "Necromancy",
+      "classes": [
+        "Wizard"
+      ],
+      "casting_time": "1 minute",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "permata, kristal, atau reliquary",
+        "minimum_gp": 500,
+        "consumed": false
+      },
+      "duration": "Until dispelled",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          146
+        ],
+        "anchor": "Magic Jar",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Tubuhmu memasuki keadaan katatonik ketika jiwamu keluar dan masuk ke wadah yang digunakan sebagai Material component. Selama berada di wadah, kamu menyadari lingkungan seolah berada di ruang wadah tersebut. Kamu tidak dapat bergerak atau melakukan Reaction. Satu-satunya action yang dapat kamu lakukan adalah memproyeksikan jiwa hingga 100 feet keluar dari wadah, baik untuk kembali ke tubuhmu yang masih hidup (mengakhiri spell) maupun mencoba merasuki tubuh Humanoid.\n\nKamu dapat mencoba merasuki Humanoid yang dapat kamu lihat dalam jarak 100 feet darimu. Creature yang dilindungi Protection from Evil and Good atau Magic Circle tidak dapat dirasuki. Target melakukan Charisma Saving Throw. Jika gagal, jiwamu memasuki tubuh target dan jiwa target terperangkap di wadah. Jika berhasil, target menolak upaya possession dan kamu tidak dapat mencoba merasukinya lagi selama 24 jam.\n\nSelama merasuki tubuh creature, kamu mengendalikannya. Hit Points, Hit Point Dice, Strength, Dexterity, Constitution, Speed, dan indramu digantikan oleh milik creature tersebut; statistik permainan lainnya tetap milikmu. Jiwa creature yang dirasuki dapat mengamati lingkungan dari wadah dengan indranya sendiri, tetapi tidak dapat bergerak dan mengalami kondisi Incapacitated.\n\nSaat merasuki tubuh, kamu dapat menggunakan Magic Action untuk kembali ke wadah jika berada dalam jarak 100 feet darimu, sekaligus mengembalikan jiwa creature ke tubuhnya. Jika tubuh inang mati saat kamu berada di dalamnya, creature itu mati dan kamu melakukan Charisma Saving Throw terhadap Spell Save DC-mu sendiri. Jika berhasil dan wadah berada dalam jarak 100 feet, kamu kembali ke wadah; jika tidak, kamu mati.\n\nJika wadah hancur atau spell berakhir, jiwamu kembali ke tubuhmu. Jika tubuhmu sudah mati atau berada lebih dari 100 feet darimu, kamu mati. Jika jiwa creature lain berada di wadah saat wadah hancur, jiwanya kembali ke tubuhnya apabila tubuh itu masih hidup dan berada dalam jarak 100 feet; jika tidak, creature itu mati.\n\nKetika spell berakhir, wadah hancur.",
+      "reference_checks": {
+        "body_state": "catatonic",
+        "projection_max_ft": 100,
+        "container_no_move": true,
+        "container_no_reactions": true,
+        "target_type": "Humanoid",
+        "target_visible": true,
+        "possession_range_ft": 100,
+        "blocked_by": [
+          "Protection from Evil and Good",
+          "Magic Circle"
+        ],
+        "possession_save": "Charisma",
+        "retry_after_success_hours": 24,
+        "replaced_stats": [
+          "Hit Points",
+          "Hit Point Dice",
+          "Strength",
+          "Dexterity",
+          "Constitution",
+          "Speed",
+          "senses"
+        ],
+        "other_stats_retained": true,
+        "host_soul_condition": "Incapacitated",
+        "host_soul_no_move": true,
+        "return_action": "Magic Action",
+        "return_max_ft": 100,
+        "host_death_save": "Charisma",
+        "host_death_dc": "own spell save DC",
+        "host_death_return_requires_success_and_range": true,
+        "own_body_alive_and_in_range_required": true,
+        "other_soul_return_alive_and_in_range_required": true,
+        "container_destroyed_on_spell_end": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 196,
+      "name_en": "Magic Missile",
+      "level": 1,
+      "school": "Evocation",
+      "classes": [
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          146
+        ],
+        "anchor": "Magic Missile",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Ciptakan tiga proyektil bercahaya dari energi magis. Setiap proyektil mengenai creature pilihanmu yang dapat kamu lihat dalam jangkauan dan memberikan 1d4 + 1 Force damage. Semua proyektil mengenai target secara bersamaan; kamu dapat mengarahkan semuanya ke satu creature atau membaginya ke beberapa creature.\n\n**Using a Higher-Level Spell Slot.** Tambahkan satu proyektil untuk setiap level Spell Slot di atas level 1.",
+      "reference_checks": {
+        "base_darts": 3,
+        "damage_per_dart": "1d4+1",
+        "damage_type": "Force",
+        "target_visible": true,
+        "attack_roll_required": false,
+        "simultaneous": true,
+        "split_targets": true,
+        "upcast_darts_per_slot": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 197,
+      "name_en": "Magic Mouth",
+      "level": 2,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Wizard"
+      ],
+      "casting_time": "1 minute or Ritual",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "bubuk giok",
+        "minimum_gp": 10,
+        "consumed": true
+      },
+      "duration": "Until dispelled",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          146
+        ],
+        "anchor": "Magic Mouth",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Tanamkan pesan pada benda dalam jangkauan yang dapat kamu lihat dan tidak sedang dikenakan atau dibawa creature lain. Ucapkan pesan maksimal 25 kata; penyampaiannya boleh berlangsung hingga 10 menit. Tentukan keadaan yang memicu pesan tersebut.\n\nSaat pemicu terjadi, mulut magis muncul pada benda dan mengucapkan pesan dengan suara serta volume yang sama seperti saat kamu mengucapkannya. Jika benda memiliki mulut atau bagian yang menyerupai mulut, misalnya mulut patung, mulut magis muncul di bagian tersebut. Saat casting, tentukan apakah spell berakhir setelah menyampaikan pesan atau tetap aktif dan mengulanginya setiap kali pemicu terjadi.\n\nPemicu dapat sesederhana atau sedetail yang kamu inginkan, tetapi harus berdasarkan kondisi visual atau suara yang terjadi dalam jarak 30 feet dari benda. Misalnya, pesan diucapkan ketika creature mendekati benda hingga jarak 30 feet atau ketika lonceng perak berbunyi dalam jarak tersebut.",
+      "reference_checks": {
+        "ritual": true,
+        "object_visible": true,
+        "not_worn_or_carried_by_other": true,
+        "max_words": 25,
+        "max_delivery_minutes": 10,
+        "caster_voice_and_volume": true,
+        "repeat_optional": true,
+        "trigger_modalities": [
+          "visual",
+          "audible"
+        ],
+        "trigger_radius_ft": 30
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 198,
+      "name_en": "Magic Weapon",
+      "level": 2,
+      "school": "Transmutation",
+      "classes": [
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Bonus Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "1 hour",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          146,
+          147
+        ],
+        "anchor": "Magic Weapon",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu senjata nonmagis. Hingga spell berakhir, senjata itu menjadi senjata magis dengan bonus +1 pada Attack Roll dan Damage Roll. Spell berakhir lebih awal jika kamu meng-cast-nya lagi.\n\n**Using a Higher-Level Spell Slot.** Bonus menjadi +2 jika menggunakan Spell Slot level 3–5, atau +3 jika menggunakan Spell Slot level 6 atau lebih tinggi.",
+      "reference_checks": {
+        "target_nonmagical_weapon": true,
+        "base_attack_damage_bonus": 1,
+        "recast_ends": true,
+        "upcast_bonus_by_slot": {
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 3,
+          "7": 3,
+          "8": 3,
+          "9": 3
+        }
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 199,
+      "name_en": "Magnificent Mansion",
+      "level": 7,
+      "school": "Conjuration",
+      "classes": [
+        "Bard",
+        "Wizard"
+      ],
+      "casting_time": "1 minute",
+      "range": "300 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "miniatur pintu",
+        "minimum_gp": 15,
+        "consumed": false
+      },
+      "duration": "24 hours",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          147
+        ],
+        "anchor": "Magnificent Mansion",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Ciptakan pintu berkilau dalam jangkauan yang bertahan selama durasi spell. Pintu selebar 5 feet dan setinggi 10 feet ini menuju hunian ekstradimensional. Kamu dan creature yang kamu tentukan saat casting dapat masuk selama pintu terbuka. Kamu dapat membuka atau menutupnya tanpa menggunakan action selama berada dalam jarak 30 feet. Saat tertutup, pintu tidak dapat dideteksi oleh indra.\n\nDi balik pintu terdapat aula masuk megah dan banyak ruangan. Udara di dalamnya bersih, segar, dan hangat. Kamu bebas menentukan denah, tetapi total ruang tidak boleh melebihi 50 Cube berukuran 10 feet yang saling terhubung. Hunian dilengkapi perabot dan dekorasi sesuai pilihanmu, serta makanan untuk jamuan sembilan hidangan bagi hingga 100 orang. Perabot dan benda lain yang diciptakan spell berubah menjadi asap jika dibawa keluar.\n\nSeratus pelayan yang nyaris transparan melayani semua yang masuk. Kamu menentukan penampilan dan pakaian mereka. Mereka kebal terhadap bahaya dan mematuhi perintahmu. Mereka dapat melakukan tugas yang mampu dilakukan manusia, seperti mengambil barang, membersihkan, memperbaiki barang, melipat pakaian, menyalakan api, menyajikan makanan, atau menuang minuman, tetapi tidak dapat menyerang atau melakukan action yang secara langsung membahayakan creature lain. Mereka tidak dapat meninggalkan hunian.\n\nSaat spell berakhir, creature dan benda yang masih di dalam dikeluarkan ke ruang kosong terdekat dari pintu masuk.",
+      "reference_checks": {
+        "door_width_ft": 5,
+        "door_height_ft": 10,
+        "entry_designated_at_cast": true,
+        "door_control_distance_ft": 30,
+        "door_control_action_required": false,
+        "closed_imperceptible": true,
+        "max_contiguous_cubes": 50,
+        "cube_side_ft": 10,
+        "meal_courses": 9,
+        "meal_people_max": 100,
+        "created_objects_smoke_outside": true,
+        "servants": 100,
+        "servants_invulnerable": true,
+        "servants_no_attack_or_direct_harm": true,
+        "servants_cannot_leave": true,
+        "ends_expels_creatures_and_objects": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 200,
+      "name_en": "Major Image",
+      "level": 3,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sedikit bulu wol",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 10 minutes",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          147
+        ],
+        "anchor": "Major Image",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Ciptakan citra benda, creature, atau fenomena lain yang terlihat, dengan ukuran tidak lebih besar dari Cube 20 feet. Citra muncul di titik yang dapat kamu lihat dalam jangkauan dan bertahan selama durasi spell. Citra tampak nyata, termasuk suara, bau, dan suhu yang sesuai, tetapi tidak dapat memberikan damage atau menyebabkan kondisi.\n\nJika kamu berada dalam jangkauan ilusi, gunakan Magic Action untuk memindahkannya ke titik lain dalam jangkauan. Saat berpindah, kamu dapat mengubah penampilannya agar gerakannya terlihat alami, misalnya membuat citra creature seolah berjalan. Kamu juga dapat mengubah suara ilusi dari waktu ke waktu, bahkan membuatnya seolah bercakap-cakap.\n\nInteraksi fisik mengungkap bahwa citra tersebut adalah ilusi karena benda dapat melewatinya. Creature yang menggunakan Study Action untuk memeriksa citra dapat mengenalinya sebagai ilusi dengan berhasil dalam Intelligence (Investigation) check terhadap Spell Save DC-mu. Setelah menyadari sifat ilusi, creature dapat melihat menembus citra, dan kualitas sensoris lainnya menjadi samar baginya.\n\n**Using a Higher-Level Spell Slot.** Jika menggunakan Spell Slot level 4 atau lebih tinggi, spell bertahan hingga di-dispel tanpa membutuhkan Concentration.",
+      "reference_checks": {
+        "max_cube_side_ft": 20,
+        "target_point_visible": true,
+        "sensory_qualities": [
+          "visual",
+          "sound",
+          "smell",
+          "temperature"
+        ],
+        "can_damage": false,
+        "can_cause_conditions": false,
+        "move_action": "Magic Action",
+        "caster_within_range_of_illusion": true,
+        "destination_within_range": true,
+        "appearance_and_sound_mutable": true,
+        "physical_interaction_reveals": true,
+        "examine_action": "Study",
+        "examine_check": "Intelligence (Investigation)",
+        "examine_dc": "spell save DC",
+        "discerned_image_see_through": true,
+        "discerned_other_senses_faint": true,
+        "upcast_threshold": 4,
+        "upcast_duration": "Until dispelled",
+        "upcast_concentration": false
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 201,
+      "name_en": "Mass Cure Wounds",
+      "level": 5,
+      "school": "Abjuration",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Druid"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          147
+        ],
+        "anchor": "Mass Cure Wounds",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Gelombang energi penyembuhan memancar dari titik yang dapat kamu lihat dalam jangkauan. Pilih hingga enam creature dalam Sphere berjari-jari 30 feet yang berpusat pada titik tersebut. Masing-masing target memulihkan Hit Points sebesar 5d8 + spellcasting ability modifier-mu.\n\n**Using a Higher-Level Spell Slot.** Penyembuhan bertambah 1d8 untuk setiap level Spell Slot di atas level 5.",
+      "reference_checks": {
+        "point_visible": true,
+        "sphere_radius_ft": 30,
+        "max_targets": 6,
+        "healing_dice": "5d8",
+        "add_spellcasting_modifier": true,
+        "upcast_healing_per_slot": "1d8"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 202,
+      "name_en": "Mass Heal",
+      "level": 9,
+      "school": "Abjuration",
+      "classes": [
+        "Cleric"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          147
+        ],
+        "anchor": "Mass Heal",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Energi penyembuhan mengalir darimu ke creature di sekitarmu. Pulihkan hingga 700 Hit Points secara total, dibagi sesuai pilihanmu kepada berapa pun creature yang dapat kamu lihat dalam jangkauan. Creature yang disembuhkan oleh spell ini juga terbebas dari kondisi Blinded, Deafened, dan Poisoned.",
+      "reference_checks": {
+        "total_healing_budget": 700,
+        "target_visible": true,
+        "target_count_limit": null,
+        "allocation_by_caster": true,
+        "conditions_removed": [
+          "Blinded",
+          "Deafened",
+          "Poisoned"
+        ]
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 203,
+      "name_en": "Mass Healing Word",
+      "level": 3,
+      "school": "Abjuration",
+      "classes": [
+        "Bard",
+        "Cleric"
+      ],
+      "casting_time": "Bonus Action",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          148
+        ],
+        "anchor": "Mass Healing Word",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Hingga enam creature pilihanmu yang dapat kamu lihat dalam jangkauan memulihkan Hit Points sebesar 2d4 + spellcasting ability modifier-mu masing-masing.\n\n**Using a Higher-Level Spell Slot.** Penyembuhan bertambah 1d4 untuk setiap level Spell Slot di atas level 3.",
+      "reference_checks": {
+        "max_targets": 6,
+        "target_visible": true,
+        "healing_dice": "2d4",
+        "add_spellcasting_modifier": true,
+        "upcast_healing_per_slot": "1d4"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 204,
+      "name_en": "Mass Suggestion",
+      "level": 6,
+      "school": "Enchantment",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "M"
+      ],
+      "material": {
+        "text_id": "lidah ular",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "24 hours",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          148
+        ],
+        "anchor": "Mass Suggestion",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sarankan suatu rangkaian kegiatan dalam maksimal 25 kata kepada hingga dua belas creature yang dapat kamu lihat dalam jangkauan serta dapat mendengar dan memahamimu. Saran harus terdengar dapat dilaksanakan dan tidak boleh melibatkan sesuatu yang jelas akan memberikan damage kepada target mana pun atau sekutunya. Misalnya, kamu dapat meminta mereka pergi ke desa di ujung jalan dan membantu panen hingga matahari terbenam, atau meminta mereka meletakkan senjata dan menari selama satu jam.\n\nSetiap target harus berhasil dalam Wisdom Saving Throw atau mengalami kondisi Charmed selama durasi spell, atau hingga kamu atau sekutumu memberikan damage kepada target tersebut. Setiap target yang Charmed menjalankan saran sebaik kemampuannya. Kegiatan dapat berlanjut sepanjang durasi spell, tetapi jika selesai lebih cepat, spell berakhir bagi target itu saat kegiatan selesai.\n\n**Using a Higher-Level Spell Slot.** Durasi menjadi 10 hari dengan Spell Slot level 7, 30 hari dengan level 8, atau 366 hari dengan level 9.",
+      "reference_checks": {
+        "max_words": 25,
+        "max_targets": 12,
+        "target_visible": true,
+        "target_hears_and_understands": true,
+        "suggestion_achievable": true,
+        "no_obvious_damage_to_any_target_or_allies": true,
+        "save": "Wisdom",
+        "failure_condition": "Charmed",
+        "ends_on_damage_by_caster_or_allies": true,
+        "ends_on_completion": true,
+        "upcast_duration_days": {
+          "7": 10,
+          "8": 30,
+          "9": 366
+        }
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    }
+  ]
+}

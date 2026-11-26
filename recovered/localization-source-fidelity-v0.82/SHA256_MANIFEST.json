@@ -1,0 +1,32 @@
+{
+  "edition": "v0.82",
+  "files": {
+    "build_v082.py": "45a7eb49e72209681a5c9950661143eeef68ee305df36ec8e9dbc6905a71e556",
+    "test_v082.py": "35c095e5d21585e0f4404cbc55ec7cdaf038a4c651ab85bccb6ff68ccad952e2",
+    "report_v082.py": "1db82c8cd66effa649120046760c8b05e58c102a0ec0301c6da46e5fe3a76110",
+    "release_v082.py": "f9f0af29028fc7a162ff61ecd38f317c916a746ca79ea3449c472795695dbeed",
+    "prose_patch_preview_v082.py": "94469476aa13790564008a6df5d0af5a373ba94fc32b478ec8abde7575cff290",
+    "README_v082.md": "dab2809e5331729ffacb757a1c9a96937f80f169e6fe04ae97f2f1714a19faa8",
+    "PROJECT_STATE_v082.md": "0d7a2c5f5683ee1ce520a9fcc6dd5153ca1d7f9c87f615617a7d29737cf90908",
+    "build_log.txt": "befc2a777e9b979928dc0fc05847d295f225c457504aa10b82371fbeb23629e1",
+    "test_log.txt": "072863cd372fac5be4fc3c4bf33acae31314fe5f7c78bce4f34d4fdb406a398a",
+    "report_log.txt": "dee2ae5fb315c922ea80da8ecfdda24094c4359275c99b7b713ee66c2b872e74",
+    "GwenTable_v082_Four_Spell_Clause_Audit.csv": "d4518587b7e8db06869e290a1f89859911b8dc79d58a1ab1fecda609e68105a1",
+    "GwenTable_v082_Four_Spell_Evidence.json": "fc85e231b6ef58ae31617cc634cf7f7e558aa3198e54022efe168f060929a460",
+    "GwenTable_v082_Arcane_Lock_Prose_Patch_PROPOSED.json": "e9b6ab4eb2381f690a563286331310b30d341a6af93b0b097a73c1e7a8aac898",
+    "GwenTable_v082_Editor_Decision_Template.json": "70389e77af7820d89b70f114be7dfe6f3674ebc53d268703709f2f22b8100663",
+    "GwenTable_v082_Static_QA.json": "3b02346e61cef207982c04038afb6cd9950a2c0cec2947dfcadb57af357a11f8",
+    "GwenTable_v082_Browser_QA.json": "f3357b480e96c7a9e226a9df3166358ba8ea882543cc2b8799354b835746de51",
+    "GwenTable_v082_4_Spell_Bilingual_Workbench.html": "4fbe0a31ce5cdd4b2d48b46940d68804a4fce619776f5e48489eebccbb4e2dee",
+    "GwenTable_v082_Source_Comparison_And_Correction_Report.pdf": "77924e6c0c70c9a6ad5298acef5153c891fc9536d9ce6893c4bb6ff449c76023",
+    "GwenTable_v082_Arcane_Lock_Editorial_Proof.pdf": "302a225dfef718ab255527d09800c3785319e03e9d1ea1d8ca2447d3c4cfbc92",
+    "GwenTable_v082_Workbench_375_Proof.png": "1f4f4b80bf492524e277e169e0ddbb912500a76676986e81e29e2b8bb90759db",
+    "GwenTable_v082_Source_Comparison_And_Correction_Report_page1.png": "108bfe1fca0e90f3c0b56430a069a9999d61367152a01e9e4360d56f9ec41964",
+    "GwenTable_v082_Arcane_Lock_Editorial_Proof_page1.png": "90a1a3f399a1bbf153561485b48cd81ca48dd12235bba3001592841057a60dac",
+    "source_v081/inputs/SRD_CC_v5.2.1_copy.pdf": "22bbbe05f97619b7e55f6284bce497b45e6bb3e2f09b77b92b466dc9196e8f63",
+    "source_v081/inputs/GwenTable_SRD521_Bahasa_Indonesia_Draf_v0_69_Table_Layout_Fixed.pdf": "1a1f328e711bab1ace78040115251030021a8abb2dd0c02f99a4cb5c32c41444",
+    "source_v081/inputs/GwenTable_v079_68_Candidate_Unsigned.json": "1f8049d9718b7dc968a310cbd3eb446523262673531f5603d1182ef3c8566801",
+    "source_v081/inputs/GwenTable_v080_Editor_Attestation_TEMPLATE.json": "11b20a3192551d4130c533f4cfa264bed6b639087c7e82c40e033740aa90f3d0"
+  },
+  "zip_has_duplicate_entries": false
+}

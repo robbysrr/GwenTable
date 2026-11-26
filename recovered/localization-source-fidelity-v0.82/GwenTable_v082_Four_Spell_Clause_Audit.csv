@@ -1,0 +1,63 @@
+﻿id,spell,aspect,source_folio,local_pdf_page,english_anchor,local_anchor,source_found,local_found,provisional_semantic,editorial_status,audit_note
+GT082-001,Arcane Lock,spell_level,110,219,Level 2 Abjuration,Level 2 Abjuration,True,True,MATCH,PENDING,Spell level and school
+GT082-002,Arcane Lock,casting_time,110,219,Casting Time: Action,Casting Time Action,True,True,MATCH,PENDING,Casting time
+GT082-003,Arcane Lock,range,110,219,Range: Touch,Range Touch,True,True,MATCH,PENDING,Range
+GT082-004,Arcane Lock,material_cost,110,219,gold dust worth 25+ GP,Gold dust senilai minimal 25 GP,True,True,MATCH,PENDING,Gold dust minimum cost; metadata remains English
+GT082-005,Arcane Lock,material_consumption,110,219,the spell consumes,habis digunakan saat spell di-cast,True,True,MATCH,PENDING,Material consumed
+GT082-006,Arcane Lock,duration,110,219,Duration: Until dispelled,Duration Until dispelled,True,True,MATCH,PENDING,"Duration metadata untranslated, separate issue"
+GT082-007,Arcane Lock,target_closed,110,219,"a closed door, window, gate, container","pintu, jendela, gerbang, container",True,True,MATCH,PENDING,Closed object types
+GT082-008,Arcane Lock,magical_lock,110,219,magically lock it for the duration,terkunci secara magic selama Duration,True,True,MATCH,PENDING,Magical lock for duration
+GT082-009,Arcane Lock,unlock_vs_open,110,219,This lock can’t be unlocked by any nonmagical means,tidak dapat dibuka menggunakan cara nonmagical,True,True,MISMATCH,PENDING,"Local overstates prohibition: SRD governs unlocking the lock, not every physical way of opening object"
+GT082-010,Arcane Lock,designated_access,110,219,creatures you designate when you cast,creature yang kamu tentukan saat casting,True,True,MATCH,PENDING,Designated creatures may open/close
+GT082-011,Arcane Lock,password,110,219,set a password,memasang password,True,True,MATCH,PENDING,Optional password
+GT082-012,Arcane Lock,password_distance,110,219,within 5 feet of the object,dalam jarak 5 feet dari benda,True,True,MATCH,PENDING,Password range
+GT082-013,Arcane Lock,password_duration,110,219,unlocks it for 1 minute,membuka kunci magic selama 1 menit,True,True,MATCH,PENDING,Password opens lock for 1 minute
+GT082-014,Astral Projection,spell_level,111,222,Level 9 Necromancy,Level 9 Necromancy,True,True,MATCH,PENDING,Level and school
+GT082-015,Astral Projection,casting_time,111,222,Casting Time: 1 hour,Casting Time 1 hour,True,True,MATCH,PENDING,Casting time metadata untranslated
+GT082-016,Astral Projection,range,111,222,Range: 10 feet,Range 10 feet,True,True,MATCH,PENDING,Range
+GT082-017,Astral Projection,number_targets,111,222,up to eight willing creatures,hingga 8 willing creatures,True,True,MATCH,PENDING,Caster plus up to 8 willing creatures
+GT082-018,Astral Projection,already_on_plane,111,222,spell ends instantly if you are already on that,spell langsung berakhir,True,True,MATCH,PENDING,Spell ends if caster already on Astral Plane
+GT082-019,Astral Projection,suspended_animation,111,222,state of suspended animation,keadaan suspended animation,True,True,MATCH,PENDING,Bodies remain behind
+GT082-020,Astral Projection,unconscious,111,222,Unconscious condition,kondisi Unconscious,True,True,MATCH,PENDING,Unconscious; English hyphenated line
+GT082-021,Astral Projection,no_food_air_age,111,222,"doesn’t need food or air, and doesn’t age","tidak perlu makan atau bernapas, dan tidak mengalami penuaan",True,True,MATCH,PENDING,No sustenance or aging
+GT082-022,Astral Projection,copies_stats,111,222,game statistics and possessions,game statistics serta barang miliknya,True,True,MATCH,PENDING,Stats and possessions reproduced
+GT082-023,Astral Projection,silver_cord_location,111,222,between the shoulder,di antara kedua tulang belikat,True,True,MATCH,PENDING,Silver cord origin
+GT082-024,Astral Projection,cord_one_foot,111,222,after 1 foot,setelah sekitar 1 foot,True,True,MATCH,PENDING,Cord fades from sight after one foot
+GT082-025,Astral Projection,cord_specific_cut,111,222,only when an effect states,hanya bisa terjadi jika suatu efek secara khusus menyatakannya,True,True,MATCH,PENDING,Cord severance only if explicitly specified
+GT082-026,Astral Projection,cord_death,111,222,body and astral form both die,tubuh fisik dan wujud astral target keduanya mati,True,True,MATCH,PENDING,Severed cord kills both
+GT082-027,Astral Projection,leave_astral_plane,111,222,leaves that plane,meninggalkan Astral Plane,True,True,MATCH,PENDING,Physical body/possessions follow cord
+GT082-028,Astral Projection,damage_nontransfer,111,222,no effect on the target’s body,tidak memengaruhi tubuh fisik,True,True,MATCH,PENDING,Damage/effects on astral body not transferred
+GT082-029,Astral Projection,zero_hp,111,222,drops to 0 Hit Points,turun ke 0,True,True,MATCH,PENDING,Body or astral at zero ends spell for target
+GT082-030,Astral Projection,magic_action_end_all,111,222,Magic action to dismiss it,Magic action,True,True,MATCH,PENDING,Caster may dismiss for all
+GT082-031,Astral Projection,return_to_body,111,222,target reappears in its body,target kembali ke tubuh fisiknya,True,True,MATCH,PENDING,Alive target returns at spell end
+GT082-032,Astral Projection,per_target_components,111,222,for each of the spell’s targets,Untuk setiap target,True,True,MATCH,PENDING,Each target needs both components
+GT082-033,Astral Projection,jacinth_price,111,222,"one jacinth worth 1,000+ GP","1 jacinth seharga minimal 1,000 GP",True,True,MATCH,PENDING,Jacinth minimum 1000 GP per target
+GT082-034,Astral Projection,silver_price,111,222,one silver bar worth 100+ GP,1 silver bar seharga minimal 100 GP,True,True,MATCH,PENDING,Silver bar minimum 100 GP per target
+GT082-035,Astral Projection,both_consumed,111,222,all of which the spell consumes,seluruhnya dikonsumsi,True,True,MATCH,PENDING,Both materials consumed
+GT082-036,Augury,casting_time,111,"222,223",Casting Time: 1 minute or Ritual,Casting Time 1 minute or Ritual,True,True,MATCH,PENDING,Casting time metadata untranslated
+GT082-037,Augury,specially_marked,111,"222,223","specially marked sticks, bones,","specially marked sticks, bones,",True,True,MATCH,PENDING,Current metadata remains English; candidate must apply marked condition across material set
+GT082-038,Augury,material_price,111,"222,223",tokens worth 25+ GP,tokens worth 25+ GP,True,True,MATCH,PENDING,Minimum cost for divinatory tokens
+GT082-039,Augury,omen_future,111,"222,223",within the next 30 minutes,dalam 30 menit ke depan,True,True,MATCH,PENDING,Omen concerns action within next 30 minutes
+GT082-040,Augury,gm_selects,111,"222,223",The GM chooses the omen,GM memilih satu pertanda,True,True,MATCH,PENDING,GM picks omen
+GT082-041,Augury,omen_good,111,"222,223",Weal Good,Weal Hasil baik,True,True,MATCH,PENDING,Good omen
+GT082-042,Augury,omen_bad,111,"222,223",Woe Bad,Woe Hasil buruk,True,True,MATCH,PENDING,Bad omen
+GT082-043,Augury,omen_mixed,111,"222,223",Weal and woe,Weal and woe,True,True,MATCH,PENDING,Mixed results
+GT082-044,Augury,other_circumstances,111,"222,223",doesn’t account for circumstances,tidak memperhitungkan keadaan baru,True,True,MATCH,PENDING,Does not account for changing future circumstances
+GT082-045,Augury,long_rest,111,"222,223",before finish- ing a Long Rest,sebelum menyelesaikan Long Rest,True,True,MATCH,PENDING,Multiple casts within same long rest period
+GT082-046,Augury,repeat_cumulative,111,"222,223",cumulative 25 percent chance,peluang kumulatif 25%,True,True,MATCH,PENDING,Cumulative 25 percent chance of no answer after first
+GT082-047,Awaken,spell_level,"111,112","223,224",Level 5 Transmutation,Level 5 Transmutation,True,True,MATCH,PENDING,Spell level and school
+GT082-048,Awaken,casting_time,"111,112","223,224",Casting Time: 8 hours,Casting Time 8 hours,True,True,MATCH,PENDING,Casting time metadata untranslated
+GT082-049,Awaken,range,"111,112","223,224",Range: Touch,Range Touch,True,True,MATCH,PENDING,Range
+GT082-050,Awaken,material,"111,112","223,224","an agate worth 1,000+ GP","an agate worth 1,000+ GP",True,True,MATCH,PENDING,Current metadata English; candidate needs agate min 1000 GP
+GT082-051,Awaken,casting_process,"111,112","223,224",tracing magical path- ways,menelusuri pola-pola magic,True,True,MATCH,PENDING,Traces magic pathways within gemstone
+GT082-052,Awaken,eligible_creature,"111,112","223,224",Beast or Plant creature with an Intelligence of 3 or less,Beast creature atau Plant creature dengan Intelligence 3 atau kurang,True,True,MATCH,PENDING,Beast or Plant creature INT<=3
+GT082-053,Awaken,natural_plant,"111,112","223,224",natural plant that isn’t a creature,tumbuhan alami yang bukan creature,True,True,MATCH,PENDING,Natural non-creature plant eligible
+GT082-054,Awaken,int_ten,"111,112","223,224",an Intelligence of 10,Intelligence 10,True,True,MATCH,PENDING,Target gains INT 10
+GT082-055,Awaken,known_language,"111,112","223,224",speak one language you know,satu bahasa yang kamu ketahui,True,True,MATCH,PENDING,One caster-known language
+GT082-056,Awaken,plant_becomes_creature,"111,112","223,224",becomes a Plant creature,menjadi Plant creature,True,True,MATCH,PENDING,Natural plant becomes Plant creature
+GT082-057,Awaken,moving_limbs,"111,112","223,224","move its limbs, roots, vines","menggerakkan bagian tubuh seperti dahan, akar, atau sulur",True,True,MATCH,PENDING,Movement of limbs roots vines
+GT082-058,Awaken,human_senses,"111,112","223,224",senses similar to a human,kemampuan indra yang serupa dengan Human,True,True,MATCH,PENDING,Human-like senses
+GT082-059,Awaken,gm_stats,"111,112","223,224",GM chooses statistics,GM memilih game statistics,True,True,MATCH,PENDING,GM selects creature stats
+GT082-060,Awaken,charm_30_days,"111,112","223,224",Charmed condition for 30 days,kondisi Charmed selama 30 hari,True,True,MATCH,PENDING,Charm duration 30 days
+GT082-061,Awaken,charm_break_damage,"111,112","223,224",allies deal damage,sekutumu menyebabkan damage,True,True,MATCH,PENDING,Charm ends when caster or ally damages
+GT082-062,Awaken,attitude_after,"111,112","223,224",chooses its attitude toward you,menentukan sendiri sikapnya terhadapmu,True,True,MATCH,PENDING,Attitude choice after charm ends

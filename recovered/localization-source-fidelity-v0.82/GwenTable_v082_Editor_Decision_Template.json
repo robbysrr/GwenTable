@@ -1,0 +1,79 @@
+{
+  "schema": "GT-v082-source-compared-editorial-review",
+  "status": "NO_EDITOR_APPROVAL",
+  "source_pdf_sha256": "22bbbe05f97619b7e55f6284bce497b45e6bb3e2f09b77b92b466dc9196e8f63",
+  "local_pdf_sha256": "1a1f328e711bab1ace78040115251030021a8abb2dd0c02f99a4cb5c32c41444",
+  "decisions": [
+    {
+      "spell": "Arcane Lock",
+      "review_area": "full_spell_effect_prose_and_components",
+      "source_folios": [
+        110
+      ],
+      "local_pages": [
+        219
+      ],
+      "source_anchored_clauses": 13,
+      "known_issue": "GT082-PROSE-001",
+      "editor_decision": "PENDING",
+      "editor_identity": "",
+      "review_reason": "",
+      "approval_reference": "",
+      "approved_at": ""
+    },
+    {
+      "spell": "Astral Projection",
+      "review_area": "full_spell_effect_prose_and_components",
+      "source_folios": [
+        111
+      ],
+      "local_pages": [
+        222
+      ],
+      "source_anchored_clauses": 22,
+      "known_issue": null,
+      "editor_decision": "PENDING",
+      "editor_identity": "",
+      "review_reason": "",
+      "approval_reference": "",
+      "approved_at": ""
+    },
+    {
+      "spell": "Augury",
+      "review_area": "full_spell_effect_prose_and_components",
+      "source_folios": [
+        111
+      ],
+      "local_pages": [
+        222,
+        223
+      ],
+      "source_anchored_clauses": 11,
+      "known_issue": null,
+      "editor_decision": "PENDING",
+      "editor_identity": "",
+      "review_reason": "",
+      "approval_reference": "",
+      "approved_at": ""
+    },
+    {
+      "spell": "Awaken",
+      "review_area": "full_spell_effect_prose_and_components",
+      "source_folios": [
+        111,
+        112
+      ],
+      "local_pages": [
+        223,
+        224
+      ],
+      "source_anchored_clauses": 16,
+      "known_issue": null,
+      "editor_decision": "PENDING",
+      "editor_identity": "",
+      "review_reason": "",
+      "approval_reference": "",
+      "approved_at": ""
+    }
+  ]
+}

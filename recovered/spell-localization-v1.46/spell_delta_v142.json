@@ -1,0 +1,625 @@
+{
+  "version": "1.42-delta",
+  "parent": "1.41",
+  "parent_merge_verified": false,
+  "status": "INTERNAL_DRAFT_NO_GO",
+  "attribution": "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "translation_notice": "Indonesian adaptation; source mechanics retained; not an official translation.",
+  "source_url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+  "records": [
+    {
+      "ordinal": 145,
+      "name_en": "Grease",
+      "level": 1,
+      "school": "Conjuration",
+      "classes": [
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sedikit kulit babi atau mentega",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "1 minute",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          137
+        ],
+        "anchor": "Grease",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Lapisan lemak yang tidak mudah terbakar menyelimuti tanah pada area persegi berukuran 10 feet, berpusat di titik dalam jangkauan. Area tersebut menjadi Difficult Terrain selama spell berlangsung.\n\nSaat lemak muncul, setiap creature yang berdiri di area itu harus berhasil dalam Dexterity Saving Throw atau mengalami kondisi Prone. Creature yang memasuki area atau mengakhiri turn di sana juga harus berhasil dalam Saving Throw tersebut atau jatuh Prone.",
+      "reference_checks": {
+        "area_square_ft": 10,
+        "flammable": false,
+        "terrain": "Difficult Terrain",
+        "save": "Dexterity",
+        "failure": "Prone",
+        "triggers": [
+          "appearance_standing",
+          "enter",
+          "end_turn"
+        ]
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 146,
+      "name_en": "Greater Invisibility",
+      "level": 4,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          137
+        ],
+        "anchor": "Greater Invisibility",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Creature yang kamu sentuh mengalami kondisi Invisible hingga spell berakhir.",
+      "reference_checks": {
+        "target_count": 1,
+        "target": "touched_creature",
+        "condition": "Invisible",
+        "condition_ends": "spell_end"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 147,
+      "name_en": "Greater Restoration",
+      "level": 5,
+      "school": "Abjuration",
+      "classes": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "serbuk berlian",
+        "minimum_gp": 100,
+        "consumed": true
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          137
+        ],
+        "anchor": "Greater Restoration",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu creature dan hilangkan secara magis salah satu efek berikut darinya:\n\n- 1 level Exhaustion.\n- Kondisi Charmed atau Petrified.\n- Satu kutukan, termasuk Attunement target pada magic item terkutuk.\n- Pengurangan pada salah satu Ability Score target.\n- Pengurangan pada Hit Point maximum target.",
+      "reference_checks": {
+        "target_count": 1,
+        "remove_effect_count": 1,
+        "exhaustion_levels_removed": 1,
+        "conditions": [
+          "Charmed",
+          "Petrified"
+        ],
+        "curse_includes_cursed_item_attunement": true,
+        "ability_score_reduction_removed": true,
+        "hp_max_reduction_removed": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 148,
+      "name_en": "Guardian of Faith",
+      "level": 4,
+      "school": "Conjuration",
+      "classes": [
+        "Cleric"
+      ],
+      "casting_time": "Action",
+      "range": "30 feet",
+      "components": [
+        "V"
+      ],
+      "material": null,
+      "duration": "8 hours",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          137
+        ],
+        "anchor": "Guardian of Faith",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Penjaga spektral berukuran Large muncul dan melayang selama spell berlangsung di ruang kosong yang dapat kamu lihat dalam jangkauan. Penjaga menempati ruang itu, tidak dapat dilukai, dan memiliki wujud yang sesuai dengan dewa atau pantheon-mu.\n\nSetiap musuh yang bergerak ke ruang dalam jarak 10 feet dari penjaga untuk pertama kalinya pada suatu turn, atau memulai turn di sana, melakukan Dexterity Saving Throw. Musuh menerima 20 Radiant damage jika gagal, atau separuhnya jika berhasil. Penjaga lenyap setelah total damage yang diberikannya mencapai 60.",
+      "reference_checks": {
+        "size": "Large",
+        "space": "visible_unoccupied",
+        "occupies_space": true,
+        "invulnerable": true,
+        "target": "enemy",
+        "trigger_radius_ft": 10,
+        "triggers": [
+          "moves_within_first_time_on_turn",
+          "start_turn_within"
+        ],
+        "save": "Dexterity",
+        "damage_type": "Radiant",
+        "failed_damage": 20,
+        "success_damage": 10,
+        "vanish_total_damage": 60
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 149,
+      "name_en": "Guards and Wards",
+      "level": 6,
+      "school": "Abjuration",
+      "classes": [
+        "Bard",
+        "Wizard"
+      ],
+      "casting_time": "1 hour",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "batang perak",
+        "minimum_gp": 10,
+        "consumed": false
+      },
+      "duration": "24 hours",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          137,
+          138
+        ],
+        "anchor": "Guards and Wards",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu membuat perlindungan magis untuk area lantai hingga 2.500 square feet dengan tinggi maksimal 20 feet. Bentuknya dapat berupa satu persegi 50 feet, 100 persegi 5 feet yang saling terhubung, atau 25 persegi 10 feet yang saling terhubung. Saat casting, kamu dapat menetapkan individu yang tidak terpengaruh dan kata sandi. Orang yang mengucapkan kata sandi dengan suara keras dalam jarak 5 feet dari area menjadi kebal terhadap efek spell.\n\nDispel Magic tidak mengakhiri Guards and Wards secara langsung, tetapi dapat menghilangkan masing-masing dari empat efek berikut. Spell berakhir bila keempatnya dihilangkan. Jika kamu melakukan casting setiap hari selama 365 hari pada area yang sama, spell selanjutnya bertahan sampai semua efeknya dihilangkan.\n\n**Corridors.** Kabut membuat semua koridor yang dilindungi menjadi Heavily Obscured. Pada persimpangan atau cabang yang menyediakan pilihan arah, setiap creature selain kamu memiliki peluang 50% mengira ia berjalan ke arah berlawanan dari arah yang sebenarnya dipilih.\n\n**Doors.** Semua pintu terkunci secara magis seperti oleh Arcane Lock. Kamu juga dapat menyamarkan maksimal sepuluh pintu dengan ilusi sehingga tampak seperti dinding biasa.\n\n**Stairs.** Jaring memenuhi tangga dari atas sampai bawah seperti Web. Jaring yang dihancurkan tumbuh kembali dalam 10 menit selama spell masih berlangsung.\n\n**Other Spell Effect.** Pilih satu efek tambahan: Dancing Lights di empat koridor dengan pola sederhana berulang; Magic Mouth di dua lokasi; Stinking Cloud di dua lokasi (uap kembali dalam 10 menit jika dibuyarkan selama spell berlangsung); Gust of Wind yang terus bertiup di satu koridor atau ruangan; atau Suggestion pada satu persegi 5 feet yang disampaikan secara mental kepada setiap creature yang memasukinya.",
+      "reference_checks": {
+        "floor_area_sqft_max": 2500,
+        "height_ft_max": 20,
+        "layouts": [
+          {
+            "count": 1,
+            "side_ft": 50
+          },
+          {
+            "count": 100,
+            "side_ft": 5,
+            "contiguous": true
+          },
+          {
+            "count": 25,
+            "side_ft": 10,
+            "contiguous": true
+          }
+        ],
+        "password_distance_ft": 5,
+        "individual_exemptions": true,
+        "dispel_direct": false,
+        "dispel_all_effects_count": 4,
+        "daily_casts_for_persistence": 365,
+        "corridor_visibility": "Heavily Obscured",
+        "wrong_direction_chance_pct": 50,
+        "caster_exempt_direction": true,
+        "door_lock": "Arcane Lock",
+        "illusion_doors_max": 10,
+        "stairs_effect": "Web",
+        "web_regrowth_minutes": 10,
+        "extra_effect_count": 1,
+        "dancing_lights_corridors": 4,
+        "magic_mouth_locations": 2,
+        "stinking_cloud_locations": 2,
+        "stinking_cloud_return_minutes": 10,
+        "gust_locations": 1,
+        "suggestion_square_ft": 5
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 150,
+      "name_en": "Guidance",
+      "level": 0,
+      "school": "Divination",
+      "classes": [
+        "Cleric",
+        "Druid"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          138
+        ],
+        "anchor": "Guidance",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu creature yang bersedia dan pilih satu skill. Hingga spell berakhir, creature tersebut menambahkan 1d4 pada setiap Ability Check yang menggunakan skill pilihan itu.",
+      "reference_checks": {
+        "target_willing": true,
+        "skill_count": 1,
+        "bonus_dice": "1d4",
+        "applies_to": "ability_checks_using_chosen_skill",
+        "once_only": false
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 151,
+      "name_en": "Guiding Bolt",
+      "level": 1,
+      "school": "Evocation",
+      "classes": [
+        "Cleric"
+      ],
+      "casting_time": "Action",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "1 round",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          138
+        ],
+        "anchor": "Guiding Bolt",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Lontarkan cahaya ke arah satu creature dalam jangkauan. Lakukan Ranged Spell Attack terhadap target. Jika mengenai target, target menerima 4d6 Radiant damage. Attack Roll berikutnya terhadap target mendapat Advantage jika dilakukan sebelum akhir turn-mu berikutnya.\n\n**Using a Higher-Level Spell Slot.** Damage bertambah 1d6 untuk setiap level Spell Slot di atas level 1.",
+      "reference_checks": {
+        "attack": "Ranged Spell Attack",
+        "damage": "4d6",
+        "damage_type": "Radiant",
+        "advantage_attack_count": 1,
+        "advantage_deadline": "before_end_of_caster_next_turn",
+        "upcast_dice_per_slot": "1d6"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 152,
+      "name_en": "Gust of Wind",
+      "level": 2,
+      "school": "Evocation",
+      "classes": [
+        "Druid",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "biji tanaman polong-polongan",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          138
+        ],
+        "anchor": "Gust of Wind",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Angin kencang bertiup darimu dalam bentuk Line sepanjang 60 feet dan selebar 10 feet ke arah pilihanmu selama spell berlangsung. Setiap creature dalam Line harus berhasil dalam Strength Saving Throw atau terdorong 15 feet menjauh darimu mengikuti arah Line. Creature yang mengakhiri turn di dalam Line juga melakukan Saving Throw tersebut.\n\nUntuk setiap 1 foot gerakan mendekatimu di dalam Line, creature harus menghabiskan 2 feet movement. Angin membuyarkan gas atau uap serta memadamkan lilin dan api serupa yang tidak terlindungi. Api terlindungi, misalnya dalam lentera, bergoyang hebat dan memiliki peluang 50% untuk padam.\n\nSebagai Bonus Action pada turn-turn berikutnya, kamu dapat mengubah arah tiupan Line.",
+      "reference_checks": {
+        "line_length_ft": 60,
+        "line_width_ft": 10,
+        "save": "Strength",
+        "push_ft": 15,
+        "push_direction": "away_along_line",
+        "end_turn_save": true,
+        "toward_caster_movement_cost_multiplier": 2,
+        "disperses_gas_vapor": true,
+        "unprotected_flames_extinguished": true,
+        "protected_flame_extinction_chance_pct": 50,
+        "redirect_action": "Bonus Action",
+        "redirect_timing": "later_turns"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 153,
+      "name_en": "Hallow",
+      "level": 5,
+      "school": "Abjuration",
+      "classes": [
+        "Cleric"
+      ],
+      "casting_time": "24 hours",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "dupa",
+        "minimum_gp": 1000,
+        "consumed": true
+      },
+      "duration": "Until dispelled",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          138,
+          139
+        ],
+        "anchor": "Hallow",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Sentuh satu titik dan aliri area di sekelilingnya dengan kekuatan suci atau tidak suci. Radius area maksimal 60 feet. Spell gagal jika radius tersebut mencakup area yang sudah dipengaruhi Hallow. Area memiliki efek berikut.\n\n**Hallowed Ward.** Pilih tipe creature dari Aberration, Celestial, Elemental, Fey, Fiend, atau Undead. Creature dari tipe yang dipilih tidak dapat memasuki area dengan sukarela. Creature yang dirasuki, atau mengalami Charmed atau Frightened akibat creature bertipe pilihan, tidak lagi mengalami efek tersebut dari mereka selama berada di area.\n\n**Extra Effect.** Tambahkan satu efek berikut pada area:\n\n- **Courage:** Creature dari tipe apa pun yang kamu pilih tidak dapat memperoleh kondisi Frightened di area.\n- **Darkness:** Area dipenuhi Darkness. Cahaya biasa dan cahaya magis dari spell berlevel lebih rendah tidak dapat menerangi area.\n- **Daylight:** Area dipenuhi Bright Light. Magical Darkness dari spell berlevel lebih rendah tidak dapat memadamkannya.\n- **Peaceful Rest:** Jenazah yang dimakamkan di area tidak dapat diubah menjadi Undead.\n- **Extradimensional Interference:** Creature dari tipe pilihan tidak dapat masuk atau keluar area melalui teleportasi atau perjalanan antarplane.\n- **Fear:** Creature dari tipe pilihan mengalami Frightened selama di area.\n- **Resistance:** Creature dari tipe pilihan mendapat Resistance terhadap satu damage type pilihanmu selama di area.\n- **Silence:** Suara tidak dapat keluar dari dalam area, dan tidak ada suara yang dapat mencapainya.\n- **Tongues:** Creature dari tipe pilihan dapat berkomunikasi dengan creature lain di area meskipun tidak memiliki bahasa yang sama.\n- **Vulnerability:** Creature dari tipe pilihan mendapat Vulnerability terhadap satu damage type pilihanmu selama di area.",
+      "reference_checks": {
+        "radius_ft_max": 60,
+        "fails_on_overlap": true,
+        "ward_types": [
+          "Aberration",
+          "Celestial",
+          "Elemental",
+          "Fey",
+          "Fiend",
+          "Undead"
+        ],
+        "ward_blocks_willing_entry": true,
+        "ward_suppresses": [
+          "possession",
+          "Charmed",
+          "Frightened"
+        ],
+        "ward_suppression_scope": "chosen_types_while_inside",
+        "extra_effect_count": 1,
+        "extra_options": [
+          "Courage",
+          "Darkness",
+          "Daylight",
+          "Peaceful Rest",
+          "Extradimensional Interference",
+          "Fear",
+          "Resistance",
+          "Silence",
+          "Tongues",
+          "Vulnerability"
+        ],
+        "darkness_blocks_lower_level_light": true,
+        "daylight_blocks_lower_level_magical_darkness": true,
+        "interference_blocks": [
+          "teleportation",
+          "interplanar_travel"
+        ],
+        "resistance_damage_type_count": 1,
+        "vulnerability_damage_type_count": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 154,
+      "name_en": "Hallucinatory Terrain",
+      "level": 4,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Druid",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "10 minutes",
+      "range": "300 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "jamur",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "24 hours",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          139
+        ],
+        "anchor": "Hallucinatory Terrain",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu membuat medan alami dalam Cube berukuran 150 feet di dalam jangkauan tampak, terdengar, dan berbau seperti jenis medan alami lain. Lapangan terbuka atau jalan, misalnya, dapat tampak seperti rawa, bukit, celah tanah, atau medan lain yang sulit atau mustahil dilalui. Kolam dapat tampak seperti padang rumput, jurang terjal seperti lereng landai, atau selokan berbatu seperti jalan yang lebar dan rata. Struktur buatan, equipment, serta creature di area tidak berubah.\n\nSifat medan saat disentuh tidak berubah, sehingga creature yang masuk kemungkinan menyadari ilusinya. Jika perbedaannya tidak terlihat jelas melalui sentuhan, creature dapat menggunakan Study Action untuk melakukan Intelligence (Investigation) Check melawan Spell Save DC-mu guna mengenali ilusi. Creature yang menyadari ilusi melihat bayangan samar yang menutupi medan sebenarnya.",
+      "reference_checks": {
+        "cube_side_ft": 150,
+        "changes_senses": [
+          "sight",
+          "hearing",
+          "smell"
+        ],
+        "touch_unchanged": true,
+        "unchanged": [
+          "manufactured_structures",
+          "equipment",
+          "creatures"
+        ],
+        "inspection_action": "Study",
+        "inspection_check": "Intelligence (Investigation)",
+        "inspection_dc": "spell_save_dc",
+        "disbelief_view": "vague_overlay"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 155,
+      "name_en": "Harm",
+      "level": 6,
+      "school": "Necromancy",
+      "classes": [
+        "Cleric"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          139
+        ],
+        "anchor": "Harm",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Lepaskan sihir ganas terhadap satu creature yang dapat kamu lihat dalam jangkauan. Target melakukan Constitution Saving Throw. Jika gagal, target menerima 14d6 Necrotic damage dan Hit Point maximum-nya berkurang sebesar Necrotic damage yang diterimanya. Jika berhasil, target hanya menerima separuh damage tanpa pengurangan Hit Point maximum. Spell ini tidak dapat menurunkan Hit Point maximum target di bawah 1.",
+      "reference_checks": {
+        "target_visible": true,
+        "save": "Constitution",
+        "damage": "14d6",
+        "damage_type": "Necrotic",
+        "success_damage_multiplier": 0.5,
+        "failed_hp_max_reduction": "necrotic_damage_taken",
+        "success_hp_max_reduction": false,
+        "hp_max_floor": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 156,
+      "name_en": "Haste",
+      "level": 3,
+      "school": "Transmutation",
+      "classes": [
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "serutan akar licorice",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          139
+        ],
+        "anchor": "Haste",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Pilih satu creature yang bersedia dan dapat kamu lihat dalam jangkauan. Hingga spell berakhir, Speed target menjadi dua kali lipat, Armor Class mendapat bonus +2, dan target memiliki Advantage pada Dexterity Saving Throw. Target juga mendapat satu action tambahan pada setiap turn-nya. Action tambahan tersebut hanya dapat digunakan untuk Attack (satu serangan saja), Dash, Disengage, Hide, atau Utilize.\n\nSaat spell berakhir, target mengalami Incapacitated dan Speed-nya menjadi 0 hingga akhir turn berikutnya karena gelombang kelesuan.",
+      "reference_checks": {
+        "target_willing": true,
+        "target_visible": true,
+        "speed_multiplier": 2,
+        "ac_bonus": 2,
+        "save_advantage": "Dexterity",
+        "extra_actions_per_turn": 1,
+        "extra_action_options": [
+          "Attack",
+          "Dash",
+          "Disengage",
+          "Hide",
+          "Utilize"
+        ],
+        "extra_attack_limit": 1,
+        "end_condition": "Incapacitated",
+        "end_speed": 0,
+        "end_penalty_deadline": "end_of_target_next_turn"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    }
+  ]
+}

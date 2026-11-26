@@ -1,0 +1,626 @@
+{
+  "version": "1.44-delta",
+  "parent": "1.43-combined-deltas",
+  "parent_merge_verified": false,
+  "status": "INTERNAL_DRAFT_NO_GO",
+  "attribution": "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "translation_notice": "Indonesian adaptation; source mechanics retained; not an official translation.",
+  "source_url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+  "records": [
+    {
+      "ordinal": 169,
+      "name_en": "Hypnotic Pattern",
+      "level": 3,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "120 feet",
+      "components": [
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sejumput konfeti",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          141
+        ],
+        "anchor": "Hypnotic Pattern",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu menciptakan pola warna yang berkelok-kelok dalam Cube dengan panjang sisi 30 feet di dalam jangkauan. Pola itu muncul sesaat lalu lenyap. Setiap creature di area tersebut yang dapat melihat pola harus berhasil dalam Wisdom Saving Throw atau mengalami kondisi Charmed selama spell berlangsung. Selama Charmed, creature itu juga mengalami kondisi Incapacitated dan Speed-nya menjadi 0.\n\nSpell berakhir pada masing-masing creature yang terkena efek jika ia menerima damage apa pun, atau jika pihak lain menggunakan Action untuk mengguncangnya hingga tersadar.",
+      "reference_checks": {
+        "cube_side_ft": 30,
+        "pattern_momentary": true,
+        "target_must_see_pattern": true,
+        "save": "Wisdom",
+        "failure_conditions": [
+          "Charmed",
+          "Incapacitated"
+        ],
+        "speed_while_charmed": 0,
+        "end_on_any_damage": true,
+        "end_on_other_action_to_shake": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 170,
+      "name_en": "Ice Knife",
+      "level": 1,
+      "school": "Conjuration",
+      "classes": [
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "60 feet",
+      "components": [
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "setetes air atau sepotong es",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          141
+        ],
+        "anchor": "Ice Knife",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu menciptakan pecahan es lalu melemparkannya ke satu creature dalam jangkauan. Lakukan Ranged Spell Attack terhadap target. Jika serangan mengenai target, target menerima 1d10 Piercing damage. Terlepas dari apakah serangan mengenai target atau meleset, pecahan es kemudian meledak. Target dan setiap creature dalam jarak 5 feet darinya harus berhasil dalam Dexterity Saving Throw atau menerima 2d6 Cold damage.\n\n**Using a Higher-Level Spell Slot.** Cold damage bertambah 1d6 untuk setiap level Spell Slot di atas level 1.",
+      "reference_checks": {
+        "initial_attack": "Ranged Spell Attack",
+        "hit_damage": "1d10",
+        "hit_damage_type": "Piercing",
+        "explosion_on_hit_or_miss": true,
+        "explosion_radius_ft": 5,
+        "explosion_includes_target": true,
+        "explosion_save": "Dexterity",
+        "explosion_damage": "2d6",
+        "explosion_damage_type": "Cold",
+        "explosion_success_damage": 0,
+        "upcast_cold_dice_per_slot": "1d6"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 171,
+      "name_en": "Ice Storm",
+      "level": 4,
+      "school": "Evocation",
+      "classes": [
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "300 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sarung tangan tanpa pemisah jari selain ibu jari",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          141,
+          142
+        ],
+        "anchor": "Ice Storm",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Hujan es turun dalam Cylinder berjari-jari 20 feet dan setinggi 40 feet, berpusat pada titik dalam jangkauan. Setiap creature di dalam Cylinder melakukan Dexterity Saving Throw. Jika gagal, creature menerima 2d10 Bludgeoning damage dan 4d6 Cold damage; jika berhasil, ia menerima separuh damage tersebut.\n\nButiran es menjadikan permukaan tanah di dalam Cylinder sebagai Difficult Terrain hingga akhir turn-mu berikutnya.\n\n**Using a Higher-Level Spell Slot.** Bludgeoning damage bertambah 1d10 untuk setiap level Spell Slot di atas level 4.",
+      "reference_checks": {
+        "cylinder_radius_ft": 20,
+        "cylinder_height_ft": 40,
+        "save": "Dexterity",
+        "bludgeoning_damage": "2d10",
+        "cold_damage": "4d6",
+        "success_damage_multiplier": 0.5,
+        "ground_difficult_terrain": true,
+        "terrain_deadline": "end_of_caster_next_turn",
+        "upcast_bludgeoning_dice_per_slot": "1d10"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 172,
+      "name_en": "Identify",
+      "level": 1,
+      "school": "Divination",
+      "classes": [
+        "Bard",
+        "Wizard"
+      ],
+      "casting_time": "1 minute or Ritual",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sebutir mutiara",
+        "minimum_gp": 100,
+        "consumed": false
+      },
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          142
+        ],
+        "anchor": "Identify",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu menyentuh sebuah benda selama seluruh proses casting. Jika benda itu merupakan Magic Item atau benda magis lainnya, kamu mengetahui sifat-sifatnya dan cara menggunakannya, apakah benda tersebut memerlukan Attunement, serta jumlah Charge yang dimilikinya jika ada. Kamu mengetahui apakah ada spell yang masih memengaruhi benda tersebut dan spell apa saja. Jika benda diciptakan oleh suatu spell, kamu mengetahui nama spell itu.\n\nJika sebagai gantinya kamu menyentuh creature selama seluruh proses casting, kamu mengetahui spell apa saja, jika ada, yang sedang memengaruhinya.",
+      "reference_checks": {
+        "ritual": true,
+        "touch_throughout_cast": true,
+        "object_information": [
+          "properties",
+          "usage",
+          "attunement_requirement",
+          "charge_count_if_any",
+          "ongoing_spells",
+          "creating_spell_name_if_any"
+        ],
+        "creature_information": "ongoing_spells",
+        "pearl_min_gp": 100
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 173,
+      "name_en": "Illusory Script",
+      "level": 1,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "1 minute or Ritual",
+      "range": "Touch",
+      "components": [
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "tinta",
+        "minimum_gp": 10,
+        "consumed": true
+      },
+      "duration": "10 days",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          142
+        ],
+        "anchor": "Illusory Script",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu menulis pada perkamen, kertas, atau bahan lain yang sesuai, lalu menyelimutinya dengan ilusi selama durasi spell. Bagimu dan creature mana pun yang kamu tentukan saat casting, tulisan tampak normal, seolah ditulis dengan tulisan tanganmu, dan menyampaikan makna yang kamu maksud saat menulisnya. Bagi pihak lain, tulisan tampak menggunakan aksara asing atau magis yang tidak dapat dipahami. Sebagai alternatif, ilusi dapat mengubah makna, tulisan tangan, dan bahasa teks tersebut, tetapi bahasa itu harus merupakan bahasa yang kamu ketahui.\n\nJika spell di-dispel, tulisan asli beserta ilusinya lenyap. Creature yang memiliki Truesight dapat membaca pesan tersembunyi.",
+      "reference_checks": {
+        "ritual": true,
+        "duration_days": 10,
+        "designate_readers_at_cast": true,
+        "others_default": "unintelligible_script",
+        "alternative_changes": [
+          "meaning",
+          "handwriting",
+          "language"
+        ],
+        "alternative_language_known": true,
+        "dispel_erases_original_and_illusion": true,
+        "truesight_reads_hidden_message": true
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 174,
+      "name_en": "Imprisonment",
+      "level": 9,
+      "school": "Abjuration",
+      "classes": [
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "patung kecil yang menggambarkan target",
+        "minimum_gp": 5000,
+        "consumed": false
+      },
+      "duration": "Until dispelled",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          142
+        ],
+        "anchor": "Imprisonment",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu menciptakan pengekang magis untuk menahan satu creature yang dapat kamu lihat dalam jangkauan. Target melakukan Wisdom Saving Throw. Jika berhasil, target tidak terpengaruh dan kebal terhadap spell ini selama 24 jam berikutnya. Jika gagal, target dipenjara. Selama dipenjara, target tidak perlu bernapas, makan, atau minum, dan tidak mengalami penuaan. Spell Divination tidak dapat menemukan atau mengindra target yang dipenjara, dan target tidak dapat berteleportasi.\n\nHingga spell berakhir, target juga terkena salah satu efek pilihanmu berikut:\n\n- **Burial.** Target terkubur di bawah tanah dalam bola berongga dari gaya magis yang ukurannya pas untuk menampung target. Tidak ada apa pun yang dapat masuk atau keluar dari bola tersebut.\n- **Chaining.** Rantai yang tertanam kuat di tanah menahan target di tempatnya. Target mengalami kondisi Restrained dan tidak dapat dipindahkan dengan cara apa pun.\n- **Hedged Prison.** Target terperangkap dalam demiplane yang terlindungi dari teleportasi dan perjalanan antardimensi (planar travel). Kamu memilih bentuk demiplane tersebut, misalnya labirin, sangkar, menara, atau sejenisnya.\n- **Minimus Containment.** Tinggi target menjadi 1 inch dan ia terperangkap di dalam batu permata yang tidak dapat dihancurkan atau benda sejenis. Cahaya dapat menembus batu permata, sehingga target dapat melihat keluar dan creature lain dapat melihat ke dalam, tetapi selain cahaya tidak ada yang dapat menembusnya dengan cara apa pun.\n- **Slumber.** Target mengalami kondisi Unconscious dan tidak dapat dibangunkan.\n\n**Ending the Spell.** Saat casting, tentukan pemicu yang akan mengakhiri spell. Pemicu boleh sesederhana atau serumit yang kamu inginkan, tetapi GM harus menyetujui bahwa pemicu tersebut sangat mungkin terjadi dalam sepuluh tahun mendatang. Pemicu harus berupa tindakan yang dapat diamati, misalnya seseorang memberikan persembahan tertentu di kuil dewamu, menyelamatkan cinta sejatimu, atau mengalahkan monster tertentu.\n\nDispel Magic hanya dapat mengakhiri spell ini jika di-cast menggunakan Spell Slot level 9 dan menargetkan penjara atau komponen yang digunakan untuk membuatnya.",
+      "reference_checks": {
+        "target_visible": true,
+        "save": "Wisdom",
+        "success_immunity_hours": 24,
+        "prison_no_needs": [
+          "breathing",
+          "eating",
+          "drinking"
+        ],
+        "aging_stops": true,
+        "divination_cannot_locate_or_perceive": true,
+        "teleport_blocked": true,
+        "modes": [
+          "Burial",
+          "Chaining",
+          "Hedged Prison",
+          "Minimus Containment",
+          "Slumber"
+        ],
+        "burial_no_passage": true,
+        "chaining_condition": "Restrained",
+        "chaining_cannot_move": true,
+        "hedged_blocks": [
+          "teleportation",
+          "planar_travel"
+        ],
+        "minimus_height_in": 1,
+        "minimus_indestructible_container": true,
+        "minimus_only_light_passes": true,
+        "slumber_condition": "Unconscious",
+        "slumber_cannot_awaken": true,
+        "ending_trigger_observable": true,
+        "ending_trigger_gm_agreement": true,
+        "ending_trigger_likely_within_years": 10,
+        "dispel_required_slot": 9,
+        "dispel_targets": [
+          "prison",
+          "creation_component"
+        ]
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 175,
+      "name_en": "Incendiary Cloud",
+      "level": 8,
+      "school": "Conjuration",
+      "classes": [
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "150 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          142,
+          143
+        ],
+        "anchor": "Incendiary Cloud",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Awan bara dan asap yang berputar memenuhi Sphere berjari-jari 20 feet yang berpusat pada titik dalam jangkauan. Area awan bersifat Heavily Obscured. Awan bertahan selama durasi spell atau hingga dibubarkan oleh angin kencang, seperti angin dari Gust of Wind.\n\nKetika awan muncul, setiap creature di dalamnya melakukan Dexterity Saving Throw, menerima 10d8 Fire damage jika gagal atau separuhnya jika berhasil. Creature juga melakukan Saving Throw ini ketika Sphere bergerak memasuki ruang yang ditempatinya, ketika creature memasuki Sphere, atau ketika creature mengakhiri turn-nya di dalam Sphere. Masing-masing creature melakukan Saving Throw ini hanya sekali per turn.\n\nPada awal setiap turn-mu, awan bergerak sejauh 10 feet menjauh darimu ke arah yang kamu pilih.",
+      "reference_checks": {
+        "sphere_radius_ft": 20,
+        "obscuration": "Heavily Obscured",
+        "strong_wind_disperses": true,
+        "save": "Dexterity",
+        "damage": "10d8",
+        "damage_type": "Fire",
+        "success_damage_multiplier": 0.5,
+        "save_triggers": [
+          "cloud_appears",
+          "sphere_moves_into_creature_space",
+          "creature_enters_sphere",
+          "end_of_creature_turn_inside"
+        ],
+        "max_saves_per_creature_per_turn": 1,
+        "move_ft": 10,
+        "move_timing": "start_of_each_caster_turn",
+        "move_direction": "away_from_caster_chosen_direction"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 176,
+      "name_en": "Inflict Wounds",
+      "level": 1,
+      "school": "Necromancy",
+      "classes": [
+        "Cleric"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "material": null,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143
+        ],
+        "anchor": "Inflict Wounds",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Creature yang kamu sentuh melakukan Constitution Saving Throw. Jika gagal, ia menerima 2d10 Necrotic damage; jika berhasil, ia menerima separuh damage tersebut.\n\n**Using a Higher-Level Spell Slot.** Damage bertambah 1d10 untuk setiap level Spell Slot di atas level 1.",
+      "reference_checks": {
+        "target_count": 1,
+        "save": "Constitution",
+        "damage": "2d10",
+        "damage_type": "Necrotic",
+        "success_damage_multiplier": 0.5,
+        "upcast_dice_per_slot": "1d10"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 177,
+      "name_en": "Insect Plague",
+      "level": 5,
+      "school": "Conjuration",
+      "classes": [
+        "Cleric",
+        "Druid",
+        "Sorcerer"
+      ],
+      "casting_time": "Action",
+      "range": "300 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "seekor belalang",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 10 minutes",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143
+        ],
+        "anchor": "Insect Plague",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kawanan belalang memenuhi Sphere berjari-jari 20 feet yang berpusat pada titik pilihanmu dalam jangkauan. Sphere bertahan selama durasi spell, dan areanya bersifat Lightly Obscured serta Difficult Terrain.\n\nKetika kawanan muncul, setiap creature di dalamnya melakukan Constitution Saving Throw, menerima 4d10 Piercing damage jika gagal atau separuhnya jika berhasil. Creature juga melakukan Saving Throw ini saat memasuki area spell untuk pertama kalinya dalam suatu turn atau mengakhiri turn-nya di sana. Masing-masing creature melakukan Saving Throw ini hanya sekali per turn.\n\n**Using a Higher-Level Spell Slot.** Damage bertambah 1d10 untuk setiap level Spell Slot di atas level 5.",
+      "reference_checks": {
+        "sphere_radius_ft": 20,
+        "obscuration": "Lightly Obscured",
+        "difficult_terrain": true,
+        "save": "Constitution",
+        "damage": "4d10",
+        "damage_type": "Piercing",
+        "success_damage_multiplier": 0.5,
+        "save_triggers": [
+          "swarm_appears",
+          "first_entry_on_a_turn",
+          "end_of_creature_turn_inside"
+        ],
+        "max_saves_per_creature_per_turn": 1,
+        "upcast_dice_per_slot": "1d10"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 178,
+      "name_en": "Instant Summons",
+      "level": 6,
+      "school": "Conjuration",
+      "classes": [
+        "Wizard"
+      ],
+      "casting_time": "1 minute or Ritual",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sebutir safir",
+        "minimum_gp": 1000,
+        "consumed": false
+      },
+      "duration": "Until dispelled",
+      "concentration": false,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143
+        ],
+        "anchor": "Instant Summons",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Kamu menyentuh safir yang digunakan untuk casting dan sebuah benda berbobot maksimal 10 pounds dengan dimensi terpanjang maksimal 6 feet. Spell meninggalkan tanda Invisible pada benda dan mengukir nama benda secara tak terlihat pada safir. Setiap kali meng-cast spell ini, kamu harus menggunakan safir yang berbeda.\n\nSetelah itu, kamu dapat menggunakan Magic Action untuk menyebut nama benda dan menghancurkan safir. Benda langsung muncul di tanganmu, tanpa terhalang jarak fisik maupun jarak antarplane, lalu spell berakhir.\n\nJika creature lain sedang memegang atau membawa benda tersebut, menghancurkan safir tidak memindahkan benda. Sebagai gantinya, kamu mengetahui siapa creature itu dan di mana ia berada saat itu.",
+      "reference_checks": {
+        "ritual": true,
+        "max_weight_lb": 10,
+        "max_longest_dimension_ft": 6,
+        "invisible_mark": true,
+        "invisible_name_on_sapphire": true,
+        "different_sapphire_each_cast": true,
+        "activation_action": "Magic",
+        "activation_speak_name": true,
+        "activation_crush_sapphire": true,
+        "transport_ignores_physical_and_planar_distance": true,
+        "successful_transport_ends_spell": true,
+        "held_or_carried_by_other_blocks_transport": true,
+        "blocked_reveals": [
+          "holder_identity",
+          "holder_current_location"
+        ]
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 179,
+      "name_en": "Irresistible Dance",
+      "level": 6,
+      "school": "Enchantment",
+      "classes": [
+        "Bard",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "30 feet",
+      "components": [
+        "V"
+      ],
+      "material": null,
+      "duration": "Concentration, up to 1 minute",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143
+        ],
+        "anchor": "Irresistible Dance",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Satu creature yang dapat kamu lihat dalam jangkauan melakukan Wisdom Saving Throw. Jika berhasil, target menari dengan konyol hingga akhir turn berikutnya, dan selama itu harus menghabiskan seluruh pergerakannya untuk menari di tempat.\n\nJika gagal, target mengalami kondisi Charmed selama durasi spell. Selama Charmed, target menari dengan konyol, wajib menggunakan seluruh pergerakannya untuk menari di tempat, dan memiliki Disadvantage pada Dexterity Saving Throw serta Attack Roll. Creature lain memiliki Advantage pada Attack Roll terhadap target. Pada setiap turn-nya, target dapat menggunakan Action untuk menenangkan diri dan mengulangi Saving Throw tersebut; jika berhasil, spell berakhir pada dirinya.",
+      "reference_checks": {
+        "target_visible": true,
+        "save": "Wisdom",
+        "success_dance_deadline": "end_of_target_next_turn",
+        "success_spend_all_movement": true,
+        "failure_condition": "Charmed",
+        "failure_spend_all_movement": true,
+        "failure_disadvantage": [
+          "Dexterity Saving Throw",
+          "Attack Roll"
+        ],
+        "other_attackers_advantage": true,
+        "repeat_save_action": "Action",
+        "repeat_save_timing": "each_target_turn",
+        "repeat_success": "ends_on_self"
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    },
+    {
+      "ordinal": 180,
+      "name_en": "Invisibility",
+      "level": 2,
+      "school": "Illusion",
+      "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ],
+      "casting_time": "Action",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "material": {
+        "text_id": "sehelai bulu mata dalam gom arab",
+        "minimum_gp": null,
+        "consumed": false
+      },
+      "duration": "Concentration, up to 1 hour",
+      "concentration": true,
+      "source": {
+        "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+        "printed_pages": [
+          143
+        ],
+        "anchor": "Invisibility",
+        "visual_check": "REVIEWED"
+      },
+      "description_id": "Satu creature yang kamu sentuh mengalami kondisi Invisible hingga spell berakhir. Spell langsung berakhir lebih awal setelah target melakukan Attack Roll, memberikan damage, atau meng-cast spell.\n\n**Using a Higher-Level Spell Slot.** Kamu dapat menargetkan satu creature tambahan untuk setiap level Spell Slot di atas level 2.",
+      "reference_checks": {
+        "target_count": 1,
+        "condition": "Invisible",
+        "early_end_triggers": [
+          "makes_attack_roll",
+          "deals_damage",
+          "casts_spell"
+        ],
+        "early_end_timing": "immediately_after_trigger",
+        "upcast_targets_per_slot": 1
+      },
+      "editorial_status": "PENDING",
+      "integration_status": "NOT_VERIFIED",
+      "release_status": "NO_GO"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "baseline_spell_count": 339,
+  "priority_spells": 4,
+  "clause_anchors": 62,
+  "source_anchor_passes": 62,
+  "local_anchor_passes": 62,
+  "confirmed_provisional_meaning_mismatches": 1,
+  "prose_patch_proposals": 1,
+  "new_editor_signoffs": 0,
+  "master_pdf_modified": false,
+  "repository_modified": false,
+  "source_srd_sha256": "22bbbe05f97619b7e55f6284bce497b45e6bb3e2f09b77b92b466dc9196e8f63",
+  "local_pdf_sha256": "1a1f328e711bab1ace78040115251030021a8abb2dd0c02f99a4cb5c32c41444",
+  "source_prose_review": "AI_ASSISTED_NOT_INDEPENDENT_CERTIFICATION",
+  "publication_gate": "NO_GO"
+}

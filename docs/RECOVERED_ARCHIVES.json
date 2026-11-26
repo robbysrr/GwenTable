@@ -1,0 +1,138 @@
+{
+  "delivery": "Sibling files in private Google Drive folder; not nested in this context ZIP.",
+  "verified": "Drive upload and metadata readback, not current website build or source-byte checksum validation. Expected sizes from Library records.",
+  "archives": [
+    {
+      "name": "GwenTable_Node26_Local_UX9_Player_Workspace_Windows_x64.zip",
+      "expected_bytes": 2177019,
+      "role": "UX9 workspace; candidate executable/working tree; inspect actual contents and ancestry",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_UX9_QA_and_Release_Gates.zip",
+      "expected_bytes": 507779,
+      "role": "UX9 historical QA and release gates",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_Player_Convergence_08_Private_Source.zip",
+      "expected_bytes": 1932350,
+      "role": "Player convergence source candidate; compare with UX9 and Dev15",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_Player_Convergence_08_QA_Evidence.zip",
+      "expected_bytes": 144827,
+      "role": "Historical convergence QA",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_Player_Convergence_08_Art_Withheld_Preview.zip",
+      "expected_bytes": 1170007,
+      "role": "Private preview, not source authority",
+      "priority": "P2"
+    },
+    {
+      "name": "GwenTable_dev15_Unified_Player_Console_PRIVATE_Source.zip",
+      "expected_bytes": 1994115,
+      "role": "Full-site private player console candidate; dev14-derived, not proven UX9 merge",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_dev15_QA_Evidence_and_Next_Slices.zip",
+      "expected_bytes": 450884,
+      "role": "Historical Dev15 QA and next slices",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_dev15_Artwork_Withheld_Local_UAT_Website.zip",
+      "expected_bytes": 1193076,
+      "role": "Private local preview; no publish",
+      "priority": "P2"
+    },
+    {
+      "name": "GwenTable_MVP_dev16_SRD_Warlock_Source.zip",
+      "expected_bytes": 2048170,
+      "role": "Separate MVP class progression branch, Warlock work",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_MVP_dev16_Codex_Upload_Kit.zip",
+      "expected_bytes": 3394765,
+      "role": "MVP Dev16 engineering handoff",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_Wizard_Dev19_Offline_Source.zip",
+      "expected_bytes": 125791,
+      "role": "Separate offline Wizard candidate; inspect actual functionality",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_Rules_Dev22_Integration.zip",
+      "expected_bytes": 605370,
+      "role": "Private synthetic gameplay rules bridge; not full website",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_Codex_Dev14_Merge_Input_2026-11-22.zip",
+      "expected_bytes": 2103350,
+      "role": "Historical party reconciliation merge inputs",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_Codex_Source_Recovery_Kit.zip",
+      "expected_bytes": 7001,
+      "role": "Historical source recovery instructions",
+      "priority": "P0"
+    },
+    {
+      "name": "GwenTable_SRD521_Animals_95_EN_SourcePack_Hardened_v1_1.zip",
+      "expected_bytes": 5897272,
+      "role": "Creature/animal source pack; inspect source rights and scope",
+      "priority": "P2"
+    },
+    {
+      "name": "GwenTable_SRD521_Localization_Source_Fidelity_v0_82_Kit.zip",
+      "expected_bytes": 9089759,
+      "role": "Historical localization master/source fidelity candidate",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_SRD521_Spell_Central_Audit_v1_41.zip",
+      "expected_bytes": 1050953,
+      "role": "Central audit predecessor; not proof of translation completion",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_SRD521_Spell_Localization_v1_43.zip",
+      "expected_bytes": 37731,
+      "role": "Localization reference predecessor",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_SRD521_Spell_Localization_v1_44.zip",
+      "expected_bytes": 70641,
+      "role": "Localization reference predecessor",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_SRD521_Spell_Localization_v1_45.zip",
+      "expected_bytes": 102000,
+      "role": "Localization reference predecessor",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_SRD521_Spell_Localization_v1_46.zip",
+      "expected_bytes": 146572,
+      "role": "Newest localization archive identified; inspect full contents; no new coverage claim",
+      "priority": "P1"
+    },
+    {
+      "name": "GwenTable_Character_Sheet_Kit_v03.zip",
+      "expected_bytes": 1096561,
+      "role": "Standalone fillable PDFs plus Python source, local ZIP CRC passed; export mapping pending",
+      "priority": "P1"
+    }
+  ]
+}
