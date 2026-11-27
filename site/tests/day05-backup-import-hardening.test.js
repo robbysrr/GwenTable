@@ -84,6 +84,6 @@ test('draft-backup UI catches synchronous size and validation errors and transla
 
 test('offline service worker revision precaches the new roster sort dependency',()=>{
   const sw=readFileSync(new URL('../dist/sw.js',import.meta.url),'utf8');
-  assert.ok(sw.includes("const revision='open-5e-v0.25.7-inventory-dev.10-player-convergence08-integration11'"));
+  assert.ok(sw.includes("const revision='open-5e-v0.25.7-inventory-dev.10-player-convergence08-integration13'"));
   assert.ok(sw.includes("'./lib/roster-sort.js'"));
 });

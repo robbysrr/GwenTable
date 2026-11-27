@@ -1,3 +1,19 @@
+# LATEST PROJECT_STATE — Integration 13 (Live Gameplay Sprint A) | 27 November 2026
+
+**BASELINE:** Integration 12 (821/821 Node, 16/16 browser). M1 Slice 18, named in the Live Gameplay master prompt, was not reachable (Drive "not found" for the connected account; not uploaded). Work continues on this verified checkout; reconciliation with Slice 18 is an open blocker.
+
+**COMPLETED:** #3 Attack roller on the Play sheet (Attacks & checks): choose an attack, formula shown, Finesse Str/Dex switch, Normal/Advantage/Disadvantage chosen by the player, typed or generated d20s, optional target AC, Bless/Bane d4, Exhaustion; damage with typed or generated dice, Critical Hit doubles dice only, extra damage field; SRD property and mastery text as reference. Preview only: nothing is saved. Derived attack rows gained explanatory fields (`ability`, `proficient`, `otherBonus`). Android UAT package with a loopback Python server (127.0.0.1:42639). 30-feature register, scope-conflict matrix and rule register.
+
+**VERIFIED:** 831/831 Node (10 new), static build, artwork-withheld build/audit, 17/17 browser; Android package manifest 123/123, 120/120 files byte-identical over HTTP, 9/9 negative server checks, Pixel 7 emulation smoke incl. offline and PDF. See `QA_RECEIPT_INTEGRATION13.json`.
+
+**OUTSTANDING:** Real Android device run; Slice 18 reconciliation and the 55-row crosswalk; linked ammo/Action spending (needs atomic transaction, Sprint D); mastery and on-hit effects (scope gate); Champion crit-range auto-hit is inherited resolver behavior to review; no visible Saving/Saved status chip.
+
+**NEXT:** Sprint B: spellcasting flow (#4) — named cast that spends the slot and starts/replaces Concentration in one revision-checked transaction, with SRD cast details shown.
+
+**ENVIRONMENT:** STAY in Claude Code cloud for Sprint B; owner runs the Android package for device UAT. PUBLIC NO GO.
+
+---
+
 # LATEST PROJECT_STATE — Integration 12 | 27 November 2026
 
 **BASELINE:** Integration 11 (811/811 Node, 12/12 browser).

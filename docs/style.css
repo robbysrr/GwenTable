@@ -703,6 +703,25 @@ button:active:not(:disabled):not(.primary),.button:active:not(.primary){
 /* Route changes move focus to <main> for screen readers; it is not a control, so no frame. */
 #main[tabindex="-1"]:focus{outline:none}
 
+/* Integration 13: Attack roller on the Play sheet. */
+.play-attack-panel>form{display:grid;gap:10px}
+.play-attack-panel .attack-mode{display:flex;flex-wrap:wrap;gap:6px 14px;border:0;padding:0;margin:0}
+.play-attack-panel .attack-mode legend{font-weight:650;margin-bottom:4px}
+.play-attack-panel output{display:block;font-weight:650;min-height:1.2em}
+.play-attack-panel .attack-refs{display:grid;gap:4px}
+.play-attack-panel .attack-ref{margin:0;border:0;padding:0}
+.play-attack-panel input[name=dice]{min-width:0}
+.play-attack-panel .attack-mode{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.play-attack-panel .attack-mode legend{grid-column:1/-1}
+.play-attack-panel .attack-mode label{display:flex;align-items:center;justify-content:center;gap:6px;min-height:var(--touch);padding:4px 6px;border:1px solid var(--line);border-radius:var(--radius-control);font-size:.85rem;text-align:center;cursor:pointer}
+.play-attack-panel .attack-mode input{width:18px;height:18px;min-height:0;margin:0;flex:none}
+.play-attack-panel .attack-mode label:has(input:checked){border-color:var(--accent);background:var(--gwen-secondary-bg);color:var(--gwen-on-secondary)}
+.play-attack-panel .attack-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.play-attack-panel .attack-pair input{width:100%}
+.play-attack-panel .attack-mode input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.play-attack-panel .attack-mode label{position:relative;overflow-wrap:normal;word-break:normal;hyphens:none;font-size:.82rem;font-weight:650}
+.play-attack-panel .attack-mode label:has(input:focus-visible){outline:3px solid var(--gwen-focus);outline-offset:2px}
+
 /* Artwork-withheld local preview: text/CSS fallback, no unapproved binaries. */
 .brand-mark-fallback{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:12px;background:var(--gwen-brand-scholar-plum,#42243F);color:#fff;font:700 1.3rem Georgia,serif;line-height:1;min-width:39px;min-height:39px}
 .hero-portrait-fallback{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;border:2px solid var(--gwen-brand-guild-gold,#C9A15B);border-radius:50%;background:radial-gradient(circle at 30% 25%,#E9D8F3,#6D3E82 76%,#42243F);color:#fff;min-width:0;font:700 clamp(3rem,12vw,8rem) Georgia,serif}

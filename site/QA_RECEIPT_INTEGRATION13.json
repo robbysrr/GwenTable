@@ -1,0 +1,26 @@
+{
+  "candidate": "Integration 13 private (Sprint A of the Live Gameplay master prompt); Integration 12-derived",
+  "controlling_baseline": "local git integration11 branch, commit before Sprint A: 2598ba5 (Integration 12); M1 Slice 18 NOT AVAILABLE to this session",
+  "full_tests": {
+    "pass": 831,
+    "fail": 0,
+    "skipped": 0
+  },
+  "new_tests": 10,
+  "test_changes": "4 cache-revision pins integration11->integration13; 2 pinned Play-sheet expressions now include attackPanelHTML; no assertion weakened",
+  "first_failures": "2 pinned-expression tests failed after inserting the panel; updated as above",
+  "browser": "17/17 PASS headless Chromium 1243 (Playwright 1.63) incl. new Attack roller test; phone emulation Pixel 7 / iPhone 13 / 320px",
+  "android_package": {
+    "file": "GwenTable_I13_Android_UAT.zip",
+    "bytes": 2000797,
+    "manifest": "123/123 verified after fresh extraction",
+    "http": "120/120 site files byte-identical over GET",
+    "negative_checks": "traversal 403 x3, backslash 400, null byte 400, bad Host 421, POST/DELETE 405, directory 404, missing 404 (9/9)",
+    "browser_smoke": "Pixel 7 emulation: SW scope /, build+save, crit attack, damage, v0.3 PDF download, offline reload, 0 overflow",
+    "real_android": "NOT RUN"
+  },
+  "service_worker_revision": "integration13 (Integration 12 had not bumped it; corrected here)",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "release": "PRIVATE UAT GO (owner device acceptance pending); PUBLIC NO GO"
+}

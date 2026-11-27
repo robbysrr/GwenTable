@@ -4,6 +4,7 @@ import {dodgeAvailable,dodgeActive} from './lib/srd-dodge.mjs';
 import {pendingOwnEndSaves,hasOwnEndEffects,boundaryEffects} from './lib/srd-condition-lifecycle.mjs';
 import {conditionSourcesHTML,conditionSourceCommand} from './condition-sources.js';
 import {liveCheckHTML,resolveLiveCheckForm,concentrationRollHTML,concentrationRollCommand} from './live-check-preview.js';
+import {attackPanelHTML,attackFormChanged,fillAttackDice,attackFormResult} from './attack-panel.js';
 import {savedEquipmentLines} from './lib/saved-inventory.js';
 import {commitSavedInventory} from './lib/inventory-storage.js';
 import {inventoryPanel, inventoryFormCommand} from './inventory-panel.js';
@@ -557,7 +558,7 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
       const preparation=prepGuide(d.className);
       const spellHelp=preparation?`<p class="play-note">${htmlCopy('Spell choices are read-only in Play.')} ${esc(preparation)}</p>`:'';
       const sections=[
-        ['reference','Attacks & checks',statsIntro+liveCheckHTML(p)+group('attacks','mastery','checks','saves','training')],
+        ['reference','Attacks & checks',statsIntro+attackPanelHTML(profile,p)+liveCheckHTML(p)+group('attacks','mastery','checks','saves','training')],
         ['inventory','Inventory',inventoryPanel(record,panels)],
         ['spells','Spells & slots',spellHelp+group('cantrips','prepared','granted','slots','book')+magical+free],
         ['features','Features & uses',counts+secondWind+paladinActions+paladinRestoring+paladinSmite+paladinNimbus+druidActions+druidResurgence+monkActions+monkDeflect+monkHigh+rangerHigh+rogueDodge+rogueLuck+barbarianActions+font+group('classRows','origins','feats')],
@@ -907,7 +908,28 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
     if(type==='counter') return change({type:kind,level:Number(pool),id:pool,delta:Number(delta)});
     change({type});
   });
+  // Attack roller: previews only. These handlers never call change() or touch storage.
+  root.addEventListener('change',event=>{
+    const form=event.target.closest?.('[data-attack-form]');
+    if(form&&profile&&['attack','ability'].includes(event.target.name))attackFormChanged(form,profile);
+  });
+  root.addEventListener('click',event=>{
+    const fill=event.target.closest?.('[data-attack-fill]');
+    if(!fill||!profile||!play)return;
+    const form=fill.closest('[data-attack-form]');
+    try {fillAttackDice(form,fill.dataset.attackFill,profile,play);form.requestSubmit(form.querySelector(`button[type=submit][value="${fill.dataset.attackFill}"]`));}
+    catch(error){form.querySelector(fill.dataset.attackFill==='damage'?'[data-damage-result]':'[data-attack-result]').textContent=error?.message||copy('Roll unavailable.');}
+  });
   root.addEventListener('submit',event=>{
+    if(event.target.matches('[data-attack-form]')){
+      event.preventDefault();
+      const which=event.submitter?.value==='damage'?'damage':'attack';
+      const output=event.target.querySelector(which==='damage'?'[data-damage-result]':'[data-attack-result]');
+      if(!record||!profile||!play||!output)return;
+      try {output.textContent=attackFormResult(event.target,which,profile,play);}
+      catch(error){output.textContent=error instanceof RangeError||error instanceof TypeError?error.message:copy('Attack preview unavailable. Check the dice and modifiers.');}
+      return;
+    }
     if(event.target.matches('[data-live-check]')){
       event.preventDefault();
       const output=event.target.querySelector('[data-live-check-result]');

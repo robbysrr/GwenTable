@@ -147,7 +147,7 @@ test('Play Sheet wires the panel, the three save forms and Indonesian copy; offl
   assert.match(ui, /const saveDice=liveD20Dice\(p,'save'\)/);
   assert.match(ui, /\$\{diceModifierPanel\}/);
   assert.match(ui, /spell:input\.get\('spell'\)\?\?'Shield of Faith'/);
-  assert.match(ui, /statsIntro\+liveCheckHTML\(p\)/);
+  assert.match(ui, /statsIntro\+attackPanelHTML\(profile,p\)\+liveCheckHTML\(p\)/);
   const check = readFileSync(new URL('../dist/live-check-preview.js', import.meta.url), 'utf8');
   assert.equal((check.match(/spellDiceFields\(play,'save'\)/g) || []).length, 2, 'quick save preview and Concentration form');
   const cond = readFileSync(new URL('../dist/condition-sources.js', import.meta.url), 'utf8');
@@ -157,5 +157,5 @@ test('Play Sheet wires the panel, the three save forms and Indonesian copy; offl
     assert.ok(messages[key]?.id, key);
   const sw = readFileSync(new URL('../dist/sw.js', import.meta.url), 'utf8');
   assert.ok(sw.includes("'./spell-dice-fields.js'"));
-  assert.ok(sw.includes('convergence08-integration11'));
+  assert.ok(sw.includes('convergence08-integration13'));
 });

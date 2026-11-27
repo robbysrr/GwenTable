@@ -797,16 +797,21 @@ export function deriveCharacter(d) {
     const mod=pact?Math.max(mods[5],mods[scoreIndex]):mods[scoreIndex];
     const minAbility=ranged?1:0;
     const proficient=pact||weaponTrained(name,training);
-    return {name,dice:monk&&(dice==='1d4'||dice==='1d6'&&d.level>=5||dice==='1d8'&&d.level>=11)?martialDie:dice,type,mod,bonus:mod+(proficient?proficiency:0)+(ranged&&fightingStyles.includes('Archery')?2:0),
+    const otherBonus=ranged&&fightingStyles.includes('Archery')?2:0;
+    // ability/proficient/otherBonus explain `bonus` (attack) and `mod` (damage) for the Play attack panel.
+    return {name,dice:monk&&(dice==='1d4'||dice==='1d6'&&d.level>=5||dice==='1d8'&&d.level>=11)?martialDie:dice,type,mod,bonus:mod+(proficient?proficiency:0)+otherBonus,
       properties,mastery:d.mastery?.includes(name)?mastery:null,disadvantage:properties.includes('Heavy')&&scores[minAbility]<13,
-      note:pact?'Pact weapon. May deal Necrotic, Psychic, Radiant, or its normal type.':''};
+      note:pact?'Pact weapon. May deal Necrotic, Psychic, Radiant, or its normal type.':'',
+      ability:pact&&mods[5]>mods[scoreIndex]?5:scoreIndex,proficient,otherBonus,finesse,ranged,monk:Boolean(monk)};
   });
   const unarmedMod=monkRules?Math.max(mods[0],mods[1]):mods[0];
-  attacks.push({name:'Unarmed Strike',dice:monkRules?martialDie:'1',mod:unarmedMod,bonus:unarmedMod+proficiency,type:'Bludgeoning'});
+  attacks.push({name:'Unarmed Strike',dice:monkRules?martialDie:'1',mod:unarmedMod,bonus:unarmedMod+proficiency,type:'Bludgeoning',
+    ability:monkRules&&mods[1]>mods[0]?1:0,proficient:true,otherBonus:0,unarmed:true,monk:monkRules});
   const extras=d.custom.filter(entry=>entry.type==='Weapon').map(entry=>{
     const index=entry.ability==='Finesse'?(mods[0]>mods[1]?0:1):abilities.indexOf(entry.ability);
     return {name:entry.name,dice:entry.dice,type:entry.damageType,mod:(mods[index]??0)+entry.bonus,
-      bonus:(mods[index]??0)+(entry.trained?proficiency:0)+entry.bonus,properties:entry.properties,custom:true};
+      bonus:(mods[index]??0)+(entry.trained?proficiency:0)+entry.bonus,properties:entry.properties,custom:true,
+      ability:index,proficient:Boolean(entry.trained),otherBonus:entry.bonus,damageBonus:entry.bonus};
   });
   const known=[...classSpells.map(name=>namedSpell(name,classAbility,d.className)),...granted].map(spell=>{
     const metadata=Object.values(spellLists).find(list=>Object.hasOwn(list,spell.name))?.[spell.name];

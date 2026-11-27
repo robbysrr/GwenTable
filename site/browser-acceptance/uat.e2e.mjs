@@ -375,3 +375,56 @@ test('Integration 12 compendium: subject text first, full SRD page on request', 
   assert.deepEqual(errors, []);
   await ctx.close();
 });
+
+test('Integration 13 Attack roller: typed and generated dice, Finesse, crit doubles dice only, no saved change', async () => {
+  const {ctx, page, errors} = await open({seed: 5, width: 390, height: 844});
+  await generate(page, 'Rogue', 5); await walk(page); await saveCharacter(page);
+  const stored = () => page.evaluate(() => new Promise(r => { const q = indexedDB.open('open-5e-companion'); q.onsuccess = () => { const g = q.result.transaction('characters').objectStore('characters').getAll(); g.onsuccess = () => r(JSON.stringify(g.result)); }; }));
+  const before = await stored();
+  const section = page.locator('details', {has: page.locator(':scope > summary', {hasText: /^Attacks & checks$/})}).first();
+  if (!await section.evaluate(d => d.open)) await section.locator(':scope > summary').click();
+  const form = page.locator('[data-attack-form]');
+  await form.waitFor();
+  // Pick the Dagger (Finesse): formula shown, ability choice offered.
+  await form.locator('select[name=attack]').selectOption({label: 'Dagger'});
+  assert.equal(await form.locator('[data-attack-ability]').isVisible(), true);
+  const info = await form.locator('[data-attack-info]').innerText();
+  const bonus = Number(info.match(/Attack ([+−]\d+)/)[1].replace('−', '-'));
+  assert.match(info, /= Dexterity \+\d+ \+ Proficiency Bonus \+3/);
+  // Typed natural 20: critical, checkbox set, damage dice doubled with modifier once.
+  await form.locator('input[name=first]').fill('20');
+  await form.getByRole('button', {name: 'Show attack result'}).click();
+  const attack = await form.locator('[data-attack-result]').innerText();
+  assert.match(attack, new RegExp(`d20 20 \\(Normal\\).*Total ${20 + bonus}\\. Critical Hit`));
+  assert.equal(await form.locator('input[name=critical]').isChecked(), true);
+  await form.locator('input[name=dice]').fill('3');
+  await form.getByRole('button', {name: 'Show damage'}).click();
+  assert.match(await form.locator('[data-damage-result]').innerText(), /Enter 2 results on d4/);
+  await form.locator('input[name=dice]').fill('3 4');
+  await form.getByRole('button', {name: 'Show damage'}).click();
+  const dmg = await form.locator('[data-damage-result]').innerText();
+  const mod = Number(info.match(/Damage 1d4 ([+−]\d+)/)[1].replace('−', '-'));
+  assert.match(dmg, new RegExp(`2d4 \\[3, 4\\] = 7, modifier [+−]\\d+ → ${7 + mod} Piercing.*Critical Hit`));
+  // Natural 1 always misses even against a low AC.
+  await form.locator('input[name=first]').fill('1');
+  await form.locator('input[name=ac]').fill('5');
+  await form.getByRole('button', {name: 'Show attack result'}).click();
+  assert.match(await form.locator('[data-attack-result]').innerText(), /Natural 1: the attack misses\./);
+  // Finesse switch to Strength changes the bonus.
+  await form.locator('select[name=ability]').selectOption('0');
+  assert.match(await form.locator('[data-attack-info]').innerText(), /= Strength/);
+  // Advantage needs two dice; Roll for me fills and shows a result.
+  await form.locator('.attack-mode label', {hasText: /^\s*Advantage\s*$/}).click();
+  assert.equal(await form.locator('input[value=advantage]').isChecked(), true);
+  await form.locator('input[name=first]').fill('12');
+  await form.locator('input[name=second]').fill('');
+  await form.getByRole('button', {name: 'Show attack result'}).click();
+  assert.match(await form.locator('[data-attack-result]').innerText(), /Enter both d20 results/);
+  await form.getByRole('button', {name: 'Roll for me', exact: true}).click();
+  assert.match(await form.locator('[data-attack-result]').innerText(), /\(Advantage\).*Total -?\d+\./);
+  await form.getByRole('button', {name: 'Roll damage for me'}).click();
+  assert.match(await form.locator('[data-damage-result]').innerText(), /Dagger damage: \dd4 \[/);
+  assert.equal(await stored(), before, 'previews never change the saved character');
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
