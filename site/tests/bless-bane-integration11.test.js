@@ -157,5 +157,5 @@ test('Play Sheet wires the panel, the three save forms and Indonesian copy; offl
     assert.ok(messages[key]?.id, key);
   const sw = readFileSync(new URL('../dist/sw.js', import.meta.url), 'utf8');
   assert.ok(sw.includes("'./spell-dice-fields.js'"));
-  assert.ok(sw.includes('convergence08-integration13'));
+  assert.ok(sw.includes('convergence08-integration14'));
 });

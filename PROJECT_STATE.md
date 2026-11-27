@@ -95,3 +95,6 @@ Settings menu in the top-right corner; fillable GwenTable Character Sheet v0.3 P
 
 ## Milestone • 27 November 2026 • Integration 13 (Live Gameplay Sprint A)
 Attack roller on the Play sheet (#3): typed or generated dice, Finesse choice, Critical Hit doubles dice only, natural 1/20, Champion range, Bless/Bane d4, Exhaustion, SRD property/mastery reference; preview only, nothing saved. Android UAT package (Python loopback server, port 42639) built and tested from a fresh extraction; delivered privately, not committed here. M1 Slice 18 (named in the master prompt) was not reachable from this session; reconciliation open. Full tree 831/831 Node, 17/17 browser; this public copy 823/3 (art-dependent). Registers: `site/docs/LIVE_GAMEPLAY_30_REGISTER.md`, `site/docs/SCOPE_CONFLICTS_AND_RULES_I13.md`.
+
+## Milestone • 27 November 2026 • Integration 14 (Live Gameplay Sprint B + UI/UX)
+Cast a spell (#4): SRD casting details and text, slot/ritual/cantrip choice, one save that spends the slot and starts or replaces Concentration, Undo reverses both. Sticky vitals strip (HP, Temp HP, AC, Concentration, conditions, Exhaustion, Saving/Saved/Not saved, Undo). Play sections restyled as tappable cards. Full tree 845/845 Node, 19/19 browser; this public copy 837/3 (art-dependent). M1 Slice 18 still not available.

@@ -1,0 +1,17 @@
+{
+  "candidate": "Integration 14 private (Live Gameplay Sprint B + UI/UX pass); Integration 13-derived",
+  "previous_commit": "be886b4",
+  "full_tests": {
+    "pass": 845,
+    "fail": 0,
+    "skipped": 0
+  },
+  "new_tests": 14,
+  "test_changes": "cache-revision pins integration13->integration14; two browser tests now target the toolbar Undo exactly (a second, distinctly named Undo exists in the vitals strip); no assertion weakened",
+  "first_failures": "browser: Cast test read play state that does not exist before the first play action (test fixed); 2 tests ambiguous after adding strip Undo (renamed strip button 'Undo last change', tests use exact name)",
+  "browser": "19/19 PASS headless Chromium 1243; iPhone 13 and desktop screenshots reviewed",
+  "service_worker_revision": "integration14",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "release": "PRIVATE UAT GO (owner device acceptance pending); PUBLIC NO GO"
+}

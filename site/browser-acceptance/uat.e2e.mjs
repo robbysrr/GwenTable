@@ -157,7 +157,7 @@ test('UAT-11/12/13 damage, Undo, two-tab stale write, offline reload, play backu
   assert.deepEqual(await hp(page), [full - 5, full], 'no lost update, stale write not applied');
 
   // UAT-11: Undo restores and persists.
-  await page.getByRole('button', {name: 'Undo'}).click(); await page.waitForTimeout(500);
+  await page.getByRole('button', {name: 'Undo', exact: true}).click(); await page.waitForTimeout(500);
   assert.deepEqual(await hp(page), [full, full]);
   await page.reload(); await page.waitForTimeout(500);
   assert.deepEqual(await hp(page), [full, full]);
@@ -425,6 +425,70 @@ test('Integration 13 Attack roller: typed and generated dice, Finesse, crit doub
   await form.getByRole('button', {name: 'Roll damage for me'}).click();
   assert.match(await form.locator('[data-damage-result]').innerText(), /Dagger damage: \dd4 \[/);
   assert.equal(await stored(), before, 'previews never change the saved character');
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('Integration 14 Cast a spell: details from SRD, slot + Concentration in one save, Undo reverses both', async () => {
+  const {ctx, page, errors} = await open({seed: 7, width: 390, height: 844});
+  await generate(page, 'Wizard', 5); await walk(page); await saveCharacter(page);
+  const playState = () => page.evaluate(() => new Promise(r => { const q = indexedDB.open('open-5e-companion'); q.onsuccess = () => { const g = q.result.transaction('characters').objectStore('characters').getAll(); g.onsuccess = () => { const play = g.result[0].play ?? {}; r({slots: play.slots ?? {}, focus: play.focus ?? '', log: play.log ?? []}); }; }; }));
+  const section = page.locator('details', {has: page.locator(':scope > summary', {hasText: /^Spells & slots$/})}).first();
+  if (!await section.evaluate(d => d.open)) await section.locator(':scope > summary').click();
+  const form = page.locator('form[data-play-form="spell-cast"]');
+  await form.waitFor();
+  // Choose the first prepared level 1+ spell whose duration needs Concentration if available, else the first leveled spell.
+  const options = await form.locator('select[name=spell] optgroup:not([label="Cantrips"]):not([label="Spellbook rituals"]) option').allTextContents();
+  assert.ok(options.length > 0, 'leveled spells offered');
+  let chosen = options[0];
+  for (const name of options) {
+    await form.locator('select[name=spell]').selectOption({label: name});
+    if (await form.locator('.cast-badge').count()) { chosen = name; break; }
+  }
+  await form.locator('select[name=spell]').selectOption({label: chosen});
+  assert.match(await form.locator('.cast-facts').innerText(), /CASTING TIME|Casting Time/i);
+  const method = await form.locator('select[name=method]').inputValue();
+  assert.match(method, /^slot:\d$/);
+  const level = Number(method.split(':')[1]);
+  await form.locator('details.cast-text summary').click();
+  await page.waitForTimeout(400);
+  assert.doesNotMatch(await form.locator('[data-cast-text-body]').innerText(), /Loading/);
+  const concentration = await form.locator('.cast-badge').count() > 0;
+  assert.match(await form.locator('[data-cast-consequence]').innerText(), /Spends one Level \d slot/);
+  const before = await playState();
+  await form.locator('input[name=confirmed]').check();
+  await form.getByRole('button', {name: 'Record casting'}).click();
+  await page.waitForTimeout(600);
+  const after = await playState();
+  assert.equal(after.slots[level], (before.slots[level] ?? 0) + 1, 'one slot spent');
+  assert.equal(after.focus, concentration ? chosen : before.focus, 'Concentration set in the same save');
+  assert.match(after.log.at(-1), new RegExp('^Cast ' + chosen.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ' with a level ' + level));
+  await page.getByRole('button', {name: 'Undo', exact: true}).click();
+  await page.waitForTimeout(600);
+  const undone = await playState();
+  assert.equal(undone.slots[level] ?? 0, before.slots[level] ?? 0, 'Undo restores the slot');
+  assert.equal(undone.focus, before.focus, 'Undo restores Concentration');
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('Integration 14 vitals strip: sticky HP/AC/Concentration, save state, Undo from the strip', async () => {
+  const {ctx, page, errors} = await open({seed: 3, width: 390, height: 844});
+  await generate(page, 'Cleric', 5); await walk(page); await saveCharacter(page);
+  const strip = page.locator('#play-vitals');
+  await strip.waitFor();
+  const [, max] = (await strip.innerText()).match(/HP\s*(\d+)\/(\d+)/).slice(1).map(Number);
+  await damage(page, 4);
+  assert.match(await strip.innerText(), new RegExp(`HP\\s*${max - 4}/${max}`));
+  assert.match(await strip.locator('.save-chip').innerText(), /Saved/);
+  await page.evaluate(() => window.scrollTo(0, 2000));
+  await page.waitForTimeout(200);
+  const box = await strip.boundingBox();
+  assert.ok(box.y >= 0 && box.y < 40, `strip stays at the top while scrolling (y=${box.y})`);
+  await strip.getByRole('button', {name: 'Undo'}).click();
+  await page.waitForTimeout(500);
+  assert.match(await strip.innerText(), new RegExp(`HP\\s*${max}/${max}`));
+  assert.equal(await strip.getByRole('button', {name: 'Undo'}).isDisabled(), true);
   assert.deepEqual(errors, []);
   await ctx.close();
 });

@@ -28,3 +28,19 @@ Inherited legacy paths noted: Shield's triggering-hit comparison (Integration 09
 | ATK-08 | Advantage/Disadvantage: two d20, higher/lower; both cancel | p.6 | existing resolver; mode chosen by player | Context inference | adv/dis test |
 | ATK-09 | Damage total | p.16 Damage Rolls | dice + flat + modifier + extra; no floor invented (no general minimum stated) | Resistances, target HP | negative-total note test |
 | ATK-10 | Weapon property / mastery text | pp.89–90 | `srd-weapon-reference.js` (18 entries, official PDF) | All effects | reference test |
+
+## Integration 14 additions
+
+| Requested item | Earlier exclusion | Safe implementation shipped | Pending owner approval |
+|---|---|---|---|
+| #4 Spellcasting flow | Reaction & on-hit assistance; contextual rolls | Player chooses spell and method and confirms; one action spends the slot and sets Concentration. No targets, saves, damage, conditions or components applied. Shield stays on its dedicated Reaction control | Applying spell effects; enforcing one slot per turn from turn tracking |
+
+| ID | Rule | SRD 5.2.1 | Implemented as | Not automated | Tests |
+|---|---|---|---|---|---|
+| CAST-01 | Cantrips use no slot | p.104 | method `cantrip`; slot refused | — | cantrip test |
+| CAST-02 | Ritual: prepared spell with Ritual tag, 10 minutes longer, no slot | p.104 | method `ritual` when the header's casting time names Ritual | Elapsed time | ritual test |
+| CAST-03 | Wizard Ritual Adept: any Ritual spell in the spellbook | p.77 | unprepared spellbook rituals offered to Wizards only, ritual method only | — | ritual test |
+| CAST-04 | Slot of the spell's level or higher; Pact Magic slots are one level | p.105; Warlock Pact Magic | slot options ≥ spell level from derived `profile.slots`; remaining = count − spent | — | upcast, Pact tests |
+| CAST-05 | One spell slot per turn | p.105 | reminder text only | Enforcement | — |
+| CAST-06 | Casting a Concentration spell ends earlier Concentration | p.105–106 | `focus` replaced in the same action; log names both | — | Concentration test |
+| CAST-07 | Shield has its own Reaction rules | p.161 | refused here; dedicated control | — | refusal test |

@@ -17,8 +17,8 @@ This folder runs GwenTable on your phone at **http://127.0.0.1:42639/** with a s
 3. Download this ZIP to your phone's Downloads folder, then in Termux:
    ```
    cd ~/storage/downloads
-   unzip GwenTable_I13_Android_UAT.zip
-   cd GwenTable-I13-Android-UAT
+   unzip GwenTable_I14_Android_UAT.zip
+   cd GwenTable-I14-Android-UAT
    python3 start_gwentable.py
    ```
 4. Open **http://127.0.0.1:42639/** in Chrome (same Chrome profile every time).

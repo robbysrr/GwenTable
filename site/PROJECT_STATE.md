@@ -1,3 +1,19 @@
+# LATEST PROJECT_STATE — Integration 14 (Live Gameplay Sprint B + UI/UX) | 27 November 2026
+
+**BASELINE:** Integration 13 (831/831 Node, 17/17 browser). M1 Slice 18 still not available; reconciliation open.
+
+**COMPLETED:** #4 Cast a spell (Spells & slots): choose a prepared, granted or Wizard-spellbook-ritual spell; see SRD Casting Time, Range, Components, Duration, save DC/attack and the SRD text; choose slot (with remaining counts, upcast, Pact level), Ritual or Cantrip; consequence line; confirm → one `spell-cast` action spends the slot and starts/replaces Concentration; Undo reverses both. Shield stays on its Reaction control. UI/UX: sticky vitals strip on Play (HP red at half or less, Temp HP, live AC, Concentration, conditions, Exhaustion, Saving/Saved/Not saved, Undo); Play sections restyled as tappable cards with chevrons; Attack/Cast panels as accented sub-cards; segmented roll-mode buttons. EN/ID strings.
+
+**VERIFIED:** 845/845 Node (14 new), static build, artwork-withheld build/audit; 19/19 browser. Receipt `QA_RECEIPT_INTEGRATION14.json`. Registers updated (#4 Integrated within stated scope; #2/#7/#23 improved).
+
+**OUTSTANDING:** Real Android run; Slice 18 merge; free-cast sources (Magic Initiate etc.) are not merged into the cast panel; one-slot-per-turn only a reminder; spell effects manual; #5/#17 manual action tracker and My Turn view not started.
+
+**NEXT:** Sprint C: manual Action / Bonus Action / Reaction / movement tracker and a compact My Turn view (#5, #17), reusing the combat tracker.
+
+**ENVIRONMENT:** STAY in Claude Code; owner runs Android UAT. PUBLIC NO GO.
+
+---
+
 # LATEST PROJECT_STATE — Integration 13 (Live Gameplay Sprint A) | 27 November 2026
 
 **BASELINE:** Integration 12 (821/821 Node, 16/16 browser). M1 Slice 18, named in the Live Gameplay master prompt, was not reachable (Drive "not found" for the connected account; not uploaded). Work continues on this verified checkout; reconciliation with Slice 18 is an open blocker.

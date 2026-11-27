@@ -1,4 +1,4 @@
-# GwenTable Integration 13 — Android UAT checklist
+# GwenTable Integration 14 — Android UAT checklist
 
 Record for each: phone model, Android version, Chrome version, result (Pass/Fail/Blocked), notes or screenshot.
 
@@ -22,3 +22,6 @@ Record for each: phone model, Android version, Chrome version, result (Pass/Fail
 | A-16 | Turn on airplane mode after first load; reload | Site still opens with saved characters (keep Termux running) |
 | A-17 | Open the same address in a second Chrome tab, edit HP in tab 1, then in tab 2 | Tab 2 refuses with "changed in another tab" |
 | A-18 | Rotate to landscape; zoom text to 200% (Chrome settings) | No sideways scrolling; buttons reachable |
+| A-19 | Spells & slots → Cast a spell: choose a levelled spell, read details, choose a slot, tick confirm, Record casting | Slot count drops by one; Concentration shown in the top strip if the spell needs it |
+| A-20 | Tap Undo in the top strip | Slot and Concentration both restored |
+| A-21 | Scroll down a long sheet | HP/AC strip stays at the top; shows "Saved" after each change |

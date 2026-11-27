@@ -5,6 +5,7 @@ import {pendingOwnEndSaves,hasOwnEndEffects,boundaryEffects} from './lib/srd-con
 import {conditionSourcesHTML,conditionSourceCommand} from './condition-sources.js';
 import {liveCheckHTML,resolveLiveCheckForm,concentrationRollHTML,concentrationRollCommand} from './live-check-preview.js';
 import {attackPanelHTML,attackFormChanged,fillAttackDice,attackFormResult} from './attack-panel.js';
+import {castPanelHTML,castFormChanged,loadCastText,castCommand} from './spell-cast-panel.js';
 import {savedEquipmentLines} from './lib/saved-inventory.js';
 import {commitSavedInventory} from './lib/inventory-storage.js';
 import {inventoryPanel, inventoryFormCommand} from './inventory-panel.js';
@@ -51,6 +52,28 @@ const section=(key,title,body,open)=>`<details data-panel="${key}" ${open?'open'
 export function mountPlaySheet(root,download,advance,print,showDetail) {
   const body=root.querySelector('#play-body');
   const feedback=root.querySelector('#play-feedback');
+  // Sticky vitals strip: the numbers players check every turn, plus save state and Undo.
+  const vitals=root.querySelector('#play-vitals');
+  let saveState='saved';
+  function renderVitals(){
+    if(!vitals)return;
+    if(!record||!profile||!play){vitals.hidden=true;return;}
+    const p=play,ac=liveArmorClass(profile,p).total;
+    const state=p.dead?copy('Dead'):p.stable?copy('Stable at 0 HP'):p.hp===0?copy('Unconscious'):'';
+    const chip=(cls,label,value,title='')=>`<span class="vital ${cls}"${title?` title="${esc(title)}"`:''}><b>${htmlCopy(label)}</b> ${value}</span>`;
+    vitals.innerHTML=`<div class="vitals-stats" aria-label="${htmlCopy('Current vitals')}">
+      ${chip('vital-hp'+(p.hp*2<=profile.maxHP?' is-low':''),'HP',`${p.hp}/${profile.maxHP}${p.temp?` <small>+${p.temp} ${htmlCopy('temp')}</small>`:''}`)}
+      ${chip('vital-ac','AC',ac)}
+      ${p.focus?chip('vital-focus','Conc.',esc(p.focus),copy('Concentrating on {effect}',{effect:p.focus})):''}
+      ${p.conditions.length?chip('vital-conditions','Cond.',esc(p.conditions.length>2?p.conditions.slice(0,2).join(', ')+' +'+(p.conditions.length-2):p.conditions.join(', '))):''}
+      ${p.exhaustion?chip('vital-exhaustion','Exh.',p.exhaustion):''}
+      ${state?`<span class="vital vital-state">${esc(state)}</span>`:''}
+    </div>
+    <span class="save-chip" data-state="${saveState}" role="status">${htmlCopy(saveState==='saving'?'Saving…':saveState==='error'?'Not saved':'Saved')}</span>
+    <button type="button" data-vitals-undo aria-label="${htmlCopy('Undo last change')}" ${record.playUndo&&saveState!=='saving'?'':'disabled'}>${htmlCopy('Undo')}</button>`;
+    vitals.hidden=false;
+  }
+  vitals?.addEventListener('click',event=>{if(event.target.closest('[data-vitals-undo]'))root.querySelector('[data-play-action="undo"]')?.click();});
   let activeId=null;
   let loadedId=null;
   let record=null;
@@ -560,7 +583,7 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
       const sections=[
         ['reference','Attacks & checks',statsIntro+attackPanelHTML(profile,p)+liveCheckHTML(p)+group('attacks','mastery','checks','saves','training')],
         ['inventory','Inventory',inventoryPanel(record,panels)],
-        ['spells','Spells & slots',spellHelp+group('cantrips','prepared','granted','slots','book')+magical+free],
+        ['spells','Spells & slots',castPanelHTML(profile,p)+spellHelp+group('cantrips','prepared','granted','slots','book')+magical+free],
         ['features','Features & uses',counts+secondWind+paladinActions+paladinRestoring+paladinSmite+paladinNimbus+druidActions+druidResurgence+monkActions+monkDeflect+monkHigh+rangerHigh+rogueDodge+rogueLuck+barbarianActions+font+group('classRows','origins','feats')],
         ['custom','Custom content',group('customRows')]
       ].filter(([, ,content])=>content);
@@ -585,6 +608,7 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
       }
     }
     root.querySelector('[data-play-action="undo"]').disabled=!record.playUndo;
+    renderVitals();
     root.querySelector('[data-play-action="export"]').disabled=false;
     root.querySelector('[data-play-action="print"]').disabled=false;
   }
@@ -592,6 +616,7 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
   async function change(action) {
     if(busy||!record) return;
     busy=true;
+    saveState='saving';renderVitals();
     const id=activeId;
     const node=document.activeElement;
     const key=node?.dataset.playAction;
@@ -609,15 +634,18 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
         return {...current,play:advancePlay(currentProfile,previous,action),playUndo:previous};
       },{expectedRevision,requireExisting:true});
       if(id!==activeId) return;
+      saveState='saved';
       takeRecord(next);
       message(action.type==='undo'?copy("Undid the last play change."):play.log.at(-1));
       if(form==='hp') body.querySelector('[data-play-form="hp"] input[name="value"]')?.focus({preventScroll:true});
       else if(key) Array.from(root.querySelectorAll('[data-play-action]')).find(el=>el.dataset.playAction===key&&el.getAttribute('aria-label')===node.getAttribute('aria-label')&&!el.disabled)?.focus({preventScroll:true});
     } catch(error) {
+      // A refused or failed action leaves the last saved state untouched; say so plainly.
+      saveState=error?.code===characterConflictCode?'error':'saved';
       if(id===activeId) message(error?.code===characterConflictCode
         ?copy('This saved character changed in another tab. Return to Saved Characters and reopen it before another Play action.')
         :error.message,true);
-    } finally {busy=false;}
+    } finally {busy=false;renderVitals();}
   }
 
   async function activateMulticlass(){
@@ -912,7 +940,13 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
   root.addEventListener('change',event=>{
     const form=event.target.closest?.('[data-attack-form]');
     if(form&&profile&&['attack','ability'].includes(event.target.name))attackFormChanged(form,profile);
+    const cast=event.target.closest?.('[data-play-form="spell-cast"]');
+    if(cast&&profile&&play&&['spell','method'].includes(event.target.name)){
+      try {castFormChanged(cast,profile,play,event.target);} catch(error){message(error?.message||copy('Spell unavailable.'),true);}
+    }
   });
+  // <details> toggle does not bubble; capture it to lazy-load the SRD spell text.
+  root.addEventListener('toggle',event=>{if(event.target.matches?.('[data-cast-text]')&&event.target.open)loadCastText(event.target);},true);
   root.addEventListener('click',event=>{
     const fill=event.target.closest?.('[data-attack-fill]');
     if(!fill||!profile||!play)return;
@@ -950,6 +984,10 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
     if(['condition-source-add','condition-source-remove','condition-save-add','condition-save-queue','condition-save-roll','condition-turn-save-add','condition-time-advance'].includes(type)){
       if(!body.contains(event.target))return;
       return change(conditionSourceCommand(type,input));
+    }
+    if(type==='spell-cast'){
+      if(!body.contains(event.target))return;
+      return change(castCommand(event.target));
     }
     if(type==='modifier-add'||type==='modifier-remove'){
       if(!body.contains(event.target))return;
@@ -1082,6 +1120,7 @@ export function mountPlaySheet(root,download,advance,print,showDetail) {
     record=null;
     retryInventory=null;
     root.querySelector('[data-play-action="undo"]').disabled=true;
+    saveState='saved';renderVitals();
     root.querySelector('[data-play-action="export"]').disabled=true;
     root.querySelector('[data-play-action="print"]').disabled=true;
     body.innerHTML=("<p>"+htmlCopy("Opening character…")+"</p>");

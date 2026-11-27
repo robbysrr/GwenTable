@@ -1,4 +1,5 @@
 import {modifierLedger,addModifier,removeModifier,liveArmorClass} from './srd-live-modifiers.mjs';
+import {validateCast} from './srd-spell-cast.mjs';
 // Recorded Bless/Bane physical dice, e.g. ' (Bless +3, Bane -2)'.
 const spellDiceLog=result=>result.spellDice?.length?' ('+result.spellDice.map(d=>d.spell+' '+(d.value>0?'+':'')+d.value).join(', ')+')':'';
 import {shieldSlots,validShield,shieldAttackPreview} from './srd-shield.mjs';
@@ -775,6 +776,16 @@ export function advancePlay(profile, previous, action) {
       a.dice++;
       heal(a,Math.max(1,action.value+profile.con));
       log('Spent 1d'+dieType+' on a Short Rest ('+action.value+' die roll) · '+a.hp+'/'+a.maxHP+' HP.');
+      break;
+    }
+    case 'spell-cast': {
+      // One transaction: spend the slot (if any) and start/replace Concentration together.
+      const {options,method}=validateCast(profile,a,action);
+      if(method.kind==='slot')adjust('slots',method.level,1,method.count);
+      const previous=a.focus;
+      if(options.concentration){a.focus=action.spell;a.concentrationChecks=[];}
+      log('Cast '+action.spell+(method.kind==='slot'?' with a level '+method.level+' '+(profile.pact?'Pact Magic':'spell')+' slot':method.kind==='ritual'?' as a Ritual (10 minutes longer, no slot)':' (cantrip)')+'.'+
+        (options.concentration?(previous&&previous!==action.spell?' Concentration on '+previous+' ended; now concentrating on '+action.spell+'.':' Concentrating on '+action.spell+'.'):''));
       break;
     }
     case 'slot': {

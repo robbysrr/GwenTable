@@ -721,3 +721,50 @@ button:active:not(:disabled):not(.primary),.button:active:not(.primary){
 .play-attack-panel .attack-mode input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
 .play-attack-panel .attack-mode label{position:relative;overflow-wrap:normal;word-break:normal;hyphens:none;font-size:.82rem;font-weight:650}
 .play-attack-panel .attack-mode label:has(input:focus-visible){outline:3px solid var(--gwen-focus);outline-offset:2px}
+
+/* Integration 14: Cast a spell panel. */
+.play-cast-panel>form{display:grid;gap:10px}
+.cast-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:0}
+.cast-facts>div{padding:8px 10px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--gwen-surface-sunken);min-width:0}
+.cast-facts dt{font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.cast-facts dd{margin:2px 0 0;font-weight:650;overflow-wrap:anywhere}
+.cast-badge{justify-self:start;margin:0;padding:3px 10px;border-radius:999px;background:var(--gwen-secondary-bg);color:var(--gwen-on-secondary);font-size:.8rem;font-weight:700}
+.cast-consequence{margin:0;padding:8px 10px;border-left:3px solid var(--accent);background:var(--gwen-surface-sunken);font-size:.88rem}
+.cast-text{margin:0;border:0;padding:0}
+.cast-text p{white-space:pre-line;font-size:.86rem;max-height:40vh;overflow:auto}
+
+/* Integration 14: sticky vitals strip on the Play sheet. */
+.play-vitals{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  margin:8px 0 10px;padding:8px 10px;border:1px solid var(--line);border-radius:var(--radius-card);
+  background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(6px);box-shadow:0 6px 18px -14px rgba(0,0,0,.45)}
+.vitals-stats{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 auto;min-width:0}
+.vital{display:inline-flex;align-items:baseline;gap:4px;padding:4px 9px;border-radius:999px;background:var(--gwen-surface-sunken);font-size:.86rem;font-variant-numeric:tabular-nums;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.vital b{font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.vital-hp{font-weight:750;font-size:.95rem}
+.vital-hp.is-low{background:var(--gwen-danger-bg);color:var(--gwen-danger)}
+.vital-focus{background:var(--gwen-secondary-bg);color:var(--gwen-on-secondary)}
+.vital-state{background:var(--gwen-danger-bg);color:var(--gwen-danger);font-weight:700}
+.save-chip{font-size:.75rem;font-weight:700;padding:3px 8px;border-radius:999px;color:var(--gwen-success);background:var(--gwen-success-bg)}
+.save-chip[data-state=saving]{color:var(--muted);background:var(--gwen-surface-sunken)}
+.save-chip[data-state=error]{color:var(--gwen-danger);background:var(--gwen-danger-bg)}
+.play-vitals [data-vitals-undo]{min-height:40px;padding:4px 12px}
+@media(max-width:599px){.play-vitals{margin-inline:-4px;gap:6px}.vital{font-size:.8rem;padding:3px 8px}.vital-hp{font-size:.9rem}}
+
+/* Integration 14: Play sheet sections as clear tappable cards (same palette and type). */
+.play-reference details[data-panel]{margin:12px 0;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--card);overflow:clip}
+.play-reference details[data-panel]>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:12px 16px;
+  font-size:1.02rem;font-weight:750;cursor:pointer;background:linear-gradient(180deg,var(--gwen-surface-raised),var(--card))}
+.play-reference details[data-panel]>summary::-webkit-details-marker{display:none}
+.play-reference details[data-panel]>summary::after{content:"";flex:none;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .18s ease;opacity:.7}
+.play-reference details[data-panel][open]>summary{border-bottom:1px solid var(--line)}
+.play-reference details[data-panel][open]>summary::after{transform:rotate(-135deg) translateY(-2px)}
+.play-reference details[data-panel]>summary:hover{color:var(--accent)}
+.play-reference details[data-panel]>.play-details{padding:12px 16px 16px}
+.play-attack-panel,.play-cast-panel{margin:0 0 14px;padding:0 12px 12px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius-control);background:var(--gwen-surface-raised)}
+.play-attack-panel>summary,.play-cast-panel>summary{padding:12px 0;font-size:.98rem;font-weight:750}
+@media (prefers-reduced-motion: reduce){.play-reference details[data-panel]>summary::after{transition:none}}
+.cast-facts dd{overflow-wrap:break-word;word-break:normal;hyphens:auto}
+.play-attack-panel>summary,.play-cast-panel>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+.play-attack-panel>summary::-webkit-details-marker,.play-cast-panel>summary::-webkit-details-marker{display:none}
+.play-attack-panel>summary::after,.play-cast-panel>summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);opacity:.6}
+.play-attack-panel[open]>summary::after,.play-cast-panel[open]>summary::after{transform:rotate(-135deg)}
