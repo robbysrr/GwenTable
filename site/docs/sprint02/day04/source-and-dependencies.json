@@ -1,0 +1,255 @@
+[
+  {
+    "canonicalId": "Acolyte",
+    "sourceId": "SRD 5.2.1",
+    "sourceType": "background",
+    "optionId": "Acolyte",
+    "sourceVersion": "5.2.1",
+    "isOfficialSRD": true,
+    "page": 83,
+    "license": "CC BY 4.0",
+    "abilityCandidates": [
+      "Intelligence",
+      "Wisdom",
+      "Charisma"
+    ],
+    "originFeat": "Magic Initiate (Cleric)",
+    "skills": [
+      "Insight",
+      "Religion"
+    ],
+    "tool": {
+      "kind": "fixed",
+      "name": "Calligrapher’s Supplies",
+      "selected": "Calligrapher’s Supplies"
+    },
+    "equipment": [
+      {
+        "id": "A",
+        "items": [
+          "Calligrapher’s Supplies",
+          "Book (prayers)",
+          "Holy Symbol",
+          "Parchment (10 sheets)",
+          "Robe"
+        ],
+        "gp": 8
+      },
+      {
+        "id": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "pending": [
+      {
+        "stage": "abilities",
+        "message": "Review your Background Ability Score increases in Abilities."
+      },
+      {
+        "stage": "equipment",
+        "message": "Choose equipment A or 50 GP in Equipment."
+      },
+      {
+        "stage": "magic",
+        "message": "Review Magic Initiate cantrips, spell, and spellcasting ability in Spells."
+      }
+    ],
+    "icon": {
+      "assetId": "gwen-help",
+      "fallbackId": "gwen-help",
+      "provenance": "audit/icon-registry.json",
+      "uniqueIllustration": false
+    },
+    "iconGap": "No verified unique Background SVG available; licensed generic fallback only",
+    "statePolicy": "Read-through source adapter; existing engine owns effective grants; later-stage decisions require review"
+  },
+  {
+    "canonicalId": "Criminal",
+    "sourceId": "SRD 5.2.1",
+    "sourceType": "background",
+    "optionId": "Criminal",
+    "sourceVersion": "5.2.1",
+    "isOfficialSRD": true,
+    "page": 83,
+    "license": "CC BY 4.0",
+    "abilityCandidates": [
+      "Dexterity",
+      "Constitution",
+      "Intelligence"
+    ],
+    "originFeat": "Alert",
+    "skills": [
+      "Sleight of Hand",
+      "Stealth"
+    ],
+    "tool": {
+      "kind": "fixed",
+      "name": "Thieves’ Tools",
+      "selected": "Thieves’ Tools"
+    },
+    "equipment": [
+      {
+        "id": "A",
+        "items": [
+          "2 Daggers",
+          "Thieves’ Tools",
+          "Crowbar",
+          "2 Pouches",
+          "Traveler’s Clothes"
+        ],
+        "gp": 16
+      },
+      {
+        "id": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "pending": [
+      {
+        "stage": "abilities",
+        "message": "Review your Background Ability Score increases in Abilities."
+      },
+      {
+        "stage": "equipment",
+        "message": "Choose equipment A or 50 GP in Equipment."
+      }
+    ],
+    "icon": {
+      "assetId": "gwen-help",
+      "fallbackId": "gwen-help",
+      "provenance": "audit/icon-registry.json",
+      "uniqueIllustration": false
+    },
+    "iconGap": "No verified unique Background SVG available; licensed generic fallback only",
+    "statePolicy": "Read-through source adapter; existing engine owns effective grants; later-stage decisions require review"
+  },
+  {
+    "canonicalId": "Sage",
+    "sourceId": "SRD 5.2.1",
+    "sourceType": "background",
+    "optionId": "Sage",
+    "sourceVersion": "5.2.1",
+    "isOfficialSRD": true,
+    "page": 83,
+    "license": "CC BY 4.0",
+    "abilityCandidates": [
+      "Constitution",
+      "Intelligence",
+      "Wisdom"
+    ],
+    "originFeat": "Magic Initiate (Wizard)",
+    "skills": [
+      "Arcana",
+      "History"
+    ],
+    "tool": {
+      "kind": "fixed",
+      "name": "Calligrapher’s Supplies",
+      "selected": "Calligrapher’s Supplies"
+    },
+    "equipment": [
+      {
+        "id": "A",
+        "items": [
+          "Quarterstaff",
+          "Calligrapher’s Supplies",
+          "Book (history)",
+          "Parchment (8 sheets)",
+          "Robe"
+        ],
+        "gp": 8
+      },
+      {
+        "id": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "pending": [
+      {
+        "stage": "abilities",
+        "message": "Review your Background Ability Score increases in Abilities."
+      },
+      {
+        "stage": "equipment",
+        "message": "Choose equipment A or 50 GP in Equipment."
+      },
+      {
+        "stage": "magic",
+        "message": "Review Magic Initiate cantrips, spell, and spellcasting ability in Spells."
+      }
+    ],
+    "icon": {
+      "assetId": "gwen-help",
+      "fallbackId": "gwen-help",
+      "provenance": "audit/icon-registry.json",
+      "uniqueIllustration": false
+    },
+    "iconGap": "No verified unique Background SVG available; licensed generic fallback only",
+    "statePolicy": "Read-through source adapter; existing engine owns effective grants; later-stage decisions require review"
+  },
+  {
+    "canonicalId": "Soldier",
+    "sourceId": "SRD 5.2.1",
+    "sourceType": "background",
+    "optionId": "Soldier",
+    "sourceVersion": "5.2.1",
+    "isOfficialSRD": true,
+    "page": 83,
+    "license": "CC BY 4.0",
+    "abilityCandidates": [
+      "Strength",
+      "Dexterity",
+      "Constitution"
+    ],
+    "originFeat": "Savage Attacker",
+    "skills": [
+      "Athletics",
+      "Intimidation"
+    ],
+    "tool": {
+      "kind": "choice",
+      "name": "Gaming Set"
+    },
+    "equipment": [
+      {
+        "id": "A",
+        "items": [
+          "Spear",
+          "Shortbow",
+          "20 Arrows",
+          "Gaming Set",
+          "Healer’s Kit",
+          "Quiver",
+          "Traveler’s Clothes"
+        ],
+        "gp": 14
+      },
+      {
+        "id": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "pending": [
+      {
+        "stage": "abilities",
+        "message": "Review your Background Ability Score increases in Abilities."
+      },
+      {
+        "stage": "equipment",
+        "message": "Choose equipment A or 50 GP in Equipment."
+      }
+    ],
+    "icon": {
+      "assetId": "gwen-help",
+      "fallbackId": "gwen-help",
+      "provenance": "audit/icon-registry.json",
+      "uniqueIllustration": false
+    },
+    "iconGap": "No verified unique Background SVG available; licensed generic fallback only",
+    "statePolicy": "Read-through source adapter; existing engine owns effective grants; later-stage decisions require review"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "version": "GwenTable Player Convergence 06",
+  "date": "2026-11-22",
+  "source": "Private development branch descended from dev.6. Not merged with authoritative UX9/dev.14.",
+  "base": {
+    "archive": "GwenTable_Player_Convergence_05_Private_Source.zip",
+    "sha256": "b6b641e34d55d4b51739065f675771bcea23ef1f5ba65eacd0d8c111fe333baa",
+    "inheritedPassingTests": 608
+  },
+  "completed": [
+    "Fillable PDF for supported active Fighter1/Rogue1 with correct total class level and independent Hit Dice",
+    "Build and live GCX 1.0.0 class allocation with namespaced SRD-only active data and integrity validation",
+    "Fail-closed mismatched, unknown, or foreign composite import; original GCX retained for review",
+    "Roster shows active composite level and locks the unsafe single-class Builder edit",
+    "Play Sheet shows correct next total-level XP threshold and hides unsupported single-class advancement",
+    "Bilingual composite export/roster guidance and isolated offline cache revision"
+  ],
+  "verification": {
+    "nodeVersion": "v22.16.0",
+    "fullSuite": "620/620 PASS",
+    "newCases": 12,
+    "staticBuild": "PASS",
+    "artworkWithheldPreview": "PASS, 12 inherited image variants withheld",
+    "previewArtAudit": "PASS, 0 image binaries",
+    "httpSmoke": "7/7 PASS",
+    "nativePdf": "4 layout/paper combinations tested; synthetic three-page A4 rendered and visually inspected",
+    "realBrowserIndexedDB": "NOT TESTED",
+    "windowsNode26": "NOT TESTED",
+    "authenticUserMigration": "NOT TESTED"
+  },
+  "outstanding": [
+    "Full composite multiclass progression across 12 classes and levels 1–20",
+    "Complete SRD 5.2.1 executable rule coverage and equipment/spell/encounter integrations",
+    "Missing authoritative UX9/dev.14 source and repository merge",
+    "Real browser two-tab IndexedDB and historic character migration acceptance",
+    "Full bilingual/accessibility/security/public artwork/licensing review"
+  ],
+  "release": "NO GO"
+}

@@ -1,0 +1,18 @@
+{
+  "candidate": "Integration 11 private; Integration 10-derived",
+  "baseline_sha256": "059f095f957759b210638f6a0ece75fdbc00c1c242b2ac65bb65790e67bfe95b",
+  "baseline_manifest": "400/400 PASS (fresh)",
+  "baseline_tests": "796/796 PASS (fresh, Node 22.23.5)",
+  "new_tests": 15,
+  "full_tests": {"pass": 811, "fail": 0, "skipped": 0},
+  "updated_tests": "4 offline cache revision pins (integration10 -> integration11); 1 pinned liveCheckHTML() call -> liveCheckHTML(p)",
+  "runtime": "Node 22.23.5, Linux",
+  "static_build": "PASS",
+  "artwork_withheld": "PASS; 12 binaries withheld; 0 variants",
+  "browser": "12/12 PASS, headless Chromium 1243 via Playwright 1.63.0 (browser-acceptance/uat.e2e.mjs); see docs/INTEGRATION11_UAT_RESULTS.md for scenarios not run",
+  "defects_fixed": ["Magic Initiate confirmation missing on Spells step (builder blocker)", "Generated/template Standard Array scores rendered blank"],
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "source_scope": "SRD 5.2.1 p.106, p.112, p.113; incoming Bless/Bane dice on saving throws",
+  "release": "PRIVATE QA ONLY; PUBLIC NO GO"
+}

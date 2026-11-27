@@ -1,0 +1,28 @@
+{
+  "product": "GwenTable",
+  "candidate": "Player Convergence 02 | Saved Next-Class Planning",
+  "date": "2026-11-22",
+  "sourceBaseline": "GwenTable_Player_Convergence_01_Private_Source.zip",
+  "sourceBaselineSHA256": "dd577c800dbc370e3510b8872f969b11cbb5ae2ce7bb9148fa42e86a0d61b59c",
+  "lineage": "Private dev.6-derived convergence candidate; NOT merged into UX9/dev.14 canonical site",
+  "status": "PRIVATE_DEVELOPMENT_NOT_RELEASE",
+  "implemented": [
+    "SRD next-class prerequisites for both current and proposed classes",
+    "non-active future multiclass intent stored on the existing saved character record",
+    "ineligible class reasons and disabled options",
+    "revision-checked atomic character-row save/remove",
+    "non-destructive stale-plan detection after character build changes",
+    "individual and roster portable backup restoration of planning metadata",
+    "offline module precache; no IndexedDB version change"
+  ],
+  "baselineAutomatedTests": 538,
+  "automatedTests": "559/559 PASS on Node.js 22.16.0; clean package extraction pending",
+  "notImplemented": [
+    "Active multiclass class-level allocation and character resource calculations",
+    "UX9 and dev.14 authoritative merge",
+    "Windows Node26 and real browser two-tab IndexedDB persistence",
+    "Full SRD level 1-20 gameplay and device accessibility",
+    "Public artwork copyright clearance and release approval"
+  ],
+  "release": "NO_GO"
+}

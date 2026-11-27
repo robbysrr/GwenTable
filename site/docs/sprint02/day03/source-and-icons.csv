@@ -1,0 +1,13 @@
+id,primary_ability,complexity,overview_page,class_page,requested_asset,shipped_asset,rights
+Barbarian,Strength,Average,19,28,tav-classes-barbarian,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Bard,Charisma,High,19,31,tav-classes-bard,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Cleric,Wisdom,Average,19,36,tav-classes-cleric,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Druid,Wisdom,High,19,41,tav-classes-druid,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Fighter,Strength or Dexterity,Low,19,47,tav-classes-fighter,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Monk,Dexterity and Wisdom,High,19,49,tav-classes-monk,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Paladin,Strength and Charisma,Average,19,53,tav-classes-paladin,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Ranger,Dexterity and Wisdom,Average,19,57,tav-classes-ranger,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Rogue,Dexterity,Low,19,61,tav-classes-rogue,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Sorcerer,Charisma,High,19,64,tav-classes-sorcerer,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Warlock,Charisma,High,19,70,tav-classes-warlock,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only
+Wizard,Intelligence,Average,19,77,tav-classes-wizard,tav-character,Specific asset unavailable/pending; installed licensed generic fallback only

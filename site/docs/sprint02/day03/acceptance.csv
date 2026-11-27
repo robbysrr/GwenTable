@@ -1,0 +1,43 @@
+id,status,evidence,fixture_context,owner
+D03-01,PASS,Clean parent e0e5101; sprint-02-class-safety; v0.22.4; no merge/deployment.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-02,PASS,Actual foundation README/F01–36 inspected: REPAIR; not READY.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-03,PASS,Parent candidate31 retained; raw recovery snapshot/backup tests remain passing.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-04,PASS,Gate B bounded safety repair; P0 integration gate explicitly retained.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-05,PASS,12 existing Class keys equal p19 overview; no extras; class-choice test.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-06,PASS,All primary/complexity values checked from actual SRD p19; source-and-icons.csv.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-07,PASS,No rules corpus changes; pinned registry and exact attribution build check pass.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-08,PASS,Unknown raw Class/source data blocks transition and remains unchanged; recovery regression.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-09,PASS,Existing stage registry class follows unified identity-species; existing tests.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-10,BLOCKED,12 rows constructed by real adapter; actual browser open/scroll unverified.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-11,NOT TESTED,Existing short flag hides search and focuses Close in handler tests; actual IME not tested.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-12,PASS,"classChoiceRow supplies source name, original role description and installed generic class icon.",Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-13,PASS,Resolver returns only installed licensed generic class glyph; no pending unique SVG shipped.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-14,PASS,Each actual row includes one localized editorial example and source primary abilities.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-15,PASS,p19 Low/Average/High source values with guidance explanation in actual Class stage.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-16,FAIL,Class/Ability Score/Saving Throw have two-example help; remaining Class jargon help incomplete.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-17,NOT TESTED,Explanations are inline; novice comprehension of other jargon unvalidated.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-18,PASS,All12 option rows retained; complexity does not disable choices. Unsupported level blocks change with repair guidance.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-19,BLOCKED,Shared handler tests pass; actual X/Escape/outside+confirmation cancellation not observed.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-20,BLOCKED,Native modal focus trapping/return not browser-verified.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-21,NOT TESTED,Inline details avoid a nested modal; keyboard close order not exercised.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-22,BLOCKED,No native keyboard/touch user journey.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-23,PASS,Candidate uses unchanged className canonical key; IDs never translated; new tests.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-24,PASS,Locale row/derive invariance tests; actual flag interaction/reload pending.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-25,BLOCKED,Candidate preserves name/Species/level/Background in tests; real Back/Next not observed.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-26,BLOCKED,Real IndexedDB reload/resume unverified; no schema change.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-27,PASS,Plan diffs existing engine decisions; Class facts do not invent final HP/AC; new tests/source review.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-28,PASS,SRD Fighter p47 level1 feature/skill source and existing controls/tests; no new features granted.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-29,PASS,Wizard source pp77–82; existing magic engine preserved; Wizard/Fighter comparison regressions pass.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-30,PASS,"Existing engine level eligibility retained; subclass described as starting at3, not granted by overview adapter.",Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-31,PASS,Actual Class callback opens grouped proposal before commit; pure plan immutable; dialog interaction unverified.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-32,PASS,Compatible identity/story/kit preserved; pre-change save must succeed; existing recovery captures original; tests.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-33,PASS,commitClassPlan false/throwing save rejects mutation; app reports no change. Actual quota injection pending.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-34,PASS,Existing raw legacy/custom/HP/XP and backup tests pass; actual restore UI remains unverified.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-35,BLOCKED,Existing pure/fake-DOM guards pass; full invalid-route/PDF journey unverified.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-36,BLOCKED,Existing Review/Edit wiring retained; browser focus/state not observed.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-37,NOT TESTED,No 320px/200%/long-locale rendered observation.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-38,PASS,Known semantics/handler tests and all untested native keyboard/AT checks explicitly distinguished.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-39,PASS,npm run build + npm test:100 pass/0 fail; focused7 class tests pass.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-40,PASS,No paid calls/art/dependencies/new rules engine.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-41,PASS,Specific class SVG source/rights not verified; only licensed installed fallback distributed; disclosure explicit.,Synthetic Node fixtures/source; no browser viewport,unassigned
+D03-42,PASS,"README gives actual contracts, source map, rollback, open issues and Background ticket.",Synthetic Node fixtures/source; no browser viewport,unassigned

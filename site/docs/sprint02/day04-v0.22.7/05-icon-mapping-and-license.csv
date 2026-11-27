@@ -1,0 +1,5 @@
+background,requested_unique_icon,actual_resolver,unique_art,license_basis,status
+Acolyte,prayer/shrine,gwen-help SVG currentColor,none,audit/icon-registry.json (existing first-party UI glyph),fallback usable; distinct artwork missing
+Criminal,keys/lockpick,gwen-help SVG currentColor,none,audit/icon-registry.json (existing first-party UI glyph),fallback usable; distinct artwork missing
+Sage,archive/book,gwen-help SVG currentColor,none,audit/icon-registry.json (existing first-party UI glyph),fallback usable; distinct artwork missing
+Soldier,shield/banner,gwen-help SVG currentColor,none,audit/icon-registry.json (existing first-party UI glyph),fallback usable; distinct artwork missing

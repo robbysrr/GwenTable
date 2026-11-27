@@ -1,0 +1,13 @@
+{
+  "project": "GwenTable",
+  "edition": "Player Convergence 07: Fighter 1 / Rogue 2",
+  "date": "2026-11-23",
+  "sourceAuthority": "Exact Convergence 06 recovered private source, not verified canonical UX9/dev.14",
+  "baselineSha256": "e73ce069cf1727f23846c7e252e847997c4e62324207a6673e27f3a41b1ef28f",
+  "nodeVersion": "v22.16.0",
+  "tests": {"baseline": 620,"added": 17,"passed": 637,"failed": 0,"actualBrowserIndexedDB": "NOT TESTED"},
+  "features": ["Active Fighter1/Rogue2 with explicit XP or GM milestone", "Rogue2 Cunning Action tracked Bonus Action", "Separate Fighter d10 and Rogue d8 pools", "Preserved v1 Fighter1/Rogue1 saved imports", "GCX, native fillable PDF, roster and individual JSON support", "SRD-only EN/ID guidance", "Per-row revision CAS conflict protection", "Source-bound HP/XP authorization receipt", "No inferred Hide/DM results"],
+  "verified": {"staticBuild": "PASS", "artworkWithheldPreview": "PASS with 0 served image binaries", "syntheticPDF": "PASS, 3 pages, rendered and visually inspected", "simulatedConcurrentCharacterWrites": "PASS"},
+  "outstanding": ["Real browser two-tab persistence", "Windows Node26 acceptance", "Authentic user save migrations", "UX9/dev.14 canonical merge", "Other class combinations/levels", "Full SRD 5.2.1 automation", "Accessibility, security and public licensing gates"],
+  "release": "NO_GO"
+}

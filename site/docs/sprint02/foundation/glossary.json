@@ -1,0 +1,244 @@
+{
+  "Species": {
+    "id": "Species",
+    "en": {
+      "why": "Check your Species traits before choosing related options. Species does not decide your Class or personality.",
+      "definition": "Species describes your character’s ancestry. It gives you traits such as senses, movement, or special abilities.",
+      "examples": [
+        "A Dwarf can see in darkness within the range of their Darkvision.",
+        "A Dragonborn can use a Breath Weapon whose damage type comes from their ancestry."
+      ],
+      "pages": "20, 84–86"
+    },
+    "idID": {
+      "definition": "Species menunjukkan asal-usul karaktermu. Ini bisa memberi trait seperti indra, cara bergerak, atau kemampuan khusus.",
+      "examples": [
+        "Dwarf bisa melihat dalam gelap sejauh jangkauan Darkvision-nya.",
+        "Dragonborn bisa memakai Breath Weapon. Tipe damage-nya mengikuti garis keturunannya."
+      ],
+      "why": "Cek trait Species-mu sebelum memilih opsi terkait. Species tidak menentukan Class atau kepribadianmu."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Background": {
+    "id": "Background",
+    "en": {
+      "why": "Review your granted feat and training, then choose ability increases and starting equipment in their own steps.",
+      "definition": "Background describes what you did before adventuring. It gives you an Origin feat, skill and tool proficiencies, and starting gear or money. It also sets which ability scores you can increase.",
+      "examples": [
+        "A Sage gains proficiency in Arcana and History.",
+        "A Soldier gains Savage Attacker, an Origin feat that can improve a weapon damage roll."
+      ],
+      "pages": "19–20, 83"
+    },
+    "idID": {
+      "definition": "Background menceritakan kegiatanmu sebelum jadi petualang. Kamu dapat Origin Feat, Skill dan Tool Proficiency, serta perlengkapan atau uang awal. Background juga menentukan Ability Score mana yang bisa kamu naikkan.",
+      "examples": [
+        "Sage mendapat Proficiency di Arcana dan History.",
+        "Soldier mendapat Savage Attacker, Origin Feat yang bisa membantu hasil damage roll senjata."
+      ],
+      "why": "Cek feat dan latihan yang kamu dapat, lalu pilih peningkatan Ability dan perlengkapan awal di langkahnya masing-masing."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Proficiency": {
+    "id": "Proficiency",
+    "en": {
+      "why": "Look for the specific skill, save, weapon, or tool you are trained in before adding this bonus.",
+      "definition": "Proficiency means you add your Proficiency Bonus when you make a roll covered by that training. At level 1, that bonus is +2.",
+      "examples": [
+        "If you have Athletics proficiency, add +2 to a level 1 Athletics check to climb a difficult wall, in addition to your Strength modifier.",
+        "If you have proficiency with a Longsword, add +2 to a level 1 attack roll with it. The bonus is for the attack roll."
+      ],
+      "pages": "9–11"
+    },
+    "idID": {
+      "definition": "Proficiency berarti kamu menambahkan Proficiency Bonus ke roll yang sesuai dengan latihanmu. Di level 1, bonusnya +2.",
+      "examples": [
+        "Kalau kamu punya Proficiency di Athletics, tambahkan +2 ke Athletics Check level 1 saat memanjat tembok yang sulit, selain modifier Strength.",
+        "Kalau kamu punya Proficiency dengan Longsword, tambahkan +2 ke Attack Roll pakai senjata itu di level 1."
+      ],
+      "why": "Cek dulu skill, save, senjata, atau tool yang kamu kuasai sebelum menambahkan bonus ini."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Class": {
+    "id": "Class",
+    "en": {
+      "definition": "Class describes your adventuring training. It determines features, Hit Dice, saving throw proficiencies, and how you gain abilities as you level up.",
+      "examples": [
+        "A level 1 Fighter can use Second Wind to regain Hit Points.",
+        "A level 1 Wizard records spells in a spellbook and prepares spells from it."
+      ],
+      "why": "Choose the kind of actions you want to take; your Class determines which options become available.",
+      "pages": "19, 28–82"
+    },
+    "idID": {
+      "definition": "Class menjelaskan latihan dan peran petualangmu. Pilihan ini menentukan fitur, Hit Dice, Saving Throw Proficiency, dan kemampuan yang kamu dapat saat naik level.",
+      "examples": [
+        "Fighter level 1 bisa memakai Second Wind untuk memulihkan Hit Points.",
+        "Wizard level 1 mencatat spell di spellbook, lalu menyiapkan spell dari buku itu."
+      ],
+      "why": "Pilih aktivitas yang ingin kamu lakukan. Class menentukan pilihan kemampuan yang tersedia."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Skill": {
+    "id": "Skill",
+    "en": {
+      "definition": "A skill is a category of tasks that can use an ability check. Skill proficiency adds your Proficiency Bonus when that skill applies.",
+      "examples": [
+        "Athletics often uses Strength to swim through rough water.",
+        "Perception often uses Wisdom to notice something easy to miss."
+      ],
+      "why": "Pick skills for tasks you want training in; proficiency does not guarantee success.",
+      "pages": "9"
+    },
+    "idID": {
+      "definition": "Skill adalah kelompok aktivitas yang bisa diuji dengan Ability Check. Kalau punya proficiency pada skill yang dipakai, tambahkan Proficiency Bonus.",
+      "examples": [
+        "Athletics biasanya memakai Strength saat berenang di air yang bergelombang.",
+        "Perception biasanya memakai Wisdom untuk menyadari sesuatu yang mudah terlewat."
+      ],
+      "why": "Pilih skill untuk aktivitas yang ingin kamu kuasai. Proficiency membantu, tapi tidak menjamin berhasil."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Skill Check": {
+    "id": "Skill Check",
+    "en": {
+      "definition": "A Skill Check is an ability check involving a skill. Roll a d20, add the ability modifier, and add Proficiency Bonus if you are proficient in the relevant skill. The GM decides the relevant check.",
+      "examples": [
+        "The GM might ask for Strength (Athletics) when you try to climb a cliff.",
+        "The GM might ask for Intelligence (Investigation) to deduce how a mechanism works."
+      ],
+      "why": "Your ability modifier and relevant training both affect the total. Ask the GM what to roll.",
+      "pages": "7–9"
+    },
+    "idID": {
+      "definition": "Skill Check adalah Ability Check yang melibatkan skill. Lempar d20, tambahkan Ability Modifier, lalu Proficiency Bonus kalau kamu punya proficiency pada skill itu. GM menentukan check yang sesuai.",
+      "examples": [
+        "GM bisa meminta Strength (Athletics) saat kamu mencoba memanjat tebing.",
+        "GM bisa meminta Intelligence (Investigation) untuk menyimpulkan cara kerja suatu mekanisme."
+      ],
+      "why": "Ability Modifier dan latihan yang sesuai sama-sama memengaruhi hasilnya. Tanyakan ke GM check yang perlu dilempar."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Tool Proficiency": {
+    "id": "Tool Proficiency",
+    "en": {
+      "definition": "Tool Proficiency lets you add your Proficiency Bonus to an ability check that uses that tool. If you also have proficiency in a skill used for that check, you gain Advantage; do not add the bonus twice.",
+      "examples": [
+        "With Thieves’ Tools proficiency, add your Proficiency Bonus to a check using those tools to pick a lock.",
+        "If a check uses both your proficient skill and your proficient tool, roll with Advantage and add your Proficiency Bonus once."
+      ],
+      "why": "Training applies when you actually use the appropriate tool, not to every task involving the same ability.",
+      "pages": "10, 98–99"
+    },
+    "idID": {
+      "definition": "Tool Proficiency membuatmu bisa menambahkan Proficiency Bonus ke Ability Check yang memakai tool itu. Kalau juga punya proficiency pada skill yang dipakai check tersebut, kamu mendapat Advantage; bonusnya tidak ditambahkan dua kali.",
+      "examples": [
+        "Dengan Thieves’ Tools proficiency, tambahkan Proficiency Bonus ke check memakai tool itu untuk membuka kunci.",
+        "Kalau sebuah check memakai skill dan tool yang sama-sama kamu kuasai, lempar dengan Advantage dan tambahkan Proficiency Bonus sekali saja."
+      ],
+      "why": "Latihan ini berlaku saat kamu memakai tool yang sesuai, bukan untuk semua aktivitas dengan Ability yang sama."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Origin Feat": {
+    "id": "Origin Feat",
+    "en": {
+      "definition": "An Origin Feat is a category of feat available through character origins. Your Background grants a specific Origin Feat; some other features can grant one too.",
+      "examples": [
+        "The Criminal Background grants Alert, which adds your Proficiency Bonus to Initiative rolls.",
+        "Skilled grants proficiency in any combination of three skills or tools you choose."
+      ],
+      "why": "Read the feat your Background grants; you do not automatically gain every Origin Feat.",
+      "pages": "83, 87"
+    },
+    "idID": {
+      "definition": "Origin Feat adalah kategori feat yang bisa didapat dari asal-usul karakter. Background memberi Origin Feat tertentu; beberapa fitur lain juga bisa memberikannya.",
+      "examples": [
+        "Background Criminal memberi Alert, yang menambahkan Proficiency Bonus ke lemparan Initiative.",
+        "Skilled memberi proficiency dalam gabungan tiga skill atau tool pilihanmu."
+      ],
+      "why": "Baca feat yang diberikan Background-mu. Kamu tidak otomatis mendapat semua Origin Feat."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Ability Score": {
+    "id": "Ability Score",
+    "en": {
+      "definition": "The six Ability Scores describe your capabilities. Each score has a modifier used for related rolls; your Background allows specific score increases.",
+      "examples": [
+        "Strength 16 has a +3 modifier, so a Strength check starts with d20 + 3 before other bonuses.",
+        "Dexterity 10 has a +0 modifier, so it adds 0 to your Initiative roll before other bonuses."
+      ],
+      "why": "Choose scores that support the abilities your Class uses, then apply only the increases your Background permits.",
+      "pages": "6–7, 21–22"
+    },
+    "idID": {
+      "definition": "Enam Ability Score menggambarkan kemampuanmu. Setiap score punya modifier untuk lemparan terkait; Background menentukan pilihan peningkatan score.",
+      "examples": [
+        "Strength 16 punya modifier +3, jadi Strength check dimulai dari d20 + 3 sebelum bonus lain.",
+        "Dexterity 10 punya modifier +0, jadi menambahkan 0 ke lemparan Initiative sebelum bonus lain."
+      ],
+      "why": "Pilih score yang mendukung Ability Class-mu, lalu pakai peningkatan yang diizinkan Background."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Saving Throw": {
+    "id": "Saving Throw",
+    "en": {
+      "definition": "A Saving Throw is a roll to resist a threat. Roll a d20 and add the relevant ability modifier; add Proficiency Bonus only if you have proficiency in that saving throw.",
+      "examples": [
+        "A Wizard adds Proficiency Bonus to a Wisdom saving throw because the Class grants that proficiency.",
+        "After taking damage while concentrating, you make a Constitution saving throw to try to maintain Concentration."
+      ],
+      "why": "Skill proficiency is separate from saving throw proficiency; Perception proficiency does not grant Wisdom save proficiency.",
+      "pages": "7, 9, 179"
+    },
+    "idID": {
+      "definition": "Saving Throw adalah lemparan untuk melawan ancaman. Lempar d20 dan tambahkan Ability Modifier yang sesuai; Proficiency Bonus ditambahkan kalau kamu punya proficiency pada Saving Throw itu.",
+      "examples": [
+        "Wizard menambahkan Proficiency Bonus ke Wisdom saving throw karena Class-nya memberi proficiency itu.",
+        "Setelah menerima damage saat berkonsentrasi, kamu membuat Constitution saving throw untuk mencoba mempertahankan Concentration."
+      ],
+      "why": "Skill Proficiency berbeda dari Saving Throw Proficiency. Perception proficiency tidak memberi Wisdom save proficiency."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  },
+  "Advantage": {
+    "id": "Advantage",
+    "en": {
+      "definition": "For a D20 Test with Advantage, roll two d20s and use the higher result. Multiple sources do not add extra dice. Advantage and Disadvantage cancel each other.",
+      "examples": [
+        "If you roll 4 and 17 with Advantage, use 17 before adding your modifiers.",
+        "If a check has both Advantage and Disadvantage, roll one d20 normally."
+      ],
+      "why": "Advantage improves the roll; it does not guarantee success or add a flat bonus.",
+      "pages": "8"
+    },
+    "idID": {
+      "definition": "Untuk D20 Test dengan Advantage, lempar dua d20 dan pakai hasil yang lebih tinggi. Beberapa sumber Advantage tidak menambah jumlah dadu. Advantage dan Disadvantage saling meniadakan.",
+      "examples": [
+        "Kalau hasil lemparan dengan Advantage adalah 4 dan 17, pakai 17 sebelum menambahkan modifier.",
+        "Kalau sebuah check punya Advantage dan Disadvantage sekaligus, lempar satu d20 seperti biasa."
+      ],
+      "why": "Advantage membantu lemparan, tapi tidak menjamin berhasil dan bukan bonus angka tetap."
+    },
+    "source": "SRD 5.2.1",
+    "editorialStatus": "Original beginner explanation; source traced; no participant validation"
+  }
+}

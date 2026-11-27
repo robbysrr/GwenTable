@@ -1,0 +1,5 @@
+id,display_name,ability_candidates,feat,variant,skills,tool,equipment_A_items,equipment_A_gp,equipment_B_gp,source,license,engine_key
+srd-5.2.1:background:acolyte,Acolyte,Intelligence|Wisdom|Charisma,Magic Initiate,Cleric,Insight|Religion,Calligrapher’s Supplies,Calligrapher’s Supplies|Book (prayers)|Holy Symbol|Parchment (10 sheets)|Robe,8,50,SRD_CC_v5.2.1_copy.pdf p.83,CC BY 4.0,Acolyte
+srd-5.2.1:background:criminal,Criminal,Dexterity|Constitution|Intelligence,Alert,,Sleight of Hand|Stealth,Thieves’ Tools,2 Daggers|Thieves’ Tools|Crowbar|2 Pouches|Traveler’s Clothes,16,50,SRD_CC_v5.2.1_copy.pdf p.83,CC BY 4.0,Criminal
+srd-5.2.1:background:sage,Sage,Constitution|Intelligence|Wisdom,Magic Initiate,Wizard,Arcana|History,Calligrapher’s Supplies,Quarterstaff|Calligrapher’s Supplies|Book (history)|Parchment (8 sheets)|Robe,8,50,SRD_CC_v5.2.1_copy.pdf p.83,CC BY 4.0,Sage
+srd-5.2.1:background:soldier,Soldier,Strength|Dexterity|Constitution,Savage Attacker,,Athletics|Intimidation,choose 1 Gaming Set,Spear|Shortbow|20 Arrows|Gaming Set (same kind)|Healer’s Kit|Quiver|Traveler’s Clothes,14,50,SRD_CC_v5.2.1_copy.pdf p.83,CC BY 4.0,Soldier

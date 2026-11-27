@@ -1,0 +1,1531 @@
+[
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Barbarian",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Barbarian",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 28,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "gamingSet",
+        "count": 1,
+        "options": [
+          "Dice gaming set",
+          "Dragonchess gaming set",
+          "Playing cards gaming set",
+          "Three-dragon ante gaming set"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Animal Handling",
+          "Nature",
+          "Perception",
+          "Survival"
+        ]
+      },
+      {
+        "key": "mastery",
+        "count": 2,
+        "options": [
+          "Greataxe",
+          "Handaxe",
+          "Spear",
+          "Club",
+          "Dagger",
+          "Greatclub",
+          "Javelin",
+          "Light Hammer",
+          "Mace",
+          "Quarterstaff",
+          "Sickle",
+          "Battleaxe",
+          "Flail",
+          "Glaive",
+          "Greatsword",
+          "Halberd",
+          "Lance",
+          "Longsword",
+          "Maul",
+          "Morningstar",
+          "Pike",
+          "Rapier",
+          "Scimitar",
+          "Shortsword",
+          "Trident",
+          "Warhammer",
+          "War Pick",
+          "Whip"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Bard",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Bard",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 31,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "instruments",
+        "count": 3,
+        "options": [
+          "Bagpipes",
+          "Drum",
+          "Dulcimer",
+          "Flute",
+          "Horn",
+          "Lute",
+          "Lyre",
+          "Pan flute",
+          "Shawm",
+          "Viol"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 3,
+        "options": [
+          "Acrobatics",
+          "Animal Handling",
+          "Arcana",
+          "Athletics",
+          "Deception",
+          "History",
+          "Intimidation",
+          "Investigation",
+          "Medicine",
+          "Nature",
+          "Perception",
+          "Performance",
+          "Persuasion",
+          "Sleight of Hand",
+          "Stealth",
+          "Survival"
+        ]
+      },
+      {
+        "key": "humanSkill",
+        "count": 1,
+        "options": [
+          "Acrobatics",
+          "Animal Handling",
+          "Arcana",
+          "Athletics",
+          "Deception",
+          "History",
+          "Medicine",
+          "Perception",
+          "Performance",
+          "Persuasion",
+          "Sleight of Hand",
+          "Stealth",
+          "Survival"
+        ]
+      },
+      {
+        "key": "backgroundMagicAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "backgroundMagicCantrips",
+        "count": 2,
+        "options": [
+          "Guidance",
+          "Light",
+          "Mending",
+          "Resistance",
+          "Sacred Flame",
+          "Spare the Dying",
+          "Thaumaturgy"
+        ]
+      },
+      {
+        "key": "backgroundMagicSpell",
+        "count": 1,
+        "options": [
+          "Bane",
+          "Bless",
+          "Command",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Guiding Bolt",
+          "Healing Word",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Sanctuary",
+          "Shield of Faith"
+        ]
+      },
+      {
+        "key": "humanFeat",
+        "count": 1,
+        "options": [
+          "Alert",
+          "Magic Initiate",
+          "Savage Attacker",
+          "Skilled"
+        ]
+      },
+      {
+        "key": "humanFeatList",
+        "count": 1,
+        "options": [
+          "Druid",
+          "Wizard"
+        ]
+      },
+      {
+        "key": "humanFeatAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "humanFeatCantrips",
+        "count": 2,
+        "options": [
+          "Druidcraft",
+          "Elementalism",
+          "Guidance",
+          "Mending",
+          "Message",
+          "Poison Spray",
+          "Produce Flame",
+          "Resistance",
+          "Shillelagh",
+          "Spare the Dying",
+          "Starry Wisp"
+        ]
+      },
+      {
+        "key": "humanFeatSpell",
+        "count": 1,
+        "options": [
+          "Animal Friendship",
+          "Charm Person",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Entangle",
+          "Faerie Fire",
+          "Fog Cloud",
+          "Goodberry",
+          "Healing Word",
+          "Ice Knife",
+          "Jump",
+          "Longstrider",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Speak with Animals",
+          "Thunderwave"
+        ]
+      },
+      {
+        "key": "cantrips",
+        "count": 2,
+        "options": [
+          "Dancing Lights",
+          "Light",
+          "Mage Hand",
+          "Mending",
+          "Message",
+          "Minor Illusion",
+          "Prestidigitation",
+          "Starry Wisp",
+          "True Strike",
+          "Vicious Mockery"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 4,
+        "options": [
+          "Animal Friendship",
+          "Bane",
+          "Charm Person",
+          "Color Spray",
+          "Command",
+          "Comprehend Languages",
+          "Cure Wounds",
+          "Detect Magic",
+          "Disguise Self",
+          "Dissonant Whispers",
+          "Faerie Fire",
+          "Feather Fall",
+          "Healing Word",
+          "Heroism",
+          "Hideous Laughter",
+          "Identify",
+          "Illusory Script",
+          "Longstrider",
+          "Silent Image",
+          "Sleep",
+          "Speak with Animals",
+          "Thunderwave",
+          "Unseen Servant"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Cleric",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Cleric",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 36,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "History",
+          "Medicine",
+          "Persuasion"
+        ]
+      },
+      {
+        "key": "order",
+        "count": 1,
+        "options": [
+          "Protector",
+          "Thaumaturge"
+        ]
+      },
+      {
+        "key": "backgroundMagicAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "backgroundMagicCantrips",
+        "count": 2,
+        "options": [
+          "Guidance",
+          "Light",
+          "Mending",
+          "Resistance",
+          "Sacred Flame",
+          "Spare the Dying",
+          "Thaumaturgy"
+        ]
+      },
+      {
+        "key": "backgroundMagicSpell",
+        "count": 1,
+        "options": [
+          "Bane",
+          "Bless",
+          "Command",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Guiding Bolt",
+          "Healing Word",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Sanctuary",
+          "Shield of Faith"
+        ]
+      },
+      {
+        "key": "cantrips",
+        "count": 3,
+        "options": [
+          "Guidance",
+          "Light",
+          "Mending",
+          "Resistance",
+          "Sacred Flame",
+          "Spare the Dying",
+          "Thaumaturgy"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 4,
+        "options": [
+          "Bane",
+          "Bless",
+          "Command",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Guiding Bolt",
+          "Healing Word",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Sanctuary",
+          "Shield of Faith"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Druid",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Druid",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 41,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "keen",
+        "count": 1,
+        "options": [
+          "Insight",
+          "Perception",
+          "Survival"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Animal Handling",
+          "Insight",
+          "Medicine",
+          "Nature",
+          "Perception",
+          "Religion"
+        ]
+      },
+      {
+        "key": "order",
+        "count": 1,
+        "options": [
+          "Warden",
+          "Magician"
+        ]
+      },
+      {
+        "key": "backgroundMagicAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "backgroundMagicCantrips",
+        "count": 2,
+        "options": [
+          "Acid Splash",
+          "Chill Touch",
+          "Dancing Lights",
+          "Elementalism",
+          "Fire Bolt",
+          "Light",
+          "Mage Hand",
+          "Mending",
+          "Message",
+          "Minor Illusion",
+          "Poison Spray",
+          "Prestidigitation",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike"
+        ]
+      },
+      {
+        "key": "backgroundMagicSpell",
+        "count": 1,
+        "options": [
+          "Alarm",
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Color Spray",
+          "Comprehend Languages",
+          "Detect Magic",
+          "Disguise Self",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Find Familiar",
+          "Floating Disk",
+          "Fog Cloud",
+          "Grease",
+          "Hideous Laughter",
+          "Ice Knife",
+          "Identify",
+          "Illusory Script",
+          "Jump",
+          "Longstrider",
+          "Mage Armor",
+          "Magic Missile",
+          "Protection from Evil and Good",
+          "Ray of Sickness",
+          "Shield",
+          "Silent Image",
+          "Sleep",
+          "Thunderwave",
+          "Unseen Servant"
+        ]
+      },
+      {
+        "key": "cantrips",
+        "count": 3,
+        "options": [
+          "Druidcraft",
+          "Elementalism",
+          "Guidance",
+          "Mending",
+          "Message",
+          "Poison Spray",
+          "Produce Flame",
+          "Resistance",
+          "Shillelagh",
+          "Spare the Dying",
+          "Starry Wisp"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 4,
+        "options": [
+          "Animal Friendship",
+          "Charm Person",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Entangle",
+          "Faerie Fire",
+          "Fog Cloud",
+          "Goodberry",
+          "Healing Word",
+          "Ice Knife",
+          "Jump",
+          "Longstrider",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Thunderwave"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Fighter",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Fighter",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 47,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "gamingSet",
+        "count": 1,
+        "options": [
+          "Dice gaming set",
+          "Dragonchess gaming set",
+          "Playing cards gaming set",
+          "Three-dragon ante gaming set"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Acrobatics",
+          "Animal Handling",
+          "History",
+          "Insight",
+          "Persuasion",
+          "Perception",
+          "Survival"
+        ]
+      },
+      {
+        "key": "humanSkill",
+        "count": 1,
+        "options": [
+          "Acrobatics",
+          "Animal Handling",
+          "Arcana",
+          "Deception",
+          "History",
+          "Insight",
+          "Investigation",
+          "Medicine",
+          "Nature",
+          "Perception",
+          "Performance",
+          "Religion",
+          "Sleight of Hand",
+          "Stealth"
+        ]
+      },
+      {
+        "key": "style",
+        "count": 1,
+        "options": [
+          "Defense",
+          "Archery",
+          "Great Weapon Fighting",
+          "Two-Weapon Fighting"
+        ]
+      },
+      {
+        "key": "mastery",
+        "count": 3,
+        "options": [
+          "Greatsword",
+          "Flail",
+          "Javelin",
+          "Spear",
+          "Shortbow",
+          "Club",
+          "Dagger",
+          "Greatclub",
+          "Handaxe",
+          "Light Hammer",
+          "Mace",
+          "Quarterstaff",
+          "Sickle",
+          "Dart",
+          "Light Crossbow",
+          "Sling",
+          "Battleaxe",
+          "Glaive",
+          "Greataxe",
+          "Halberd",
+          "Lance",
+          "Longsword",
+          "Maul",
+          "Morningstar",
+          "Pike",
+          "Rapier",
+          "Scimitar",
+          "Shortsword",
+          "Trident",
+          "Warhammer",
+          "War Pick",
+          "Whip",
+          "Blowgun",
+          "Hand Crossbow",
+          "Heavy Crossbow",
+          "Longbow",
+          "Musket",
+          "Pistol"
+        ]
+      },
+      {
+        "key": "humanFeat",
+        "count": 1,
+        "options": [
+          "Alert",
+          "Magic Initiate",
+          "Skilled"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Monk",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Monk",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 49,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "gamingSet",
+        "count": 1,
+        "options": [
+          "Dice gaming set",
+          "Dragonchess gaming set",
+          "Playing cards gaming set",
+          "Three-dragon ante gaming set"
+        ]
+      },
+      {
+        "key": "monkTool",
+        "count": 1,
+        "options": [
+          "Alchemist’s Supplies",
+          "Brewer’s Supplies",
+          "Calligrapher’s Supplies",
+          "Carpenter’s Tools",
+          "Cartographer’s Tools",
+          "Cobbler’s Tools",
+          "Cook’s Utensils",
+          "Glassblower’s Tools",
+          "Jeweler’s Tools",
+          "Leatherworker’s Tools",
+          "Mason’s Tools",
+          "Painter’s Supplies",
+          "Potter’s Tools",
+          "Smith’s Tools",
+          "Tinker’s Tools",
+          "Weaver’s Tools",
+          "Woodcarver’s Tools",
+          "Bagpipes",
+          "Drum",
+          "Dulcimer",
+          "Flute",
+          "Horn",
+          "Lute",
+          "Lyre",
+          "Pan flute",
+          "Shawm",
+          "Viol"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Acrobatics",
+          "History",
+          "Insight",
+          "Religion",
+          "Stealth"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Paladin",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Paladin",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 53,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "gamingSet",
+        "count": 1,
+        "options": [
+          "Dice gaming set",
+          "Dragonchess gaming set",
+          "Playing cards gaming set",
+          "Three-dragon ante gaming set"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Insight",
+          "Medicine",
+          "Persuasion",
+          "Religion"
+        ]
+      },
+      {
+        "key": "mastery",
+        "count": 2,
+        "options": [
+          "Longsword",
+          "Javelin",
+          "Spear",
+          "Shortbow",
+          "Club",
+          "Dagger",
+          "Greatclub",
+          "Handaxe",
+          "Light Hammer",
+          "Mace",
+          "Quarterstaff",
+          "Sickle",
+          "Dart",
+          "Light Crossbow",
+          "Sling",
+          "Battleaxe",
+          "Flail",
+          "Glaive",
+          "Greataxe",
+          "Greatsword",
+          "Halberd",
+          "Lance",
+          "Maul",
+          "Morningstar",
+          "Pike",
+          "Rapier",
+          "Scimitar",
+          "Shortsword",
+          "Trident",
+          "Warhammer",
+          "War Pick",
+          "Whip",
+          "Blowgun",
+          "Hand Crossbow",
+          "Heavy Crossbow",
+          "Longbow",
+          "Musket",
+          "Pistol"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 2,
+        "options": [
+          "Bless",
+          "Command",
+          "Cure Wounds",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Divine Favor",
+          "Divine Smite",
+          "Heroism",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Searing Smite",
+          "Shield of Faith"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Ranger",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Ranger",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 57,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "classSkills",
+        "count": 3,
+        "options": [
+          "Animal Handling",
+          "Athletics",
+          "Insight",
+          "Investigation",
+          "Nature",
+          "Perception",
+          "Survival"
+        ]
+      },
+      {
+        "key": "mastery",
+        "count": 2,
+        "options": [
+          "Scimitar",
+          "Shortsword",
+          "Longbow",
+          "Dagger",
+          "Club",
+          "Greatclub",
+          "Handaxe",
+          "Javelin",
+          "Light Hammer",
+          "Mace",
+          "Quarterstaff",
+          "Sickle",
+          "Spear",
+          "Dart",
+          "Light Crossbow",
+          "Shortbow",
+          "Sling",
+          "Battleaxe",
+          "Flail",
+          "Glaive",
+          "Greataxe",
+          "Greatsword",
+          "Halberd",
+          "Lance",
+          "Longsword",
+          "Maul",
+          "Morningstar",
+          "Pike",
+          "Rapier",
+          "Trident",
+          "Warhammer",
+          "War Pick",
+          "Whip",
+          "Blowgun",
+          "Hand Crossbow",
+          "Heavy Crossbow",
+          "Musket",
+          "Pistol"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 2,
+        "options": [
+          "Alarm",
+          "Animal Friendship",
+          "Cure Wounds",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Ensnaring Strike",
+          "Entangle",
+          "Fog Cloud",
+          "Goodberry",
+          "Jump",
+          "Longstrider",
+          "Speak with Animals"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Rogue",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Rogue",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 61,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "classSkills",
+        "count": 4,
+        "options": [
+          "Acrobatics",
+          "Athletics",
+          "Deception",
+          "Insight",
+          "Intimidation",
+          "Investigation",
+          "Perception",
+          "Persuasion"
+        ]
+      },
+      {
+        "key": "expertise",
+        "count": 2,
+        "options": [
+          "Sleight of Hand",
+          "Stealth",
+          "Athletics",
+          "Investigation",
+          "Intimidation",
+          "Insight"
+        ]
+      },
+      {
+        "key": "extraLanguages",
+        "count": 1,
+        "options": [
+          "Common Sign Language",
+          "Draconic",
+          "Dwarvish",
+          "Elvish",
+          "Giant",
+          "Goblin",
+          "Halfling",
+          "Abyssal",
+          "Celestial",
+          "Deep Speech",
+          "Druidic",
+          "Infernal",
+          "Primordial",
+          "Sylvan",
+          "Undercommon"
+        ]
+      },
+      {
+        "key": "mastery",
+        "count": 2,
+        "options": [
+          "Dagger",
+          "Shortsword",
+          "Shortbow",
+          "Club",
+          "Greatclub",
+          "Handaxe",
+          "Javelin",
+          "Light Hammer",
+          "Mace",
+          "Quarterstaff",
+          "Sickle",
+          "Spear",
+          "Dart",
+          "Light Crossbow",
+          "Sling",
+          "Rapier",
+          "Scimitar",
+          "Whip",
+          "Hand Crossbow"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Sorcerer",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Sorcerer",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 64,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Arcana",
+          "Deception",
+          "Intimidation",
+          "Persuasion"
+        ]
+      },
+      {
+        "key": "backgroundMagicAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "backgroundMagicCantrips",
+        "count": 2,
+        "options": [
+          "Guidance",
+          "Light",
+          "Mending",
+          "Resistance",
+          "Sacred Flame",
+          "Spare the Dying",
+          "Thaumaturgy"
+        ]
+      },
+      {
+        "key": "backgroundMagicSpell",
+        "count": 1,
+        "options": [
+          "Bane",
+          "Bless",
+          "Command",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Guiding Bolt",
+          "Healing Word",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Sanctuary",
+          "Shield of Faith"
+        ]
+      },
+      {
+        "key": "cantrips",
+        "count": 4,
+        "options": [
+          "Acid Splash",
+          "Chill Touch",
+          "Dancing Lights",
+          "Elementalism",
+          "Fire Bolt",
+          "Light",
+          "Mage Hand",
+          "Mending",
+          "Message",
+          "Minor Illusion",
+          "Poison Spray",
+          "Prestidigitation",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "Sorcerous Burst",
+          "True Strike"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 2,
+        "options": [
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Color Spray",
+          "Comprehend Languages",
+          "Detect Magic",
+          "Disguise Self",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Fog Cloud",
+          "Grease",
+          "Ice Knife",
+          "Jump",
+          "Mage Armor",
+          "Magic Missile",
+          "Ray of Sickness",
+          "Shield",
+          "Silent Image",
+          "Sleep",
+          "Thunderwave"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Warlock",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Warlock",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 70,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Arcana",
+          "Deception",
+          "History",
+          "Intimidation",
+          "Investigation",
+          "Nature"
+        ]
+      },
+      {
+        "key": "backgroundMagicAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "backgroundMagicCantrips",
+        "count": 2,
+        "options": [
+          "Guidance",
+          "Light",
+          "Mending",
+          "Resistance",
+          "Sacred Flame",
+          "Spare the Dying",
+          "Thaumaturgy"
+        ]
+      },
+      {
+        "key": "backgroundMagicSpell",
+        "count": 1,
+        "options": [
+          "Bane",
+          "Bless",
+          "Command",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Guiding Bolt",
+          "Healing Word",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Sanctuary",
+          "Shield of Faith"
+        ]
+      },
+      {
+        "key": "cantrips",
+        "count": 2,
+        "options": [
+          "Chill Touch",
+          "Eldritch Blast",
+          "Mage Hand",
+          "Minor Illusion",
+          "Poison Spray",
+          "Prestidigitation",
+          "True Strike"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 2,
+        "options": [
+          "Bane",
+          "Charm Person",
+          "Comprehend Languages",
+          "Detect Magic",
+          "Expeditious Retreat",
+          "Hellish Rebuke",
+          "Hex",
+          "Hideous Laughter",
+          "Illusory Script",
+          "Protection from Evil and Good",
+          "Speak with Animals",
+          "Unseen Servant"
+        ]
+      },
+      {
+        "key": "invocations",
+        "count": 1,
+        "options": [
+          "Armor of Shadows",
+          "Eldritch Mind",
+          "Pact of the Blade",
+          "Pact of the Chain",
+          "Pact of the Tome"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Wizard",
+    "type": "Class",
+    "version": "5.2.1",
+    "enLabel": "Wizard",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 77,
+    "icon": "tav-character",
+    "dependencies": [
+      {
+        "key": "keen",
+        "count": 1,
+        "options": [
+          "Insight",
+          "Perception",
+          "Survival"
+        ]
+      },
+      {
+        "key": "classSkills",
+        "count": 2,
+        "options": [
+          "Investigation",
+          "Medicine",
+          "Nature",
+          "Religion"
+        ]
+      },
+      {
+        "key": "backgroundMagicAbility",
+        "count": 1,
+        "options": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "key": "backgroundMagicCantrips",
+        "count": 2,
+        "options": [
+          "Acid Splash",
+          "Chill Touch",
+          "Dancing Lights",
+          "Elementalism",
+          "Fire Bolt",
+          "Light",
+          "Mage Hand",
+          "Mending",
+          "Message",
+          "Minor Illusion",
+          "Poison Spray",
+          "Prestidigitation",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike"
+        ]
+      },
+      {
+        "key": "backgroundMagicSpell",
+        "count": 1,
+        "options": [
+          "Alarm",
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Color Spray",
+          "Comprehend Languages",
+          "Detect Magic",
+          "Disguise Self",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Find Familiar",
+          "Floating Disk",
+          "Fog Cloud",
+          "Grease",
+          "Hideous Laughter",
+          "Ice Knife",
+          "Identify",
+          "Illusory Script",
+          "Jump",
+          "Longstrider",
+          "Mage Armor",
+          "Magic Missile",
+          "Protection from Evil and Good",
+          "Ray of Sickness",
+          "Shield",
+          "Silent Image",
+          "Sleep",
+          "Thunderwave",
+          "Unseen Servant"
+        ]
+      },
+      {
+        "key": "cantrips",
+        "count": 3,
+        "options": [
+          "Acid Splash",
+          "Chill Touch",
+          "Dancing Lights",
+          "Elementalism",
+          "Fire Bolt",
+          "Light",
+          "Mage Hand",
+          "Mending",
+          "Message",
+          "Minor Illusion",
+          "Poison Spray",
+          "Prestidigitation",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike"
+        ]
+      },
+      {
+        "key": "bookBasics",
+        "count": 6,
+        "options": [
+          "Alarm",
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Color Spray",
+          "Comprehend Languages",
+          "Detect Magic",
+          "Disguise Self",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Find Familiar",
+          "Floating Disk",
+          "Fog Cloud",
+          "Grease",
+          "Hideous Laughter",
+          "Ice Knife",
+          "Identify",
+          "Illusory Script",
+          "Jump",
+          "Longstrider",
+          "Mage Armor",
+          "Magic Missile",
+          "Protection from Evil and Good",
+          "Ray of Sickness",
+          "Shield",
+          "Silent Image",
+          "Sleep",
+          "Thunderwave",
+          "Unseen Servant"
+        ]
+      },
+      {
+        "key": "prepared",
+        "count": 4,
+        "options": [
+          "Detect Magic",
+          "Feather Fall",
+          "Mage Armor",
+          "Magic Missile",
+          "Sleep",
+          "Thunderwave"
+        ]
+      }
+    ],
+    "status": "Existing record; PDF header checked; engine regression; not complete manual feature audit"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Acolyte",
+    "type": "Background",
+    "version": "5.2.1",
+    "enLabel": "Acolyte",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 83,
+    "icon": "gwen-help",
+    "dependencies": {
+      "boosts": [
+        3,
+        4,
+        5
+      ],
+      "feat": "Magic Initiate",
+      "skills": [
+        "Insight",
+        "Religion"
+      ],
+      "tool": "Calligrapher’s Supplies",
+      "magic": "Cleric",
+      "equipment": [
+        "Calligrapher’s Supplies",
+        "Book (prayers)",
+        "Holy Symbol",
+        "Parchment (10 sheets)",
+        "Robe"
+      ],
+      "gp": 8
+    },
+    "status": "PDF origins record checked; boosts deferred to Abilities; kit choice deferred to Equipment"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Criminal",
+    "type": "Background",
+    "version": "5.2.1",
+    "enLabel": "Criminal",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 83,
+    "icon": "gwen-help",
+    "dependencies": {
+      "boosts": [
+        1,
+        2,
+        3
+      ],
+      "feat": "Alert",
+      "skills": [
+        "Sleight of Hand",
+        "Stealth"
+      ],
+      "tool": "Thieves’ Tools",
+      "magic": "",
+      "equipment": [
+        "2 Daggers",
+        "Thieves’ Tools",
+        "Crowbar",
+        "2 Pouches",
+        "Traveler’s Clothes"
+      ],
+      "gp": 16
+    },
+    "status": "PDF origins record checked; boosts deferred to Abilities; kit choice deferred to Equipment"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Sage",
+    "type": "Background",
+    "version": "5.2.1",
+    "enLabel": "Sage",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 83,
+    "icon": "gwen-help",
+    "dependencies": {
+      "boosts": [
+        2,
+        3,
+        4
+      ],
+      "feat": "Magic Initiate",
+      "skills": [
+        "Arcana",
+        "History"
+      ],
+      "tool": "Calligrapher’s Supplies",
+      "magic": "Wizard",
+      "equipment": [
+        "Quarterstaff",
+        "Calligrapher’s Supplies",
+        "Book (history)",
+        "Parchment (8 sheets)",
+        "Robe"
+      ],
+      "gp": 8
+    },
+    "status": "PDF origins record checked; boosts deferred to Abilities; kit choice deferred to Equipment"
+  },
+  {
+    "sourceId": "SRD 5.2.1",
+    "canonicalId": "Soldier",
+    "type": "Background",
+    "version": "5.2.1",
+    "enLabel": "Soldier",
+    "idLabelPolicy": "Keep official English name",
+    "sourcePage": 83,
+    "icon": "gwen-help",
+    "dependencies": {
+      "boosts": [
+        0,
+        1,
+        2
+      ],
+      "feat": "Savage Attacker",
+      "skills": [
+        "Athletics",
+        "Intimidation"
+      ],
+      "tool": "Gaming Set",
+      "magic": "",
+      "equipment": [
+        "Spear",
+        "Shortbow",
+        "20 Arrows",
+        "Gaming Set",
+        "Healer’s Kit",
+        "Quiver",
+        "Traveler’s Clothes"
+      ],
+      "gp": 14
+    },
+    "status": "PDF origins record checked; boosts deferred to Abilities; kit choice deferred to Equipment"
+  }
+]

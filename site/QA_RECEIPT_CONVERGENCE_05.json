@@ -1,0 +1,26 @@
+{
+  "product": "GwenTable",
+  "candidate": "Player Convergence 05 | First ACTIVE Fighter 1 / Rogue 1 Composite Class Slice",
+  "date": "2026-11-22",
+  "baseline": "GwenTable_Player_Convergence_04_Private_Source.zip",
+  "baselineSHA256": "8e1d40e074c6c3b807cd08c63daa050c206fb6b27967e521bcc315f8c73c395d",
+  "sourceAuthority": "dev.6-derived local source; UX9/dev.14 canonical merge NOT performed",
+  "implemented": [
+    "Explicit revision-checked Fighter1/Rogue1 activation only; original Fighter1 draft preserved",
+    "Composite max/current HP, character XP/proficiency, Rogue1 skill, Expertise, language, tool and mastery choices",
+    "Independent Fighter d10/Rogue d8 spend and Long Rest reset with pure Play validation",
+    "Fighter1 Second Wind and Rogue1 Sneak Attack sharing one saved Play engine",
+    "Single saved record atomic CAS activation, stale revision and partial-failure tests",
+    "Private individual/roster JSON keeps active composite and mixed Hit Dice; no database version change",
+    "Single-class Builder, linked GCX updates and invalid composite PDF/GCX rendering fail closed",
+    "Play UI activation confirmation and EN/ID concise labels, offline module precache"
+  ],
+  "tests": {"inherited":594,"added":14,"total":608,"passed":608,"failed":0,"runtime":"Node.js 22.16.0"},
+  "staticBuild":"PASS",
+  "artworkWithheldPreview":"PASS, 0 served image/icon binaries",
+  "localHTTP":"6/6 PASS at localhost:42705",
+  "nativeBrowserIndexedDB":"NOT VERIFIED: Chromium local navigation ERR_BLOCKED_BY_ADMINISTRATOR",
+  "windowsNode26":"NOT VERIFIED",
+  "activeMulticlass":"ONLY FIGHTER1/ROGUE1; NOT ALL SRD CLASSES",
+  "publicRelease":"NO_GO"
+}

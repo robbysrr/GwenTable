@@ -1,0 +1,722 @@
+
+> open-5e-companion@0.22.6 test
+> node --test
+
+TAP version 13
+# Subtest: each SRD class progresses to level 4 and retains its subclass and starting choices
+ok 1 - each SRD class progresses to level 4 and retains its subclass and starting choices
+  ---
+  duration_ms: 22.827826
+  type: 'test'
+  ...
+# Subtest: level 4 Constitution increases update all Hit Dice and retain prior rolled results
+ok 2 - level 4 Constitution increases update all Hit Dice and retain prior rolled results
+  ---
+  duration_ms: 0.734609
+  type: 'test'
+  ...
+# Subtest: level 4 casting tables, prepared spells and Wizard book follow published counts
+ok 3 - level 4 casting tables, prepared spells and Wizard book follow published counts
+  ---
+  duration_ms: 6.282564
+  type: 'test'
+  ...
+# Subtest: level-4 generator chooses valid feats and caps ability scores
+ok 4 - level-4 generator chooses valid feats and caps ability scores
+  ---
+  duration_ms: 378.614447
+  type: 'test'
+  ...
+# Subtest: play state tracks recorded XP and migrates backups from before XP tracking
+ok 5 - play state tracks recorded XP and migrates backups from before XP tracking
+  ---
+  duration_ms: 15.369368
+  type: 'test'
+  ...
+# Subtest: level 5 SRD classes gain proficiency and their tier-two spell slots or attack features
+ok 6 - level 5 SRD classes gain proficiency and their tier-two spell slots or attack features
+  ---
+  duration_ms: 13.465294
+  type: 'test'
+  ...
+# Subtest: tier-two unlocks refresh Bardic Inspiration and preserve spent Pact Magic on level change
+ok 7 - tier-two unlocks refresh Bardic Inspiration and preserve spent Pact Magic on level change
+  ---
+  duration_ms: 2.880861
+  type: 'test'
+  ...
+# Subtest: level 5 Sorcerous Restoration is optional and resets on a Long Rest
+ok 8 - level 5 Sorcerous Restoration is optional and resets on a Long Rest
+  ---
+  duration_ms: 1.892125
+  type: 'test'
+  ...
+# Subtest: all SRD classes advance through levels 6–8 with the correct thresholds and slots
+ok 9 - all SRD classes advance through levels 6–8 with the correct thresholds and slots
+  ---
+  duration_ms: 24.972085
+  type: 'test'
+  ...
+# Subtest: Champion gains a distinct fighting style and Fighter Constitution changes apply at both feat levels
+ok 10 - Champion gains a distinct fighting style and Fighter Constitution changes apply at both feat levels
+  ---
+  duration_ms: 1.333958
+  type: 'test'
+  ...
+# Subtest: level 7 Wizards can add 4th-level spells and level 8 Warlocks retain spent Pact Magic
+ok 11 - level 7 Wizards can add 4th-level spells and level 8 Warlocks retain spent Pact Magic
+  ---
+  duration_ms: 3.52011
+  type: 'test'
+  ...
+# Subtest: Natural Recovery is separate from free casting and older Paladin backups remain valid
+ok 12 - Natural Recovery is separate from free casting and older Paladin backups remain valid
+  ---
+  duration_ms: 9.365751
+  type: 'test'
+  ...
+# Subtest: Magic Initiate stops offering an extra pick after all three class lists are used
+ok 13 - Magic Initiate stops offering an extra pick after all three class lists are used
+  ---
+  duration_ms: 0.919654
+  type: 'test'
+  ...
+# Subtest: all classes advance through levels 9–12 with their spell slots and new feat choices
+ok 14 - all classes advance through levels 9–12 with their spell slots and new feat choices
+  ---
+  duration_ms: 28.949913
+  type: 'test'
+  ...
+# Subtest: higher-level resources follow rest rules and Mystic Arcanum survives a backup
+ok 15 - higher-level resources follow rest rules and Mystic Arcanum survives a backup
+  ---
+  duration_ms: 5.860209
+  type: 'test'
+  ...
+# Subtest: older Druids retain their six Wild Shape choices when importing with room for eight
+ok 16 - older Druids retain their six Wild Shape choices when importing with room for eight
+  ---
+  duration_ms: 5.102345
+  type: 'test'
+  ...
+# Subtest: four p83 records have exact source grants and mutually exclusive equipment A/B
+ok 17 - four p83 records have exact source grants and mutually exclusive equipment A/B
+  ---
+  duration_ms: 2.054486
+  type: 'test'
+  ...
+# Subtest: proposal previews contextual grants even when stored boost and kit values do not change
+ok 18 - proposal previews contextual grants even when stored boost and kit values do not change
+  ---
+  duration_ms: 4.311643
+  type: 'test'
+  ...
+# Subtest: Soldier selected Gaming Set matches package A; derivation does not append grants on repeats
+ok 19 - Soldier selected Gaming Set matches package A; derivation does not append grants on repeats
+  ---
+  duration_ms: 5.006252
+  type: 'test'
+  ...
+# Subtest: Magic Initiate controls stay on the correct source spell list and are labeled for later review
+ok 20 - Magic Initiate controls stay on the correct source spell list and are labeled for later review
+  ---
+  duration_ms: 1.290583
+  type: 'test'
+  ...
+# Subtest: repeated Soldier/Sage proposals do not mutate source records or accumulate GP/skills/items
+ok 21 - repeated Soldier/Sage proposals do not mutate source records or accumulate GP/skills/items
+  ---
+  duration_ms: 3.479514
+  type: 'test'
+  ...
+# Subtest: failed pre-save never applies Background; raw unsupported custom data remains unchanged
+ok 22 - failed pre-save never applies Background; raw unsupported custom data remains unchanged
+  ---
+  duration_ms: 1.458092
+  type: 'test'
+  ...
+# Subtest: locale switching keeps Background and source IDs plus numeric mechanics intact
+ok 23 - locale switching keeps Background and source IDs plus numeric mechanics intact
+  ---
+  duration_ms: 1.192428
+  type: 'test'
+  ...
+# Subtest: identity and species start together with level and no duplicate species stage
+ok 24 - identity and species start together with level and no duplicate species stage
+  ---
+  duration_ms: 0.763943
+  type: 'test'
+  ...
+# Subtest: older spellcaster draft retains its record choices and progress
+ok 25 - older spellcaster draft retains its record choices and progress
+  ---
+  duration_ms: 4.085217
+  type: 'test'
+  ...
+# Subtest: completion requires confirmed mechanics and permits empty appearance
+ok 26 - completion requires confirmed mechanics and permits empty appearance
+  ---
+  duration_ms: 1.424332
+  type: 'test'
+  ...
+# Subtest: beginner examples and localized names leave official choices and calculations intact
+ok 27 - beginner examples and localized names leave official choices and calculations intact
+  ---
+  duration_ms: 12.786148
+  type: 'test'
+  ...
+# Subtest: C-01 | Fighter/Human/Soldier with chain mail and Defense
+ok 28 - C-01 | Fighter/Human/Soldier with chain mail and Defense
+  ---
+  duration_ms: 2.155265
+  type: 'test'
+  ...
+# Subtest: C-01 | leather with Archery and the cash alternative
+ok 29 - C-01 | leather with Archery and the cash alternative
+  ---
+  duration_ms: 0.60027
+  type: 'test'
+  ...
+# Subtest: C-01 | chain mail penalties and unarmored Defense
+ok 30 - C-01 | chain mail penalties and unarmored Defense
+  ---
+  duration_ms: 0.395366
+  type: 'test'
+  ...
+# Subtest: C-05 | conflicting proficiencies, invalid boosts, and duplicate mastery are rejected
+ok 31 - C-05 | conflicting proficiencies, invalid boosts, and duplicate mastery are rejected
+  ---
+  duration_ms: 0.316359
+  type: 'test'
+  ...
+# Subtest: ABILITY-01 | point costs and modifier boundaries
+ok 32 - ABILITY-01 | point costs and modifier boundaries
+  ---
+  duration_ms: 0.295228
+  type: 'test'
+  ...
+# Subtest: C-06 | deterministic fixture drops lowest die, preserves duplicate assignments
+ok 33 - C-06 | deterministic fixture drops lowest die, preserves duplicate assignments
+  ---
+  duration_ms: 0.466662
+  type: 'test'
+  ...
+# Subtest: C-09 | JSON round-trip keeps build and derived values
+ok 34 - C-09 | JSON round-trip keeps build and derived values
+  ---
+  duration_ms: 8.868359
+  type: 'test'
+  ...
+# Subtest: PORT-02 | malformed, oversized, and prohibited shapes are rejected
+ok 35 - PORT-02 | malformed, oversized, and prohibited shapes are rejected
+  ---
+  duration_ms: 0.742541
+  type: 'test'
+  ...
+# Subtest: NPC-01 | seeded fields reproduce, lock stays on reroll
+ok 36 - NPC-01 | seeded fields reproduce, lock stays on reroll
+  ---
+  duration_ms: 0.557276
+  type: 'test'
+  ...
+# Subtest: short choices default to non-search, show selected state and commit once despite repeat invocation
+ok 37 - short choices default to non-search, show selected state and commit once despite repeat invocation
+  ---
+  duration_ms: 3.27788
+  type: 'test'
+  ...
+# Subtest: dirty spell picks survive X, Escape and outside click until explicit discard
+ok 38 - dirty spell picks survive X, Escape and outside click until explicit discard
+  ---
+  duration_ms: 1.384632
+  type: 'test'
+  ...
+# Subtest: returning to original selection closes cleanly and Apply cannot double commit
+ok 39 - returning to original selection closes cleanly and Apply cannot double commit
+  ---
+  duration_ms: 0.577826
+  type: 'test'
+  ...
+# Subtest: empty read-only view does not inspect an absent row; disabled reason stays visible
+ok 40 - empty read-only view does not inspect an absent row; disabled reason stays visible
+  ---
+  duration_ms: 0.299003
+  type: 'test'
+  ...
+# Subtest: fresh draft keeps mechanic projections while Background remains unconfirmed
+ok 41 - fresh draft keeps mechanic projections while Background remains unconfirmed
+  ---
+  duration_ms: 8.325604
+  type: 'test'
+  ...
+# Subtest: Background acknowledgement is tied to selected record and old acknowledgement cannot approve a change
+ok 42 - Background acknowledgement is tied to selected record and old acknowledgement cannot approve a change
+  ---
+  duration_ms: 1.618159
+  type: 'test'
+  ...
+# Subtest: Magic Initiate acknowledgement captures all three projected choices and becomes stale on edit
+ok 43 - Magic Initiate acknowledgement captures all three projected choices and becomes stale on edit
+  ---
+  duration_ms: 5.823244
+  type: 'test'
+  ...
+# Subtest: a non-Magic-Initiate Background never adds fake magic gates
+ok 44 - a non-Magic-Initiate Background never adds fake magic gates
+  ---
+  duration_ms: 2.061617
+  type: 'test'
+  ...
+# Subtest: new Magic Initiate characters cannot finish until both acknowledgement stages are completed
+ok 45 - new Magic Initiate characters cannot finish until both acknowledgement stages are completed
+  ---
+  duration_ms: 1.885236
+  type: 'test'
+  ...
+# Subtest: legacy completed characters remain usable, but genuinely fresh drafts cannot inherit their approval
+ok 46 - legacy completed characters remain usable, but genuinely fresh drafts cannot inherit their approval
+  ---
+  duration_ms: 1.470921
+  type: 'test'
+  ...
+# Subtest: draft backup preserves exact source but discards even structurally valid imported choice confirmations
+ok 47 - draft backup preserves exact source but discards even structurally valid imported choice confirmations
+  ---
+  duration_ms: 4.244142
+  type: 'test'
+  ...
+# Subtest: selection fingerprints and mechanics never depend on English or Indonesian UI locale
+ok 48 - selection fingerprints and mechanics never depend on English or Indonesian UI locale
+  ---
+  duration_ms: 2.546345
+  type: 'test'
+  ...
+# Subtest: nested backup history cannot smuggle saved status, IDs or confirmation authority
+ok 49 - nested backup history cannot smuggle saved status, IDs or confirmation authority
+  ---
+  duration_ms: 2.011682
+  type: 'test'
+  ...
+# Subtest: Human Magic Initiate also requires review of its chosen spell list and three magic controls
+ok 50 - Human Magic Initiate also requires review of its chosen spell list and three magic controls
+  ---
+  duration_ms: 1.914088
+  type: 'test'
+  ...
+# Subtest: switching a Human from Soldier to Criminal surfaces auto-substituted Origin Magic Initiate rather than silently approving it
+ok 51 - switching a Human from Soldier to Criminal surfaces auto-substituted Origin Magic Initiate rather than silently approving it
+  ---
+  duration_ms: 0.470859
+  type: 'test'
+  ...
+# Subtest: twelve overview primary abilities and complexity use the p19 source values
+ok 52 - twelve overview primary abilities and complexity use the p19 source values
+  ---
+  duration_ms: 1.700792
+  type: 'test'
+  ...
+# Subtest: Class proposal is non-mutating, lists new/removed decisions and preserves valid identity and equipment option
+ok 53 - Class proposal is non-mutating, lists new/removed decisions and preserves valid identity and equipment option
+  ---
+  duration_ms: 7.123993
+  type: 'test'
+  ...
+# Subtest: unknown data and unsupported high level block the proposal without altering the original
+ok 54 - unknown data and unsupported high level block the proposal without altering the original
+  ---
+  duration_ms: 3.885049
+  type: 'test'
+  ...
+# Subtest: failed pre-change save and stale preview cannot commit Class
+ok 55 - failed pre-change save and stale preview cannot commit Class
+  ---
+  duration_ms: 1.7877
+  type: 'test'
+  ...
+# Subtest: successful commit writes the old raw state first, then changes Class; locale never changes IDs
+ok 56 - successful commit writes the old raw state first, then changes Class; locale never changes IDs
+  ---
+  duration_ms: 5.617374
+  type: 'test'
+  ...
+# Subtest: changing a rolled-HP Class to a different Hit Die requires new advancement rolls
+ok 57 - changing a rolled-HP Class to a different Hit Die requires new advancement rolls
+  ---
+  duration_ms: 2.557212
+  type: 'test'
+  ...
+# Subtest: level1 Fighter and Wizard keep their own class-specific feature and magic contracts
+ok 58 - level1 Fighter and Wizard keep their own class-specific feature and magic contracts
+  ---
+  duration_ms: 2.345968
+  type: 'test'
+  ...
+# Subtest: final sheet requires valid rules plus an explicit appearance decision on the current revision
+ok 59 - final sheet requires valid rules plus an explicit appearance decision on the current revision
+  ---
+  duration_ms: 9.708294
+  type: 'test'
+  ...
+# Subtest: missing Wizard spell choices produce an owning field, and unsupported levels cannot pass
+ok 60 - missing Wizard spell choices produce an owning field, and unsupported levels cannot pass
+  ---
+  duration_ms: 4.620421
+  type: 'test'
+  ...
+# Subtest: all class templates derive completion and conditional Magic from their real controls
+ok 61 - all class templates derive completion and conditional Magic from their real controls
+  ---
+  duration_ms: 9.92846
+  type: 'test'
+  ...
+# Subtest: legacy aliases and canonical source values survive repeated reads, with exact raw preservation on unknown data
+ok 62 - legacy aliases and canonical source values survive repeated reads, with exact raw preservation on unknown data
+  ---
+  duration_ms: 5.053753
+  type: 'test'
+  ...
+# Subtest: appearance and locale cannot change calculations, and legitimate saving reconciles existing play state
+ok 63 - appearance and locale cannot change calculations, and legitimate saving reconciles existing play state
+  ---
+  duration_ms: 2.187233
+  type: 'test'
+  ...
+# Subtest: PDF dialog rechecks stale eligibility on submit and on browser-print activation
+ok 64 - PDF dialog rechecks stale eligibility on submit and on browser-print activation
+  ---
+  duration_ms: 2.852049
+  type: 'test'
+  ...
+# Subtest: legacy normalization retains its exact raw record, including unknown origin and imported provenance
+ok 65 - legacy normalization retains its exact raw record, including unknown origin and imported provenance
+  ---
+  duration_ms: 0.72801
+  type: 'test'
+  ...
+# Subtest: active backup and recovery snapshot retain raw data and envelope provenance without aliasing
+ok 66 - active backup and recovery snapshot retain raw data and envelope provenance without aliasing
+  ---
+  duration_ms: 7.881105
+  type: 'test'
+  ...
+# Subtest: draft backup cannot import completion authority, even from an otherwise valid completed build
+ok 67 - draft backup cannot import completion authority, even from an otherwise valid completed build
+  ---
+  duration_ms: 1.243714
+  type: 'test'
+  ...
+# Subtest: partial drafts and unknown source fields survive backup without mechanical approval
+ok 68 - partial drafts and unknown source fields survive backup without mechanical approval
+  ---
+  duration_ms: 3.533128
+  type: 'test'
+  ...
+# Subtest: invalid or oversized backup files are rejected; names cannot crash recovery labels
+ok 69 - invalid or oversized backup files are rejected; names cannot crash recovery labels
+  ---
+  duration_ms: 54.208262
+  type: 'test'
+  ...
+# Subtest: unrenderable imported raw data remains recoverable rather than throwing during startup
+ok 70 - unrenderable imported raw data remains recoverable rather than throwing during startup
+  ---
+  duration_ms: 1.019442
+  type: 'test'
+  ...
+# Subtest: appearance is seeded, rerolls unlocked fields, and survives the portable JSON format
+ok 71 - appearance is seeded, rerolls unlocked fields, and survives the portable JSON format
+  ---
+  duration_ms: 28.126823
+  type: 'test'
+  ...
+# Subtest: 3D die meshes have distinct closed faces and percentile faces represent the exact result
+ok 72 - 3D die meshes have distinct closed faces and percentile faces represent the exact result
+  ---
+  duration_ms: 0.637385
+  type: 'test'
+  ...
+# Subtest: public index resolves names to the pinned source and excludes known private records
+ok 73 - public index resolves names to the pinned source and excludes known private records
+  ---
+  duration_ms: 13.473126
+  type: 'test'
+  ...
+# Subtest: guide separates sourced tactics from outside-combat advice for all class templates
+ok 74 - guide separates sourced tactics from outside-combat advice for all class templates
+  ---
+  duration_ms: 7.487452
+  type: 'test'
+  ...
+# Subtest: both original print layouts contain the generated guide with no private notes enabled
+ok 75 - both original print layouts contain the generated guide with no private notes enabled
+  ---
+  duration_ms: 636.019156
+  type: 'test'
+  ...
+# Subtest: collection search is accent and punctuation tolerant with OR within facets and AND across groups
+ok 76 - collection search is accent and punctuation tolerant with OR within facets and AND across groups
+  ---
+  duration_ms: 10.803458
+  type: 'test'
+  ...
+# Subtest: all twelve templates keep engine attacks, checks, saves, known spells and slot capacity
+ok 77 - all twelve templates keep engine attacks, checks, saves, known spells and slot capacity
+  ---
+  duration_ms: 20.561256
+  type: 'test'
+  ...
+# Subtest: slot summaries update while stable IDs, canonical spell names and custom origin survive localization
+ok 78 - slot summaries update while stable IDs, canonical spell names and custom origin survive localization
+  ---
+  duration_ms: 2.519155
+  type: 'test'
+  ...
+# Subtest: shipped icon mappings resolve to documented safe glyphs, with an offline fallback
+ok 79 - shipped icon mappings resolve to documented safe glyphs, with an offline fallback
+  ---
+  duration_ms: 15.023991
+  type: 'test'
+  ...
+# Subtest: SRD catalogue contains 330 source-linked stat blocks and distinct lair XP
+ok 80 - SRD catalogue contains 330 source-linked stat blocks and distinct lair XP
+  ---
+  duration_ms: 1.650066
+  type: 'test'
+  ...
+# Subtest: mixed-level budgets sum the SRD thresholds without multiplying XP
+ok 81 - mixed-level budgets sum the SRD thresholds without multiplying XP
+  ---
+  duration_ms: 0.450668
+  type: 'test'
+  ...
+# Subtest: group rolls, tied order, and round rollover are deterministic
+ok 82 - group rolls, tied order, and round rollover are deterministic
+  ---
+  duration_ms: 2.201774
+  type: 'test'
+  ...
+# Subtest: temp HP, concentration, death saves, stabilization and undo keep replay consistent
+ok 83 - temp HP, concentration, death saves, stabilization and undo keep replay consistent
+  ---
+  duration_ms: 1.433876
+  type: 'test'
+  ...
+# Subtest: portable JSON replays the exact live and completed encounter and checks integrity
+ok 84 - portable JSON replays the exact live and completed encounter and checks integrity
+  ---
+  duration_ms: 9.245608
+  type: 'test'
+  ...
+# Subtest: every starter template is a ready-to-play level 3 subclass with class and background equipment
+ok 85 - every starter template is a ready-to-play level 3 subclass with class and background equipment
+  ---
+  duration_ms: 15.340375
+  type: 'test'
+  ...
+# Subtest: generator produces legal choices across all class, background, species and level combinations
+ok 86 - generator produces legal choices across all class, background, species and level combinations
+  ---
+  duration_ms: 857.941674
+  type: 'test'
+  ...
+# Subtest: prepared spells and Invocations constrain class, prerequisites and advancement
+ok 87 - prepared spells and Invocations constrain class, prerequisites and advancement
+  ---
+  duration_ms: 1.452003
+  type: 'test'
+  ...
+# Subtest: custom equipment updates the sheet and both portable formats preserve custom content
+ok 88 - custom equipment updates the sheet and both portable formats preserve custom content
+  ---
+  duration_ms: 14.73697
+  type: 'test'
+  ...
+# Subtest: v1 imports keep Fighter build choices, unarmored selection and base scores
+ok 89 - v1 imports keep Fighter build choices, unarmored selection and base scores
+  ---
+  duration_ms: 1.597419
+  type: 'test'
+  ...
+# Subtest: Fighter levels 1–20 match the SRD table and canonical Play Sheet resources
+ok 90 - Fighter levels 1–20 match the SRD table and canonical Play Sheet resources
+  ---
+  duration_ms: 29.632725
+  type: 'test'
+  ...
+# Subtest: high-level Fighter unlocks support feats, legal Epic Boons, and chronological Constitution changes
+ok 91 - high-level Fighter unlocks support feats, legal Epic Boons, and chronological Constitution changes
+  ---
+  duration_ms: 2.451906
+  type: 'test'
+  ...
+# Subtest: Survivor only rallies a living Bloodied Champion and restores 1 HP on a death save of 18–20
+ok 92 - Survivor only rallies a living Bloodied Champion and restores 1 HP on a death save of 18–20
+  ---
+  duration_ms: 10.865701
+  type: 'test'
+  ...
+# Subtest: Fighter advancement preserves spent uses, new capacity, and roster undo snapshots
+ok 93 - Fighter advancement preserves spent uses, new capacity, and roster undo snapshots
+  ---
+  duration_ms: 3.288295
+  type: 'test'
+  ...
+# Subtest: 800 seeded high-level Fighters are valid and start with gear or starting gold
+ok 94 - 800 seeded high-level Fighters are valid and start with gear or starting gold
+  ---
+  duration_ms: 406.16577
+  type: 'test'
+  ...
+# Subtest: all eleven pilot terms have distinct Indonesian definitions, examples and consequences
+ok 95 - all eleven pilot terms have distinct Indonesian definitions, examples and consequences
+  ---
+  duration_ms: 2.453618
+  type: 'test'
+  ...
+# Subtest: semantic icon resolver uses only existing public licensed assets and safe fallbacks
+ok 96 - semantic icon resolver uses only existing public licensed assets and safe fallbacks
+  ---
+  duration_ms: 1.877184
+  type: 'test'
+  ...
+# Subtest: GwenTable GCX restores native custom choices and opt-in current resources
+ok 97 - GwenTable GCX restores native custom choices and opt-in current resources
+  ---
+  duration_ms: 17.078982
+  type: 'test'
+  ...
+# Subtest: unsupported builds stay private, survive roster backups, and can be separated
+ok 98 - unsupported builds stay private, survive roster backups, and can be separated
+  ---
+  duration_ms: 3.043543
+  type: 'test'
+  ...
+# Subtest: interface messages use the chosen language with safe HTML interpolation
+ok 99 - interface messages use the chosen language with safe HTML interpolation
+  ---
+  duration_ms: 0.799265
+  type: 'test'
+  ...
+# Subtest: language changes update the document and persist on the same control
+ok 100 - language changes update the document and persist on the same control
+  ---
+  duration_ms: 0.444359
+  type: 'test'
+  ...
+# Subtest: temporary HP absorbs damage, Short Rest dice heal, and Long Rest restores all Hit Dice
+ok 101 - temporary HP absorbs damage, Short Rest dice heal, and Long Rest restores all Hit Dice
+  ---
+  duration_ms: 5.596187
+  type: 'test'
+  ...
+# Subtest: Fighter short rest restores one Second Wind and all Action Surge uses
+ok 102 - Fighter short rest restores one Second Wind and all Action Surge uses
+  ---
+  duration_ms: 1.081824
+  type: 'test'
+  ...
+# Subtest: Warlock pact slots refill on Short Rest, Magical Cunning only on Long Rest
+ok 103 - Warlock pact slots refill on Short Rest, Magical Cunning only on Long Rest
+  ---
+  duration_ms: 1.441337
+  type: 'test'
+  ...
+# Subtest: Wizard short rest leaves ordinary slots spent and Arcane Recovery is bounded per long rest
+ok 104 - Wizard short rest leaves ordinary slots spent and Arcane Recovery is bounded per long rest
+  ---
+  duration_ms: 1.561696
+  type: 'test'
+  ...
+# Subtest: dead or downed characters cannot rest and death natural 20 restores HP
+ok 105 - dead or downed characters cannot rest and death natural 20 restores HP
+  ---
+  duration_ms: 0.712095
+  type: 'test'
+  ...
+# Subtest: play backup preserves expended resources, HP and log alongside the character
+ok 106 - play backup preserves expended resources, HP and log alongside the character
+  ---
+  duration_ms: 12.286326
+  type: 'test'
+  ...
+# Subtest: roster backups preserve custom content, live play, and undo across multiple characters
+ok 107 - roster backups preserve custom content, live play, and undo across multiple characters
+  ---
+  duration_ms: 17.064622
+  type: 'test'
+  ...
+# Subtest: roster backups reject empty rosters, invalid play state, tampering, and oversized input
+ok 108 - roster backups reject empty rosters, invalid play state, tampering, and oversized input
+  ---
+  duration_ms: 8.526311
+  type: 'test'
+  ...
+# Subtest: all installed spell options have cited SRD headers and legal pools remain filterable
+ok 109 - all installed spell options have cited SRD headers and legal pools remain filterable
+  ---
+  duration_ms: 6.740884
+  type: 'test'
+  ...
+# Subtest: both native PDF layouts print every class template on A4 and US Letter
+ok 110 - both native PDF layouts print every class template on A4 and US Letter
+  ---
+  duration_ms: 4075.817839
+  type: 'test'
+  ...
+# Subtest: native PDF paginates long custom content and handles unsupported characters visibly
+ok 111 - native PDF paginates long custom content and handles unsupported characters visibly
+  ---
+  duration_ms: 463.790459
+  type: 'test'
+  ...
+# Subtest: picker combines text with the available category and spell filters
+ok 112 - picker combines text with the available category and spell filters
+  ---
+  duration_ms: 1.108163
+  type: 'test'
+  ...
+# Subtest: native A4 exports retain character name edits after resaving
+ok 113 - native A4 exports retain character name edits after resaving
+  ---
+  duration_ms: 124.123084
+  type: 'test'
+  ...
+# Subtest: creation stages expose each builder control and separate Wizard spellbook, preparation and grants
+ok 114 - creation stages expose each builder control and separate Wizard spellbook, preparation and grants
+  ---
+  duration_ms: 5.39553
+  type: 'test'
+  ...
+# Subtest: the guided builder requires an explicit roll and a character name
+ok 115 - the guided builder requires an explicit roll and a character name
+  ---
+  duration_ms: 0.374064
+  type: 'test'
+  ...
+# Subtest: identity suggestions are editable original text and selected spells include complete SRD details
+ok 116 - identity suggestions are editable original text and selected spells include complete SRD details
+  ---
+  duration_ms: 0.426012
+  type: 'test'
+  ...
+# Subtest: personal description survives a character file round trip
+ok 117 - personal description survives a character file round trip
+  ---
+  duration_ms: 11.290119
+  type: 'test'
+  ...
+# Subtest: metric display and planner suggestions avoid changing underlying rules
+ok 118 - metric display and planner suggestions avoid changing underlying rules
+  ---
+  duration_ms: 2.211619
+  type: 'test'
+  ...
+1..118
+# tests 118
+# suites 0
+# pass 118
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6237.568991

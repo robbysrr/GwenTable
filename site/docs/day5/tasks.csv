@@ -1,0 +1,6 @@
+task,reviewer,method,result,comprehension,hints,time,observed_evidence,issue_id
+T1,Gwen/assistant,source heuristic,blocked,not assessable,none; no participant,not measured,"Single identity stage, direct generator, editable Name and Level. Interactive walk blocked.",GT5-03;GT5-04
+T2,Gwen/assistant,content heuristic,blocked,not assessable,none; no participant,not measured,Background definition/two examples exist in source; no novice response.,GT5-06
+T3,Gwen/assistant,automated plus source,blocked,not assessable,none; no participant,not measured,Locale derivations equal in regression; actual flag interaction/reload unverified.,GT5-03
+T4,Gwen/assistant,desktop attempt,blocked,not assessable,none; no participant,not measured,Chromium blank newtab; sky.press_key Control_L+l rejected by AT-SPI bridge.,GT5-03
+T5,Gwen/assistant,automated plus source,blocked,not assessable,none; no participant,not measured,Revision gate/PDF handlers pass; real early-print and repair not observed.,GT5-03

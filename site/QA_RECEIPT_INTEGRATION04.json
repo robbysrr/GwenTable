@@ -1,0 +1,20 @@
+{
+  "candidate": "Integration 04 private; Integration 03-derived",
+  "baseline_sha256": "c53d10eae29036aea2459bec9be3d03cdf34eb037e5169e6510dacb3ea25c8c8",
+  "baseline_manifest": "369/369 PASS",
+  "baseline_tests": 693,
+  "new_tests": 17,
+  "full_tests": {
+    "pass": 710,
+    "fail": 0
+  },
+  "runtime": "Node 22.16.0",
+  "static_build": "PASS",
+  "artwork_withheld": "PASS; 12 binaries withheld; 0 variants",
+  "http_smoke": "10/10 PASS",
+  "browser": "NOT VERIFIED; exit 124; zero DOM bytes",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "source_scope": "SRD 5.2.1; table-confirmed success-ends-one-source saves; embedded Hold Person/Hold Monster descriptions and D20 rules",
+  "release": "PRIVATE QA ONLY; PUBLIC NO GO"
+}

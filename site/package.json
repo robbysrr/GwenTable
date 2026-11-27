@@ -1,0 +1,21 @@
+{
+  "name": "open-5e-companion",
+  "version": "0.25.7-inventory-dev.10-player-convergence08",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "dist/lib"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/check.mjs",
+    "dev": "node scripts/dev-local.mjs",
+    "start": "node scripts/dev-local.mjs",
+    "verify:source": "node scripts/verify-source-hashes.mjs",
+    "audit:public-art": "node scripts/audit-release-assets.mjs",
+    "build:artwork-withheld-preview": "node scripts/build-artwork-withheld-preview.mjs",
+    "audit:artwork-withheld-preview": "node scripts/audit-release-assets.mjs .artwork-withheld-preview",
+    "dev:artwork-withheld-preview": "node scripts/build-artwork-withheld-preview.mjs && node scripts/dev-local.mjs --artwork-withheld",
+    "preflight:inventory": "node scripts/preflight-inventory-export.mjs"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "candidate": "Integration 09 private; Integration 08-derived",
+  "baseline_sha256": "877165c9aac95ebd5c063af7b3e1dafad70739e4b222ace79009dd82e152c59f",
+  "baseline_manifest": "390/390 PASS",
+  "baseline_tests": 767,
+  "new_tests": 14,
+  "initial_full_tests": {
+    "pass": 778,
+    "fail": 3,
+    "cause": "old cache revision assertions; updated expected revision"
+  },
+  "full_tests": {
+    "pass": 781,
+    "fail": 0
+  },
+  "runtime": "Node 22.16.0",
+  "static_build": "PASS",
+  "artwork_withheld": "PASS; 12 binaries withheld; 0 variants",
+  "http_smoke": "10/10 PASS",
+  "browser": "NOT RUN; historical timeouts; NOT VERIFIED",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "source_scope": "SRD 5.2.1 p.161 Shield; limited prepared class slot casting",
+  "release": "PRIVATE QA ONLY; PUBLIC NO GO"
+}

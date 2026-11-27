@@ -1,0 +1,107 @@
+[
+  {
+    "entityType": "class",
+    "assetId": "tav-character",
+    "fallbackId": "tav-character",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "background",
+    "assetId": "gwen-help",
+    "fallbackId": "gwen-help",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "species",
+    "assetId": "tav-character",
+    "fallbackId": "tav-character",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "feat",
+    "assetId": "tav-feat",
+    "fallbackId": "tav-feat",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "ability-score",
+    "assetId": "tav-dice",
+    "fallbackId": "tav-dice",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "skill",
+    "assetId": "tav-search",
+    "fallbackId": "tav-search",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "tool",
+    "assetId": "tav-search",
+    "fallbackId": "tav-search",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "navigation",
+    "assetId": "gwen-overview",
+    "fallbackId": "gwen-overview",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "help",
+    "assetId": "gwen-help",
+    "fallbackId": "gwen-help",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "error",
+    "assetId": "gwen-warning",
+    "fallbackId": "gwen-warning",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "success",
+    "assetId": "tav-feat",
+    "fallbackId": "tav-feat",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "close",
+    "assetId": "gwen-close",
+    "fallbackId": "gwen-close",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "expand",
+    "assetId": "gwen-up",
+    "fallbackId": "gwen-up",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "item",
+    "assetId": "tav-item",
+    "fallbackId": "tav-item",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  },
+  {
+    "entityType": "spell",
+    "assetId": "tav-spell",
+    "fallbackId": "tav-spell",
+    "provenance": "audit/icon-registry.json",
+    "uniqueIllustration": false
+  }
+]

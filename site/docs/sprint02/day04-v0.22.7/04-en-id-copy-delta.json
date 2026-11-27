@@ -1,0 +1,27 @@
+{
+  "locale_ids": [
+    "en",
+    "id-ID"
+  ],
+  "new_background_help_terms": [
+    "Feat",
+    "Skill Proficiency",
+    "Gaming Set",
+    "Ability Score Improvement",
+    "Starting Equipment",
+    "GP",
+    "Magic Initiate"
+  ],
+  "total_available_help_terms": 18,
+  "canonical_names_unchanged": [
+    "Acolyte",
+    "Criminal",
+    "Sage",
+    "Soldier",
+    "Alert",
+    "Magic Initiate",
+    "Savage Attacker"
+  ],
+  "copy_file": "dist/locale-copy.js",
+  "missing_translations_fallback": "English source key shown"
+}

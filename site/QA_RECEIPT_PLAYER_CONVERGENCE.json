@@ -1,0 +1,30 @@
+{
+  "product": "GwenTable",
+  "edition": "dev.6-derived Player Convergence 01",
+  "date": "2026-11-22",
+  "sourceBaseline": "GwenTable-MVP-dev6-Source.zip",
+  "sourceBaselineSHA256": "e54cdb3fee84e31f2a1aa86070c77d0145be1ed73dd3739da9cdac560ef58b97",
+  "actualSourceAuthority": "Private user-provided dev.6 snapshot, not canonical UX9/dev.14 branch",
+  "nodeRuntime": "Node v22.16.0 for automated tests; Windows Node26 not tested",
+  "verification": {
+    "automatedTests": "538 of 538 PASS",
+    "staticBuild": "PASS",
+    "themeBehavior": "Preferences/default/cross-tab storage-event unit tests PASS",
+    "readOnlyMulticlass": "12 classes, eligibility, total level 20, proficiency, full/half Spellcasting slots, Pact Magic boundary unit tests PASS",
+    "syntheticVisualQA": "16 CSS states across 1440px and 390px, 2 palettes x 2 schemes x 2 densities, no horizontal overflow; static markup only",
+    "artworkWithheldPreview": "PASS; zero image/icon variants (12 inherited variants removed)",
+    "realBrowserApplication": "NOT VERIFIED; Chromium screenshots use static markup, not app navigation",
+    "actualSavedCharacterData": "NOT ACCESSED OR MODIFIED",
+    "databaseMigration": "NONE",
+    "authoritativeSourceMerged": false,
+    "release": "NO GO"
+  },
+  "notImplemented": [
+    "Persistent multiclass character builds and level-up class features",
+    "Complete level 1–20 playable progression for all classes",
+    "Full executable SRD 5.2.1 features and spell automation",
+    "Canonical UX9 plus dev.14 source merge",
+    "Live Chromium two-tab IndexedDB and authentic legacy migrations",
+    "Device accessibility and publication-rights signoff"
+  ]
+}

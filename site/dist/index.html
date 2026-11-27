@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF7F2"><meta name="description" content="Build a 5E-compatible character and run encounters with a local initiative tracker.">
+<title>GwenTable D&amp;D Companion</title>
+<link rel="icon" href="./branding/gwen-favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="./branding/gwen-touch.png" sizes="180x180">
+<script src="./design/theme.js"></script><link rel="stylesheet" href="./design/taverley/taverley-theme.css"><link rel="stylesheet" href="./design/tokens.css"><link rel="stylesheet" href="./style.css"><script type="module" src="./bootstrap.js"></script>
+</head>
+<body>
+<a href="#main" class="skip" data-copy="Skip to content">Skip to content</a>
+<div class="shell">
+<aside class="sidebar">
+  <a class="brand" href="#home"><img class="brand-mark" src="./branding/gwen-logo.png" alt="" width="39" height="39"><span>GwenTable<span class="brand-sub">5E COMPANION</span></span></a>
+  <div class="site-preferences"><div class="preference"><div id="language-mode" class="language-control"><button id="language-toggle" class="language-toggle" type="button" role="switch" aria-checked="false" aria-label="Language: English. Switch to Bahasa Indonesia." title="Language: English. Switch to Bahasa Indonesia." data-active-language="en"><span class="lang-flag flag-en" aria-hidden="true"></span><span class="lang-flag flag-id" aria-hidden="true"></span></button></div></div><div class="preference theme-preference"><label for="theme-mode" data-copy="Theme">Theme</label><select id="theme-mode"><option value="system" data-copy="System">System</option><option value="light" data-copy="Light">Light</option><option value="dark" data-copy="Dark">Dark</option></select></div><div class="preference"><label for="palette-mode" data-copy="Palette">Palette</label><select id="palette-mode" aria-label="GwenTable palette"><option value="scholar-plum">Scholar Plum</option><option value="moonlit-sapphire">Moonlit Sapphire</option></select></div><div class="preference"><label for="density-mode" data-copy="Layout">Layout</label><select id="density-mode" aria-label="Interface density"><option value="comfortable" data-copy="Comfortable">Comfortable</option><option value="compact" data-copy="Compact">Compact</option></select></div></div>
+  <nav class="desktop-navigation" aria-label="Workspace" data-copy-aria-label="Workspace">
+    <a href="#home" data-ui-icon="overview"><span data-copy="Overview">Overview</span></a>
+    <a href="#create" data-ui-icon="create"><span data-copy="Character Builder">Character Builder</span></a>
+    <a href="#characters" data-ui-icon="character"><span data-copy="Saved Characters">Saved Characters</span></a>
+    <a href="#dice" data-ui-icon="dice"><span data-copy="Dice Roller">Dice Roller</span></a>
+    <a href="#encounters" data-ui-icon="attack"><span data-copy="Party Session">Party Session</span></a>
+    <a href="#rules" data-ui-icon="help"><span data-copy="Rules &amp; Credits">Rules &amp; Credits</span></a>
+    <a href="#compendium" data-ui-icon="archive"><span data-copy="Compendium">Compendium</span></a>
+  </nav>
+</aside>
+<div class="workspace">
+<header class="topbar"><span id="breadcrumb" data-copy="Workspace">Workspace</span><a href="#characters"><span data-copy="My characters">My characters</span> <span aria-hidden="true">↗</span></a></header>
+<main id="main" tabindex="-1">
+<noscript><p class="card" data-copy="Enable JavaScript in your browser to open the character builder.">Enable JavaScript in your browser to open the character builder.</p></noscript>
+<div id="startup-error" class="card" role="alert" hidden>
+  <h1 data-copy="The workspace couldn’t load">The workspace couldn’t load</h1>
+  <p data-copy="Check your connection and reload this page. If you’re in an in-app browser, open this link in your regular browser.">Check your connection and reload this page. If you’re in an in-app browser, open this link in your regular browser.</p>
+  <button type="button" id="reload-workspace" class="primary" data-copy="Reload workspace">Reload workspace</button>
+</div>
+<section id="home" class="view" hidden>
+  <div class="hero"><div class="hero-copy"><div class="eyebrow" data-copy="INDEPENDENT · 5E COMPATIBLE">INDEPENDENT · 5E COMPATIBLE</div><h1 data-copy="Welcome to my table.">Welcome to my table.</h1><p data-copy="Build, roll, or choose a ready-to-play character. Save a printable sheet for your next session.">Build, roll, or choose a ready-to-play character. Save a printable sheet for your next session.</p><a class="button primary" href="#create"><span data-copy="Build character free">Build character free</span> <span aria-hidden="true">→</span></a></div><img class="hero-portrait" src="./branding/gwen-portrait.webp" alt="" width="448" height="448"></div>
+  <div class="home-grid">
+    <article class="card"><h2 data-copy="Player Tools">Player Tools</h2><p data-copy="Make your adventurer, open a saved sheet, or roll dice.">Make your adventurer, open a saved sheet, or roll dice.</p><div class="toolbar"><a href="#create" data-copy="Character Builder">Character Builder</a><a href="#characters" data-copy="Saved Characters">Saved Characters</a><a href="#dice" data-copy="Dice Roller">Dice Roller</a></div></article>
+    <article class="card"><h2 data-copy="Party Session">Party Session</h2><p data-copy="Track confirmed conditions, Initiative and Hit Points for your party.">Track confirmed conditions, Initiative and Hit Points for your party.</p><a href="#encounters" data-copy="Open Party Session">Open Party Session</a></article>
+  </div>
+</section>
+<section id="create" class="view" hidden>
+  <header class="builder-heading"><div><h1 data-copy="Character Builder">Character Builder</h1><p data-copy="Build a character, try a level 3 template, or roll a new adventurer.">Build a character, try a level 3 template, or roll a new adventurer.</p></div><button type="button" id="new-in-builder" data-ui-icon="create"><span data-copy="Create New Character">Create New Character</span></button></header>
+  <details id="build-start" class="start-picker">
+  <summary data-copy="Start or import a character">Start or import a character</summary>
+  <div class="start-grid">
+    <section class="card start-card">
+      <h2 data-copy="Random character">Random character</h2>
+      <form id="generator">
+        <div class="start-fields">
+          <label>Class<select name="className" id="generator-class"><option value="" data-copy="Any class">Any class</option></select></label>
+          <label><span data-copy="Level">Level</span><select name="level"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label>
+          <label><span data-copy="Ability scores">Ability scores</span><select name="method"><option value="" data-copy="Surprise me">Surprise me</option><option value="array" data-copy="Standard array">Standard array</option><option value="points" data-copy="Point buy">Point buy</option><option value="rolled">Roll 4d6</option></select></label>
+        </div>
+        <button type="submit" class="primary" data-copy="Generate character">Generate character</button>
+      </form>
+    </section>
+    <section class="card start-card"><h2 data-copy="Level 3 templates">Level 3 templates</h2>
+      <a class="button" href="#templates" data-copy="Browse templates">Browse templates</a></section>
+  </div>
+  <div class="start-actions">
+    <button type="button" id="manual-start" data-copy="Build from scratch">Build from scratch</button>
+    <button type="button" id="builder-import" data-ui-icon="exchange"><span data-copy="Import character JSON">Import character JSON</span></button>
+  </div>
+  </details>
+  <div id="draft-toolbar" class="card draft-toolbar">
+    <div class="draft-heading">
+      <span id="draft-state" data-copy="Draft">Draft</span>
+      <h2 id="draft-name" data-copy="Unnamed adventurer">Unnamed adventurer</h2>
+      <p id="draft-identity"></p>
+    </div>
+    <div class="draft-actions">
+      <button type="button" id="save-draft" data-ui-icon="save"><span data-copy="Save draft">Save draft</span></button>
+      <button type="button" id="conflict-draft-backup" class="quiet-action" hidden data-copy="Download draft backup">Download draft backup</button>
+      <button type="button" id="reload-conflicted-draft" class="quiet-action" hidden data-copy="Reload latest saved draft">Reload latest saved draft</button>
+      <a class="button" id="play-saved" hidden data-copy="Play character">Play character</a>
+      <details id="draft-export"><summary data-copy="More actions">More actions</summary>
+        <div><button type="button" id="draft-backup" data-copy="Download draft backup">Download draft backup</button><button type="button" id="load-draft-backup" data-copy="Load draft backup">Load draft backup</button><input type="file" id="draft-backup-file" accept="application/json,.json" hidden><button type="button" id="export" data-copy="Character JSON">Character JSON</button><button type="button" id="export-gcx">Portable GCX</button><button type="button" id="restore-draft" hidden data-copy="Restore previous draft">Restore previous draft</button></div>
+      </details>
+    </div>
+    <div id="draft-message">
+      <p id="status" role="status" class="status"></p>
+    </div>
+  </div>
+  <div class="builder-layout">
+    <div class="builder-navigation">
+      <div class="steps" role="tablist" aria-label="Character creation steps" data-copy-aria-label="Character creation steps"></div>
+    </div>
+    <form id="builder" class="card builder-editor" novalidate>
+      <div id="step-content" class="step-content" role="tabpanel"></div>
+      <div id="step-status" role="status" hidden><p data-step-message></p><button type="button" class="quiet-action" hidden></button></div>
+      <div id="errors" class="errors" role="alert" hidden></div>
+      <div class="form-footer"><button type="button" id="back" data-copy="← Previous">← Previous</button><button type="button" id="next" class="primary" data-copy="Next →">Next →</button></div>
+    </form>
+  </div>
+  <section class="card" id="sheet-preview" aria-labelledby="completed-sheet-title" hidden>
+    <h2 id="completed-sheet-title" tabindex="-1" data-copy="Completed character sheet">Completed character sheet</h2>
+    <div id="sheet-data"></div>
+    <div class="toolbar"><button type="button" id="print" data-copy="Print / PDF">Print / PDF</button>
+    <button type="button" id="save" class="primary" data-copy="Save &amp; open character sheet">Save &amp; open character sheet</button></div>
+  </section>
+</section>
+<section id="templates" class="view" hidden>
+  <p><a href="#create" data-copy="Back to builder">Back to builder</a></p>
+  <section class="card start-card">
+      <h1 data-copy="Level 3 templates">Level 3 templates</h1>
+      <p data-copy="All 12 classes with their SRD subclass and starting kit.">All 12 classes with their SRD subclass and starting kit.</p>
+      <form id="template-form" class="template-form">
+        <label><span data-copy="Class">Class</span><select name="className" id="template-class"></select></label>
+        <button type="submit" data-copy="Use template">Use template</button>
+      </form>
+    </section>
+</section>
+<section id="characters" class="view" hidden>
+  <div class="page-head"><div class="eyebrow" data-copy="LOCAL WORKSPACE">LOCAL WORKSPACE</div><h1 data-copy="Saved Characters">Saved Characters</h1><p data-copy="Open a character’s Play Sheet for the session, or edit its build. Saves stay in this browser.">Open a character’s Play Sheet for the session, or edit its build. Saves stay in this browser.</p></div>
+  <div class="toolbar"><button id="new" class="primary" data-ui-icon="create"><span data-copy="Create New Character">Create New Character</span></button><button type="button" id="library-import" data-ui-icon="exchange"><span data-copy="Import JSON">Import JSON</span></button><button type="button" id="roster-export" disabled data-ui-icon="exchange"><span data-copy="Export roster backup">Export roster backup</span></button><button type="button" id="roster-export-readable" hidden data-copy="Export readable characters only">Export readable characters only</button><input type="file" id="import" accept=".json,application/json" hidden></div>
+  <div id="import-preview" class="card" hidden></div><p id="roster-warning" role="status" hidden></p><p id="library-status" role="status"></p><div id="roster" class="roster"></div>
+</section>
+<section id="play" class="view" hidden>
+  <div class="play-toolbar"><a href="#characters" data-copy="← Saved Characters">← Saved Characters</a>
+    <div class="toolbar"><button type="button" data-play-action="undo" disabled data-ui-icon="reset"><span data-copy="Undo">Undo</span></button><button type="button" data-play-action="print" disabled data-ui-icon="archive"><span data-copy="Print / PDF">Print / PDF</span></button><button type="button" data-play-action="export" disabled data-ui-icon="exchange"><span data-copy="Export play backup">Export play backup</span></button></div>
+  </div>
+  <p id="play-feedback" role="status" aria-live="polite"></p>
+  <div id="play-body"></div>
+</section>
+<section id="dice" class="view" hidden>
+  <div class="page-head"><h1 data-copy="Dice Roller">Dice Roller</h1><p data-copy="A d20 is your usual die for checking whether an attack, skill check, or saving throw succeeds. The dice in a damage or healing formula tell you how much happens.">A d20 is your usual die for checking whether an attack, skill check, or saving throw succeeds. The dice in a damage or healing formula tell you how much happens.</p></div>
+  <form class="card dice-tool"><div class="fields"><label><span data-copy="Die">Die</span> <select name="sides"><option value="4">d4</option><option value="6">d6</option><option value="8">d8</option><option value="10">d10</option><option value="12">d12</option><option value="20" selected>d20</option><option value="100">d100</option></select></label>
+  <label><span data-copy="Number of dice">Number of dice</span> <input type="number" name="count" min="1" max="20" value="1" required></label></div>
+  <p data-dice-use></p><button type="submit" class="primary dice-button" data-copy="Roll dice">Roll dice</button><div class="dice-tray"><canvas data-dice-tray aria-hidden="true"></canvas></div><p class="dice-output" data-dice-result role="status"></p></form>
+</section>
+<section id="dm" class="view" hidden aria-hidden="true" data-legacy-only="true">
+  <div class="page-head"><h1 data-copy="DM Tools">DM Tools</h1><p data-copy="Prepare your table’s scenes and track the action.">Prepare your table’s scenes and track the action.</p></div>
+  <div class="home-grid"><article class="card"><h2 data-copy="Encounters">Encounters</h2><p data-copy="Set an XP budget and track initiative, Hit Points, and conditions.">Set an XP budget and track initiative, Hit Points, and conditions.</p><a href="#encounters" data-copy="Open Encounters">Open Encounters</a></article>
+  <article class="card"><h2>NPC Studio</h2><p data-copy="Generate and save contacts. Keep editable table notes with each NPC.">Generate and save contacts. Keep editable table notes with each NPC.</p><a href="#npc" data-copy="Open NPC Studio">Open NPC Studio</a></article></div>
+</section>
+<section id="encounters" class="view" hidden>
+  <a class="quiet-link" href="#characters" data-copy="← Saved Characters">← Saved Characters</a>
+  <div class="page-head"><h1 data-copy="Encounters">Encounters</h1><p data-copy="Prepare combat, track initiative, and save a recap for your table.">Prepare combat, track initiative, and save a recap for your table.</p></div>
+  <div class="card enc-picker">
+    <label><span data-copy="Saved encounters">Saved encounters</span><select id="encounter-select"><option value="" data-copy="Choose a saved encounter">Choose a saved encounter</option></select></label>
+    <div class="toolbar"><button type="button" data-enc-action="new" data-ui-icon="create"><span data-copy="New encounter">New encounter</span></button><button type="button" data-enc-action="import" data-ui-icon="exchange"><span data-copy="Import encounter JSON">Import encounter JSON</span></button></div>
+    <input type="file" id="encounter-import" accept=".json,application/json" hidden>
+  </div>
+  <p id="encounter-feedback" role="status" aria-live="polite"></p>
+  <div id="encounter-workspace"></div>
+</section>
+<section id="npc" class="view" hidden aria-hidden="true" data-legacy-only="true">
+  <a class="quiet-link" href="#characters" data-copy="← Saved Characters">← Saved Characters</a>
+  <div class="page-head"><div class="eyebrow" data-copy="DM WORKSHOP">DM WORKSHOP</div><h1>NPC Studio</h1><p data-copy="Generate an original contact for your next scene.">Generate an original contact for your next scene.</p></div>
+  <div class="builder-grid"><form class="card" id="npc-form"><h2 data-copy="Contact brief">Contact brief</h2><label><span data-copy="Seed">Seed</span> <input name="seed" required maxlength="80" value="copper-lantern"></label><label><span data-copy="Role">Role</span> <select name="role"><option>Innkeeper</option><option>Courier</option><option>Archivist</option><option>Guide</option><option>Healer</option><option>Merchant</option><option>Guard</option><option>Artisan</option><option>Sailor</option></select></label><button class="primary" type="submit" data-copy="Generate contact">Generate contact</button> <button type="button" id="npc-reroll" data-copy="Reroll unlocked">Reroll unlocked</button> <button type="button" id="npc-save" data-copy="Save NPC">Save NPC</button></form><article class="card" id="npc-card"></article></div>
+  <section class="card npc-library"><h2 data-copy="Saved NPCs">Saved NPCs</h2><p id="npc-status" role="status"></p><div id="npc-list"></div></section>
+</section>
+<section id="compendium" class="view" hidden>
+  <div class="page-head"><h1 data-copy="Compendium">Compendium</h1><p data-copy="Browse verified SRD 5.2.1 entries and open the source for each one.">Browse verified SRD 5.2.1 entries and open the source for each one.</p></div>
+  <div class="card"><div class="fields"><label><span data-copy="Search the compendium">Search the compendium</span><input type="search" data-catalogue-search></label><label><span data-copy="Category">Category</span><select data-catalogue-category></select></label></div>
+  <p data-catalogue-count role="status"></p><ul data-catalogue-results class="catalogue-results"></ul><button data-more-results type="button" data-copy="Show more entries">Show more entries</button></div>
+</section>
+<section id="rules" class="view" hidden>
+  <div class="page-head"><div class="eyebrow" data-copy="SOURCE INDEX">SOURCE INDEX</div><h1 data-copy="Rules &amp; Credits">Rules &amp; Credits</h1><p data-copy="Printed page references for the SRD 5.2.1 rules used in the builder and encounter tracker.">Printed page references for the SRD 5.2.1 rules used in the builder and encounter tracker.</p></div>
+  <div class="card" id="source-index"></div>
+  <div class="card credits"><h2 data-copy="Credits &amp; license">Credits &amp; license</h2><p>This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at <a href="https://www.dndbeyond.com/srd">https://www.dndbeyond.com/srd</a>. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a>.</p><p data-copy="GwenTable is an independent 5E-compatible project. The interface adapts selected SRD rules into structured options and original summaries.">GwenTable is an independent 5E-compatible project. The interface adapts selected SRD rules into structured options and original summaries.</p><p><a href="./design/taverley/LICENSE.txt">Taverley design kit · MIT license</a></p></div>
+</section>
+</main>
+</div>
+<nav class="mobile-navigation" aria-label="Workspace" data-copy-aria-label="Workspace">
+  <a href="#create" data-ui-icon="create"><span data-copy="Builder">Builder</span></a>
+  <a href="#characters" data-ui-icon="character"><span data-copy="Characters">Characters</span></a>
+  <a href="#dice" data-ui-icon="dice"><span data-copy="Dice">Dice</span></a>
+  <details id="mobile-more">
+    <summary data-copy="More">More</summary>
+    <div><a href="#home" data-ui-icon="overview"><span data-copy="Overview">Overview</span></a><a href="#encounters" data-ui-icon="attack"><span data-copy="Party Session">Party Session</span></a><a href="#rules" data-ui-icon="help"><span data-copy="Rules &amp; Credits">Rules &amp; Credits</span></a><a href="#compendium" data-ui-icon="archive"><span data-copy="Compendium">Compendium</span></a></div>
+  </details>
+</nav>
+</div>
+<dialog id="gcx-export" aria-labelledby="gcx-export-title">
+  <header class="sheet-dialog-head"><h2 id="gcx-export-title" data-copy="Export Gwen Character Exchange">Export Gwen Character Exchange</h2><button type="button" id="close-gcx" data-copy="Close">Close</button></header>
+  <p id="gcx-character"></p>
+  <label><span data-copy="Export mode">Export mode</span> <select id="gcx-mode"><option value="build" data-copy="Character Build">Character Build</option><option value="live-snapshot" data-copy="Live Snapshot">Live Snapshot</option></select></label>
+  <p id="gcx-mode-help"></p>
+  <p data-copy="Keep files with private custom content in a trusted location.">Keep files with private custom content in a trusted location.</p>
+  <button type="button" class="primary" id="download-gcx" data-copy="Prepare GCX JSON">Prepare GCX JSON</button>
+  <p role="status" id="gcx-status"></p>
+</dialog>
+<dialog id="spell-picker" class="workspace-dialog" aria-labelledby="spell-picker-title">
+  <header class="sheet-dialog-head"><h2 id="spell-picker-title" data-copy="Search spells">Search spells</h2><button type="button" data-picker-close aria-label="Close" data-copy-aria-label="Close" autofocus>×</button></header>
+  <div class="picker-filters"><label><span data-picker-query-label data-copy="Search choices">Search choices</span><input type="search" placeholder="Spell name or school" data-copy-placeholder="Spell name or school" autocomplete="off"></label>
+  <div class="fields"><label><span data-copy="Level">Level</span><select data-spell-level></select></label><label><span data-picker-category-label data-copy="Category">Category</span><select data-spell-school></select></label></div>
+  <div class="picker-options"><label><input type="checkbox" data-concentration> <span data-copy="Concentration only">Concentration only</span></label><label hidden><input type="checkbox" data-selected-only> <span data-copy="Selected only">Selected only</span></label></div>
+  <p role="status"></p></div>
+  <button type="button" data-picker-back data-copy="← Back to results">← Back to results</button>
+  <div class="spell-picker-grid"><ul data-spell-results aria-label="Eligible choices" data-copy-aria-label="Eligible choices"></ul><section data-spell-details aria-label="Choice details" data-copy-aria-label="Choice details"></section></div>
+  <footer data-selection-toolbar hidden><div><span data-selection-count role="status"></span><p data-selection-message role="alert" hidden></p></div><button type="button" class="primary" data-copy="Apply selections">Apply selections</button></footer>
+</dialog>
+<dialog id="play-detail" class="workspace-dialog" aria-labelledby="play-detail-title">
+  <header class="sheet-dialog-head"><h2 id="play-detail-title" data-copy="Character detail">Character detail</h2><button type="button" data-close data-copy="Close">Close</button></header>
+  <p data-description></p><button type="button" data-source class="quiet-action" data-copy="Full official rules">Full official rules</button>
+</dialog>
+<dialog id="official-reference" class="workspace-dialog" aria-labelledby="official-reference-title">
+  <header class="sheet-dialog-head"><h2 id="official-reference-title" data-copy="Official rules">Official rules</h2><button type="button" data-rules-close data-copy="Close">Close</button></header>
+  <p class="reference-type" data-rules-page></p>
+  <pre tabindex="0" aria-label="Official rules text" data-copy-aria-label="Official rules text"></pre>
+  <div class="toolbar"><button type="button" data-rules-prev data-copy="Previous page">Previous page</button><button type="button" data-rules-next data-copy="Next page">Next page</button>
+    <a class="rule" target="_blank" rel="noopener" data-copy="Open official SRD PDF">Open official SRD PDF</a></div>
+</dialog>
+<dialog id="sheet-export" aria-labelledby="sheet-export-title">
+  <header class="sheet-dialog-head"><h2 id="sheet-export-title" data-copy="Print character sheet">Print character sheet</h2><button type="button" data-sheet-close data-copy="Close">Close</button></header>
+  <form>
+    <div class="fields">
+      <label><span data-copy="Edition">Edition</span><select name="edition"><option value="2024">2024-style · GwenTable</option><option value="2014">2014-style · GwenTable</option></select></label>
+      <label><span data-copy="Paper">Paper</span><select name="paper"><option value="a4">A4</option><option value="letter">US Letter</option></select></label>
+    </div>
+
+    <p data-copy="Both editions display your current character using 2024 SRD rules. Your character data stays in this browser.">Both editions display your current character using 2024 SRD rules. Your character data stays in this browser.</p>
+    <label><span data-copy="Character state">Character state</span><select name="snapshot"><option value="current" data-copy="Current play snapshot">Current play snapshot</option><option value="clean" data-copy="Clean build · maximum resources">Clean build · maximum resources</option></select></label>
+    <label><input type="checkbox" name="notes"> <span data-copy="Include private notes and custom descriptions">Include private notes and custom descriptions</span></label>
+    <div class="toolbar">
+      <button type="submit" name="generate" class="primary" data-copy="Generate PDF">Generate PDF</button>
+      <button type="button" data-sheet-web data-copy="Print web sheet">Print web sheet</button>
+    </div>
+    <div data-sheet-feedback role="status" aria-live="polite"></div>
+  </form>
+</dialog>
+<dialog id="class-change-dialog" aria-labelledby="class-change-title">
+<header class="sheet-dialog-head"><h2 id="class-change-title" data-copy="Review Class change">Review Class change</h2><button type="button" data-class-cancel aria-label="Close" data-copy-aria-label="Close">×</button></header><p data-class-target></p>
+<p data-change-explanation data-copy="Review the choices below before changing Class. Your current draft will be backed up first. Restore previous draft can undo the change.">Review the choices below before changing Class. Your current draft will be backed up first. Restore previous draft can undo the change.</p>
+<div data-class-impact></div><form method="dialog" class="toolbar"><button value="cancel" autofocus data-copy="Cancel">Cancel</button><button value="confirm" class="primary" data-copy="Confirm Class change">Confirm Class change</button></form></dialog>
+<dialog id="new-character-dialog" aria-labelledby="new-character-title"><h2 id="new-character-title" data-copy="Start a new character?">Start a new character?</h2>
+<p data-copy="You can keep this unfinished build as a recoverable draft before starting a new one.">You can keep this unfinished build as a recoverable draft before starting a new one.</p>
+<form method="dialog" class="toolbar"><button value="keep" class="primary" data-copy="Keep draft and start new">Keep draft and start new</button><button value="discard" data-copy="Discard draft">Discard draft</button><button value="cancel" autofocus data-copy="Cancel">Cancel</button></form></dialog>
+<dialog id="recover-draft-dialog" aria-labelledby="recover-draft-title"><h2 id="recover-draft-title" data-copy="Resume a draft">Resume a draft</h2>
+<form method="dialog"><label><span data-copy="Choose a draft">Choose a draft</span><select></select></label>
+<div class="toolbar"><button class="primary" value="resume" data-copy="Resume draft">Resume draft</button><button value="cancel" data-copy="Cancel">Cancel</button></div></form></dialog>
+<article id="printout" aria-hidden="true"></article>
+</body></html>

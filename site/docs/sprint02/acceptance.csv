@@ -1,0 +1,45 @@
+id,status,evidence
+S2-01,PASS,Day5 README/issues/matrix and clean parent 834cf7a inspected.
+S2-02,PASS,Parent 834cf7a source/version29 and synthetic fixtures retained; no real store reset.
+S2-03,PASS,NO GO inherited; core integration blockers remain open; expansion held.
+S2-04,PASS,No corpus change; pinned registry build and exact attribution check passed.
+S2-05,PASS,Exact raw custom/provenance snapshot backup tests; not a public core import.
+S2-06,PASS,Existing catalog has twelve Class keys; completion template regressions pass.
+S2-07,BLOCKED,Existing dialog source only; keyboard/scroll behavior not observed.
+S2-08,NOT TESTED,No new Class-stage patch within repair-only cutline; existing intros not visually verified.
+S2-09,FAIL,Class glossary still missing in current beginner-help.js; GT5-04 remains open.
+S2-10,BLOCKED,Locale calculations automated; navigation/reload interaction unavailable.
+S2-11,NOT TESTED,Existing snapshots retained; no new downstream impact preview implemented.
+S2-12,PASS,Existing class templates/unsupported-level tests pass; no new rule coverage claim.
+S2-13,PASS,Existing core background keys Acolyte/Criminal/Sage/Soldier; no extras added.
+S2-14,NOT TESTED,Existing source benefits map retained; no visual benefit panel verification.
+S2-15,BLOCKED,Background dialog focus/X/Escape unobserved.
+S2-16,NOT TESTED,Snapshot helper preserves unrelated metadata; actual background-change journey pending.
+S2-17,NOT TESTED,No Background/Ability changes in this build.
+S2-18,BLOCKED,Actual Review/Edit navigation and persistence unverified.
+S2-19,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-20,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-21,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-22,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-23,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-24,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-25,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-26,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-27,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-28,NOT TESTED,NOT IN SCOPE THIS BUILD: conditional Languages/Ability slice held by entry NO GO.
+S2-29,PASS,Existing unified identity-species stage and legacy aliases preserved; regression tests.
+S2-30,BLOCKED,Supported managed preview refused connection; no dismissal/focus pass.
+S2-31,NOT TESTED,Existing accessible names/state regression retained; screen-reader behavior untested.
+S2-32,PASS,Seven localized recovery strings; existing locale/ID calculation tests pass.
+S2-33,BLOCKED,"No narrow viewport, keyboard-only or phone observation."
+S2-34,FAIL,Only three glossary terms implemented; Class/Ability Score missing.
+S2-35,PASS,Existing accordion Review unchanged; no pills/search/filter introduced (source review).
+S2-36,PASS,Existing pure Appearance skip/decision tests pass; browser journey unverified.
+S2-37,BLOCKED,Draft backup does not require final approval and rejects imported approval; real save/print journey pending.
+S2-38,BLOCKED,Pure guard and PDF handler regressions pass; all entry paths browser unverified.
+S2-39,PASS,Snapshot and existing Play reconciliation tests retain HP/XP; no Play UI change.
+S2-40,PASS,Exact raw legacy/custom/malformed input backup/repeated read tests; browser reload still open.
+S2-41,NOT TESTED,Existing suite passes; actual class/background change + stored equipment/spells E2E pending.
+S2-42,PASS,Touched diff has no new art/private lore/content imports; scoped rights check.
+S2-43,PASS,npm run build; npm test:87 passed/0 failed; focused12 passed; test-results.txt.
+S2-44,PASS,"README links source checkpoint, NO GO, save-only intent and rollback; final save SHA in handoff."

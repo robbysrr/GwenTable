@@ -1,0 +1,15 @@
+{
+  "candidate": "Integration 11 private, Integration 10-derived",
+  "source": {"document": "SRD 5.2.1", "sha256": "8974902d109d6e63672d7c490bde9ccf052410503d9cfa768237154fbc5e3d87", "pages": {"Bless": 113, "Bane": 112, "Combining Magical Effects": 106}},
+  "features": [
+    {"register_rank": 6, "backlog": ["DERIVE-14", "EFFECT-05", "SAVE-04", "CONC-04"], "feature": "Bless/Bane physical d4 on saving throws via shared resolver",
+     "implementation": ["dist/lib/srd-live-modifiers.mjs", "dist/lib/srd-live-check-preview.mjs", "dist/lib/play.js", "dist/spell-dice-fields.js", "dist/live-check-preview.js", "dist/condition-sources.js", "dist/play-sheet.js"],
+     "tests": ["tests/bless-bane-integration11.test.js (12)", "browser-acceptance/uat.e2e.mjs: Integration 11 Bless/Bane"],
+     "automation": "saves: automatic with player-entered d4; attacks: reminder only; duration/Concentration: table-managed", "status": "integrated-private"},
+    {"register_rank": 4, "backlog": ["CREATE-02", "CREATE-13"], "feature": "Builder completion for Magic Initiate backgrounds and generated Standard Array",
+     "implementation": ["dist/app.js"], "tests": ["tests/builder-uat-fixes-integration11.test.js (3)", "browser-acceptance/uat.e2e.mjs: UAT-01 (4)"], "status": "defects fixed, browser-verified"},
+    {"register_rank": 3, "backlog": ["STATE-04", "STATE-11"], "feature": "Reload, Undo and two-tab stale write rejection",
+     "tests": ["browser-acceptance/uat.e2e.mjs: UAT-11/12/13"], "status": "browser-verified (headless Chromium, one origin, two pages)"},
+    {"register_rank": 40, "backlog": ["QA-02"], "feature": "Offline reload of a saved character", "tests": ["browser-acceptance/uat.e2e.mjs: UAT-11/12/13"], "status": "browser-verified (service worker + IndexedDB, headless)"}
+  ]
+}

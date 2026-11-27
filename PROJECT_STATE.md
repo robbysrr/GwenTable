@@ -61,7 +61,7 @@ Owner direction: build a private browser preview of the Hazards v3 candidate (ch
 
 **Inputs received:** Context v3, Character Sheet Kit v0.3, Spell Localization v1.46, Localization Source Fidelity v0.82 (+ START_HERE v3). That is 3 of the 22 registered archives, plus the context. Searching the connected Google Drive found none of the 22. The only ZIPs there are two "DnD-20261117…" exports (1.6/2.1 GB) in a "Books" folder; they are not GwenTable source and were not downloaded.
 
-**Authoritative website baseline: NOT IDENTIFIED.** UX9, Convergence08, Dev15 and MVP16 source ZIPs are all missing. No integration was performed. See `docs/CONSOLIDATION_PLAN.md` for the exact files required and the selection/merge procedure.
+**Authoritative website baseline: NOT IDENTIFIED.** UX9, Convergence08, Dev15 and MVP16 source ZIPs are all missing. No integration was performed. See `project-docs/CONSOLIDATION_PLAN.md` for the exact files required and the selection/merge procedure.
 
 **Verified now**
 - ZIP CRC OK for all 5 uploaded ZIPs. Byte sizes of sheet kit, v1.46 and v0.82 match `RECOVERED_ARCHIVES.md`.
@@ -72,10 +72,20 @@ Owner direction: build a private browser preview of the Hazards v3 candidate (ch
 - Finding: the v0.82 kit's `SRD_CC_v5.2.1_copy.pdf` is a re-saved file (SHA-256 22bbbe05…, 6,542,011 bytes) that differs in bytes from the official PDF (8974902d…). The extracted text is identical, so the kit's `srd_sha256` pins a copy, not the official file.
 - Secret-pattern scan of all extracted packages: no matches.
 
-**Repository changes:** `docs/` (v3 register, backlog JSON with status vocabulary and evidence, consolidation plan), `handover/*_v3.md`, `recovered/` (text/source parts of sheet kit v0.3, localization v1.46 and v0.82; PDFs and images not committed).
+**Repository changes:** `docs/` (now `project-docs/`) (v3 register, backlog JSON with status vocabulary and evidence, consolidation plan), `handover/*_v3.md`, `recovered/` (text/source parts of sheet kit v0.3, localization v1.46 and v0.82; PDFs and images not committed).
 
 **Register:** 315 items: 293 not verifiable, 6 blocked, 2 partial, 1 candidate-only, 8 candidate-verified, 3 verified, 2 compliant. Site-integrated: 0/315.
 
 **Next:** owner supplies the four site ZIPs (+ recovery kit and QA ZIPs), then baseline selection per the plan.
 
 **Environment:** Claude Code cloud, GwenTable environment. Release: NO GO.
+
+---
+
+## Milestone • 27 November 2026 • Integration 10 source received; Integration 11 and online UAT build
+
+**Authoritative source:** Integration 10 handover (4 parts, 515/515 files verified). Baseline reproduced fresh: 400/400 source hashes, 796/796 Node tests, static build, artwork-withheld build and art audit. The website now lives in `site/` (Integration 11); full state is in `site/PROJECT_STATE.md` (newest first).
+
+**Integration 11:** two builder blockers found by the first real-browser acceptance run and fixed; Bless/Bane D20 dice on saving throws. 811/811 Node tests, 12/12 Chromium acceptance tests, phone emulation (Pixel 7, iPhone 13, 320 px) passes build → save → damage with no overflow.
+
+**Online UAT (owner-approved, 27 Nov):** `docs/` holds the artwork-withheld build with `noindex`, served by GitHub Pages from branch `claude/lucid-ritchie-nvja1w`, folder `/docs`. Not a public release; release gates still NO GO. The 12 uncleared image binaries and the Taverley design kit are withheld from this repository (`site/WITHHELD_FROM_PUBLIC_REPO.md`). Earlier repo docs moved to `project-docs/`.

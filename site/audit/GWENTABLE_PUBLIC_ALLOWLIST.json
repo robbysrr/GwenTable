@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "product": "GwenTable",
+  "reviewStatus": "PENDING_OWNER_REVIEW",
+  "description": "Fail-closed public distribution allowlist. Fill each exact path and SHA-256 only after documented owner/license approval. Local source presence does not authorize web publication.",
+  "assets": []
+}

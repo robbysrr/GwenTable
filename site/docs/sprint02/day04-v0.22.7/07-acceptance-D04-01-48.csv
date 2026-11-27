@@ -1,0 +1,49 @@
+id,status,evidence,context,owner
+D04-01,PASS,Exactly Acolyte/Criminal/Sage/Soldier source records; new p83 tests.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-02,PASS,Existing background English canonical keys unchanged across EN/ID; new test.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-03,PASS,Exact three source ability names asserted for all4.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-04,PASS,Fixed feat and Cleric/Wizard variant asserted for all4.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-05,PASS,Exact two skills asserted for all4.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-06,PASS,"p83 tool data, one-kind Soldier confirmation and A kit pairing tested; node tests only",v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-07,PASS,entire four equipment A item sequences and quantities asserted against p83 PDF,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-08,PASS,B adapter is items[]/50GP; engine original mutually-exclusive kit behavior retained.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-09,PASS,page83 PDF inspected; sourceId and immutable per-effect provenance; CC BY 4.0 attribution retained,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-10,PASS,Existing stage order Class→Background→Languages retained; no Species duplicate.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-11,NOT TESTED,Zero novice participants; discovery/comprehension unvalidated.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-12,FAIL,"four names and usable glyph fallbacks, but distinct approved SVGs are absent",v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-13,NOT TESTED,shortChoiceKeys and Gaming Set non-search configured; actual scroll/IME unverified.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-14,BLOCKED,Shared picker Close/selected handlers have prior tests; native Background flow not observed.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-15,BLOCKED,No native Escape/outside/focus-return observation.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-16,PASS,18 bilingual glossary terms including 11 Background terms; exactly two examples and why; Node localization tests,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-17,NOT TESTED,readable source benefit/pending UI implemented; no actual novice comprehension session,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-18,BLOCKED,Actual Back/Next route/state journey unverified.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-19,PASS,"source adapter records all grants, tool state, both complete A/B branches; unit assertions",v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-20,FAIL,Next has actionable explicit confirmation; however engine still has a projected default rather than null/unselected Background,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-21,PASS,Read-through source provenance avoids new ledger; repeated rebuild does not duplicate feats.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-22,PASS,Acolyte backgroundMagic controls restricted to Cleric list; two cantrips/level1 checked.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-23,PASS,Sage backgroundMagic controls restricted to Wizard list; two cantrips/level1 checked.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-24,FAIL,"Magic Initiate requires explicit approval, but canonical engine still fills speculative defaults instead of unresolved/null fields",v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-25,PASS,Manual Initiative Swap/Savage Attacker reroll references added; no fake automation introduced.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-26,PASS,Existing engine distinct skill controls/unique derivation retained; no additive new bonus path.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-27,PASS,tool and kit A same kind asserted; Soldier chosen set now requires acknowledgment,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-28,PASS,read-only pending abilityPlan introduced; engine existing boost projection remains; no second application,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-29,PASS,Source pattern +2/+1 or +1/+1/+1 and cap20 explained; existing rules validation retained.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-30,PASS,Repeated Soldier↔Sage candidate derivations have same GP/items when returning; no append mutation.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-31,PASS,Wizard book/prepared/class identity retained in fixture; changes enumerate affected engine decisions.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-32,PASS,existing source diff/preview retained; new gamingSet review invalidates after edit,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-33,PASS,"class/species/kit preserved, p83 read-through effects no duplicates; user purchases browser untested",v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-34,BLOCKED,Original before-state captured via existing recovery; actual restore/reselection workflow unverified.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-35,BLOCKED,No real browser save/reload/navigation pass.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-36,PASS,legacy fixture tests and imported backup nested approval reset; actual browser recovery unverified,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-37,PASS,New BG row and mechanics invariant under locale; official IDs retained.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-38,PASS,18 term EN/ID coverage + background-specific copy; no human readability rating,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-39,NOT TESTED,No320px/200%/orientation rendered test.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-40,BLOCKED,Native keyboard/focus/glossary path not observed.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-41,NOT TESTED,Native names/labels source retained; no screen reader used.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-42,PASS,Existing safe resolver fallback; option text remains independent; no new image paths.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-43,PASS,injected writer failure/test retry + source click-rollback; real browser quota unavailable,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-44,BLOCKED,Node final/PDF guard tests pass; real direct-route and print browser tests not executed,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-45,PASS,entire inherited test set passes with eight new hardening tests,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-46,PASS,npm run build + npm test; 126 passed/0 failed; browser attempt timed out,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-47,PASS,No new art/private sources; attribution retained; unique assets withheld and generic licensed fallback explicit.,v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer
+D04-48,PASS,"current Day05 handoff, source table, 48 statuses and explicit NO GO gate",v0.22.7 source/Node unless explicitly marked browser; zero real participants,local engineer

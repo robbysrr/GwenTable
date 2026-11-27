@@ -1,0 +1,245 @@
+{
+  "assets": {
+    "tav-character": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/character.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "b0d7ed74755fbecccc0873d11d77093097e530edcc2b6cc0c707349dd3fa2422",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-dice": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/dice.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "aa6b3cfa7c72ff16cf415fc4bfb45dc1dc6fa128bd515e0bb28385948f829f99",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-enemy": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/enemy.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "74c38c10f124b9e1d6e1ef65f2e0f581b3669d7dc8fe7f8242e4f99feba34bf1",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-exchange": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/exchange.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "42642e028e98c0a9b52f5735eb0e19617bd959508cb9d47be8ecbeb0f3b95afd",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-feat": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/feat.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "e4d94d45a633f9b1b6ec4f9f6f70bdc4a30a80226a788c845681b60bf55e422c",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-item": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/item.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "da8ad633744e3a913cc58bd30a240d6ea56327ef128425d84969b76788d94829",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-search": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/search.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "46b1fc8eb06c859317407c8c6271f23ec9b8fea7f52cdf53e8463c295c6ace8c",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "tav-spell": {
+      "source": "Taverley Design System implementation kit",
+      "filePath": "design/taverley/icons/spell.svg",
+      "mimeType": "image/svg+xml",
+      "viewBox": "0 0 24 24",
+      "sha256": "3d6771b1d389fbc464e1d2d7fb5c85a83bbe7097b778742a44c1ed552f0f16a3",
+      "publicationRights": "MIT",
+      "audienceVisibility": "public"
+    },
+    "gwen-overview": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "1f2cb940e278bc3b0c5da2586c9cddc30c7c59ee27a313ac1dd519352f174d14",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-create": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "690679d8e786e4aa2d0a55dda39cefa37a7c02998d53f9ac7e8cb1f766c46eb9",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-filter": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "179f6c8e48cfcd8043395a32d41a500844f30abbe541423ecdfcfebe522d5f1c",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-archive": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "56c5c023221bde64ed409acc80ececcb4065e2ed91cfc3078aeded2e9260a556",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-attack": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "f32e05a99286a6a3af7627c2e4ba0525555dde85a1628b9e79f58acc806126cf",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-language": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "75f2bf96163a1f1c1a4edc951c0401ca7656d35c43c5ef9f33161d9d1588f1b4",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-edit": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "7afc6db295134d8e609420e47617740e77d2d6afb341585022655db68d868ef2",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-save": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "9885d30ae6f362efacd61b9865b3ebdeb462f942e5c81d42a5e365d47156bcfa",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-help": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "19f1ae884e7c65060a37c05d233c5b8ba6743fa20a4a7ef54392c11be4640237",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-reset": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "fd2e07a4b9ad12655c5b26e487bf545fc2eaa3d173bdd6d69efa7f2e7e1e1f15",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-close": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "1d8e24ff56a75bb09c86a58f843f752da41ba3967a442e4751bd5154fe3d14fc",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-trash": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "4e2dac2f780633754b30503d93aa427ce1ad63437ae86866fb84da57f6acc929",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-warning": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "233939c505cc324f184a490417935b71c1a03bf620e4d54403f21aacfc4fdd58",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-info": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "11fb6831997a41ec91806e0d6c6f3b21b15af76b3e0842e3e24284a92dfede1f",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    },
+    "gwen-up": {
+      "source": "GwenTable original interface glyph",
+      "filePath": "ui-icons.js",
+      "viewBox": "0 0 24 24",
+      "mimeType": "image/svg+xml",
+      "sha256": "7e1946e2258bac056a1a4ba22bd789789116f729ac1a3583dc3f4f47dac630f8",
+      "publicationRights": "GwenTable interface",
+      "audienceVisibility": "public"
+    }
+  },
+  "semanticMappings": {
+    "character": "tav-character",
+    "dice": "tav-dice",
+    "enemy": "tav-enemy",
+    "exchange": "tav-exchange",
+    "feat": "tav-feat",
+    "item": "tav-item",
+    "search": "tav-search",
+    "spell": "tav-spell",
+    "overview": "gwen-overview",
+    "create": "gwen-create",
+    "filter": "gwen-filter",
+    "archive": "gwen-archive",
+    "attack": "gwen-attack",
+    "language": "gwen-language",
+    "edit": "gwen-edit",
+    "save": "gwen-save",
+    "help": "gwen-help",
+    "reset": "gwen-reset",
+    "close": "gwen-close",
+    "trash": "gwen-trash",
+    "warning": "gwen-warning",
+    "info": "gwen-info",
+    "up": "gwen-up",
+    "class": "tav-character",
+    "subclass": "tav-character",
+    "species": "tav-character",
+    "background": "gwen-help",
+    "trait": "tav-feat",
+    "slot": "tav-spell",
+    "check": "tav-search"
+  },
+  "fallbackIconId": "tav-item",
+  "exactEntityArtwork": {}
+}

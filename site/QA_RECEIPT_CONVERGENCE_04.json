@@ -1,0 +1,35 @@
+{
+  "product": "GwenTable",
+  "candidate": "Player Convergence 04 | Validated Fighter-to-Rogue Class Entry Choices",
+  "date": "2026-11-22",
+  "baseline": "GwenTable_Player_Convergence_03_Private_Source.zip",
+  "baselineSHA256": "500f0f259417cb3a635e700b64bf9853e0688655333575059f89cdc40c23a855",
+  "lineage": "dev.6-derived local website; UX9 and dev.14 authoritative merge NOT done",
+  "implemented": [
+    "Fighter level 1–19 to Rogue level 1 class-specific multiclass proficiency selection and logic gates",
+    "Source-aware 1 Rogue skill, 2 Expertise, 1 language, 2 nonduplicated weapon masteries with class training previews",
+    "Verified multiclass Hit Dice, total character level, projected max HP, proficiency bonus and Rogue level-1 features PREVIEW ONLY",
+    "Opt-in Play Sheet selection with live current/review/invalid status and clear control",
+    "Same character row revision-checked save; no active Play, inventory, XP, GCX or Undo modification",
+    "Plan/level-up checkpoint reapproval invalidates dependent selections",
+    "Individual and roster portable extension persistence, no schema migration",
+    "Offline module and cache namespace, responsive UI"
+  ],
+  "tests": {
+    "inherited": 576,
+    "new": 18,
+    "total": 594,
+    "passed": 594,
+    "failed": 0,
+    "runtime": "Node.js 22.16.0"
+  },
+  "staticBuild": "PASS",
+  "artworkWithheldPreview": "PASS, zero published image/icon variants",
+  "nativeBrowserIndexedDB": "NOT VERIFIED",
+  "windowsNode26": "NOT VERIFIED",
+  "activeMulticlassing": "NOT IMPLEMENTED; class-entry choice preview remains inactive",
+  "sourceManifest": "VERIFIED_LOCAL_THEN_CLEAN_EXTRACTION",
+  "publicRelease": "NO_GO",
+  "httpSmoke": "7/7 PASS localhost Node 22 on isolated port; NOT browser IndexedDB",
+  "bilingual": "New Rogue entry controls have EN/ID interface copy; some longer guidance remains English"
+}

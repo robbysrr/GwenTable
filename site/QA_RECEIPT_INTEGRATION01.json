@@ -1,0 +1,55 @@
+{
+  "candidate": "GwenTable Integration 01 (Convergence 08-derived)",
+  "runtime": "Node.js 22.16.0",
+  "baselines": [
+    {
+      "branch": "Convergence 08",
+      "archive": "GwenTable_Player_Convergence_08_Private_Source.zip",
+      "sha256": "81e0bbf150ef4633a83402bb43f9a59febfe3235bb4139544a54009ac4e97851",
+      "tests_passed": 651,
+      "integrity": "PASS",
+      "static_build": "PASS",
+      "role": "Private merge candidate; existing active Fighter 1/Rogue 3 path"
+    },
+    {
+      "branch": "Unified Player Console Dev.15",
+      "archive": "GwenTable_dev15_Unified_Player_Console_PRIVATE_Source.zip",
+      "sha256": "04262bf73505beaf71d2c05274ae1152005bb1e5114ea350f7d9db2d3a5d186d",
+      "tests_passed": 709,
+      "integrity": "PASS",
+      "static_build": "PASS",
+      "role": "Donor: read-only D20 core; richer conditions and party reconciliation remain to integrate"
+    },
+    {
+      "branch": "UX9",
+      "archive": "GwenTable_Node26_Local_UX9_Player_Workspace_Windows_x64.zip",
+      "sha256": "26fb1ce7bc5d394b5e9623ee2f22221b6ff6e79ce7ff4145a8aa68d2036b91cb",
+      "tests_passed": 191,
+      "integrity": "PASS",
+      "static_build": "not provided",
+      "role": "UX reference; Windows Node 26 not tested"
+    },
+    {
+      "branch": "MVP Dev.16",
+      "archive": "GwenTable_MVP_dev16_SRD_Warlock_Source.zip",
+      "sha256": "b7f21946468a607e45d685d41471e88ac50113b39a61d2f74b4386dfd5e9428f",
+      "tests_passed": 796,
+      "integrity": "PASS",
+      "static_build": "PASS",
+      "role": "Class progression and Warlock donor; not merged"
+    }
+  ],
+  "candidate_tests": {
+    "inherited": 651,
+    "new": 10,
+    "passed": 661,
+    "failed": 0
+  },
+  "static_build": "PASS",
+  "artwork_withheld_build": "PASS; 12 inherited binaries withheld",
+  "artwork_withheld_audit": "PASS; zero variants",
+  "http_smoke": "10/10 PASS",
+  "chromium": "timeout exit 124; zero DOM bytes; EGL initialization errors",
+  "canonical_repository": "not verified",
+  "release": "PRIVATE_QA_ONLY; PUBLIC_NO_GO"
+}

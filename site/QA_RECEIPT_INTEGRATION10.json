@@ -1,0 +1,20 @@
+{
+  "candidate": "Integration 10 private; Integration 09-derived",
+  "baseline_sha256": "5613ce0d9ad9ac3968961a53e352f811e1fa89cb770b99bd96be37816e31b3f2",
+  "baseline_manifest": "395/395 PASS",
+  "baseline_tests": 781,
+  "new_tests": 15,
+  "full_tests": {
+    "pass": 796,
+    "fail": 0
+  },
+  "runtime": "Node 22.16.0",
+  "static_build": "PASS",
+  "artwork_withheld": "PASS; 12 binaries withheld; 0 variants",
+  "http_smoke": "10/10 PASS",
+  "browser": "NOT RUN; historical timeouts; NOT VERIFIED",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "source_scope": "SRD 5.2.1 pp.161\u2013162; incoming Shield of Faith and legacy Shield AC aggregation",
+  "release": "PRIVATE QA ONLY; PUBLIC NO GO"
+}

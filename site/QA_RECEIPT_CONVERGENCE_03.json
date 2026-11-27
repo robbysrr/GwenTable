@@ -1,0 +1,32 @@
+{
+  "product": "GwenTable",
+  "candidate": "Player Convergence 03 | Inert Multiclass Level-Up Checkpoint",
+  "date": "2026-11-22",
+  "baseline": "GwenTable_Player_Convergence_02_Private_Source.zip",
+  "baselineSHA256": "74010e11b4cec5a4ee5aaa88015540fbd7aac55c875961d54d59f8572989815b",
+  "lineage": "dev.6-derived local website; UX9 and dev.14 authoritative merge NOT done",
+  "implemented": [
+    "SRD 5.2.1 confirmed fixed/rolled second-class HP with Constitution and minimum 1",
+    "Mixed Hit Dice, proficiency and shared Spellcasting slot previews; Warlock Pact Magic separate",
+    "Next total-level XP threshold or explicitly confirmed GM milestone",
+    "Existing saved character row checkpoint with revision-checked atomic save and removal",
+    "Stale/corrupt checkpoint warnings and automatic invalidation when future-class plan is changed",
+    "Portable individual and roster backup round trip; no schema migration",
+    "Play Sheet UI; new offline module and cache namespace"
+  ],
+  "tests": {
+    "inherited": 559,
+    "new": 17,
+    "total": 576,
+    "passed": 576,
+    "failed": 0,
+    "runtime": "Node.js 22.16.0"
+  },
+  "staticBuild": "PASS",
+  "artworkWithheldPreview": "PASS, 12 withheld binary variants, 0 published image variants",
+  "nativeBrowserIndexedDB": "NOT VERIFIED",
+  "node26Windows": "NOT VERIFIED",
+  "activeMulticlassing": "NOT IMPLEMENTED; hard-gated as a planning checkpoint",
+  "sourceManifest": "VERIFIED_LOCAL_THEN_CLEAN_EXTRACTION",
+  "publicRelease": "NO_GO"
+}

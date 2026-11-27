@@ -1,0 +1,26 @@
+{
+  "candidate": "GwenTable Integration 03 (Integration 02-derived, private)",
+  "baseline_sha256": "716fae3954df90e3799478806cd5069959f0175708c1d8049c72effa53a0adb1",
+  "runtime": "Node.js 22.16.0",
+  "baseline_manifest": "363/363 PASS",
+  "baseline_tests": 674,
+  "new_tests": 19,
+  "full_tests": {
+    "pass": 693,
+    "fail": 0
+  },
+  "static_build": "PASS",
+  "artwork_withheld": "PASS; 12 binary assets withheld; 0 variants",
+  "http_smoke": "10/10 PASS",
+  "browser": "NOT VERIFIED; Chromium exit 124, zero DOM bytes",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "additive_optional_play_fields": [
+    "manualConditions",
+    "conditionEffects",
+    "nextConditionId"
+  ],
+  "source_scope": "SRD 5.2.1 printed pp. 53\u201355, 179; bounded manual-source handling",
+  "canonical_repo": "not established",
+  "release": "PRIVATE_QA_ONLY; PUBLIC_NO_GO"
+}

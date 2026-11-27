@@ -1,0 +1,33 @@
+{
+  "product": "GwenTable",
+  "version": "Player Convergence 08: Fighter 1 / Rogue 3 (Thief)",
+  "date": "2026-11-23",
+  "baselineSourceZipSha256": "eba0fb91d752640dd80ee20e322148b54e3b7fcb46a8cc3c013cd4cbd288e304",
+  "baselineLineage": "Exact Convergence 07 private source (dev.6-derived), not authoritative UX9/dev.14",
+  "verifiedImplementation": [
+    "Explicit Thief-only Rogue 3 advancement at total character level 4, 2700 XP or GM milestone",
+    "Strict subclass and HP/Hit Die/XP authorization receipt verification",
+    "Separate Fighter d10 and Rogue 3d8 pools, Second Wind and 2d6 Sneak Attack",
+    "Steady Aim confirmed no movement, tracked Bonus Action, one next attack Advantage, speed lock until turn end",
+    "Fast Hands confirmed Sleight of Hand, Utilize and eligible magic-item actions with no inferred checks or consumptions",
+    "Second-Story Work climb speed and optional Dexterity jump guidance",
+    "Existing Rogue 1/2 Play and private JSON, roster, GCX and fillable PDF compatibility",
+    "Bilingual controls and offline precache for the new advancer"
+  ],
+  "evidence": {
+    "runtime": "Node.js v22.16.0",
+    "sourceBaselineTests": "637/637 PASS",
+    "updatedAutomatedTests": "651/651 PASS (14 additional)",
+    "realHTTP": "10/10 PASS on artwork-withheld local Node server",
+    "staticBuild": "PASS",
+    "artworkWithheldBuild": "PASS, 12 inherited image/icon binaries withheld",
+    "artworkWithheldAudit": "PASS, 0 image/icon binaries served",
+    "actualChromiumNavigation": "BLOCKED, ERR_BLOCKED_BY_ADMINISTRATOR",
+    "actualBrowserIndexedDB": "NOT VERIFIED",
+    "genuineLegacyMigration": "NOT VERIFIED",
+    "node26Windows": "NOT VERIFIED"
+  },
+  "outstanding": ["Other multiclass combinations and later class levels", "Complete SRD 5.2.1 automated rules", "Authorized UX9/dev.14 merge", "Real browser two-tab storage acceptance", "Genuine save migrations", "Public artwork/legal/privacy/security/accessibility review"],
+  "environment": "STAY_CHAT_LOCAL",
+  "release": "PRIVATE_DEVELOPMENT_ONLY; PUBLIC_NO_GO"
+}

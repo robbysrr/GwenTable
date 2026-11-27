@@ -1,0 +1,32 @@
+{
+  "package": "GwenTable",
+  "version": "0.25.6",
+  "releaseType": "local-development-only",
+  "sourceBaseline": "GwenTable v0.25.5",
+  "date": "2026-11-19",
+  "implemented": [
+    "SRD 5.2.1 Ranger/Hunter level 13–20 builder and half-caster spell progression",
+    "Level 16 feat/ASI, level 19 Epic Boon, Hunter’s Mark free casts 2/3/4/5/6",
+    "Relentless Hunter damage-based Concentration immunity for Hunter’s Mark",
+    "Nature’s Veil tracked Bonus Action and Long Rest resources",
+    "Superior Hunter’s Defense confirmed Reaction damage calculation and DM resistance reminder",
+    "Precise Hunter explicit marked target Advantage with cancellation",
+    "Foe Slayer d10 Hunter’s Mark damage, critical bonus dice, logged total",
+    "Bilingual Play UI, legacy private backup compatibility, isolated offline service worker"
+  ],
+  "verification": {
+    "npmTest": {
+      "passed": 498,
+      "failed": 0
+    },
+    "npmBuild": "pass",
+    "artworkWithheldAudit": "pass: zero image binaries",
+    "originalArtworkAudit": "BLOCKED: 12 files",
+    "realBrowser": "unverified",
+    "mobile": "unverified",
+    "screenReader": "unverified"
+  },
+  "production": "NO GO",
+  "licenseBlocker": "12 inherited original artwork files not cleared for public distribution",
+  "environment": "Codex/equivalent real-browser repo-backed workspace mandatory for integration/publication gate; local isolated rules modules can continue."
+}

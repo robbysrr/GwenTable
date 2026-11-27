@@ -1,0 +1,7 @@
+GwenTable local continuation v0.22.6
+Source: uploaded GwenTable_Source_v0.22.5_Local_Development.zip
+Baseline: 107 passed, 0 failed
+Local result: 118 passed, 0 failed, 0 skipped
+Automated test additions: 11
+Browser: navigation blocked by ERR_BLOCKED_BY_ADMINISTRATOR
+Release gate: NO GO (not browser/mobile/assistive technology certified)

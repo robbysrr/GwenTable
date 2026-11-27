@@ -1,0 +1,20 @@
+{
+  "candidate": "Integration 05 private; Integration 04-derived",
+  "baseline_sha256": "2416a68283e41a969bc7fe7dd50ee31da8635811b1412d8b08c62681f65ac5b1",
+  "baseline_manifest": "373/373 PASS",
+  "baseline_tests": 710,
+  "new_tests": 14,
+  "full_tests": {
+    "pass": 724,
+    "fail": 0
+  },
+  "runtime": "Node 22.16.0",
+  "static_build": "PASS",
+  "artwork_withheld": "PASS; 12 binaries withheld; 0 variants",
+  "http_smoke": "10/10 PASS",
+  "browser": "NOT VERIFIED; timeout exit 124, zero DOM bytes",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "source_scope": "Embedded SRD 5.2.1 Hold Person/Hold Monster; confirmed active sources only",
+  "release": "PRIVATE QA ONLY; PUBLIC NO GO"
+}

@@ -1,0 +1,49 @@
+id,status,priority,evidence,issue_id
+D5-01,PASS,P1,Source 424446fa156b9ee30c34690c898af4fd68054e40; branch sprint-01-day-05-verification; candidate v0.22.1,
+D5-02,PASS,P1,Report reference inventory distinguishes actual Day2/Day4 artifacts from missing Day3 code,GT5-04
+D5-03,PASS,P0,Parent commit 424446fa is local rollback checkpoint; public source 7d58b77/version27 retained,
+D5-04,PASS,P0,tests/fixtures-day4.json F1–F10 plus exact legacy raw test; synthetic data only,
+D5-05,PASS,P0,Baseline build +81 tests; final build +82 tests. test-results.txt,
+D5-06,FAIL,P1,Day2 progressive form selected; name Apply/Undo and explicit fresh Species confirmation absent,GT5-04
+D5-07,PASS,P1,No external participants; heuristic source/automated review only,GT5-06
+D5-08,NOT TESTED,P1,Zero participants; no self-reported experience or participant devices,GT5-06
+D5-09,NOT TESTED,P1,T1 source reviewed; no actual participant comprehension or browser journey,GT5-06
+D5-10,NOT TESTED,P1,T2 Background has two examples; comprehension not assessed,GT5-06
+D5-11,NOT TESTED,P0,T3 calculation invariance tested; interactive switch/reload not observed,GT5-03
+D5-12,NOT TESTED,P0,T4 bridge rejects keyboard input before candidate navigation,GT5-03
+D5-13,NOT TESTED,P0,T5 eligibility and PDF handlers tested; complete browser repair journey unverified,GT5-03
+D5-14,PASS,P1,Task scorecard records blocked/not assessable; no hints/times/quotes invented,
+D5-15,PASS,P1,External beginner effectiveness explicitly UNVALIDATED,
+D5-16,PASS,P1,builder-stages.js single identity-species first stage; beginner-sprint tests,
+D5-17,PASS,P1,app.js editable Name/direct generator/native single-select Level; source only,GT5-04
+D5-18,PASS,P1,builder-stages.js legacy Species alias resolves first stage; automated,
+D5-19,NOT TESTED,P0,Locale math checks pass; real Back/Next/reload/IndexedDB preservation pending,GT5-03
+D5-20,PASS,P0,Exact raw legacy IDs/provenance retained and input unchanged; legacy held unsupported,GT5-01
+D5-21,NOT TESTED,P0,Engine revalidation retained; app snapshot logic revised but storage/UI not executed,GT5-02
+D5-22,NOT TESTED,P1,Review subtitles and field targets present; exact focus after Edit not observed,GT5-03
+D5-23,PASS,P0,day4-completion tests reviewed/skipped decisions; no Appearance requirement,
+D5-24,NOT TESTED,P0,Pure gate/PDF dialog handlers pass; full deep-link/stale browser bypass audit pending,GT5-03
+D5-25,NOT TESTED,P0,Pure valid Fighter finish passes; final route/download not exercised,GT5-03
+D5-26,PASS,P0,Revision change and invalid data reject canOpenFinalSheet; stale PDF handler tested,
+D5-27,PASS,P0,Class templates/Wizard missing magic and spell regression tests; no new spell formula,
+D5-28,PASS,P0,Existing GCX/portable custom round-trip tests and exact raw test pass; UI import untested,
+D5-29,PASS,P1,Source Species choice uses shared glyph/name/description and visible close control,GT5-07
+D5-30,NOT TESTED,P0,Dialog dismissal/focus behavior not observed; source is insufficient,GT5-03
+D5-31,NOT TESTED,P1,No actual phone/IME available,GT5-03
+D5-32,NOT TESTED,P0,Native desktop Chromium input bridge unavailable,GT5-03
+D5-33,PASS,P1,Existing named flag buttons/pressed states; locale interface tests,
+D5-34,NOT TESTED,P1,360px candidate not observed; no viewport claim,GT5-03
+D5-35,NOT TESTED,P1,200% text enlargement not exercised,GT5-03
+D5-36,NOT TESTED,P1,Status and aria-invalid wiring present; announcement/focus not exercised,GT5-03
+D5-37,PASS,P1,Report labels desktop environment and all untested phone/screen reader checks,
+D5-38,FAIL,P1,beginner-help.js implements Species/Background/Proficiency only; Class/Ability Score absent,GT5-04
+D5-39,PASS,P1,locale-eight.csv reviews exact eight Day4 rows; no changes needed by editorial review,
+D5-40,PASS,P0,Template derivations invariant across EN/ID; official IDs untouched by patch,
+D5-41,PASS,P0,No catalog/rules changes; inherited SRD attribution in dist/index.html retained; scoped audit,
+D5-42,PASS,P0,Diff adds no corpus/art/private material; full missing 466-pack rights not asserted,GT5-07
+D5-43,PASS,P1,Existing local save labels retained; patch adds no account/cloud/live-AI claims,
+D5-44,PASS,P0,"Touched code is local-only guards/snapshots, no new transport/HTML/eval; scoped review",
+D5-45,PASS,P0,issues.csv records fixes versus open integration/recovery blockers,
+D5-46,PASS,P0,NO GO production; no deployment authorized by this release gate,
+D5-47,PASS,P1,backlog.csv eight scoped tickets with dependencies and acceptance,
+D5-48,PASS,P1,Report + test log + matrices; diff/rollback/source save required before closeout,

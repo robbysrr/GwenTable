@@ -1,0 +1,10 @@
+GwenTable v0.25.6 LOCAL SOURCE verification (2026-11-19)
+Baseline v0.25.5: 476 / 476 tests PASS; static build PASS; 281 hashes verified.
+Candidate v0.25.6: 498 / 498 tests PASS; 22 new Ranger cases.
+800 deterministic generated level-13–20 Ranger/Hunter characters validated by test.
+npm run build: PASS.
+Artwork-withheld build and audit: PASS, 0 image binaries.
+Original local artwork publication audit: expected NO GO, 12 uncleared assets.
+Real-browser, IndexedDB multi-tab, mobile, screen reader, PDF/GCX downloads and staging: NOT VERIFIED.
+Release decision: G1 REPAIR, PUBLIC NO GO.
+See docs/v0.25.6-ranger-high-level.md and docs/v0.25.6-codex-gate.md.

@@ -1,0 +1,529 @@
+{
+  "F1": {
+    "model": 2,
+    "className": "Fighter",
+    "level": 1,
+    "background": "Soldier",
+    "species": "Human",
+    "name": "Mira",
+    "story": "Prove a family story true.",
+    "trinket": "A brass key with no teeth.",
+    "alignment": "Neutral Good",
+    "size": "Small",
+    "languages": [
+      "Common Sign Language",
+      "Dwarvish"
+    ],
+    "method": "array",
+    "rolls": [],
+    "scores": [
+      15,
+      13,
+      14,
+      8,
+      12,
+      10
+    ],
+    "boost": "2,0,1",
+    "gamingSet": "Playing cards gaming set",
+    "classSkills": [
+      "Persuasion",
+      "Survival"
+    ],
+    "humanSkill": "Religion",
+    "style": "Defense",
+    "kit": "A",
+    "backgroundKit": "A",
+    "custom": [],
+    "armor": "Chain Mail",
+    "mastery": [
+      "Greatsword",
+      "Flail",
+      "Javelin"
+    ],
+    "humanFeat": "Alert"
+  },
+  "F2": {
+    "model": 2,
+    "className": "Wizard",
+    "level": 1,
+    "background": "Sage",
+    "species": "Elf",
+    "name": "Mira",
+    "story": "Find a new calling after a broken promise.",
+    "trinket": "A dried flower pressed between playing cards.",
+    "alignment": "Neutral Good",
+    "size": "Medium",
+    "lineage": "High Elf",
+    "lineageAbility": 5,
+    "languages": [
+      "Common Sign Language",
+      "Halfling"
+    ],
+    "method": "array",
+    "rolls": [],
+    "scores": [
+      8,
+      13,
+      14,
+      15,
+      12,
+      10
+    ],
+    "boost": "1,2,0",
+    "keen": "Insight",
+    "classSkills": [
+      "Religion",
+      "Nature"
+    ],
+    "kit": "A",
+    "backgroundKit": "A",
+    "custom": [],
+    "backgroundMagicAbility": 5,
+    "backgroundMagicCantrips": [],
+    "backgroundMagicSpell": "Alarm",
+    "cantrips": [
+      "Fire Bolt",
+      "Mage Hand",
+      "Minor Illusion"
+    ],
+    "bookBasics": [
+      "Detect Magic",
+      "Feather Fall",
+      "Mage Armor",
+      "Magic Missile",
+      "Sleep",
+      "Thunderwave"
+    ],
+    "prepared": [
+      "Magic Missile",
+      "Mage Armor",
+      "Detect Magic",
+      "Feather Fall"
+    ]
+  },
+  "F3": {
+    "draft": {
+      "model": 2,
+      "className": "Fighter",
+      "level": 3,
+      "background": "Soldier",
+      "species": "Human",
+      "name": "Mira",
+      "story": "Prove a family story true.",
+      "trinket": "A brass key with no teeth.",
+      "alignment": "Neutral Good",
+      "size": "Small",
+      "languages": [
+        "Common Sign Language",
+        "Dwarvish"
+      ],
+      "method": "array",
+      "rolls": [],
+      "scores": [
+        15,
+        13,
+        14,
+        8,
+        12,
+        10
+      ],
+      "boost": "2,0,1",
+      "hpMethod": "fixed",
+      "hpRolls": [],
+      "gamingSet": "Playing cards gaming set",
+      "classSkills": [
+        "Persuasion",
+        "Survival"
+      ],
+      "humanSkill": "Religion",
+      "style": "Defense",
+      "kit": "A",
+      "backgroundKit": "A",
+      "higherGear": "standard",
+      "custom": [],
+      "armor": "Chain Mail",
+      "mastery": [
+        "Greatsword",
+        "Flail",
+        "Javelin"
+      ],
+      "humanFeat": "Alert"
+    },
+    "note": "Champion is the sole automatic SRD subclass. No arbitrary subclass pick is required."
+  },
+  "F4": {
+    "draft": {
+      "model": 2,
+      "className": "Fighter",
+      "level": 15,
+      "background": "Soldier",
+      "species": "Dwarf",
+      "name": "Mira",
+      "story": "Prove a family story true.",
+      "trinket": "A brass key with no teeth.",
+      "alignment": "Neutral Good",
+      "size": "Medium",
+      "languages": [
+        "Common Sign Language",
+        "Dwarvish"
+      ],
+      "method": "array",
+      "rolls": [],
+      "scores": [
+        15,
+        13,
+        14,
+        8,
+        12,
+        10
+      ],
+      "boost": "2,0,1",
+      "hpMethod": "fixed",
+      "hpRolls": [],
+      "gamingSet": "Playing cards gaming set",
+      "classSkills": [
+        "Persuasion",
+        "Survival"
+      ],
+      "style": "Defense",
+      "kit": "A",
+      "backgroundKit": "A",
+      "higherGear": "standard",
+      "custom": [],
+      "armor": "Chain Mail",
+      "mastery": [
+        "Greatsword",
+        "Flail",
+        "Javelin",
+        "Spear",
+        "Shortbow"
+      ],
+      "advancementFeat": "Ability Score Improvement",
+      "advancementBoost": "0,0",
+      "fighterSixFeat": "Ability Score Improvement",
+      "fighterSixBoost": "0,2",
+      "championStyle": "Archery",
+      "advancementEightFeat": "Ability Score Improvement",
+      "advancementEightBoost": "2,2",
+      "advancementTwelveFeat": "Ability Score Improvement",
+      "advancementTwelveBoost": "2,2",
+      "fighterFourteenFeat": "Ability Score Improvement",
+      "fighterFourteenBoost": "1,1"
+    },
+    "stage": "species",
+    "unlockedStage": "appearance"
+  },
+  "F5": {
+    "model": 2,
+    "className": "Wizard",
+    "level": 1,
+    "background": "Sage",
+    "species": "Elf",
+    "name": "Mira",
+    "story": "Find a new calling after a broken promise.",
+    "trinket": "A dried flower pressed between playing cards.",
+    "alignment": "Neutral Good",
+    "size": "Medium",
+    "lineage": "High Elf",
+    "lineageAbility": 5,
+    "languages": [
+      "Common Sign Language",
+      "Halfling"
+    ],
+    "method": "array",
+    "rolls": [],
+    "scores": [
+      8,
+      13,
+      14,
+      15,
+      12,
+      10
+    ],
+    "boost": "1,2,0",
+    "keen": "Insight",
+    "classSkills": [
+      "Religion",
+      "Nature"
+    ],
+    "kit": "A",
+    "backgroundKit": "A",
+    "custom": [],
+    "backgroundMagicAbility": 5,
+    "backgroundMagicCantrips": [
+      "Minor Illusion",
+      "Shocking Grasp"
+    ],
+    "backgroundMagicSpell": "Alarm",
+    "cantrips": [
+      "Fire Bolt",
+      "Mage Hand",
+      "Minor Illusion"
+    ],
+    "bookBasics": [
+      "Detect Magic",
+      "Feather Fall",
+      "Mage Armor",
+      "Magic Missile",
+      "Sleep",
+      "Thunderwave"
+    ],
+    "prepared": [
+      "Magic Missile",
+      "Mage Armor",
+      "Detect Magic",
+      "Feather Fall"
+    ],
+    "custom:source": {
+      "id": "missing:pack"
+    }
+  },
+  "F6": {
+    "model": 2,
+    "className": "Fighter",
+    "level": 1,
+    "background": "Soldier",
+    "species": "Human",
+    "name": "Mira Putri Cahaya Banyu Wening Anggraini Kusumadewi",
+    "story": "Prove a family story true.",
+    "trinket": "A brass key with no teeth.",
+    "alignment": "Neutral Good",
+    "size": "Small",
+    "languages": [
+      "Common Sign Language",
+      "Dwarvish"
+    ],
+    "method": "array",
+    "rolls": [],
+    "scores": [
+      15,
+      13,
+      14,
+      8,
+      12,
+      10
+    ],
+    "boost": "2,0,1",
+    "gamingSet": "Playing cards gaming set",
+    "classSkills": [
+      "Persuasion",
+      "Survival"
+    ],
+    "humanSkill": "Religion",
+    "style": "Defense",
+    "kit": "A",
+    "backgroundKit": "A",
+    "custom": [],
+    "armor": "Chain Mail",
+    "mastery": [
+      "Greatsword",
+      "Flail",
+      "Javelin"
+    ],
+    "humanFeat": "Alert"
+  },
+  "F7": {
+    "draft": {
+      "model": 2,
+      "className": "Fighter",
+      "level": 3,
+      "background": "Soldier",
+      "species": "Human",
+      "name": "Mira",
+      "story": "Prove a family story true.",
+      "trinket": "A brass key with no teeth.",
+      "alignment": "Neutral Good",
+      "size": "Small",
+      "languages": [
+        "Common Sign Language",
+        "Dwarvish"
+      ],
+      "method": "array",
+      "rolls": [],
+      "scores": [
+        15,
+        13,
+        14,
+        8,
+        12,
+        10
+      ],
+      "boost": "2,0,1",
+      "hpMethod": "fixed",
+      "hpRolls": [],
+      "gamingSet": "Playing cards gaming set",
+      "classSkills": [
+        "Persuasion",
+        "Survival"
+      ],
+      "humanSkill": "Religion",
+      "style": "Defense",
+      "kit": "A",
+      "backgroundKit": "A",
+      "higherGear": "standard",
+      "custom": [],
+      "armor": "Chain Mail",
+      "mastery": [
+        "Greatsword",
+        "Flail",
+        "Javelin"
+      ],
+      "humanFeat": "Alert"
+    },
+    "play": {
+      "hp": 13,
+      "xp": 1350
+    }
+  },
+  "F8": {
+    "draft": {
+      "model": 2,
+      "className": "Fighter",
+      "level": 1,
+      "background": "Soldier",
+      "species": "Human",
+      "name": "Mira",
+      "story": "Prove a family story true.",
+      "trinket": "A brass key with no teeth.",
+      "alignment": "Neutral Good",
+      "size": "Small",
+      "languages": [
+        "Common Sign Language",
+        "Dwarvish"
+      ],
+      "method": "array",
+      "rolls": [],
+      "scores": [],
+      "boost": "2,0,1",
+      "gamingSet": "Playing cards gaming set",
+      "classSkills": [
+        "Persuasion",
+        "Survival"
+      ],
+      "humanSkill": "Religion",
+      "style": "Defense",
+      "kit": "A",
+      "backgroundKit": "A",
+      "custom": [],
+      "armor": "Chain Mail",
+      "mastery": [
+        "Greatsword",
+        "Flail",
+        "Javelin"
+      ],
+      "humanFeat": "Alert"
+    },
+    "stage": "abilities",
+    "arrayAssigned": []
+  },
+  "F9": {
+    "model": 2,
+    "className": "Wizard",
+    "level": 20,
+    "background": "Sage",
+    "species": "Elf",
+    "name": "Mira",
+    "story": "Find a new calling after a broken promise.",
+    "trinket": "A dried flower pressed between playing cards.",
+    "alignment": "Neutral Good",
+    "size": "Medium",
+    "lineage": "High Elf",
+    "lineageAbility": 5,
+    "languages": [
+      "Common Sign Language",
+      "Halfling"
+    ],
+    "method": "array",
+    "rolls": [],
+    "scores": [
+      8,
+      13,
+      14,
+      15,
+      12,
+      10
+    ],
+    "boost": "1,2,0",
+    "keen": "Insight",
+    "classSkills": [
+      "Religion",
+      "Nature"
+    ],
+    "kit": "A",
+    "backgroundKit": "A",
+    "custom": [],
+    "backgroundMagicAbility": 5,
+    "backgroundMagicCantrips": [
+      "Minor Illusion",
+      "Shocking Grasp"
+    ],
+    "backgroundMagicSpell": "Alarm",
+    "cantrips": [
+      "Fire Bolt",
+      "Mage Hand",
+      "Minor Illusion"
+    ],
+    "bookBasics": [
+      "Detect Magic",
+      "Feather Fall",
+      "Mage Armor",
+      "Magic Missile",
+      "Sleep",
+      "Thunderwave"
+    ],
+    "prepared": [
+      "Magic Missile",
+      "Mage Armor",
+      "Detect Magic",
+      "Feather Fall"
+    ]
+  },
+  "F10": {
+    "draft": {
+      "model": 2,
+      "className": "Fighter",
+      "level": 1,
+      "background": "Soldier",
+      "species": "Human",
+      "name": "Mira",
+      "story": "Prove a family story true.",
+      "trinket": "A brass key with no teeth.",
+      "alignment": "Neutral Good",
+      "size": "Small",
+      "languages": [
+        "Common Sign Language",
+        "Dwarvish"
+      ],
+      "method": "array",
+      "rolls": [],
+      "scores": [
+        15,
+        13,
+        14,
+        8,
+        12,
+        10
+      ],
+      "boost": "2,0,1",
+      "gamingSet": "Playing cards gaming set",
+      "classSkills": [
+        "Persuasion",
+        "Survival"
+      ],
+      "humanSkill": "Religion",
+      "style": "Defense",
+      "kit": "A",
+      "backgroundKit": "A",
+      "custom": [],
+      "armor": "Chain Mail",
+      "mastery": [
+        "Greatsword",
+        "Flail",
+        "Javelin"
+      ],
+      "humanFeat": "Alert"
+    },
+    "appearanceDecision": "skipped"
+  }
+}

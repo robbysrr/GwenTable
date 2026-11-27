@@ -1,0 +1,37 @@
+id,status,evidence,issue
+F01,PASS,Clean parent63caa4a; branch sprint-02-foundation; v0.22.3.,
+F02,PASS,Actual docs/day5 report/matrix/issues and docs/sprint02 repair checkpoint.,
+F03,PASS,Build passed; final93 tests passed; focused10 tests passed.,
+F04,PASS,builder-stages.js unified stable IDs and legacy aliases; tests unchanged.,
+F05,PASS,Existing IndexedDB v2/model2/portable/GCX/recovery documented; untouched.,
+F06,PASS,Parent63caa4a / saved candidate30 retained before edits.,
+F07,PASS,NO GO inherited; P0 browser/storage/final-route verification still open.,GT5-03
+F08,PASS,Pinned source registry/attribution build passed; no corpus/art addition.,
+F09,PASS,Existing canonical draft and raw backup round-trip regression tests pass; browser reload not observed.,
+F10,PASS,Existing old Species stage aliases/Dwarf choice preservation tests pass.,
+F11,PASS,No character engine/catalog/stage data changes; derivation regressions pass.,
+F12,PASS,Existing draft-recovery/portable/roster/play tests preserve raw custom/equipment/HP/XP.,
+F13,PASS,Existing EN/ID canonical derivation invariance plus new glossary translation tests.,
+F14,BLOCKED,Pure incomplete/final guard and backup tests pass; real storage/print route unverified.,GT5-03
+F15,BLOCKED,Existing truthful failure labels retained; no actual IndexedDB failure injection.,GT5-03
+F16,NOT TESTED,Default non-search/Close-focus handler tested; actual viewport scrolling/phone IME untested.,GT5-03
+F17,NOT TESTED,Actual handler contract restores synthetic opener; native browser focus unverified.,GT5-03
+F18,NOT TESTED,Actual cancel handler tested; native Escape/focus behavior unverified.,GT5-03
+F19,PASS,Actual picker handlers retain dirty selection on X/cancel/outside; explicit discard tested.,FD-01
+F20,BLOCKED,Keyboard arrows remain; native focus trap/screen-reader operation not observed.,GT5-03
+F21,PASS,Selected aria-pressed/disabled attribute/reason tested on actual mount handler DOM contract.,FD-03
+F22,NOT TESTED,320px/zoom/long ID rendered layout not observed.,GT5-03
+F23,PASS,Double callback and stale callback after reopening ignored; actual component handler tests.,FD-02
+F24,PASS,"Eleven terms each2 examples, definition/consequence translated EN/ID; source trace in glossary.json.",
+F25,NOT TESTED,Native details markup and source checked explanations; browser/SR dismissibility not verified.,GT5-03
+F26,PASS,Locale regression and new all-entry translation tests passed; no placeholder changes.,
+F27,NOT TESTED,Existing flags/name/pressed-state source retained; screen-reader interaction untested.,GT5-03
+F28,PASS,resolveIcon wired to icon; every returned ID exists in installed registry.,
+F29,PASS,Unknown icon resolves existing tav-item; choice label stays separate; no dynamic image URL.,
+F30,PASS,"First identity-species, no duplicate stage; existing tests pass.",
+F31,PASS,README contract and actual mount/help/icon consumer wiring documented.,
+F32,PASS,"12 existing canonical Class keys/page headers checked; engine level1 control map provided, bounded audit disclosed.",
+F33,PASS,Four existing SRD Backgrounds checked against actual page83; grants/deferred benefits mapped.,
+F34,PASS,No non-SRD defaults/private art/new sources introduced.,
+F35,NOT TESTED,Impact preview contract documented; no new preview/cancel adapter implemented; no destructive state patch.,GT5-04
+F36,PASS,"Focused10 + final93 tests, static build and diff check pass.",

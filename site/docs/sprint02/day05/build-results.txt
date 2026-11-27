@@ -1,0 +1,5 @@
+
+> open-5e-companion@0.22.6 build
+> node scripts/check.mjs
+
+Static build, asset references, and pinned source registry passed.

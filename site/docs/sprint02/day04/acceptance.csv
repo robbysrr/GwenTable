@@ -1,0 +1,49 @@
+id,status,evidence,context,owner
+D04-01,PASS,Exactly Acolyte/Criminal/Sage/Soldier source records; new p83 tests.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-02,PASS,Existing background English canonical keys unchanged across EN/ID; new test.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-03,PASS,Exact three source ability names asserted for all4.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-04,PASS,Fixed feat and Cleric/Wizard variant asserted for all4.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-05,PASS,Exact two skills asserted for all4.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-06,PASS,Fixed tool/one Gaming Set kind; engine options and each kind linkage tested.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-07,PASS,A source items/gold unchanged; representative quantities and gold tested against p83.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-08,PASS,B adapter is items[]/50GP; engine original mutually-exclusive kit behavior retained.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-09,PASS,Actual stage displays SRD5.2.1 p83 CC BY4; optional unknown source quarantined separately.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-10,PASS,Existing stage order Class→Background→Languages retained; no Species duplicate.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-11,NOT TESTED,Zero novice participants; discovery/comprehension unvalidated.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-12,FAIL,"Names/descriptions/mechanical clues present; unique icons unavailable, all use licensed generic fallback.",Synthetic source/Node fixtures; browser unverified,unassigned
+D04-13,NOT TESTED,shortChoiceKeys and Gaming Set non-search configured; actual scroll/IME unverified.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-14,BLOCKED,Shared picker Close/selected handlers have prior tests; native Background flow not observed.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-15,BLOCKED,No native Escape/outside/focus-return observation.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-16,PASS,Existing Background/Origin Feat/Skill/Tool Proficiency/Ability Score optional help each2 EN/ID examples.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-17,NOT TESTED,Grouped source impact and later-choice list implemented; beginner understanding not assessed.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-18,BLOCKED,Actual Back/Next route/state journey unverified.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-19,PASS,"Actual selected stage renders fixed grants, exact A/B branches and pending list from source adapter.",Synthetic source/Node fixtures; browser unverified,unassigned
+D04-20,FAIL,No explicit unselected Background state; inherited engine initializes a default Background.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-21,PASS,Read-through source provenance avoids new ledger; repeated rebuild does not duplicate feats.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-22,PASS,Acolyte backgroundMagic controls restricted to Cleric list; two cantrips/level1 checked.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-23,PASS,Sage backgroundMagic controls restricted to Wizard list; two cantrips/level1 checked.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-24,FAIL,"Inherited build still fills candidate spell defaults; labeled review-in-Spells, not new unresolved-field schema.",Synthetic source/Node fixtures; browser unverified,unassigned
+D04-25,PASS,Manual Initiative Swap/Savage Attacker reroll references added; no fake automation introduced.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-26,PASS,Existing engine distinct skill controls/unique derivation retained; no additive new bonus path.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-27,PASS,Every supported Gaming Set kind appears in same-kind A inventory and tool adapter test.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-28,PASS,"Adapter labels Abilities review; existing early projection retained with repeat/idempotency regression, no second bonus application.",Synthetic source/Node fixtures; browser unverified,unassigned
+D04-29,PASS,Source pattern +2/+1 or +1/+1/+1 and cap20 explained; existing rules validation retained.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-30,PASS,Repeated Soldier↔Sage candidate derivations have same GP/items when returning; no append mutation.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-31,PASS,Wizard book/prepared/class identity retained in fixture; changes enumerate affected engine decisions.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-32,PASS,Raw changes plus semantic feat/skills/tool/ability/equipment changes computed before confirm.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-33,PASS,Fixture identity/story/scores/kit/book/prepared retained; unsupported raw custom blocked unchanged; broader purchased inventory UI untested.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-34,BLOCKED,Original before-state captured via existing recovery; actual restore/reselection workflow unverified.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-35,BLOCKED,No real browser save/reload/navigation pass.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-36,PASS,Existing legacy/unknown raw/portable/recovery tests pass; no codec/schema edits.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-37,PASS,New BG row and mechanics invariant under locale; official IDs retained.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-38,PASS,"New instructions/error/pending copy localized; editorial check only, no human comprehension claim.",Synthetic source/Node fixtures; browser unverified,unassigned
+D04-39,NOT TESTED,No320px/200%/orientation rendered test.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-40,BLOCKED,Native keyboard/focus/glossary path not observed.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-41,NOT TESTED,Native names/labels source retained; no screen reader used.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-42,PASS,Existing safe resolver fallback; option text remains independent; no new image paths.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-43,PASS,Injected false pre-save returns save-failed and keeps Background unchanged; actual quota UI unverified.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-44,BLOCKED,Existing pure and PDF handler guards pass; direct invalid final-route browser verification open.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-45,PASS,Class/Species/legacy/portable/Play regressions pass in final suite.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-46,PASS,"Focused14 + final107 tests and build, diff check pass; logs retained.",Synthetic source/Node fixtures; browser unverified,unassigned
+D04-47,PASS,No new art/private sources; attribution retained; unique assets withheld and generic licensed fallback explicit.,Synthetic source/Node fixtures; browser unverified,unassigned
+D04-48,PASS,"README documents actual code, issues, dependencies, rollback and Day05 REPAIR gate.",Synthetic source/Node fixtures; browser unverified,unassigned

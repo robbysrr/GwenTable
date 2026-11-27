@@ -1,0 +1,17 @@
+type,stable_key,source,page,scope
+Class,Barbarian,SRD 5.2.1,28,Existing source; no new class UI slice
+Class,Bard,SRD 5.2.1,31,Existing source; no new class UI slice
+Class,Cleric,SRD 5.2.1,36,Existing source; no new class UI slice
+Class,Druid,SRD 5.2.1,41,Existing source; no new class UI slice
+Class,Fighter,SRD 5.2.1,47,Existing source; no new class UI slice
+Class,Monk,SRD 5.2.1,49,Existing source; no new class UI slice
+Class,Paladin,SRD 5.2.1,53,Existing source; no new class UI slice
+Class,Ranger,SRD 5.2.1,57,Existing source; no new class UI slice
+Class,Rogue,SRD 5.2.1,61,Existing source; no new class UI slice
+Class,Sorcerer,SRD 5.2.1,64,Existing source; no new class UI slice
+Class,Warlock,SRD 5.2.1,70,Existing source; no new class UI slice
+Class,Wizard,SRD 5.2.1,77,Existing source; no new class UI slice
+Background,Acolyte,SRD 5.2.1,83,Existing source; no new background UI slice
+Background,Criminal,SRD 5.2.1,83,Existing source; no new background UI slice
+Background,Sage,SRD 5.2.1,83,Existing source; no new background UI slice
+Background,Soldier,SRD 5.2.1,83,Existing source; no new background UI slice
