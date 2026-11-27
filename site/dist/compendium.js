@@ -9,7 +9,7 @@ import {copy,htmlCopy,htmlCanonicalOptionName} from './locale.js';
 import {icon,iconFor} from './ui-icons.js';
 
 export function catalogueEntries() {
-  const row=(type,name,first,meta='',details={})=>({type,name,first,meta,...details});
+  const row=(type,name,first,meta='',details={})=>({type,name,first,meta,entryKey:type+'|'+name,...details});
   return [
     ...Object.entries(classes).flatMap(([name,c])=>[row('Class',name,c.page),row('Subclass',c.subclass,c.subclassPage,name)]),
     ...Object.entries(species).map(([name,s])=>row('Species',name,s.page)),
@@ -18,11 +18,13 @@ export function catalogueEntries() {
     ...styles.map(name=>row('Feat',name,name==='Archery'?87:88,'Fighting Style')),
     row('Feat','Ability Score Improvement',87),row('Feat','Grappler',87),
     ...Object.entries(skills).map(([name,index])=>row('Skill',name,9,abilities[index])),
-    ...Object.entries(weaponProfiles).map(([name,profile])=>row('Equipment',name,91,profile[4],{end:92})),
+    ...Object.entries(weaponProfiles).map(([name,[dice,damage,category,properties,mastery]])=>row('Equipment',name,91,mastery,{end:92,
+      summary:`${category} weapon\nDamage: ${dice} ${damage}\nProperties: ${properties||'—'}\nMastery: ${mastery}`})),
     ...srdEquipment.map(([name,page,price])=>row('Equipment',name,page,price,{end:page+1})),
     ...srdMagicItems.map(([name,page])=>row('Magic Item',name,page,'',{end:Math.min(page+1,253)})),
     ...srdTopics.map(([name,page])=>row('Rules topic',name,page,'',{end:Math.min(page+3,364)})),
-    ...Object.keys(armorProfiles).map(name=>row('Equipment',name,92,'Armor')),
+    ...Object.entries(armorProfiles).map(([name,[ac,category,strength,stealth]])=>row('Equipment',name,92,'Armor',{
+      summary:`${category} Armor\nArmor Class: ${ac}${category==='Light'?' + Dex modifier':category==='Medium'?' + Dex modifier (max 2)':''}\nStrength: ${strength?strength:'—'}\nStealth: ${stealth?'Disadvantage':'—'}`})),
     ...Object.keys(spellHeaders).flatMap(name=>{
       const spell=spellReference(name);
       return spell?[row('Spell',name,spell.page,(spell.level?'Level '+spell.level:'Cantrip')+' · '+spell.school,{spellName:name})]:[];

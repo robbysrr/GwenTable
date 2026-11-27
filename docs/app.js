@@ -659,6 +659,9 @@ function renderStep() {
   const opened=new Set([...$('step-content').querySelectorAll('[data-feature-section][open]')].map(item=>item.dataset.featureSection));
   $('step-content').innerHTML=`<header class="editor-heading"><p class="builder-progress">${htmlCopy("Step {number} of {total}",{number:Math.max(0,relevant.indexOf(step))+1,total:relevant.length})}</p><h2 tabindex="-1">${htmlCopy(stage.title)}</h2><p>${htmlCopy(stage.help)}</p></header>${content}<div class="editor-sources">${refsHTML}</div>`;
   for(const item of $('step-content').querySelectorAll('[data-feature-section]')) item.open=opened.has(item.dataset.featureSection);
+  // One tap: when the only thing left on this step is confirming a suggestion, Next confirms it too.
+  if(active!=='appearance'&&!stepIssue(stages[step].id,draft,waitingForRoll,waitingForHP,draft.method!=='array'||arrayAssigned.length===6)&&singlePendingConfirmation())
+    $('next').textContent=copy('Confirm & continue')+' · '+$('next').textContent;
   if(active==='custom') {
     for(const select of $('step-content').querySelectorAll('select'))
       pickerForSelect(select,select.closest('label').firstChild.textContent.trim());
@@ -868,12 +871,17 @@ function abilityOptions() {
 }
 const openOfficial=mountOfficialReference($('official-reference'));
 const openChoicePicker=mountChoicePicker($('spell-picker'),openOfficial);
-$('step-content').addEventListener('click',async event=>{
-  const confirmation=event.target.closest('[data-confirm-choice]');
-  if(confirmation) {
-    if(unavailableDraft||choiceConfirmationSaving) return;
-    const field=confirmation.dataset.confirmChoice;
-    if(!['species','className','background','gamingSet','languages','training','feats','boost','equipment','classMagic','originMagic'].includes(field)) return;
+// The step's only outstanding item is one suggested choice awaiting the player's confirmation.
+function singlePendingConfirmation() {
+  const pending=choiceReviewIssues(draft,choiceReview).filter(item=>item.stage===stages[step].id);
+  const field=/^\[data-confirm-choice="([a-zA-Z]+)"\]$/.exec(pending[0]?.target??'')?.[1];
+  return pending.length===1&&field&&document.querySelector(`#step-content [data-confirm-choice="${field}"]`)?field:null;
+}
+// Record the player's explicit confirmation of one suggested choice. Shared by the step's own
+// Confirm button and by Next when Next reads "Confirm & continue".
+async function confirmChoice(field) {
+  if(unavailableDraft||choiceConfirmationSaving) return false;
+  if(!['species','className','background','gamingSet','languages','training','feats','boost','equipment','classMagic','originMagic'].includes(field)) return false;
     const before=choiceReview;
     const proposed=acceptChoiceReview(choiceReview,draft,field);
     const originalRevision=draftRevision(draft);
@@ -890,10 +898,15 @@ $('step-content').addEventListener('click',async event=>{
         renderSheet();
       }
       stepNotice(copy('Choice confirmation was not saved. Keep your current draft and download a backup if browser storage is unavailable.'),'error');
-      return;
+      return false;
     }
     stepNotice(copy(({species:'Species choices confirmed.',className:'Class confirmed.',background:'Background confirmed.',gamingSet:'Gaming Set confirmed.',languages:'Languages confirmed.',training:'Class training confirmed.',feats:'Feat choices confirmed.',boost:'Ability Score increases confirmed.',equipment:'Starting equipment confirmed.',classMagic:'Class spells confirmed.',originMagic:'Magic Initiate choices confirmed.'})[field]),'success');
-    $('next').focus({preventScroll:true});
+  return true;
+}
+$('step-content').addEventListener('click',async event=>{
+  const confirmation=event.target.closest('[data-confirm-choice]');
+  if(confirmation) {
+    if(await confirmChoice(confirmation.dataset.confirmChoice)) $('next').focus({preventScroll:true});
     return;
   }
   const repair=event.target.closest('[data-repair-field]');
@@ -1058,6 +1071,11 @@ $('next').onclick=()=>{
   if(choiceConfirmationSaving) {stepNotice(copy('Saving your choice. Continue after the save finishes.'),'info');return;}
   const issue=stepIssue(stages[step].id,draft,waitingForRoll,waitingForHP,draft.method!=='array'||arrayAssigned.length===6);
   const unresolved=issue??choiceReviewIssues(draft,choiceReview).find(item=>item.stage===stages[step].id);
+  const single=!issue&&singlePendingConfirmation();
+  if(single) {
+    void confirmChoice(single).then(ok=>{if(ok)$('next').onclick();});
+    return;
+  }
   if(unresolved) {
     stepNotice(copy(unresolved.message),'error',copy(unresolved.action),unresolved.target);
     return;
@@ -1868,6 +1886,13 @@ const openPlaySheet=mountPlaySheet($('play'),download,record=>{
 },openSheetExport,openPlayDetail);
 mountDiceTools($('dice'));
 const views={templates:'Level 3 templates',compendium:'Compendium',dice:'Dice Roller',home:'Overview',create:'Character Builder',characters:'Saved Characters',play:'Play Sheet',encounters:'Party Session',rules:'Rules & Credits'};
+// Display settings menu: close on Escape (focus back to the button), outside tap, or Tab-away.
+const siteSettings=$('site-settings');
+siteSettings.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&siteSettings.open){siteSettings.open=false;siteSettings.querySelector('summary').focus();}
+});
+document.addEventListener('pointerdown',event=>{if(siteSettings.open&&!siteSettings.contains(event.target))siteSettings.open=false;});
+siteSettings.addEventListener('focusout',event=>{if(siteSettings.open&&event.relatedTarget&&!siteSettings.contains(event.relatedTarget))siteSettings.open=false;});
 const mobileMore=$('mobile-more');
 mobileMore.addEventListener('click',event=>{
   if(event.target.closest('a')) mobileMore.open=false;

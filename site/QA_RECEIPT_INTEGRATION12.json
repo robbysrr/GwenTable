@@ -1,0 +1,16 @@
+{
+  "candidate": "Integration 12 private; Integration 11-derived",
+  "full_tests": {
+    "pass": 821,
+    "fail": 0,
+    "skipped": 0
+  },
+  "new_tests": 10,
+  "updated_tests": "none weakened; sheet-export tolerates older markup used by existing freshness tests",
+  "browser": "16/16 PASS headless Chromium 1243 (browser-acceptance/uat.e2e.mjs); phone emulation Pixel 7, iPhone 13, Galaxy S9+",
+  "compendium_fidelity": "7262/7315 sentences verbatim against official SRD 5.2.1 PDF text",
+  "sheet_templates": "6 approved v0.3 kit PDFs, byte-identical to owner upload",
+  "actual_player_data_modified": 0,
+  "indexeddb_schema_migration": false,
+  "release": "PRIVATE QA / UAT ONLY; PUBLIC NO GO"
+}

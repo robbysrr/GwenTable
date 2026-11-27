@@ -5,7 +5,12 @@ import {normalizePlay,playProfile,validatePlay} from './lib/play.js';
 
 export function mountSheetExport(dialog,printWebSheet) {
   const form=dialog.querySelector('form');
-  const {edition,paper,snapshot:mode,notes,generate}=form.elements;
+  const {design,edition,paper,snapshot:mode,notes,generate}=form.elements;
+  // Without a design control (older markup), the dialog keeps the simple sheet.
+  const designValue=()=>design?.value??'simple';
+  const simpleOnly=form.querySelectorAll?[...form.querySelectorAll('[data-simple-only]')]:[];
+  const syncDesign=()=>{for(const el of simpleOnly)el.hidden=designValue()!=='simple';const label=notes?.closest?.('label');if(label)label.hidden=designValue()!=='simple';};
+  design?.addEventListener('change',syncDesign);
   const feedback=dialog.querySelector('[data-sheet-feedback]');
   const web=dialog.querySelector('[data-sheet-web]');
   let request=0;
@@ -37,7 +42,7 @@ export function mountSheetExport(dialog,printWebSheet) {
     feedback.textContent='';
   }
   function busy(value) {
-    for(const control of [edition,paper,mode,notes,generate,web]) control.disabled=value;
+    for(const control of [design,edition,paper,mode,notes,generate,web]) if(control) control.disabled=value;
   }
   dialog.querySelector('[data-sheet-close]').onclick=()=>dialog.close();
   dialog.addEventListener('close',()=>{
@@ -75,15 +80,22 @@ export function mountSheetExport(dialog,printWebSheet) {
       const profile=playProfile(draft,snapshot.multiclassActive);
       const state=normalizePlay(profile,clean?undefined:play);
       if(!clean&&play)validatePlay(profile,play);
-      const {makeNativeSheetPDF}=await import('./lib/native-sheet-pdf.js');
-      const result=await makeNativeSheetPDF(profile,state,options);
+      let result;
+      if(designValue().startsWith('v03-')){
+        // Approved GwenTable v0.3 fillable sheet, filled from the same canonical profile.
+        const {makeSheetV03PDF}=await import('./lib/gwentable-sheet-v03.js');
+        result=await makeSheetV03PDF(profile,state,{variant:designValue().slice(4),paper:paper.value,clean});
+      } else {
+        const {makeNativeSheetPDF}=await import('./lib/native-sheet-pdf.js');
+        result=await makeNativeSheetPDF(profile,state,options);
+      }
       if(id!==request||!dialog.open||snapshot!==selected)return;
       // A second read catches a revision change while the PDF was generated.
       if(!await authorizedNow(snapshot)||id!==request||!dialog.open)return;
       objectURL=URL.createObjectURL(new Blob([result.bytes],{type:'application/pdf'}));
       const name=draft.name.trim().replace(/[^a-z0-9-]+/gi,'-').replace(/^-+|-+$/g,'').slice(0,60)||'Character';
       const preparedURL=objectURL;
-      const filename='GwenTable_'+name+'_Level'+String(profile.totalLevel??draft.level).padStart(2,'0')+'_'+format+'_GwenTable'+'.pdf';
+      const filename='GwenTable_'+name+'_Level'+String(profile.totalLevel??draft.level).padStart(2,'0')+'_'+(designValue().startsWith('v03-')?'Sheet-v03-'+designValue().slice(4)+'-'+paper.value.toUpperCase():format+'_GwenTable')+'.pdf';
       // Do not put the blob URL in a persistent <a href>. A PDF can become
       // stale after generation, while the user leaves the dialog open.
       const gate=createPDFDeliveryGuard({
@@ -114,7 +126,9 @@ export function mountSheetExport(dialog,printWebSheet) {
       };
       const tip=document.createElement('p');
       tip.textContent=result.pages+' '+(result.pages===1?'page':'pages')+' ready to print.'+
-        (result.substituted?' Characters unsupported by the PDF font are shown by their Unicode code points.':'');
+        (result.substituted?' '+copy('Some characters are not supported by the PDF font and were replaced.'):'')+
+        (result.overflow?' '+copy(result.overflowListed?'{count} entries did not fit and are listed under Notes.':'{count} entries did not fit on this sheet. Choose the Complete sheet to include them.',{count:result.overflow}):'')+
+        (result.filled?' '+copy('Fields stay editable in any PDF viewer.'):'');
       const open=document.createElement('button');
       open.type='button';
       open.className='button';
@@ -155,6 +169,7 @@ export function mountSheetExport(dialog,printWebSheet) {
     mode.closest('label').hidden=!play;
     mode.value=play?'current':'clean';
     notes.checked=false;
+    syncDesign();
     busy(false);
     resetOutput();
     dialog.showModal();

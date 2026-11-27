@@ -20,4 +20,4 @@ These Integration 11 files are not published here: 12 image/icon binaries withou
 | `dist/design/taverley/taverley-theme.css` | `cfc1a71a10a6bbfe227d1234110b8411dd39e374c0ddcfd00900237509d016ab` |
 
 ## Effect on checks in this public copy
-Without these files, `npm run build` (asset-reference check) and 3 tests fail: `tests/artwork-withheld-preview.test.js`, "actual GwenTable local assets stay blocked…", "shipped icon mappings resolve…". Measured 27 Nov 2026: 803 pass / 3 fail here. With the files restored the full tree passes 811/811, the build and the art audit.
+Without these files, `npm run build` (asset-reference check) and 3 tests fail: `tests/artwork-withheld-preview.test.js`, "actual GwenTable local assets stay blocked…", "shipped icon mappings resolve…". Measured at Integration 12: 813 pass / 3 fail here. With the files restored the full tree passes 821/821, the build and the art audit.

@@ -672,3 +672,33 @@ button:active:not(:disabled):not(.primary),.button:active:not(.primary){
 .play-multiclass-rogue-entry .toolbar{display:flex;gap:8px;flex-wrap:wrap}
 .play-multiclass-rogue-entry button{min-height:44px}
 @media(max-width:600px){.play-multiclass-rogue-entry{padding:9px}.play-multiclass-rogue-entry .fields{grid-template-columns:1fr}}
+
+/* Integration 12: display settings live behind a Settings button in the top-right corner. */
+.topbar-tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.topbar-tools .language-control{display:flex}
+.site-settings{position:relative;margin:0;padding:0;border:0}
+.site-settings>summary{font-size:.875rem}
+.site-settings>summary{list-style:none;display:inline-flex;align-items:center;gap:6px;min-height:var(--touch);padding:6px 12px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--card);color:var(--ink);font-weight:650;cursor:pointer;user-select:none}
+.site-settings>summary::-webkit-details-marker{display:none}
+.site-settings>summary:hover{border-color:var(--accent)}
+.site-settings[open]>summary{background:var(--gwen-secondary-bg);color:var(--gwen-on-secondary);border-color:var(--accent)}
+.settings-panel{position:absolute;right:0;top:calc(100% + 8px);z-index:80;width:min(300px,calc(100vw - 24px));display:grid;gap:12px;padding:16px;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--card);color:var(--ink);box-shadow:var(--elevation-popover)}
+.settings-panel h2{margin:0;font-size:1rem}
+.settings-panel .preference{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);align-items:center;gap:10px;font-size:.9rem;color:var(--ink)}
+.settings-panel .preference label{font-weight:650}
+.settings-panel select{min-height:var(--touch);width:100%;padding:4px 8px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--gwen-surface-raised);color:var(--ink);font-size:.9rem}
+.settings-panel .theme-preference label{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+.settings-note{margin:0;font-size:.8rem;color:var(--muted)}
+@media(max-width:650px){
+  .shell{position:relative}
+  .topbar{display:flex;position:absolute;top:0;right:0;z-index:70;min-height:0;padding:max(6px,env(safe-area-inset-top,0px)) 10px 0 0;border:0;background:transparent}
+  .topbar #breadcrumb,.topbar .topbar-link{display:none}
+  .topbar-tools{gap:6px}
+  .site-settings>summary{border-color:var(--inverse-divider);background:var(--inverse-raised);color:var(--inverse-text);padding:6px 10px}
+  .settings-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .brand{max-width:calc(100% - 146px);min-width:0;overflow:hidden}
+}
+@media(max-width:360px){.topbar-tools .language-toggle{width:84px;min-width:84px}.brand-sub{display:none}.brand{font-size:20px;gap:6px}.brand-mark{width:32px;height:32px}}
+
+/* Route changes move focus to <main> for screen readers; it is not a control, so no frame. */
+#main[tabindex="-1"]:focus{outline:none}

@@ -13,7 +13,6 @@
 <div class="shell">
 <aside class="sidebar">
   <a class="brand" href="#home"><img class="brand-mark" src="./branding/gwen-logo.png" alt="" width="39" height="39"><span>GwenTable<span class="brand-sub">5E COMPANION</span></span></a>
-  <div class="site-preferences"><div class="preference"><div id="language-mode" class="language-control"><button id="language-toggle" class="language-toggle" type="button" role="switch" aria-checked="false" aria-label="Language: English. Switch to Bahasa Indonesia." title="Language: English. Switch to Bahasa Indonesia." data-active-language="en"><span class="lang-flag flag-en" aria-hidden="true"></span><span class="lang-flag flag-id" aria-hidden="true"></span></button></div></div><div class="preference theme-preference"><label for="theme-mode" data-copy="Theme">Theme</label><select id="theme-mode"><option value="system" data-copy="System">System</option><option value="light" data-copy="Light">Light</option><option value="dark" data-copy="Dark">Dark</option></select></div><div class="preference"><label for="palette-mode" data-copy="Palette">Palette</label><select id="palette-mode" aria-label="GwenTable palette"><option value="scholar-plum">Scholar Plum</option><option value="moonlit-sapphire">Moonlit Sapphire</option></select></div><div class="preference"><label for="density-mode" data-copy="Layout">Layout</label><select id="density-mode" aria-label="Interface density"><option value="comfortable" data-copy="Comfortable">Comfortable</option><option value="compact" data-copy="Compact">Compact</option></select></div></div>
   <nav class="desktop-navigation" aria-label="Workspace" data-copy-aria-label="Workspace">
     <a href="#home" data-ui-icon="overview"><span data-copy="Overview">Overview</span></a>
     <a href="#create" data-ui-icon="create"><span data-copy="Character Builder">Character Builder</span></a>
@@ -25,7 +24,7 @@
   </nav>
 </aside>
 <div class="workspace">
-<header class="topbar"><span id="breadcrumb" data-copy="Workspace">Workspace</span><a href="#characters"><span data-copy="My characters">My characters</span> <span aria-hidden="true">↗</span></a></header>
+<header class="topbar"><span id="breadcrumb" data-copy="Workspace">Workspace</span><div class="topbar-tools"><a class="topbar-link" href="#characters"><span data-copy="My characters">My characters</span> <span aria-hidden="true">↗</span></a><div id="language-mode" class="language-control"><button id="language-toggle" class="language-toggle" type="button" role="switch" aria-checked="false" aria-label="Language: English. Switch to Bahasa Indonesia." title="Language: English. Switch to Bahasa Indonesia." data-active-language="en"><span class="lang-flag flag-en" aria-hidden="true"></span><span class="lang-flag flag-id" aria-hidden="true"></span></button></div><details id="site-settings" class="site-settings"><summary aria-label="Settings" data-copy-aria-label="Settings"><svg class="settings-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span class="settings-label" data-copy="Settings">Settings</span></summary><div class="settings-panel" role="group" aria-labelledby="settings-title"><h2 id="settings-title" data-copy="Display settings">Display settings</h2><div class="preference theme-preference"><label for="theme-mode" data-copy="Theme">Theme</label><select id="theme-mode"><option value="system" data-copy="System">System</option><option value="light" data-copy="Light">Light</option><option value="dark" data-copy="Dark">Dark</option></select></div><div class="preference"><label for="palette-mode" data-copy="Palette">Palette</label><select id="palette-mode" aria-label="GwenTable palette"><option value="scholar-plum">Scholar Plum</option><option value="moonlit-sapphire">Moonlit Sapphire</option></select></div><div class="preference"><label for="density-mode" data-copy="Layout">Layout</label><select id="density-mode" aria-label="Interface density"><option value="comfortable" data-copy="Comfortable">Comfortable</option><option value="compact" data-copy="Compact">Compact</option></select></div><p class="settings-note" data-copy="Saved on this device only. Character data is not affected.">Saved on this device only. Character data is not affected.</p></div></details></div></header>
 <main id="main" tabindex="-1">
 <noscript><p class="card" data-copy="Enable JavaScript in your browser to open the character builder.">Enable JavaScript in your browser to open the character builder.</p></noscript>
 <div id="startup-error" class="card" role="alert" hidden>
@@ -42,7 +41,7 @@
 </section>
 <section id="create" class="view" hidden>
   <header class="builder-heading"><div><h1 data-copy="Character Builder">Character Builder</h1><p data-copy="Build a character, try a level 3 template, or roll a new adventurer.">Build a character, try a level 3 template, or roll a new adventurer.</p></div><button type="button" id="new-in-builder" data-ui-icon="create"><span data-copy="Create New Character">Create New Character</span></button></header>
-  <details id="build-start" class="start-picker">
+  <details id="build-start" class="start-picker" open>
   <summary data-copy="Start or import a character">Start or import a character</summary>
   <div class="start-grid">
     <section class="card start-card">
@@ -201,14 +200,15 @@
   <header class="sheet-dialog-head"><h2 id="official-reference-title" data-copy="Official rules">Official rules</h2><button type="button" data-rules-close data-copy="Close">Close</button></header>
   <p class="reference-type" data-rules-page></p>
   <pre tabindex="0" aria-label="Official rules text" data-copy-aria-label="Official rules text"></pre>
-  <div class="toolbar"><button type="button" data-rules-prev data-copy="Previous page">Previous page</button><button type="button" data-rules-next data-copy="Next page">Next page</button>
+  <div class="toolbar"><button type="button" data-rules-mode hidden></button><button type="button" data-rules-prev data-copy="Previous page">Previous page</button><button type="button" data-rules-next data-copy="Next page">Next page</button>
     <a class="rule" target="_blank" rel="noopener" data-copy="Open official SRD PDF">Open official SRD PDF</a></div>
 </dialog>
 <dialog id="sheet-export" aria-labelledby="sheet-export-title">
   <header class="sheet-dialog-head"><h2 id="sheet-export-title" data-copy="Print character sheet">Print character sheet</h2><button type="button" data-sheet-close data-copy="Close">Close</button></header>
   <form>
     <div class="fields">
-      <label><span data-copy="Edition">Edition</span><select name="edition"><option value="2024">2024-style · GwenTable</option><option value="2014">2014-style · GwenTable</option></select></label>
+      <label><span data-copy="Sheet design">Sheet design</span><select name="design"><option value="v03-complete" data-copy="GwenTable sheet · Complete (4 pages, fillable)">GwenTable sheet · Complete (4 pages, fillable)</option><option value="v03-compact" data-copy="GwenTable sheet · Compact (3 pages, fillable)">GwenTable sheet · Compact (3 pages, fillable)</option><option value="v03-quick" data-copy="GwenTable sheet · Quick Reference (1 page, fillable)">GwenTable sheet · Quick Reference (1 page, fillable)</option><option value="simple" data-copy="Simple text sheet">Simple text sheet</option></select></label>
+      <label data-simple-only hidden><span data-copy="Edition">Edition</span><select name="edition"><option value="2024">2024-style · GwenTable</option><option value="2014">2014-style · GwenTable</option></select></label>
       <label><span data-copy="Paper">Paper</span><select name="paper"><option value="a4">A4</option><option value="letter">US Letter</option></select></label>
     </div>
 

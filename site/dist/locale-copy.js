@@ -1600,5 +1600,21 @@ export const messages = {
   "Caster name or identifier": {"id": "Nama atau penanda caster"},
   "Confirm this spell is active on you now.": {"id": "Konfirmasi mantra ini sedang aktif pada Anda."},
   "Record spell effect": {"id": "Catat efek mantra"},
-  "Spell": {"id": "Mantra"}
+  "Spell": {"id": "Mantra"},
+  "Settings": {"id": "Pengaturan"},
+  "Display settings": {"id": "Pengaturan tampilan"},
+  "Saved on this device only. Character data is not affected.": {"id": "Hanya tersimpan di perangkat ini. Data karakter tidak berubah."},
+  "Sheet design": {"id": "Desain lembar"},
+  "GwenTable sheet · Complete (4 pages, fillable)": {"id": "Lembar GwenTable · Lengkap (4 halaman, bisa diisi)"},
+  "GwenTable sheet · Compact (3 pages, fillable)": {"id": "Lembar GwenTable · Ringkas (3 halaman, bisa diisi)"},
+  "GwenTable sheet · Quick Reference (1 page, fillable)": {"id": "Lembar GwenTable · Referensi Cepat (1 halaman, bisa diisi)"},
+  "Simple text sheet": {"id": "Lembar teks sederhana"},
+  "Some characters are not supported by the PDF font and were replaced.": {"id": "Beberapa karakter tidak didukung font PDF dan diganti."},
+  "{count} entries did not fit and are listed under Notes.": {"id": "{count} entri tidak muat dan dicantumkan di Catatan."},
+  "{count} entries did not fit on this sheet. Choose the Complete sheet to include them.": {"id": "{count} entri tidak muat di lembar ini. Pilih lembar Lengkap untuk menyertakannya."},
+  "Fields stay editable in any PDF viewer.": {"id": "Kolom tetap bisa diubah di penampil PDF apa pun."},
+  "SRD description · page {page}": {"id": "Deskripsi SRD · halaman {page}"},
+  "Show full SRD page": {"id": "Tampilkan halaman SRD lengkap"},
+  "Back to description": {"id": "Kembali ke deskripsi"},
+  "Confirm & continue": {"id": "Konfirmasi & lanjut"}
 };

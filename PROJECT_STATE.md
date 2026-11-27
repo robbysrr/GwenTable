@@ -89,3 +89,6 @@ Owner direction: build a private browser preview of the Hazards v3 candidate (ch
 **Integration 11:** two builder blockers found by the first real-browser acceptance run and fixed; Bless/Bane D20 dice on saving throws. 811/811 Node tests, 12/12 Chromium acceptance tests, phone emulation (Pixel 7, iPhone 13, 320 px) passes build → save → damage with no overflow.
 
 **Online UAT (owner-approved, 27 Nov):** `docs/` holds the artwork-withheld build with `noindex`, served by GitHub Pages from branch `claude/lucid-ritchie-nvja1w`, folder `/docs`. Not a public release; release gates still NO GO. The 12 uncleared image binaries and the Taverley design kit are withheld from this repository (`site/WITHHELD_FROM_PUBLIC_REPO.md`). Earlier repo docs moved to `project-docs/`.
+
+## Milestone • 27 November 2026 • Integration 12 (owner requests)
+Settings menu in the top-right corner; fillable GwenTable Character Sheet v0.3 PDF generated from each character; compendium opens each subject on its own SRD 5.2.1 text (99.3% of sentences verbatim against the official PDF); builder start options open for new players and Next confirms-and-continues. 821/821 Node tests and 16/16 browser tests on the full private tree; 813/3 in this public copy (3 need the withheld art). Online UAT copy in `docs/` rebuilt. Details: `site/docs/INTEGRATION12_SETTINGS_SHEET_COMPENDIUM_UX.md`.

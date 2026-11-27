@@ -1,3 +1,19 @@
+# LATEST PROJECT_STATE — Integration 12 | 27 November 2026
+
+**BASELINE:** Integration 11 (811/811 Node, 12/12 browser).
+
+**COMPLETED:** Settings menu (theme, palette, layout) behind a gear button in the top-right corner; fillable GwenTable Character Sheet v0.3 PDF generated from the character (Quick Reference, Compact, Complete; A4/Letter; approved kit templates); compendium opens each subject on its own SRD 5.2.1 text instead of whole pages; builder start options open for new players and Next confirms-and-continues when only a confirmation is pending; removed full-page focus frame. Details: `docs/INTEGRATION12_SETTINGS_SHEET_COMPENDIUM_UX.md`.
+
+**VERIFIED:** 821/821 Node tests (10 new), static build, artwork-withheld build and art audit; browser 16/16 (all earlier UAT plus Settings at 320/390/1280 px, v0.3 PDF downloaded and its fields read back, compendium text and full-page toggle, Next-only builder flow). Compendium text 99.3% verbatim against the official SRD.
+
+**OUTSTANDING:** Sheet fields not mapped: player, campaign, pronouns, appearance, resistances, item weights, non-GP coins, Heroic Inspiration. Compendium: Classes and chapter topics still page view; 1 spell, 1 magic item, 2 subclasses unmatched. Real-device, screen-reader, zoom and Windows launcher checks still open. PUBLIC NO GO.
+
+**NEXT:** Owner UAT on phone via GitHub Pages; then remaining UAT scenarios and donor reconciliation.
+
+**ENVIRONMENT:** Claude Code cloud, headless Chromium. No deployment beyond the owner-approved UAT Pages copy.
+
+---
+
 # LATEST PROJECT_STATE — Integration 11 | 27 November 2026
 
 **BASELINE:** Integration 10 handover (bundle 515/515 files verified), source SHA-256 `059f095f…bfe95b`; fresh 400/400 manifest, 796/796 Node tests, static build, artwork-withheld build and 0-variant art audit, Node 22.23.5. Local Git snapshot `integration10-baseline` (no remote).

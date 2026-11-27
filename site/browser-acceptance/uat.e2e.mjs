@@ -59,7 +59,7 @@ async function walk(page, stop = /Appearance/) {
     seen.push(tab);
     if (stop.test(tab)) return seen;
     if (seen.length >= 3 && seen.at(-1) === seen.at(-3)) throw new Error(`Builder stuck on "${tab}": ${await page.locator('#step-status').innerText()}`);
-    const confirm = page.locator('#create button:visible', {hasText: /^(Confirm|Use this)/});
+    const confirm = page.locator('#create button:visible:not(#next)', {hasText: /^(Confirm|Use this)/});
     for (let k = await confirm.count(); k > 0; k--) { await confirm.first().click(); await page.waitForTimeout(100); }
     await page.locator('#next').click();
     await page.waitForTimeout(200);
@@ -277,6 +277,101 @@ test('Integration 11 Bless/Bane: record on Play sheet, save preview asks for the
   await page.locator('#language-toggle').click(); await page.waitForTimeout(300);
   assert.match(await page.locator('main').innerText(), /Bless dan Bane/);
   await page.locator('#language-toggle').click();
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('Integration 12 fillable GwenTable v0.3 sheet: generate from Play sheet, download, fields filled from the character', async () => {
+  const {ctx, page, errors} = await open({seed: 7});
+  await generate(page, 'Wizard', 5); await walk(page); await saveCharacter(page);
+  await damage(page, 3);
+  const name = (await page.locator('main h1:visible').first().innerText()).trim();
+  await page.getByRole('button', {name: 'Print / PDF'}).click();
+  const dialog = page.locator('dialog[open]');
+  assert.equal(await dialog.locator('select[name=design]').inputValue(), 'v03-complete');
+  assert.equal(await dialog.locator('select[name=edition]').isVisible(), false, 'edition only for simple sheet');
+  await dialog.getByRole('button', {name: 'Generate PDF'}).click();
+  const button = dialog.getByRole('button', {name: 'Download character PDF'});
+  await button.waitFor({timeout: 20000});
+  const [download] = await Promise.all([page.waitForEvent('download'), button.click()]);
+  assert.match(download.suggestedFilename(), /_Sheet-v03-complete-A4\.pdf$/);
+  const {PDFDocument} = await import('../dist/vendor/pdf-lib.min.js');
+  const pdf = await PDFDocument.load(await readFile(await download.path()));
+  const form = pdf.getForm();
+  const text = n => form.getTextField(n).getText();
+  assert.equal(pdf.getPageCount(), 4);
+  assert.equal(text('identity.name'), name);
+  assert.equal(text('identity.class'), 'Wizard');
+  assert.equal(text('identity.level'), '5');
+  const [cur, max] = (await page.locator('main').innerText()).match(/\b(\d+)\s*\/\s*(\d+)\s*\n?\s*Hit Points/i).slice(1, 3);
+  assert.equal(text('combat.hp_current'), cur, 'current play snapshot');
+  assert.equal(text('combat.hp_max'), max);
+  const proficientSkills = form.getFields().filter(f => /^skills\.[a-z_]+\.proficient$/.test(f.getName()) && f.isChecked()).length;
+  assert.ok(proficientSkills >= 4, `skill proficiencies checked: ${proficientSkills}`);
+  assert.ok(text('spellcasting.save_dc'));
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('Integration 12 builder ergonomics: start options open for new players; Next alone confirms and continues', async () => {
+  const {ctx, page, errors} = await open({seed: 2, width: 390, height: 844});
+  await page.locator('a[href="#create"]:visible').first().click();
+  assert.equal(await page.locator('#build-start').evaluate(d => d.open), true, 'start options visible on first visit');
+  await page.locator('button[aria-label^="Generator class"]').click();
+  await page.locator('dialog[open] button', {hasText: /^Fighter/}).click();
+  await page.locator('#generator select[name=level]').selectOption('3');
+  await page.locator('#generator button[type=submit]').click();
+  await page.waitForTimeout(300);
+  let taps = 0, combined = 0;
+  for (; taps < 20; taps++) {
+    const tab = (await page.locator('[role=tab][aria-selected=true]').textContent()).trim();
+    if (/Appearance/.test(tab)) break;
+    const label = await page.locator('#next').textContent();
+    if (/^Confirm & continue/.test(label)) combined++;
+    await page.locator('#next').click();
+    await page.waitForTimeout(350);
+  }
+  assert.ok(taps < 20, 'reached Appearance using Next only');
+  assert.ok(combined >= 5, `steps that confirmed and continued in one tap: ${combined}`);
+  await page.locator('#next').click(); await page.waitForTimeout(300);
+  await page.locator('#save').click();
+  await page.waitForURL(/#play\//);
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('Integration 12 Settings menu: top-right on phone and desktop; theme applies; Escape closes', async () => {
+  for (const width of [320, 390, 1280]) {
+    const {ctx, page, errors} = await open({width});
+    const summary = page.locator('#site-settings > summary');
+    const box = await summary.boundingBox();
+    assert.ok(box.x + box.width > width - 70 && box.y < 60, `top-right at ${width}px`);
+    await summary.click();
+    await page.locator('#theme-mode').selectOption('dark');
+    assert.equal(await page.evaluate(() => document.documentElement.dataset.theme), 'dark');
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#site-settings').evaluate(d => d.open), false);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth), 0);
+    assert.deepEqual(errors, []);
+    await ctx.close();
+  }
+});
+
+test('Integration 12 compendium: subject text first, full SRD page on request', async () => {
+  const {ctx, page, errors} = await open();
+  await page.goto(BASE + '#compendium'); await page.waitForTimeout(400);
+  await page.fill('[data-catalogue-search]', 'Bag of Holding');
+  await page.locator('[data-catalogue-results] button', {hasText: 'Magic Item'}).filter({has: page.locator('b', {hasText: /^Bag of Holding$/})}).click();
+  const dialog = page.locator('#official-reference');
+  await page.waitForTimeout(400);
+  const pre = dialog.locator('pre');
+  assert.match(await pre.innerText(), /^Wondrous Item, Uncommon\nThis bag has an interior space/);
+  assert.match(await dialog.locator('[data-rules-page]').innerText(), /SRD description · page 212/);
+  await dialog.locator('[data-rules-mode]').click(); await page.waitForTimeout(300);
+  assert.match(await dialog.locator('[data-rules-page]').innerText(), /SRD page 212/);
+  assert.match(await pre.innerText(), /Bag of Devouring/);
+  await dialog.locator('[data-rules-mode]').click(); await page.waitForTimeout(300);
+  assert.match(await pre.innerText(), /^Wondrous Item, Uncommon/);
   assert.deepEqual(errors, []);
   await ctx.close();
 });
